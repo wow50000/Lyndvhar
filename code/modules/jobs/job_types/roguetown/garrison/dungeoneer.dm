@@ -46,7 +46,7 @@
 	id = /obj/item/scomstone/bad/garrison
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE) //hilarious
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE) //hilarious
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
@@ -55,10 +55,9 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.change_stat("strength", 2)
-	H.change_stat("intelligence", -2)
+	H.change_stat("intelligence", -1)
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 2)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
