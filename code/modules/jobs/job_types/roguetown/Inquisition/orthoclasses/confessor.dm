@@ -13,13 +13,13 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE) // Stabbin - Lethals
-	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) // Quick
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE) // Stitch up your prey
-	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 5, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 	cloak = /obj/item/clothing/suit/roguetown/armor/longcoat
@@ -37,10 +37,10 @@
 	mask = /obj/item/clothing/mask/rogue/facemask/psydonmask
 	head = /obj/item/clothing/head/roguetown/roguehood/psydon
 	backpack_contents = list(/obj/item/roguekey/inquisition = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/mace/cudgel)
-	H.change_stat("strength", -1) // weasel
-	H.change_stat("endurance", 3)
+	H.change_stat("strength", -2) // weasel
+	H.change_stat("endurance", 1)
 	H.change_stat("perception", 2)
-	H.change_stat("speed", 3)
+	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
