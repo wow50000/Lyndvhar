@@ -11,11 +11,11 @@
 	allowed_sexes = list(MALE, FEMALE)
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation, /obj/effect/proc_holder/spell/invoked/projectile/fireball/greater)
 	display_order = JDO_MAGICIAN
-	tutorial = "The art of magic and the arcyne in this age is on the decline, but you stand as one of its top practictioners. Keep the traditions of the magi alive, and teach your apprentice what you know, for there is power to be found in what is lost."
+	tutorial = "The art of magic and the arcyne in this age is on the decline, but you stand as one of its top practictioners. For your efforts to maintain the art as well as protection from the dark, you were elevated to nobility and given residency in the Manor by the Lord. Keep the traditions of the magi alive, and teach your apprentice what you know, for there is power to be found in what is lost."
 
 	outfit = /datum/outfit/job/roguetown/magician
 	whitelist_req = TRUE
-	give_bank_account = 47
+	give_bank_account = 120
 	min_pq = 4 //High potential for abuse, lovepotion/killersice/greater fireball is not for the faint of heart
 	max_pq = null
 	round_contrib_points = 2
