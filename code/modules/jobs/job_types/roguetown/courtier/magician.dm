@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/job/roguetown/magician
 	whitelist_req = TRUE
 	give_bank_account = 120
-	min_pq = 4 //High potential for abuse, lovepotion/killersice/greater fireball is not for the faint of heart
+	min_pq = 5
 	max_pq = null
 	round_contrib_points = 2
 	cmode_music = 'sound/music/combat_bandit_mage.ogg'
@@ -43,16 +43,13 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 		H.change_stat("strength", -1)
 		H.change_stat("constitution", -1)
 		H.change_stat("intelligence", 4)
