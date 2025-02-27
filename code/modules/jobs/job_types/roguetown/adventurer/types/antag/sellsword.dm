@@ -10,18 +10,14 @@
 /datum/outfit/job/roguetown/bandit/sellsword/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
@@ -52,12 +48,12 @@
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
-		if("Spear & Crossbow") //Deserter watchman. Maybe should be shield and spear? spear and crossbow is kinda clumsy
-			backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow //we really need to make this not a grenade launcher subtype
+		if("Spear & Crossbow")
+			backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltr = /obj/item/quiver/bolts
 			r_hand = /obj/item/rogueweapon/spear/billhook
 			head = /obj/item/clothing/head/roguetown/helmet/kettle
-		if("Sword & Buckler") //Mercenary on the wrong side of the law
+		if("Sword & Buckler")
 			backl= /obj/item/rogueweapon/shield/buckler
-			beltr = /obj/item/rogueweapon/sword //steel sword like literally every adventurer gets
+			beltr = /obj/item/rogueweapon/sword
 			head = /obj/item/clothing/head/roguetown/helmet/sallet
