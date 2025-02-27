@@ -39,9 +39,9 @@
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
@@ -51,11 +51,11 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE) //This does nothing, but maybe one day it will.
-		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE) //Druids know the forest and when it has been disturbed
+		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE) //To help them defend themselves with parrying
-		H.put_in_hands(new /obj/item/rogueweapon/woodstaff(H), TRUE) //To encourage them to wander the forests and to help defend themselves
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+		H.put_in_hands(new /obj/item/rogueweapon/woodstaff(H), TRUE)
 		H.change_stat("intelligence", 1)
 		H.change_stat("endurance", 1)
 		H.change_stat("speed", 1)
