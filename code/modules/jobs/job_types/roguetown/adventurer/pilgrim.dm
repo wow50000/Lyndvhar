@@ -6,7 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0 //disables round-start spawn of pilgrims but allows migrant waves
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Fleeing misfortune you head your way towards Azure Peak, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
+	tutorial = "Whether through migration, fleeing trouble, or running from the terrors of this world- you've found yourself on a journey to Lyndvhar. Whether or not you will survive the rest of your way there however is to be seen."
 
 	outfit = null
 	outfit_female = null
