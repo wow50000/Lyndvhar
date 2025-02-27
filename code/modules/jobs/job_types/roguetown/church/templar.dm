@@ -4,7 +4,7 @@
 	title = "Templar"
 	department_flag = CHURCHMEN
 	faction = "Station"
-	tutorial = "Templars are warriors who have forsaken wealth and title in lieu of service to the church, due to either zealotry or a past shame. They guard the church and its priest while keeping a watchful eye against heresy and nite-creechers. Within troubled dreams, they wonder if the blood they shed makes them holy or stained."
+	tutorial = "Having forsaken your own wealth and any titles you may have possessed to serve the Pantheon either due to past transgressions or dutiful zealotry, you serve as a Templar of the Most Holy, charged with the protection of the Church of Lyndvhar. You are one of the first lines of defense of what may lurk in the dark. Serve the Church faithfully, and perhaps you will live to see the dae when the realm is pure once more."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS
@@ -84,7 +84,7 @@
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
@@ -104,10 +104,10 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
 		H.cmode_music = 'sound/music/combat_holy.ogg'
-		H.change_stat("strength", 3)
+		H.change_stat("strength", 2)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", 2)
-		H.change_stat("perception", -1)
+		H.change_stat("speed", 1)
+		H.change_stat("perception", -2)
 
 		ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
@@ -178,11 +178,11 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate	///Half-Plate not fullplate
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
@@ -197,16 +197,16 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 		if(H.patron?.type == /datum/patron/divine/malum)
-			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)	//May tone down to 2; seems OK.
 		H.cmode_music = 'sound/music/combat_holy.ogg'
 		H.change_stat("strength", 2)
 		H.change_stat("constitution", 2)
 		H.change_stat("endurance", 3)
-		
+		H.change_stat("speed", -1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	

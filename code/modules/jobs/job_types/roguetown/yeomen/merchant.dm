@@ -13,11 +13,11 @@
 
 	outfit = /datum/outfit/job/roguetown/merchant
 	give_bank_account = 22
-	noble_income = 100 // Guild Support - The sole Money Role outside of the keep, should help them keep pace a bit + pick up if they get completely knocked out of coin.
-	min_pq = 1 //"Yeah...my guy says the best I can do is one PQ, final offer"
+	noble_income = 20
+	min_pq = 1
 	max_pq = null
 	required = TRUE
-	round_contrib_points = 3
+	round_contrib_points = 4
 	cmode_music = 'sound/music/combat_noble.ogg'
 
 /datum/outfit/job/roguetown/merchant/pre_equip(mob/living/carbon/human/H)

@@ -13,12 +13,12 @@
 		Perhaps in another life, you would have turned out to be a powerful mage, wise archivist or a shrewd steward, \
 		but leprosy took away your younger years. \
 		Out of desperation, you followed the ways of Pestra and managed to be cured. \
-		Now you serve in the Duke's court ensuring the good health of those inhabiting the keep."
+		Now you serve in the court ensuring the good health of those inhabiting the keep."
 	outfit = /datum/outfit/job/roguetown/physician
 	whitelist_req = TRUE
 
 	give_bank_account = 30
-	min_pq = 3 //Please don't kill the duke by operating on strong intent. Play apothecary until you're deserving of the great white beak of doom
+	min_pq = 3
 	max_pq = null
 	round_contrib_points = 3
 
@@ -62,7 +62,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 6, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 5, TRUE)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
 		H.change_stat("strength", -1)
 		H.change_stat("constitution", -1)

@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the town and enforce its laws. Trained regularly in combat and siege warfare, you stand a small chance of surviving the Duke's reign."
+	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the town and enforce its laws. Trained regularly in combat and siege warfare, you stand a small chance of surviving to retirement."
 	display_order = JDO_CASTLEGUARD
 	whitelist_req = TRUE
 
@@ -115,8 +115,8 @@
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)		//Not as good as the boltman
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 5, TRUE)		//Only effects draw and reload time.
-	H.mind.adjust_skillrank(/datum/skill/combat/bows, 5, TRUE)			//Only effects draw times.
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)		//Only effects draw and reload time.
+	H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)			//Only effects draw times.
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) // Athletics a bit better than ur average gooby
