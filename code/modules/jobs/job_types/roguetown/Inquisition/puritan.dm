@@ -95,7 +95,7 @@
 
 /datum/advclass/puritan/muscle
 	name = "The Fist of Psydon"
-	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of PSYDON. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to PSYDON, and driving out the children of ASCENDANT FILTH with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are the Fist of Psydon."
+	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of PSYDON. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to PSYDON, and driving out the Daemons with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are the Fist of Psydon."
 	outfit = /datum/outfit/job/roguetown/puritan/muscle
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
@@ -264,7 +264,7 @@
 		return
 	if(!H.stat)
 		var/static/list/faith_lines = list(
-			"DO YOU DENY THE TEN?",
+			"DO YOU DENY THE PANTHEON?",
 			"WHO IS YOUR GOD?",
 			"ARE YOU FAITHFUL?",
 			"WHO IS YOUR SHEPHERD?",
