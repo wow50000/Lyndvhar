@@ -191,11 +191,11 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 /datum/game_mode/chaosmode/proc/pick_bandits()
 	//BANDITS
 	banditgoal = rand(200,400)
-	restricted_jobs = list("Grand Duke",
+	restricted_jobs = list("Viscount",
 	"Consort",
 	"Merchant",
 	"Priest",
-	"Royal Guard")
+	"Household Guard")
 	var/num_bandits = 0
 	if(num_players() >= 10)
 		num_bandits = CLAMP(round(num_players() / 5), 4, 6)

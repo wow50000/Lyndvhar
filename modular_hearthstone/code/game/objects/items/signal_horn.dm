@@ -21,7 +21,7 @@
 			playsound(src, 'modular_hearthstone/sound/items/bogguardhorn.ogg', 100, TRUE)
 		if("Town Sheriff", "Watchman", "Sergeant", "Man at Arms")
 			playsound(src, 'modular_hearthstone/sound/items/watchhorn.ogg', 100, TRUE)
-		if("Garrison Captain", "Royal Guard")
+		if("Garrison Captain", "Household Guard")
 			playsound(src, 'modular_hearthstone/sound/items/rghorn.ogg', 100, TRUE)
 		else
 			playsound(src, 'modular_hearthstone/sound/items/signalhorn.ogg', 100, TRUE)
