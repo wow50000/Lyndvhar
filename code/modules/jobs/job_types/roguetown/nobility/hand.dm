@@ -58,7 +58,7 @@
 
 /datum/advclass/hand/hand
 	name = "Hand"
-	tutorial = " You have played blademaster and strategist to the Noble-Family for so long that you are a master tactician, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with swords than any spymaster could ever claim to."
+	tutorial = " You have played blademaster and strategist to the lord's family for so long that you are a master tactician, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with swords than any spymaster could ever claim to."
 	outfit = /datum/outfit/job/roguetown/hand/handclassic
 
 	category_tags = list(CTAG_HAND)
@@ -89,11 +89,11 @@
 		H.change_stat("perception", 3)
 		H.change_stat("intelligence", 3)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/advclass/hand/spymaster
 	name = "Spymaster"
-	tutorial = " You have played spymaster and confidant to the Noble-Family for so long that you are a vault of intrigue, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with those lips than any blademaster could ever claim to."
+	tutorial = " You have played spymaster and confidant to the lord's family for so long that you are a vault of intrigue, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with those lips than any blademaster could ever claim to."
 	outfit = /datum/outfit/job/roguetown/hand/spymaster
 
 	category_tags = list(CTAG_HAND)
@@ -133,54 +133,10 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 5, TRUE) // not like they're gonna break into the vault.
-	H.change_stat("strength", -1)
+	H.change_stat("strength", -2)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 4)
 	H.change_stat("intelligence", 2)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-
-/datum/advclass/hand/advisor
-	name = "Advisor"
-	tutorial = " You have played researcher and confidant to the Noble-Family for so long that you are a vault of knowledge, something you exploit with potent conviction. Let no man ever forget the knowledge you wield. You've read more books than any blademaster or spymaster could ever claim to."
-	outfit = /datum/outfit/job/roguetown/hand/advisor
-
-	category_tags = list(CTAG_HAND)
-
-//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors. 
-/datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-	backr = /obj/item/storage/backpack/rogue/satchel/black
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/storage/keyring/hand = 1, /obj/item/reagent_containers/glass/bottle/rogue/poison = 1) //starts with a vial of poison, like all wizened evil advisors do!
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
-	pants = /obj/item/clothing/under/roguetown/tights/black
-	id = /obj/item/scomstone/garrison
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
-		H.change_stat("intelligence", rand(4,5))
-		H.change_stat("perception", 3)
-		H.mind.adjust_spellpoints(2)
-		ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-	if(H.age == AGE_OLD)
-		H.change_stat("speed", -1)
-		H.change_stat("strength", -1)
-		H.change_stat("intelligence", 1)
-		H.change_stat("perception", 1)
-		H.mind.adjust_spellpoints(1)
-
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 
