@@ -2,8 +2,8 @@ GLOBAL_VAR(lordsurname)
 GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/lord
-	title = "Grand Duke"
-	f_title = "Grand Duchess"
+	title = "Viscount"
+	f_title = "Viscountess"
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -22,7 +22,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error of their ways."
+	tutorial = "Elevated into overlordship of the city through a web of intrigue and political upheaval, you are the absolute authority of these lands ever since the succession crisis and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error of their ways."
 	whitelist_req = FALSE
 	min_pq = 10
 	max_pq = null
@@ -32,8 +32,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	cmode_music = 'sound/music/combat_noble.ogg'
 
 /datum/job/roguetown/exlord //just used to change the lords title
-	title = "Duke Emeritus"
-	f_title = "Duchess Emeritus"
+	title = "Viscount Emeritus"
+	f_title = "Viscountess Emeritus"
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -55,11 +55,11 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		SSticker.rulermob = L
 		switch(L.pronouns)
 			if(SHE_HER)
-				SSticker.rulertype = "Grand Duchess"
+				SSticker.rulertype = "Viscountess"
 			if(THEY_THEM_F)
-				SSticker.rulertype = "Grand Duchess"
+				SSticker.rulertype = "Viscountess"
 			else
-				SSticker.rulertype = "Grand Duke"
+				SSticker.rulertype = "Viscount"
 		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is [SSticker.rulertype] of Lyndvhar.</span></span></b>")
 		if(STATION_TIME_PASSED() <= 10 MINUTES) //Late to the party? Stuck with default colors, sorry!
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
