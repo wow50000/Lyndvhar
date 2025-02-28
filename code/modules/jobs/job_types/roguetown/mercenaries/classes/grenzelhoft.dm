@@ -37,7 +37,7 @@
 			H.change_stat("strength", 3)
 			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
-			H.change_stat("speed", -2)		//They get heavy armor now + sword option; so lower speed.
+			H.change_stat("speed", -2)	//They get heavy armor now + sword option; so lower speed.
 			r_hand = /obj/item/rogueweapon/greatsword/grenz
 		if("Halberdier")
 			H.set_blindness(0)
