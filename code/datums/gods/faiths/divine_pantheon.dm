@@ -1,8 +1,7 @@
 /datum/faith/divine
 	name = "Divine Pantheon"
-	desc = "The TEN, children of PSYDON. The most accepted religion in Azure Peak. born from Psydon sending the Comet Syon to defeat the rampaging Archdevil and splitting him into Ten. \n \n\
-		The <b>Holy See</b>, recently rocked by a violent schism, controls diosces across the world.\
-		The splinter church, the <b>Holy Ecclesial</b>, recognize the heretical 'Ascendants' - better known as INHUMEN GODS- as True Divinity. \
-		But it is only through faith of the TRUE DIVINE that hope can be found in this world."
-	worshippers = "Citizens of Azure Peak, conservative religious-folk, many commonfolk."
+	desc = "The Pantheonic Church is the most widely common and accepted faith in all of Lyndhardtia. \n \n\
+		The <b>Mother Church</b>, slowly decaying due to the civil war, controls diosces across the continent.\
+		It is only through faith of the TRUE DIVINE that hope can be found in this collapsing realm."
+	worshippers = "Lyndhardtians, commonfolk, nobility."
 	godhead = /datum/patron/divine/astrata
