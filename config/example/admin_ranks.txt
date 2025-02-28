@@ -76,7 +76,7 @@ Edit = EVERYTHING
 
 Name = Host
 Include = EVERYTHING
-Exclude = AUTOADMIN
+Exclude =
 Edit = EVERYTHING
 
 Name = Coder
