@@ -35,7 +35,7 @@
 
 /datum/virtue/utility/resident
 	name = "Resident"
-	desc = "I'm a resident of Azure Peak. I have an account in the city's treasury and a home in the city."
+	desc = "I'm a resident of Lyndvhar. I have an account in the city's treasury and a home in the city."
 	added_traits = list(TRAIT_RESIDENT)
 
 /datum/virtue/utility/linguist
