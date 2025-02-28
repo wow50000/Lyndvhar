@@ -978,14 +978,13 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			humie.add_stress(/datum/stressevent/maniac_woke_up)
 			to_chat(humie, span_deadsay("<span class='reallybig'>... WHERE AM I? ...</span>"))
 			var/static/list/slop_lore = list(
-				span_deadsay("... Azure Peak? No ... It doesn't exist ..."),
-				span_deadsay("... My name is Trey. Trey Liam, Liamtific Troverseer ..."),
-				span_deadsay("... I'm on NT Liam, a self Treystaining ship, used to Treyserve what Liamains of roguemanity ..."),
-				span_deadsay("... Launched into the Grim Darkness, War and Grim Darkness preserves their grimness ... Their edge ..."),
-				span_deadsay("... Keeps them alive in the grimdark future, where there is only war  ..."),
-				span_deadsay("... There is no hope left. Only the Space Station 13 (TRADEMARK TITLE DROP) lets me live in the Trey Liam ..."),
-				span_deadsay("... What have I done!? ..."),
-				span_reallybig("... OH SHIT WHY IS THERE A TALKING DOG?! ..."),
+				span_deadsay("... Lyndvhar? No ... It doesn't exist ..."),
+				span_deadsay("... My name is Trey. Trey Liam, Scientific Overseer ..."),
+				span_deadsay("... I'm on the NTS Nostromo, a self sustaining ship, used to preserve what remains of all humanity ..."),
+				span_deadsay("... Launched into space, it is likely all that is left of humankind."),
+				span_deadsay("... The simulation keeps them alive in this future, where nothing remains  ..."),
+				span_deadsay("... There is no hope left. Only the simulation lets us live in bliss and ignorance ..."),
+				span_reallybig("... What have I done!? ..."),
 		)
 			for(var/slop in slop_lore)
 				to_chat(humie, slop)

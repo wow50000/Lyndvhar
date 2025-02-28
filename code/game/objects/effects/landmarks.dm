@@ -132,11 +132,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/lord
-	name = "Grand Duke"
+	name = "Viscount"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/knight
-	name = "Royal Guard"
+	name = "Household Guard"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/sheriff
@@ -144,7 +144,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guard_captain
-	name = "Guard Captain"
+	name = "Garrison Captain"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/barkeep

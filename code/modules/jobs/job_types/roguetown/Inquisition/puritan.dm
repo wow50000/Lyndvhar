@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/old_god) //You MUST have a Psydonite character to start. Just so people don't get japed into Oops Suddenly Psydon!
-	tutorial = "PSYDON YET LIVES. PSYDON YET ENDURES. You have been sent by the High Bishop of Otava, leader of a radical denomination of the Holy See that still believes in the endurance of PSYDON, and holds him above the Ten. Officially, you are here on diplomatic business. /n /n Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from Ten-worshippers that stray too far from doctrine, to Ecclesial fools that worship Ascendants. The Duchy tolerates you due to your ability to fight the inhumen, and the Church tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
+	tutorial = "HE LIVES. HE ENDURES. You have been sent by the Bisphoric of Valoria, the leading realm of the Psydonian Orthodoxy, on a diplomatic misssion.. officially, that is. /n /n Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from Ten-worshippers that stray too far from doctrine, to fools that worship the Daemons. The city of Lyndvhar tolerates you due to your ability to fight the inhumen, and the Pantheonic Church tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
 	whitelist_req = TRUE
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
@@ -95,7 +95,7 @@
 
 /datum/advclass/puritan/muscle
 	name = "The Fist of Psydon"
-	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of PSYDON. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to PSYDON, and driving out the children of ASCENDANT FILTH with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are the Fist of Psydon."
+	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of PSYDON. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to PSYDON, and driving out the Daemons with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are the Fist of Psydon."
 	outfit = /datum/outfit/job/roguetown/puritan/muscle
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
@@ -264,7 +264,7 @@
 		return
 	if(!H.stat)
 		var/static/list/faith_lines = list(
-			"DO YOU DENY THE TEN?",
+			"DO YOU DENY THE PANTHEON?",
 			"WHO IS YOUR GOD?",
 			"ARE YOU FAITHFUL?",
 			"WHO IS YOUR SHEPHERD?",

@@ -1,5 +1,5 @@
 /datum/job/roguetown/captain
-	title = "Guard Captain"
+	title = "Garrison Captain"
 	flag = GUARD_CAPTAIN
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "Your lineage is noble, and generations of strong, loyal knights have come before you. You served your time \
-	gracefully as knight of his royal majesty, and now you've grown into a role which many men can only dream of becoming. \
+	gracefully as knight of the Viscount, and now you've grown into a role which many men can only dream of becoming. \
 	Lead your men to victory--and keep them in line--and you will see this realm prosper under a thousand suns."
 	display_order = JDO_GUARD_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
@@ -300,7 +300,7 @@
 	overlay_state = "recruit_guard"
 	recruitment_faction = "Watchman"
 	recruitment_message = "Serve the town guard, %RECRUIT!"
-	accept_message = "FOR THE CROWN!"
+	accept_message = "FOR THE VISCOUNT!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/guard/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)

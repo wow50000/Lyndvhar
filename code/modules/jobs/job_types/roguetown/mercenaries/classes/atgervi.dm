@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/atgervi
 	name = "Atgervi"
-	tutorial = "Fear. What more can you feel when a stranger tears apart your friend with naught but hand and maw? What more can you feel when your warriors fail to slay an invader? What more could you ask for, when hiring a mercenary?"
+	tutorial = "Atgervians are the term for those who live in the far north of Rhaenval. This land is particular known for its highlands and more hostile weather patterns- those who live here are the hardiest and most fiercesome of people. In past daes the Atgervians were known as fierce sea raiders. But those daes have passed."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/atgervi
@@ -21,16 +21,16 @@
 	switch(classchoice)
 		if("Varangian")
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Varangian of the Gronn Highlands. Warrior-Traders whose exploits into the Zybantine Empire will be forever remembered by historians."))
+			to_chat(H, span_warning("You are a Varangian Mercenary of Rhaenvali. The Varangians are one of the more prestigious mercenary groups of their time, known for their loyalty to their clients."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)	
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)	
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -60,7 +60,7 @@
 			H.cmode_music = 'sound/music/combat_vagarian.ogg'
 		if("Shaman")
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Shaman of the Northern Empty. Savage combatants who commune with their gods through gut-wrenching violence, rather than idle prayer."))
+			to_chat(H, span_warning("You are a Shaman of the Atgervian. Savage combatants who commune with their gods through gut-wrenching violence, rather than idle prayer."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)

@@ -503,14 +503,14 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		"[pick_list_replacements(HAL_LINES_FILE, "threat")] in [pick_list_replacements(HAL_LINES_FILE, "location")][prob(50)?"!":"!!"]",\
 		"[pick("[target.first_name()] is a heretic!", "Make [target.first_name()] an outlaw!")]",\
 		"[pick("I","Squire","Somebody","They")] killed the priest!",\
-		"Duke [pick("is a Zizoid", "is a heretic")]!!")
+		"Viscount [pick("is a Zizoid", "is a heretic")]!!")
 
 	/*var/radio_messages = list("[pick_list_replacements(HAL_LINES_FILE, "people")] is [pick_list_replacements(HAL_LINES_FILE, "accusations")]!",\
 		"Help!",\
 		"[pick_list_replacements(HAL_LINES_FILE, "threat")] in [pick_list_replacements(HAL_LINES_FILE, "location")][prob(50)?"!":"!!"]",\
 		"[pick("[target.first_name()] is a heretic!", "Make [target.first_name()] an outlaw!")]",\
 		"[pick("I","Squire","Somebody","They")] killed the priest!",\
-		"Duke [pick("is a Zizoid", "is a heretic")]!!")*/
+		"Viscount [pick("is a Zizoid", "is a heretic")]!!")*/
 
 	var/mob/living/carbon/person = null
 	var/datum/language/understood_language = target.get_random_understood_language()
@@ -580,7 +580,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		if(istype(equipped_backpack))
 			for(var/i in 1 to 5) //increase the odds
 				message_pool.Add("<span class='notice'>[other] puts the [pick(\
-					"killersice","crimson fang","severed head","crown of Azure Peak","master's rod",\
+					"killersice","crimson fang","severed head","crown of Lyndvhar","master's rod",\
 					"master key","vault key", "steward's key", "ritual dagger","spellbook",\
 					)] into [equipped_backpack].</span>")
 
@@ -701,7 +701,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 	set waitfor = FALSE
 	..()
 	if(!message)
-		message = pick("heretic","outlaw","duke dead","priest dead","lich","ww")
+		message = pick("heretic","outlaw","viscount dead","priest dead","lich","ww")
 	feedback_details += "Type: [message]"
 	switch(message)
 		if("heretic")
@@ -712,7 +712,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			to_chat(target, "<h1 class='alert'>The [SSticker.rulertype] Decrees</h1>")
 			to_chat(target, "<br><br><span class='alert'>[target.first_name()] has been declared an outlaw and must be captured or slain.</span><br><br>")
 			SEND_SOUND(target, 'sound/misc/royal_decree.ogg')
-		if("duke dead")
+		if("viscount dead")
 			to_chat(target, "<h1 class='alert'>Bad Omen</h1>")
 			to_chat(target, "<br><br><span class='alert'>The [SSticker.rulertype] is dead! We need a new ruler.</span><br><br>")
 			SEND_SOUND(target, 'sound/misc/evilevent.ogg')

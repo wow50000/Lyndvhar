@@ -60,15 +60,15 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	ROLE_PAI))
 
 GLOBAL_LIST_INIT(noble_positions, list(
-	"Grand Duke",
+	"Viscount",
 	"Consort",
 	"Prince",
 	"Hand",
-	"Guard Captain",
+	"Garrison Captain",
 	"Marshal",
 	"Councillor",
 	"Steward",
-	"Royal Guard",
+	"Household Guard",
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(

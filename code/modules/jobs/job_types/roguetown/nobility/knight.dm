@@ -1,5 +1,5 @@
 /datum/job/roguetown/knight
-	title = "Royal Guard"		//Knights, but their role is far more clear this way.
+	title = "Household Guard"		//Knights, but their role is far more clear this way.
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -8,7 +8,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the realm as the Grand Duke's personal guard. You listen to your Liege and the Captain of the Guard, defending your Lord and realm."
+	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the city as the Viscount's personal household guard. You listen to your Liege and the Captain of the Guard, defending your Lord and city."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight
@@ -91,7 +91,6 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Knights should be used to the horrors of war if they're tride-and-true.
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)			//Knights are /technically/ nobles? But they are of the lower-tiers; mainly that a non-blue-blood could become a knight
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) 		//if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) 		//Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.
@@ -170,7 +169,6 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Knights should be used to the horrors of war if they're tride-and-true.
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)			//Knights are /technically/ nobles? But they are of the lower-tiers; mainly that a non-blue-blood could become a knight.
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) 		//if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) 		//Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.
@@ -244,7 +242,6 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Knights should be used to the horrors of war if they're tride-and-true.
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)			//Knights are /technically/ nobles? But they are of the lower-tiers; mainly that a non-blue-blood could become a knight.
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) 		//if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) 		//Knights can train their squires.
 	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC)		//Mounted Knights can roam the town (on their mounts)
@@ -323,7 +320,6 @@
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Knights should be used to the horrors of war if they're tride-and-true.
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)			//Knights are /technically/ nobles? But they are of the lower-tiers; mainly that a non-blue-blood could become a knight.
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) 		//if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) 		//Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.

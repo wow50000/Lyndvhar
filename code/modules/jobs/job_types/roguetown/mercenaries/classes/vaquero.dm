@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/vaquero
 	name = "Vaquero"
-	tutorial = "A band of mercenaries hailing from the Isles of Etrusca, their name traced back to humble origins as cattle drivers."
+	tutorial = "A band of mercenaries hailing from Valoria, their name traced back to humble origins as cattle drivers."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	cmode_music = 'sound/music/combat_vaquero.ogg'
@@ -14,12 +14,12 @@
 
 /datum/outfit/job/roguetown/mercenary/vaquero/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -52,9 +52,7 @@
 					/obj/item/roguekey/mercenary = 1
 					)
 	H.change_stat("strength", 1)
-	H.change_stat("intelligence", 2)
-	H.change_stat("endurance", 2)
+	H.change_stat("intelligence", 1)
 	H.change_stat("speed", 3)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)

@@ -63,7 +63,7 @@
 		SSroguemachine.key = src
 
 /obj/item/roguekey/lord/proc/anti_stall()
-	src.visible_message(span_warning("The Key of Azure Peak crumbles to dust, the ashes spiriting away in the direction of the Keep."))
+	src.visible_message(span_warning("The Key of Lyndvhar crumbles to dust, the ashes spiriting away in the direction of the Keep."))
 	SSroguemachine.key = null //Do not harddel.
 	qdel(src) //Anti-stall
 
@@ -121,7 +121,7 @@
 	lockid = "vault"
 
 /obj/item/roguekey/sheriff
-	name = "guard captain's key"
+	name = "garrison captain's key"
 	desc = "This key belongs to the captain of the guard."
 	icon_state = "cheesekey"
 	lockid = "sheriff"

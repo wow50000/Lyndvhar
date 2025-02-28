@@ -25,20 +25,19 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)	//Won't be using normally with Zwiehander but useful.
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)		//Trust me, they'll need it due to stamina drain on their base-sword.
-			H.change_stat("strength", 2)	//Should give minimum required stats to use Zweihander
-			H.change_stat("endurance", 3)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+			H.change_stat("strength", 3)
+			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
-			H.change_stat("perception", 1)
-			H.change_stat("speed", -1)		//They get heavy armor now + sword option; so lower speed.
+			H.change_stat("speed", -2)		//They get heavy armor now + sword option; so lower speed.
 			r_hand = /obj/item/rogueweapon/greatsword/grenz
 		if("Halberdier")
 			H.set_blindness(0)
@@ -46,20 +45,19 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.change_stat("strength", 2) //same str, worse end, more speed - actually a good tradeoff, now.
-			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 2)
-			H.change_stat("perception", 1)
+			H.change_stat("strength", 2)
+			H.change_stat("endurance", 1)
+			H.change_stat("constitution", 1)
 			H.change_stat("speed", 1)
 			r_hand = /obj/item/rogueweapon/halberd
 
