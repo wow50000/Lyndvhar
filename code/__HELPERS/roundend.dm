@@ -253,24 +253,24 @@
 						"Our actors hang up their masks. A new cast begins to rehearse.",
 						"Thus the week's events have taken place. Eventful or mundane, life continues.",
 						"Pawns of gods, preachers of nite, all come together to recite this tale.",
-						"Whether with loss or life, the duchy survives... for now.",
-						"The people of Azure prepare to look forward; their actions locked in the impermeable past.")
+						"Whether with loss or life, the city survives... for now.",
+						"The people of Lyndvhar prepare to look forward; their actions locked in the impermeable past.")
 //		if(C.not_enough_players)
 //			end_reason = "The town was abandoned."
 
 		if(C.vampire_werewolf() == "vampire")
-			end_reason = "When the Vampires finished sucking the town dry, they moved on to the next one."
+			end_reason = "When the Vampires finished sucking the city dry, they moved on to the next one."
 		if(C.vampire_werewolf() == "werewolf")
-			end_reason = "The Werevolves formed an unholy clan, marauding Azure Peak until the end of its daes."
+			end_reason = "The Werevolves formed an unholy clan, marauding Lyndvhar until the end of its daes."
 
 		if(C.headrebdecree)
-			end_reason = "The peasant rebels took control of the throne, hail the new community!"
+			end_reason = "The peasant rebels took control of the city, hail the new community!"
 
 
 	if(end_reason)
 		to_chat(world, span_bigbold("[end_reason]."))
 	else
-		to_chat(world, span_bigbold("The town has managed to survive another week."))
+		to_chat(world, span_bigbold("The city has managed to survive another week."))
 
 /datum/controller/subsystem/ticker/proc/gamemode_report()
 	var/list/all_teams = list()
