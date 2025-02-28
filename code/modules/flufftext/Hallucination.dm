@@ -580,7 +580,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		if(istype(equipped_backpack))
 			for(var/i in 1 to 5) //increase the odds
 				message_pool.Add("<span class='notice'>[other] puts the [pick(\
-					"killersice","crimson fang","severed head","crown of Azure Peak","master's rod",\
+					"killersice","crimson fang","severed head","crown of Lyndvhar","master's rod",\
 					"master key","vault key", "steward's key", "ritual dagger","spellbook",\
 					)] into [equipped_backpack].</span>")
 
