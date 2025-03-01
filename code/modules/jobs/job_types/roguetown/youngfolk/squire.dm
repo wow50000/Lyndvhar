@@ -26,7 +26,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/guardcastle
 	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
-	id = /obj/item/scomstone/bad/garrison
 
 /datum/job/roguetown/squire/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

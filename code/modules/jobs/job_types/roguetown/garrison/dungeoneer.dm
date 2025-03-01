@@ -43,7 +43,6 @@
 	beltr = /obj/item/rogueweapon/whip/antique
 	beltl = /obj/item/storage/keyring/dungeoneer
 	backr = /obj/item/storage/backpack/rogue/satchel/black
-	id = /obj/item/scomstone/bad/garrison
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE) //hilarious
@@ -64,4 +63,3 @@
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC)

@@ -40,7 +40,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
-	id = /obj/item/scomstone/bad
 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F) 
 		armor = /obj/item/clothing/suit/roguetown/armor/silkcoat
 	if(H.mind)
@@ -85,7 +84,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
-	id = /obj/item/scomstone/bad
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
@@ -127,7 +125,6 @@
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
-	id = /obj/item/scomstone/bad
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
