@@ -1,5 +1,4 @@
 // traitors, bandits, pro thieves, werewolves, vampires, demons, cultists
-/*
 
 /datum/game_mode/chaosmode
 	name = "chaosmode"

@@ -97,7 +97,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 			missing_lord_time = world.time
 		if(world.time > missing_lord_time + 10 MINUTES)
 			missing_lord_time = world.time
-			//addomen(OMEN_NOLORD) not really fun or roleplay tbh
+			addomen(OMEN_NOLORD) // Should be punished for missing a lord
 		return FALSE
 	else
 		return TRUE
@@ -116,9 +116,10 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 /datum/game_mode/chaosmode/after_DO()
 	if(allmig || roguefight)
 		return TRUE
+	/* As I understand it, this is what Azure used to force manual antagonism
 	if(SSticker.manualmodes)
 		forcedmodes |= SSticker.manualmodes
-
+	*/
 	if(forcedmodes.len)
 		message_admins("Manual gamemodes selected.")
 		for(var/G in forcedmodes)
@@ -150,37 +151,43 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 				pick_rebels()
 				log_game("Major Antagonist: Rebellion")
 			*/
-			if(1 to 25)
+			if(1 to 15)
 				pick_bandits()
 				log_game("Antagonists: Bandits")
-			if(26 to 50)
-				//"pick_vampires() was removed from here, normally they spawn together
+			if(15 to 25)
+				pick_werewolves() or pick_vampires() //Readded vampries from 90 to 100 pop and made it so it picks either wolves or vamps
+				pick_bandits()
+				log_game("Antagonists: Werewolves or Vampires & Bandits")
+			if(25 to 30)
+				pick_lich()
+				pick_bandits() or pick_rebels()
+				log_game("Antagonists: Lich & Bandits OR Bandits")
+			if(30 to 40)
+				pick_lich()
+				pick_werewolves()
+				log_game("Antagonists: Lich")
+			if(40 to 100) //Should never happen but you know, would be pretty funny and can be tweaked later
+				pick_vampires() 
 				pick_werewolves()
 				pick_bandits()
-				log_game("Antagonists: Werewolves & Bandits")
-			if(51 to 75)
 				pick_lich()
-				pick_bandits()
-				log_game("Antagonists: Lich & Bandits")
-			if(76 to 89)
-				pick_lich()
-				log_game("Antagonists: Lich")
-			if(90 to 100)
-				pick_vampires()
-				log_game("Antagonists: Vampyr")
+				log_game("Darkness Comes!")
+
+				
 			/* we've been having a lot of this, we can reimplement a random extended chance after seeing how the antags go
 			if(81 to 100)
 				log_game("Major Antagonist: Extended") //gotta put something here.
 			*/
 
-		/* removing the "minor antagonist" system as we currently need them as major antagonist gamemodes while waiting for our own custom antags
+		// readding the "minor antagonist" that Azure removed
 		if(prob(45))
 			pick_bandits()
 			log_game("Minor Antagonist: Bandit")
 		if(prob(45))
 			pick_aspirants()
 			log_game("Minor Antagonist: Aspirant")
-		//Rest well, unoriginal LFWB reference. You will not be missed.
+		//Maniac should still not spawn
+		/*
 		if(prob(10))
 			pick_maniac()
 			log_game("Minor Antagonist: Maniac")
