@@ -1431,7 +1431,7 @@
 	return ..()
 
 /atom/movable/screen/gameover
-	icon = 'icons/gameover.dmi'
+	icon = 'icons/RoguetownIcons/gameover.dmi'
 	icon_state = ""
 	screen_loc = ui_backhudl
 	layer = SPLASHSCREEN_LAYER
