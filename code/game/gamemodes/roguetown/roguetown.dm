@@ -158,7 +158,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 				if(prob(50)) //Readded vampries from 90 to 100 pop and made it so it picks either wolves or vamps
 					pick_werewolves()
 				else
-					pick_vampires
+					pick_vampires()
 				log_game("Antagonists: Werewolves or Vampires & Bandits")
 			if(25 to 30)
 				if(prob(50))
