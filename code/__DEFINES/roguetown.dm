@@ -12,7 +12,7 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -30,7 +30,7 @@
 	/datum/species/aasimar,\
 	/datum/species/lupian,\
 	/datum/species/vulpkanin,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,
 
 #define RACES_TOLERATED \
@@ -69,7 +69,7 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -91,7 +91,7 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -113,7 +113,7 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
@@ -129,7 +129,7 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
+	
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
