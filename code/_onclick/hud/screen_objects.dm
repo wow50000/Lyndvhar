@@ -1387,7 +1387,7 @@
 	var/fucme = TRUE
 
 /atom/movable/screen/splash/credits
-	icon = 'icons/fullblack.dmi'
+	icon = 'icons/RoguetownIcons/fullblack.dmi'
 	icon_state = ""
 	screen_loc = ui_backhudl
 	layer = SPLASHSCREEN_LAYER
