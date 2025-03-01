@@ -161,7 +161,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 			if(25 to 30)
 				pick_lich()
 				pick_bandits() or pick_rebels()
-				log_game("Antagonists: Lich & Bandits OR Bandits")
+				log_game("Antagonists: Lich & Bandits OR Rebels")
 			if(30 to 40)
 				pick_lich()
 				pick_werewolves()
