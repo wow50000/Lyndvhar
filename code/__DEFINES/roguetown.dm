@@ -1,4 +1,5 @@
 //used in various places
+//used in various places
 #define ALL_RACES_TYPES list(\
 	/datum/species/human/northern,\
 	/datum/species/human/halfelf,\
@@ -29,7 +30,7 @@
 	/datum/species/aasimar,\
 	/datum/species/lupian,\
 	/datum/species/vulpkanin,\
-	/datum/species/dracon,
+	/datum/species/dracon 
 
 #define RACES_TOLERATED \
 	/datum/species/elf/dark,\
@@ -54,6 +55,7 @@
 
 #define RACES_TOLERATED_UP list(RACES_TOLERATED, RACES_RESPECTED)
 
+
 #define NOBLE_RACES_TYPES list(\
 	/datum/species/human/northern,\
 	/datum/species/human/halfelf,\
@@ -72,7 +74,7 @@
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
-	/datum/species/goblinp,\
+	/datum/species/goblinp
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -94,7 +96,7 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
-	/datum/species/goblinp,\
+	/datum/species/goblinp
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
@@ -112,7 +114,7 @@
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
-	/datum/species/halforc,\
+	/datum/species/halforc
 )
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
@@ -126,7 +128,7 @@
 	/datum/species/akula,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
-	/datum/species/demihuman,\
+	/datum/species/demihuman
 )
 #define ALL_CLERIC_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/necra, /datum/patron/divine/pestra, /datum/patron/divine/ravox, /datum/patron/divine/malum, /datum/patron/divine/eora)
 
