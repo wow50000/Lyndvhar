@@ -75,7 +75,6 @@ GLOBAL_LIST_INIT(our_forest_sex, typecacheof(list(
 //Human sub-species
 #define ishumanbasic(A) (is_species(A, /datum/species/human))
 #define isvampire(A) (is_species(A,/datum/species/vampire))
-#define ismoth(A) (is_species(A, /datum/species/moth))
 
 //RT species
 #define ishumannorthern(A) (is_species(A, /datum/species/human/northern))
