@@ -243,7 +243,6 @@
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)		//Knights should be used to the horrors of war if they're tride-and-true.
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) 		//if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) 		//Knights can train their squires.
-	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC)		//Mounted Knights can roam the town (on their mounts)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()	//For knightly voices; even though I despise them.
 	H.verbs |= /mob/proc/haltyell
 
