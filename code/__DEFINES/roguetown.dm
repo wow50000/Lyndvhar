@@ -15,7 +15,7 @@
 	/datum/species/akula,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
-	/datum/species/anthromorphsmall,\
+	/datum/species/anthromorphsmall\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
