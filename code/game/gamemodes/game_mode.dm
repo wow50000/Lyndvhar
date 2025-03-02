@@ -131,7 +131,7 @@
 			query_round_game_mode.Execute()
 			qdel(query_round_game_mode)
 	if(report)
-		addtimer(CALLBACK(src, .proc/send_intercept, 0), rand(waittime_l, waittime_h))
+		addtimer(CALLBACK(src, 0), rand(waittime_l, waittime_h)) // Should be addtimer(CALLBACK(src, .proc/send_intercept, 0)
 	gamemode_ready = TRUE
 	return 1
 
