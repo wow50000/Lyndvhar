@@ -1,3 +1,4 @@
+/*
 /mob/living/carbon/human/species/moth
 	race = /datum/species/moth
 
@@ -146,3 +147,4 @@
 	returned["mcolor2"] = second_color
 	returned["mcolor3"] = second_color
 	return returned
+*/

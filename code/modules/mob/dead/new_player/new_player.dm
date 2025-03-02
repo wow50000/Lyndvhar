@@ -446,11 +446,13 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 		return JOB_UNAVAILABLE_PATRON
 	if((client.prefs.lastclass == job.title) && !job.bypass_lastclass)
 		return JOB_UNAVAILABLE_LASTCLASS
+	/*
 	if(istype(SSticker.mode, /datum/game_mode/roguewar))
 		var/datum/game_mode/roguewar/W = SSticker.mode
 		if(W.get_team(ckey))
 			if(W.get_team(ckey) != job.faction)
 				return JOB_UNAVAILABLE_WTEAM
+	*/
 	// Check if the player is on cooldown for the hiv+ role
 	if((job.same_job_respawn_delay) && (ckey in GLOB.job_respawn_delays))
 		if(world.time < GLOB.job_respawn_delays[ckey])
@@ -607,9 +609,9 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 		var/datum/game_mode/chaosmode/C = SSticker.mode
 		if(C.allmig)
 			omegalist = list(GLOB.allmig_positions)
-	if(istype(SSticker.mode, /datum/game_mode/roguewar))
+	/*if(istype(SSticker.mode, /datum/game_mode/roguewar))
 		omegalist = list(GLOB.roguewar_positions)
-
+	*/
 	for(var/list/category in omegalist)
 		if(!SSjob.name_occupations[category[1]])
 			testing("HELP NO THING FOUND FOR [category[1]]")

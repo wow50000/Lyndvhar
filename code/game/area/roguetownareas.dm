@@ -18,30 +18,6 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	var/town_area = FALSE
 	var/keep_area = FALSE
 	var/warden_area = FALSE
-
-/area/rogue/Entered(mob/living/carbon/human/guy)
-
-	. = ..()
-	if((src.town_area == TRUE) && HAS_TRAIT(guy, TRAIT_GUARDSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/guardbuffone)) //man at arms
-		guy.apply_status_effect(/datum/status_effect/buff/guardbuffone)
-		if(HAS_TRAIT(guy, TRAIT_KNIGHTSMAN) && guy.has_status_effect(/datum/status_effect/buff/knightbuff))
-			guy.remove_status_effect(/datum/status_effect/buff/knightbuff)
-
-/area/rogue/Entered(mob/living/carbon/human/guy)
-
-	. = ..()
-	if((src.warden_area == TRUE) && HAS_TRAIT(guy, TRAIT_WOODSMAN) && !guy.has_status_effect(/datum/status_effect/buff/wardenbuff)) // Warden
-		guy.apply_status_effect(/datum/status_effect/buff/wardenbuff)
-
-/area/rogue/Entered(mob/living/carbon/human/guy)
-
-	. = ..()
-	if((src.keep_area == TRUE) && HAS_TRAIT(guy, TRAIT_KNIGHTSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/knightbuff)) //royal guard
-		guy.apply_status_effect(/datum/status_effect/buff/knightbuff)
-		if(HAS_TRAIT(guy, TRAIT_GUARDSMAN) && guy.has_status_effect(/datum/status_effect/buff/guardbuffone))
-			guy.remove_status_effect(/datum/status_effect/buff/guardbuffone)
-
-
 /area/rogue/indoors
 	name = "indoors rt"
 	icon_state = "indoors"
@@ -556,7 +532,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
-	first_time_text = "THE KEEP OF AZURE PEAK"
+	first_time_text = "THE KEEP OF LYNDVHAR"
 	keep_area = TRUE
 
 /area/rogue/outdoors/exposed/manorgarri
@@ -718,7 +694,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	converted_type = /area/rogue/indoors/shelter/town
-	first_time_text = "THE CITY OF AZURE PEAK"
+	first_time_text = "THE CITY OF LYNDVHAR"
 	town_area = TRUE
 
 /area/rogue/indoors/shelter/town

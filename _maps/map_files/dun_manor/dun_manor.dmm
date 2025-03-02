@@ -5798,7 +5798,7 @@
 /area/rogue/indoors)
 "enF" = (
 /obj/structure/fluff/signage{
-	name = "AZURE PEAK - NORTH"
+	name = "Lyndvhar - NORTH"
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)

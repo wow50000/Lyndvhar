@@ -1,8 +1,9 @@
+/*
 /datum/virtue/combat/magical_potential
 	name = "Arcyne Potential"
 	desc = "I grasped the basics of arcyne magic at an early age, and have been able to prestidigitate for as long as I can remember. Combat-oriented classes get a weaker version of this virtue."
 	added_skills = list(/datum/skill/magic/arcane = 1)
-
+*/
 /datum/virtue/combat/magical_potential/apply_to_human(mob/living/carbon/human/recipient)
 	if (!recipient.mind?.get_skill_level(/datum/skill/magic/arcane)) // we can do this because apply_to is always called first
 		recipient.mind?.adjust_spellpoints(-4) // Limits skill gain through for non-initial arcynes
