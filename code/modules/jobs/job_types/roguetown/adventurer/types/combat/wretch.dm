@@ -202,7 +202,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/rogueweapon/woodstaff
 			backpack_contents = list(/obj/item/spellbook_unfinished/pre_arcyne = 1, /obj/item/roguegem/amethyst = 1, /obj/item/roguekey/inhumen = 1, /obj/item/flashlight/flare/torch = 1)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2 TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
@@ -229,14 +229,3 @@
 			H.mind.adjust_spellpoints(1)
 			GLOB.excommunicated_players += H.real_name
 
-/obj/item/clothing/gloves/roguetown/chain/blk
-		color = CLOTHING_GREY
-
-/obj/item/clothing/under/roguetown/chainlegs/blk
-		color = CLOTHING_GREY
-
-/obj/item/clothing/suit/roguetown/armor/plate/blk
-		color = CLOTHING_GREY
-
-/obj/item/clothing/shoes/roguetown/boots/armor/blk
-		color = CLOTHING_GREY
