@@ -486,7 +486,7 @@
 				name = "maturing cheese wheel"
 				icon_state = "cheesewheel_end"
 				desc = "Slowly solidifying, best left alone a bit longer."
-				addtimer(CALLBACK(src, PROC_REF(mature_proc)), 5 MINUTES)
+				addtimer(CALLBACK(src, PROC_REF(mature_done)), 5 MINUTES)
 		else
 			to_chat(user, span_warning("You need to put [src] on a table to work on it."))
 	else
