@@ -9,7 +9,6 @@
 
 /datum/outfit/job/roguetown/adventurer/knighterrant/pre_equip(mob/living/carbon/human/H)
  	..()
-	
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	pants = /obj/item/clothing/under/roguetown/chainlegs
@@ -38,7 +37,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 		var/turf/TU = get_turf(H)
-			if(TU)
+		if(TU)
 			new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
