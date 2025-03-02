@@ -9,6 +9,7 @@
 
 /datum/outfit/job/roguetown/adventurer/knighterrant/pre_equip(mob/living/carbon/human/H)
  	..()
+	
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	pants = /obj/item/clothing/under/roguetown/chainlegs
@@ -43,6 +44,7 @@
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 			var/weapons = list("Bastard Sword","Mace + Shield","Flail + Shield","Billhook")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			H.set_blindness(0)
 			switch(weapon_choice)
 				if("Bastard Sword")
 					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
