@@ -472,7 +472,6 @@
 	name = "unfinished cheese wheel"
 	icon_state = "cheesewheel_3"
 	w_class = WEIGHT_CLASS_BULKY
-	var/mature_proc = .proc/maturing_done
 /obj/item/reagent_containers/food/snacks/rogue/foodbase/cheesewheel_three/attackby(obj/item/I, mob/living/user, params)
 	var/found_table = locate(/obj/structure/table) in (loc)
 	if(user.mind)
@@ -487,7 +486,7 @@
 				name = "maturing cheese wheel"
 				icon_state = "cheesewheel_end"
 				desc = "Slowly solidifying, best left alone a bit longer."
-				addtimer(CALLBACK(src, mature_proc), 5 MINUTES)
+				addtimer(CALLBACK(src, PROC_REF(maturing_done)), 5 MINUTES)
 		else
 			to_chat(user, span_warning("You need to put [src] on a table to work on it."))
 	else

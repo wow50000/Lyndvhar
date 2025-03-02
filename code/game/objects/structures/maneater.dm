@@ -257,7 +257,7 @@
 	. = ..()
 	transform = transform.Scale(0.5, 0.5)  // Start at half size
 	START_PROCESSING(SSobj, src)
-	addtimer(CALLBACK(src, .proc/try_grow), growth_time)
+	addtimer(CALLBACK(src, PROC_REF(try_grow)), growth_time)
 
 /obj/structure/flora/roguegrass/maneater/real/juvenile/process()
 	if(!has_buckled_mobs())
@@ -303,7 +303,7 @@
 		transform = transform.Scale(1.26, 1.26)
 		visible_message(span_warning("[src] grows bigger!"))
 		playsound(src.loc, list('sound/vo/mobs/plant/attack (1).ogg','sound/vo/mobs/plant/attack (2).ogg','sound/vo/mobs/plant/attack (3).ogg','sound/vo/mobs/plant/attack (4).ogg'), 100, FALSE, -1)
-		addtimer(CALLBACK(src, .proc/try_grow), growth_time)
+		addtimer(CALLBACK(src, PROC_REF(try_grow)), growth_time)
 	else
 		// Replace with adult form
 		visible_message(span_danger("[src] reaches full maturity!"))
