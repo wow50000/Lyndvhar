@@ -51,7 +51,7 @@
 		if("Battleaxe & Cudgel") //one weapon to hurt people one weapon to kill people
 			backl= /obj/item/rogueweapon/stoneaxe/battle
 			beltr = /obj/item/rogueweapon/mace/cudgel
-			H.mind.adjust_skillrank(/datum/skill/combat/axe, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 		if("Flail & Shield") //plate users beware, you're in for a scare!
 			backl= /obj/item/rogueweapon/shield/wood
 			beltr = /obj/item/rogueweapon/flail
