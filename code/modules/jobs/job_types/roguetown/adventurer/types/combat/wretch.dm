@@ -62,17 +62,17 @@
 				if("Battle Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					backr = /obj/item/rogueweapon/stoneaxe/battle
-			H.change_stat("strength", 2)
-			H.change_stat("constitution", 2)
+			H.change_stat("strength", 1)
+			H.change_stat("constitution", 1)
 			H.change_stat("endurance", 1)
-			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
-			gloves = /obj/item/clothing/gloves/roguetown/chain
+			head = /obj/item/clothing/head/roguetown/helmet/kettle
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			pants = /obj/item/clothing/under/roguetown/chainlegs
-			neck = /obj/item/clothing/neck/roguetown/bevor
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+			neck = /obj/item/clothing/neck/roguetown/chaincoif
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -103,14 +103,13 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/traps, 5, TRUE)
 			H.cmode_music = 'sound/music/combat_vaquero.ogg'
-			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
 			var/weapons = list("Rapier","Dagger", "Whip")
@@ -127,9 +126,8 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 					beltr = /obj/item/rogueweapon/whip
 			H.change_stat("strength", -1)
-			H.change_stat("constitution", 1)
-			H.change_stat("endurance", 2)
-			H.change_stat("speed", 3)
+			H.change_stat("endurance", 1)
+			H.change_stat("speed", 2)
 			GLOB.outlawed_players += H.real_name
 
 		if("Heretic")
@@ -167,19 +165,18 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 1)
 			if (istype (H.patron, /datum/patron/inhumen/zizo))
-				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
+				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order) //fuck you no helmet
 			cloak = /obj/item/clothing/cloak/cape/crusader
 			gloves = /obj/item/clothing/gloves/roguetown/chain/blk
-			pants = /obj/item/clothing/under/roguetown/chainlegs/blk
+			pants = /obj/item/clothing/under/roguetown/trou/leather
 			neck = /obj/item/clothing/neck/roguetown/gorget
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/blk
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blk
-			belt = /obj/item/storage/belt/rogue/leather/steel
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/rogueweapon/shield/tower/metal
+			backr = /obj/item/rogueweapon/shield/tower
 			beltl = /obj/item/roguekey/inhumen
 			backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/ritechalk = 1)
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -196,7 +193,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
 			belt = /obj/item/storage/belt/rogue/leather
 			beltr = /obj/item/reagent_containers/glass/bottle/rogue/manapot
@@ -205,11 +202,11 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/rogueweapon/woodstaff
 			backpack_contents = list(/obj/item/spellbook_unfinished/pre_arcyne = 1, /obj/item/roguegem/amethyst = 1, /obj/item/roguekey/inhumen = 1, /obj/item/flashlight/flare/torch = 1)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2 TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 4, TRUE)
@@ -221,7 +218,7 @@
 			if(H.age == AGE_OLD)
 				H.mind.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 				H.mind.adjust_spellpoints(1)
-			H.change_stat("intelligence", 4)
+			H.change_stat("intelligence", 3)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 1)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
