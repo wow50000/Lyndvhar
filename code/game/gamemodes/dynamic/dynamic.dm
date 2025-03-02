@@ -191,7 +191,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 		if(rule.flags & HIGHLANDER_RULESET)
 			return rule.round_result()
 	return ..()
-
+/*
 /datum/game_mode/dynamic/send_intercept()
 	. = "<b><i>Central Command Status Summary</i></b><hr>"
 	switch(round(threat_level))
@@ -221,6 +221,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 			. += "Good luck."
 
 	priority_announce("A summary has been copied and printed to all communications consoles.", "Security level elevated.", 'sound/blank.ogg')
+	*/
 
 // Yes, this is copy pasted from game_mode
 /datum/game_mode/dynamic/check_finished(force_ending)
