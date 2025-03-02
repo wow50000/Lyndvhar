@@ -9,12 +9,12 @@
 
 /datum/outfit/job/roguetown/bandit/brigand/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
@@ -39,8 +39,8 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
 	id = /obj/item/mattcoin
 	H.change_stat("strength", 2)
-	H.change_stat("endurance", 2)
-	H.change_stat("constitution", 2)
+	H.change_stat("endurance", 1)
+	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", -2)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
@@ -51,6 +51,8 @@
 		if("Battleaxe & Cudgel") //one weapon to hurt people one weapon to kill people
 			backl= /obj/item/rogueweapon/stoneaxe/battle
 			beltr = /obj/item/rogueweapon/mace/cudgel
+			H.mind.adjust_skillrank(/datum/skill/combat/axe, 1, TRUE)
 		if("Flail & Shield") //plate users beware, you're in for a scare!
 			backl= /obj/item/rogueweapon/shield/wood
 			beltr = /obj/item/rogueweapon/flail
+			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
