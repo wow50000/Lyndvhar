@@ -36,13 +36,10 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
-		var/turf/TU = get_turf(H)
-		if(TU)
-			new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-			var/weapons = list("Bastard Sword","Mace + Shield","Flail + Shield","Billhook")
-			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		var/weapons = list("Bastard Sword","Mace + Shield","Flail + Shield","Billhook")
+		var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			H.set_blindness(0)
 			switch(weapon_choice)
 				if("Bastard Sword")
@@ -66,4 +63,7 @@
 	H.change_stat("constitution", 1)
 	H.change_stat("endurance", 1)
 	H.change_stat("intelligence", 1)
+	var/turf/TU = get_turf(H)
+		if(TU)
+			new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
 	
