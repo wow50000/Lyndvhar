@@ -9,6 +9,19 @@
 
 /datum/outfit/job/roguetown/adventurer/knighterrant/pre_equip(mob/living/carbon/human/H)
  	..()
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
+	gloves = /obj/item/clothing/gloves/roguetown/chain
+	pants = /obj/item/clothing/under/roguetown/chainlegs
+	cloak = /obj/item/clothing/cloak/stabard
+	neck = /obj/item/clothing/neck/roguetown/bevor
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	belt = /obj/item/storage/belt/rogue/leather/steel
+	backl = /obj/item/storage/backpack/rogue/satchel
+	beltl = /obj/item/flashlight/flare/torch/lantern
+	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1)
+	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
@@ -26,6 +39,8 @@
 		var/turf/TU = get_turf(H)
 			if(TU)
 			new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
+		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 			var/weapons = list("Bastard Sword","Mace + Shield","Flail + Shield","Billhook")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
@@ -46,22 +61,8 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/billhook
 					backr = /obj/item/gwstrap
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
-	gloves = /obj/item/clothing/gloves/roguetown/chain
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	cloak = /obj/item/clothing/cloak/stabard
-	neck = /obj/item/clothing/neck/roguetown/bevor
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	belt = /obj/item/storage/belt/rogue/leather/steel
-	backl = /obj/item/storage/backpack/rogue/satchel
-	beltl = /obj/item/flashlight/flare/torch/lantern
-	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1)
 	H.change_stat("strength", 2)
 	H.change_stat("constitution", 1)
 	H.change_stat("endurance", 1)
 	H.change_stat("intelligence", 1)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	
