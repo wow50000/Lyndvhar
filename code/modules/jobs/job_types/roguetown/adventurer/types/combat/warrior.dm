@@ -36,22 +36,22 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			var/weapons = list("Bastard Sword","Mace","Billhook","Battle Axe")
+			var/weapons = list("Iron Sword","Mace","Billhook","Hand Axe")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
-				if("Bastard Sword")
-					H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-					backr = /obj/item/rogueweapon/sword/long
+				if("Iron Sword")
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+					beltr = /obj/item/rogueweapon/sword/iron
 				if("Mace")
-					H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 					beltr = /obj/item/rogueweapon/mace
 				if("Billhook")
-					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-					r_hand = /obj/item/rogueweapon/spear/billhook
+					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+					r_hand = /obj/item/rogueweapon/spear/improvisedbillhook
 					backr = /obj/item/gwstrap
-				if("Battle Axe")
-					H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
-					backr = /obj/item/rogueweapon/stoneaxe/battle
+				if("Hand Axe")
+					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+					backr = /obj/item/rogueweapon/stoneaxe/handaxe
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 2)
@@ -90,7 +90,8 @@
 					beltr = /obj/item/rogueweapon/sword/rapier
 				if("Dagger")
 					H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-					beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+					beltr = /obj/item/rogueweapon/huntingknife/idagger
+					beltr = /obj/item/rogueweapon/huntingknife/idagger
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
@@ -105,7 +106,6 @@
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/rogueweapon/shield/buckler
 			belt = /obj/item/storage/belt/rogue/leather
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 
@@ -124,15 +124,15 @@
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_gronn.ogg'
 			H.set_blindness(0)
-			var/weapons = list("Katar","Battle Axe","MY BARE HANDS!!!")
+			var/weapons = list("Katar","Axe","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if ("Katar")
 					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					beltr = /obj/item/rogueweapon/katar
-				if("Battle Axe")
+				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-					beltr = /obj/item/rogueweapon/stoneaxe/battle
+					beltr = /obj/item/rogueweapon/stoneaxe/handaxe
 				if ("MY BARE HANDS!!!")
 					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
