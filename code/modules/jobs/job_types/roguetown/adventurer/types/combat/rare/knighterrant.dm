@@ -39,8 +39,8 @@
 		var/turf/TU = get_turf(H)
 			if(TU)
 			new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
-			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 			var/weapons = list("Bastard Sword","Mace + Shield","Flail + Shield","Billhook")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
