@@ -1197,7 +1197,7 @@
 									wuzantag = TRUE
 						if(!wuzantag)
 							adjust_playerquality(-2, H.ckey, reason="Raped as a non villain.")
-					addtimer(CALLBACK(eatingus, /mob/.proc/emote, "gag"), rand(10,20))
+					addtimer(CALLBACK(eatingus, TYPE_PROC_REF(/mob, emote), "gag"), rand(10,20))
 		if("insideass")
 			if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
 				owner.sate_addiction()
@@ -1263,7 +1263,7 @@
 			if(owner.hasTesticles() && prob(20))
 				if(!fucking.mob_timers["preggo"])
 					fucking.mob_timers["preggo"] = world.time
-					addtimer(CALLBACK(fucking, /mob/living/carbon/human/.proc/become_pregnant, husbando), rand(3 MINUTES, 13 MINUTES))
+					addtimer(CALLBACK(fucking, TYPE_PROC_REF(/mob/living/carbon/human, become_pregnant), husbando), rand(3 MINUTES, 13 MINUTES))
 			playsound(fucking, 'sound/misc/mat/endin.ogg', 100, TRUE, ignore_walls = FALSE)
 			owner.visible_message("<span class='notice'>[owner] tightens in ecstasy!</span>")
 			add_cum_floor(get_turf(fucking))
