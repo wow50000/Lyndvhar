@@ -50,7 +50,7 @@
 	no_early_release = TRUE
 	penfactor = 80
 	recovery = 10
-	damfactor = 1.2
+	damfactor = 1.3
 	chargedloop = /datum/looping_sound/flailswing
 	keep_looping = TRUE
 	icon_state = "insmash"
@@ -64,8 +64,9 @@
 	chargetime = 25
 	chargedrain = 2
 	no_early_release = TRUE
-	penfactor = 50
-	recovery = 30
+	penfactor = 80
+	swingdelay = 6
+	recovery = 10
 	damfactor = 1.2
 	reach = 2
 	chargedloop = /datum/looping_sound/flailswing
@@ -91,18 +92,19 @@
 	icon_state = "flail"
 	desc = "This is a swift, steel flail. Strikes hard and far."
 	smeltresult = /obj/item/ingot/steel
-	minstr = 5
+	minstr = 9
 
 
 /datum/intent/whip/lash
 	name = "lash"
-	blade_class = BCLASS_BLUNT
+	blade_class = BCLASS_CUT
 	attack_verb = list("lashes", "cracks")
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 7
 	penfactor = 10
 	reach = 2
+	clickcd = 10
 	icon_state = "inlash"
 	item_d_type = "slash"
 
@@ -115,23 +117,38 @@
 	recovery = 10
 	penfactor = 40
 	reach = 3
+	clickcd = 14
 	icon_state = "incrack"
 	item_d_type = "slash"
 
+/datum/intent/whip/smash
+	name = "smash"
+	blade_class = BCLASS_BLUNT
+	attack_verb = list("smashes")
+	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	chargetime = 0
+	recovery = 10
+	penfactor = 20
+	damfactor = 1.2
+	reach = 2
+	icon_state = "inpunish"
+	item_d_type = "blunt"
+
 /datum/intent/whip/punish
 	name = "punish"
-	blade_class = BCLASS_BLUNT
+	blade_class = BCLASS_CUT
 	attack_verb = list("lashes")
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 10
+	damfactor = 0.3
 	penfactor = 0
 	reach = 2
 	icon_state = "inpunish"
 	item_d_type = "blunt"
 
 /obj/item/rogueweapon/whip
-	force = 21
+	force = 22
 	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash, /datum/intent/whip/punish)
 	name = "whip"
 	desc = "A leather whip. Built to last, with a sharp stone for a tip."
@@ -139,7 +156,7 @@
 	icon = 'icons/roguetown/weapons/32.dmi'
 	sharpness = IS_BLUNT
 	//dropshrink = 0.75
-	wlength = WLENGTH_NORMAL
+	wlength = WLENGTH_GREAT
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BELT
 	associated_skill = /datum/skill/combat/whipsflails
@@ -148,6 +165,7 @@
 	swingsound = WHIPWOOSH
 	throwforce = 5
 	wdefense = 0
+	wbalance = 1
 	minstr = 6
 	grid_width = 32
 	grid_height = 64
@@ -163,10 +181,10 @@
 
 
 /obj/item/rogueweapon/whip/antique
-	force = 29
+	force = 28
 	name = "Repenta En"
 	desc = "An extremely well maintained whip, with a polished steel tip and gilded handle"
-	minstr = 11
+	minstr = 9
 	icon_state = "gwhip"
 
 /obj/item/rogueweapon/whip/antique/psywhip

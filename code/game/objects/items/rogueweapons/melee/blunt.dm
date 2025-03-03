@@ -30,18 +30,17 @@
 	icon_state = "instab"
 	reach = 2
 	chargetime = 1
-	recovery = 30
+	recovery = 10
 	warnie = "mobwarning"
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 25
-	damfactor = 0.9
 	item_d_type = "stab"
 
 //blunt objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/mace
-	force = 20
-	force_wielded = 25
+	force = 24
+	force_wielded = 28
 	possible_item_intents = list(/datum/intent/mace/strike)
 	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
 	name = "mace"
@@ -63,43 +62,44 @@
 	parrysound = list('sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 	minstr = 7
-	wdefense = 2
+	wdefense = 1.5
 	wbalance = -1
 	blade_dulling = DULLING_BASHCHOP
 
 /obj/item/rogueweapon/mace/church
 	force = 25
-	force_wielded = 30
+	force_wielded = 33
 	name = "bell ringer"
 	desc = "This heavy hammer is used to ring the church's bell."
 	icon_state = "churchmace"
-	wbalance = -1
+	wbalance = -2
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
 	wdefense = 3
 
 /obj/item/rogueweapon/mace/steel
 	force = 25
-	force_wielded = 32
+	force_wielded = 30
 	name = "steel mace"
 	desc = "This steel mace is objectively superior to an iron one."
 	icon_state = "smace"
 	wbalance = -1
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
-	wdefense = 3
+	wdefense = 2
 	smelt_bar_num = 2
 
 /obj/item/rogueweapon/mace/silver
 	name = "silver war hammer"
-	desc = "A light war hammer forged of silver."
+	desc = "A light war hammer forged of silver. Made for one-handed use."
 	icon_state = "silverhammer"
-	force = 24
+	force = 28
 	gripped_intents = null
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
-	wdefense = 4
+	wdefense = 5
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 2
+	wbalance = 0.5
 	is_silver = TRUE
 
 /obj/item/rogueweapon/mace/getonmobprop(tag)
@@ -155,7 +155,7 @@
 
 /obj/item/rogueweapon/mace/woodclub
 	force = 15
-	force_wielded = 18
+	force_wielded = 25
 	name = "wooden club"
 	desc = "A primitive cudgel carved of a stout piece of treefall."
 	icon_state = "club1"
@@ -191,9 +191,9 @@
 	smeltresult = /obj/item/ash
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
-	wbalance = 0
+	wbalance = 1
 	minstr = 7
-	wdefense = 3
+	wdefense = 2
 	resistance_flags = FLAMMABLE
 
 /obj/item/rogueweapon/mace/cudgel/justice
@@ -206,9 +206,8 @@
 	smeltresult = /obj/item/ingot/steel
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
-	wbalance = 4
 	minstr = 7
-	wdefense = 5
+	wdefense = 3.5
 
 /obj/item/rogueweapon/mace/cudgel/getonmobprop(tag)
 	. = ..()
@@ -306,7 +305,7 @@
 	parrysound = "parrywood"
 	swingsound = BLUNTWOOSH_MED
 	minstr = 10
-	wdefense = 3
+	wdefense = 1.5
 	pixel_y = -16
 	pixel_x = -16
 	inhand_x_dimension = 64
@@ -355,7 +354,7 @@
 	icon_state = "morningstar"
 
 /obj/item/rogueweapon/mace/warhammer
-	force = 20
+	force = 25
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash, /datum/intent/mace/warhammer/pick)
 	gripped_intents = null
 	name = "warhammer"
@@ -367,7 +366,7 @@
 	wdefense = 3
 
 /obj/item/rogueweapon/mace/warhammer/steel
-	force = 25
+	force = 28
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash, /datum/intent/mace/warhammer/pick, /datum/intent/mace/warhammer/stab)
 	name = "steel warhammer"
 	desc = "A fine steel warhammer, makes a satisfying sound when paired with a knight's helm."
@@ -397,7 +396,7 @@
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
 	no_early_release = TRUE
 	penfactor = 20
-	damfactor = 0.8
+	damfactor = 0.9
 	item_d_type = "stab"
 
 /datum/intent/mace/warhammer/pick

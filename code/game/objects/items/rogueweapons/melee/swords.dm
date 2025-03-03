@@ -13,10 +13,19 @@
 	item_d_type = "slash"
 
 /datum/intent/sword/cut/sabre
+	clickcd = 8
+	penfactor = 20
+
+/datum/intent/sword/cut/falchion
 	clickcd = 10
+	penfactor = 30
+	swingdelay = 4
+
+
 
 /datum/intent/sword/cut/falx
-	penfactor = 20
+	penfactor = 30
+
 /datum/intent/sword/thrust
 	name = "stab"
 	icon_state = "instab"
@@ -38,7 +47,7 @@
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
 	penfactor = 20
-	swingdelay = 5
+	swingdelay = 2
 	damfactor = 0.8
 	item_d_type = "blunt"
 
@@ -86,7 +95,7 @@
 	smeltresult = /obj/item/ingot/steel
 	minstr = 7
 	sellprice = 30
-	wdefense = 4
+	wdefense = 3.5
 	grid_width = 32
 	grid_height = 64
 
@@ -97,14 +106,14 @@
 
 /obj/item/rogueweapon/sword/falchion
 	name = "falchion"
-	desc = "A blade with a quilloned crossguard."
+	desc = "A blade with a quilloned crossguard. Despite its heavy blade, each cut leads naturally into the next."
 	parrysound = "bladedmedium"
-	force = 20
-	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short)
+	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	icon_state = "falchion"
 	gripped_intents = null
 	minstr = 4
 	wdefense = 6
+	wbalance = -1
 
 /obj/item/rogueweapon/sword/falx
 	name = "falx"
@@ -117,7 +126,7 @@
 	max_integrity = 125
 	gripped_intents = null
 	minstr = 4
-	wdefense = 6
+	wdefense = 5
 
 /obj/item/rogueweapon/sword/decorated
 	name = "engraved sword"
@@ -148,14 +157,14 @@
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/chop)
 	gripped_intents = null
 	name = "stone sword"
-	desc = "A simple stone sword, crude and effective."
+	desc = "A simple stone sword, crude and ineffective."
 	icon_state = "stone_sword"
 	max_blade_int = 70
 	max_integrity = 70
 	anvilrepair = /datum/skill/craft/crafting
 	smeltresult = null
 	minstr = 4
-	wdefense = 4
+	wdefense = 1.5
 	sellprice = 10
 
 /obj/item/rogueweapon/sword/short
@@ -199,6 +208,7 @@
 	thrown_bclass = BCLASS_CUT
 	dropshrink = 0.75
 	smeltresult = /obj/item/ingot/steel
+	wdefense = 3.5
 
 /obj/item/rogueweapon/sword/long/death
 	color = CLOTHING_BLACK
@@ -214,7 +224,7 @@
 
 /obj/item/rogueweapon/sword/long/heirloom
 	force = 20
-	force_wielded = 32
+	force_wielded = 30
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "heirloom"
@@ -250,8 +260,8 @@
 			if("onbelt") return list("shrink" = 0.3, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
 
 /obj/item/rogueweapon/sword/long/judgement
-	force = 40
-	force_wielded = 55
+	force = 27
+	force_wielded = 32
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "judgement"
@@ -325,8 +335,8 @@
 
 
 /obj/item/rogueweapon/sword/long/vlord
-	force = 40
-	force_wielded = 55
+	force = 25
+	force_wielded = 38
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "vlord"
@@ -372,7 +382,7 @@
 	force = 26
 	force_wielded = 31
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/strike)
-	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/strike, /datum/intent/sword/chop)
+	gripped_intents = list(/datum/intent/sword/cut/falx, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "tabi"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	item_state = "tabi"
@@ -411,7 +421,7 @@
 	force = 26
 	force_wielded = 31
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/strike)
-	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/strike, /datum/intent/sword/chop)
+	gripped_intents = list(/datum/intent/sword/cut/falx, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "marlin"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	item_state = "marlin"
@@ -435,7 +445,6 @@
 	dropshrink = 0.75
 	minstr = 6
 	sellprice = 42
-	wdefense = 5
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/rogueweapon/sword/long/marlin/getonmobprop(tag)
@@ -525,7 +534,7 @@
 /datum/intent/sword/thrust/short
 	clickcd = 8
 	damfactor = 1.1
-	penfactor = 30
+	penfactor = 25
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
@@ -538,7 +547,7 @@
 
 /obj/item/rogueweapon/sword/sabre
 	name = "sabre"
-	desc = "A swift saber. Parries realiantly and strikes swiftly"
+	desc = "A swift saber. Parries reliably and strikes swiftly."
 	icon_state = "saber"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust)
 	gripped_intents = null
@@ -551,6 +560,7 @@
 /obj/item/rogueweapon/sword/sabre/dec
 	icon_state = "decsaber"
 	sellprice = 140
+	wbalance = 1.2 //ENGRAVINGS, they provide *some* tactical advantage whatsoever.
 
 /obj/item/rogueweapon/sword/rapier
 	name = "rapier"
@@ -573,15 +583,14 @@
 		)
 	swingsound = BLADEWOOSH_SMALL
 	minstr = 6
-	wdefense = 7
+	wdefense = 6.5
 	wbalance = 1
 
 /obj/item/rogueweapon/sword/rapier/vaquero
 	desc = "A fairly new development originating in Etrusca, the cup hilt design of this weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "cup_hilt_rapier"
-	wdefense = 8
-	force = 25
+	wdefense = 7
 
 /obj/item/rogueweapon/sword/rapier/getonmobprop(tag)
 	. = ..()
@@ -672,6 +681,7 @@
 	and its blade bears twin inscriptions on either side. One reads, 'CAST IN THE NAME OF GODS' while the \
 	obverse reads, 'YE NOT GUILTY'."
 	sellprice = 140
+	wbalance = 1.2
 
 /obj/item/rogueweapon/sword/rapier/lord
 	name = "sword of the Mad Duke"
@@ -688,7 +698,7 @@
 	name = "cutlass"
 	desc = "Used by pirates and deckhands."
 	icon_state = "cutlass"
-	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust)
+	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	gripped_intents = null
 	wdefense = 6
 	wbalance = 1
@@ -718,6 +728,7 @@
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 2
+	wbalance = 1.5
 
 /obj/item/rogueweapon/sword/silver
 	force = 24
@@ -729,6 +740,7 @@
 	smelt_bar_num = 2
 	max_blade_int = 150
 	max_integrity = 200
+	wbalance = 1
 
 /obj/item/rogueweapon/sword/long/blackflamb
 	force = 20
@@ -737,7 +749,8 @@
 	name = "blacksteel flamberge"
 	desc = "A strange sword with a winding blade forged of blacksteel and a rontz pommel."
 	smeltresult = /obj/item/ingot/blacksteel
-	max_integrity = 200
+	max_integrity = 300
+	wdefense = 4.5
 
 /obj/item/rogueweapon/sword/long/blackflamb/getonmobprop(tag)
 	. = ..()
@@ -947,8 +960,8 @@
 	name = "Oathkeeper"
 	desc = "An ornate golden blade with a ruby embedded in the hilt. Granted to the Knight Commander for their valiant service to the crown."
 	sellprice = 140
-	force = 26
-	force_wielded = 35
+	force = 25
+	force_wielded = 32
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	icon_state = "kingslayer"
 
@@ -968,11 +981,13 @@
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "astratasword"
 	name = "eclipsum sword"
-	desc = "A mutual effort of Noc and Astrata's followers, this blade was forged with both Silver and Gold alike. Blessed to hold strength and bring hope. Whether dae or nite."
+	desc = "A Pantheon relic and mutual effort of Noc and Astrata's followers, this blade was forged with both silver and gold alike. Blessed to hold strength and bring hope. Whether dae or nite."
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 2
 	max_integrity = 999
+	wdefense = 6
+	wbalance = 1
 
 /obj/item/rogueweapon/sword/long/eclipsum/getonmobprop(tag)
 	. = ..()

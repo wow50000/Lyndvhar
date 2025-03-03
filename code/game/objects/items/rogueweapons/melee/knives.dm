@@ -13,8 +13,12 @@
 	penfactor = 0
 	chargetime = 0
 	swingdelay = 0
-	clickcd = 10
+	clickcd = 8
 	item_d_type = "slash"
+
+/datum/intent/dagger/cut/seax
+	damfactor = 1.1
+	penfactor = 15
 
 /datum/intent/dagger/thrust
 	name = "thrust"
@@ -46,7 +50,7 @@
 	animname = "strike"
 	blade_class = BCLASS_BLUNT
 	hitsound = list('sound/combat/hits/blunt/bluntsmall (1).ogg', 'sound/combat/hits/blunt/bluntsmall (2).ogg', 'sound/combat/hits/kick/kick.ogg')
-	damfactor = 0.5
+	damfactor = 0.7
 	clickcd = 14
 	recovery = 10
 	item_d_type = "blunt"
@@ -176,7 +180,7 @@
 	name = "seax"
 	desc = "A fighting knife used amongst the Grenzels and Northerners for centuries, serving dual purpose as a \
 	tool of daily life and as a capable fighting knife."
-	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/chop/cleaver, /datum/intent/dagger/sucker_punch,)
+	possible_item_intents = list(/datum/intent/dagger/cut/seax, /datum/intent/dagger/chop/cleaver, /datum/intent/dagger/sucker_punch,)
 	icon_state = "combatknife"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	parrysound = list('sound/combat/parry/bladed/bladedmedium (1).ogg','sound/combat/parry/bladed/bladedmedium (2).ogg','sound/combat/parry/bladed/bladedmedium (3).ogg')
@@ -196,32 +200,35 @@
 
 /obj/item/rogueweapon/huntingknife/idagger
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut, /datum/intent/dagger/thrust/pick, /datum/intent/dagger/sucker_punch)
-	force = 15
+	force = 20
 	max_integrity = 100
 	name = "iron dagger"
-	desc = "This is a common dagger of iron."
+	desc = "The humblest of weapons, and the humbler of all."
 	icon_state = "idagger"
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/rogueweapon/huntingknife/idagger/steel
 	name = "steel dagger"
-	desc = "This is a dagger made of solid steel, more durable."
+	desc = "This is a dagger made of solid steel, more durable and better balanced."
 	icon_state = "sdagger"
-	force = 20
+	throwforce = 20
 	max_integrity = 150
+	wdefense = 4
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/rogueweapon/huntingknife/idagger/dtace
 	name = "'De Tace'"
 	desc = "The right hand of the right hand, this narrow length of steel serves as a quick solution to petty greviences."
 	icon_state = "stiletto"
-	force = 25
+	force = 22
 	max_integrity = 200
+	wdefense = 5
 	smeltresult = /obj/item/ingot/steel
+	embedding = list("embed_chance" = 0)
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
 	name = "steel parrying dagger"
-	force = 12
+	force = 18
 	throwforce = 12
 	desc = "This is a parrying dagger made of solid steel, used to catch opponent's weapons in the handguard. It's a bit more dull, however."
 	icon_state = "spdagger"
@@ -229,7 +236,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/vaquero
 	name = "sail dagger"
-	force = 15
+	force = 17
 	throwforce = 15
 	desc = "An exceptionally protective parrying dagger popular in the Etruscan Isles, this dagger features a plain metal guard in the shape of a ship's sail."
 	wdefense = 7
@@ -242,11 +249,13 @@
 	name = "silver dagger"
 	desc = "This silver dagger can be the banishment of vampires and werewolves."
 	icon_state = "sildagger"
+	throwforce = 20
 	smeltresult = null
 	sellprice = 50
 	smeltresult = /obj/item/ingot/silver
 	last_used = 0
 	is_silver = TRUE
+	embedding = list("embed_chance" = 0)
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/psydagger
 	name = "psydonian dagger"
@@ -255,7 +264,7 @@
 	sellprice = 70
 	max_blade_int = 100
 	max_integrity = 210
-	wdefense = 3
+	wdefense = 5
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/pickup(mob/user)
 	. = ..()
@@ -332,12 +341,12 @@
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	name = "dark elvish dagger"
 	desc = "A vicious wave-bladed dagger from the Underdark."
-	force = 25
+	force = 22
 	last_used = 0
 	is_silver = TRUE
 
 /obj/item/rogueweapon/huntingknife/idagger/navaja
-	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
+	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/cut/seax,  /datum/intent/dagger/thrust/pick)
 	name = "navaja"
 	desc = "A folding Etruscan knife valued by merchants, mercenaries and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
 	force = 5
@@ -372,13 +381,13 @@
 	name = "iron tossblade"
 	desc = "Paradoxical; why is it called a blade when it is meant for tossing? Or is it the act of cutting post-toss that makes it a blade? ...Are arrows tossblades, too?"
 	item_state = "bone_dagger"
-	force = 10
+	force = 14
 	throwforce = 22
 	throw_speed = 4
 	max_integrity = 50
 	wdefense = 1
 	icon_state = "throw_knifei"
-	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 25, "embedded_fall_chance" = 10)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 25, "embedded_fall_chance" = 10)
 	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/chop)
 	smeltresult = null
 	sellprice = 1
@@ -387,13 +396,13 @@
 	name = "steel tossblade"
 	desc = "There are rumors of some sea-marauders loading these into metal tubes with explosive powder to launch then fast and far. Probably won't catch on."
 	item_state = "bone_dagger"
-	force = 10
+	force = 18
 	throwforce = 28
 	throw_speed = 4
 	max_integrity = 100
 	wdefense = 1
 	icon_state = "throw_knifes"
-	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 30, "embedded_fall_chance" = 5)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 30, "embedded_fall_chance" = 10)
 	smeltresult = null
 	sellprice = 2
 
@@ -401,18 +410,19 @@
 	name = "psydonian tossblade"
 	desc = "An unconventional method of delivering silver to a heretic; but one PSYDON smiles at, all the same. Doubles as an actual knife in a pinch, though obviously not as well."
 	item_state = "bone_dagger"
-	force = 12
+	force = 16
 	throwforce = 28
 	throw_speed = 4
 	max_integrity = 150
 	wdefense = 3
 	icon_state = "throw_knifep"
-	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 30, "embedded_fall_chance" = 10)
 	is_silver = TRUE
 	sellprice = 6
 	smeltresult = null
 
 /obj/item/rogueweapon/huntingknife/scissors
+	force = 16
 	possible_item_intents = list(/datum/intent/snip, /datum/intent/dagger/thrust, /datum/intent/dagger/cut)
 	max_integrity = 100
 	name = "iron scissors"
@@ -420,7 +430,7 @@
 	icon_state = "iscissors"
 
 /obj/item/rogueweapon/huntingknife/scissors/steel
-	force = 14
+	force = 18
 	max_integrity = 150
 	name = "steel scissors"
 	desc = "Scissors made of solid steel that may be used to salvage usable materials from clothing, more durable and a tad more deadly than their iron conterpart."

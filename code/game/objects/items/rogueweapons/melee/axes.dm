@@ -11,6 +11,9 @@
 	chargetime = 0
 	item_d_type = "slash"
 
+/datum/intent/axe/cut/fast
+	clickcd = 8
+
 /datum/intent/axe/chop
 	name = "chop"
 	icon_state = "inchop"
@@ -40,8 +43,8 @@
 	blade_class = BCLASS_BLUNT
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
-	penfactor = 10
-	swingdelay = 5
+	penfactor = 20
+	swingdelay = 3
 	damfactor = 0.8
 	item_d_type = "blunt"
 
@@ -136,7 +139,7 @@
 	smelt_bar_num = 2
 	gripped_intents = list(/datum/intent/axe/cut/battle ,/datum/intent/axe/chop/battle, /datum/intent/axe/bash)
 	minstr = 9
-	wdefense = 4
+	wdefense = 3
 
 /obj/item/rogueweapon/stoneaxe/battle/getonmobprop(tag)
 	if(tag)
@@ -150,8 +153,8 @@
 	return ..()
 
 /obj/item/rogueweapon/stoneaxe/oath
-	force = 30
-	force_wielded = 40
+	force = 25
+	force_wielded = 35
 	possible_item_intents = list(/datum/intent/axe/cut/battle, /datum/intent/axe/chop/battle, /datum/intent/axe/bash)
 	name = "oath"
 	desc = "A hefty, steel-forged axe marred by the touch of countless Wardens. Despite it's weathered etchings and worn grip, the blade has been honed to a razor's edge and you can see your reflection in the finely polished metal."
@@ -170,7 +173,7 @@
 	smeltresult = /obj/item/ingot/steel
 	gripped_intents = list(/datum/intent/axe/cut/battle ,/datum/intent/axe/chop/battle, /datum/intent/axe/bash)
 	minstr = 12
-	wdefense = 5
+	wdefense = 3.5
 
 /obj/item/rogueweapon/stoneaxe/oath/getonmobprop(tag)
 	if(tag)
@@ -199,7 +202,7 @@
 	name = "Pulaski axe"
 	desc = "An odd mix of a pickaxe front and a hatchet blade back, capable of being switched between."
 	icon_state = "paxe"
-	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
+	possible_item_intents = list(/datum/intent/axe/cut/fast, /datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
 	gripped_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
 	smeltresult = /obj/item/ingot/steel
 	wlength = WLENGTH_NORMAL
@@ -211,15 +214,16 @@
 	icon_state = "wardenpax"
 	force = 22
 	force_wielded = 28
-	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
-	gripped_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
+	possible_item_intents = list(/datum/intent/axe/cut/fast , /datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
+	gripped_intents = list(/datum/intent/axe/cut, /datum/intent/axe/chop, /datum/intent/mace/warhammer/pick, /datum/intent/axe/bash)
 	smeltresult = /obj/item/ingot/steel
 	wlength = WLENGTH_NORMAL
+	wdefense = 3
 	toolspeed = 2
 
 /obj/item/rogueweapon/stoneaxe/handaxe
 	force = 19
-	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop)
+	possible_item_intents = list(/datum/intent/axe/cut/fast, /datum/intent/axe/chop)
 	name = "hatchet"
 	desc = "An iron hand axe."
 	icon_state = "hatchet"
@@ -290,7 +294,7 @@
 	desc = "A one-handed war axe forged of silver."
 	icon_state = "silveraxe"
 	force = 24
-	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/axe/bash)
+	possible_item_intents = list(/datum/intent/axe/cut/fast, /datum/intent/axe/chop, /datum/intent/axe/bash)
 	minstr = 6
 	max_blade_int = 400
 	smeltresult = /obj/item/ingot/silver
@@ -300,7 +304,8 @@
 
 /obj/item/rogueweapon/stoneaxe/silver/psyaxe
 	name = "psydonian war axe"
-	desc = "A one-handed war axe forged in the pain of psydon."
+	desc = "A one-handed war axe forged in the pain of psydon. Lightweight and masterfully balanced."
 	icon_state = "psyaxe"
 	wdefense = 5
+	wbalance = 1
 	max_blade_int = 450
