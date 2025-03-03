@@ -118,8 +118,8 @@
 #define CHURCHMEN		(1<<2)
 
 #define PRIEST		(1<<0)
-#define MONK		(1<<1)
-#define GRAVEDIGGER	(1<<2)
+#define ACOLYTE		(1<<1)
+#define TEMPLAR		(1<<2)
 #define DRUID		(1<<3)
 
 #define COURTIERS	(1<<3)
@@ -203,7 +203,7 @@
 
 #define INQUISITION (1<<10)
 
-#define PURITAN		(1<<0)
+#define INQUISITOR		(1<<0)
 #define ORTHODOXIST	(1<<1)
 
 
@@ -250,7 +250,7 @@
 
 #define JDO_PRIEST 10
 #define JDO_TEMPLAR 12
-#define JDO_MONK 13
+#define JDO_ACOLYTE 13
 #define JDO_DRUID 13.1
 #define JDO_CHURCHLING 14
 #define JDO_GRAVEMAN 15
@@ -302,7 +302,7 @@
 #define JDO_TRIBALCOOK 37
 #define JDO_TRIBALGUARD 38
 #define JDO_TRIBALSMITH 39
-#define JDO_PURITAN 40
+#define JDO_INQUISITOR 40
 #define JDO_ORTHODOXIST 40.1
 
 #define MANOR_ROLES \
@@ -387,5 +387,5 @@
 	/datum/job/roguetown/guardsman
 
 #define INQUISITION_ROLES \
-	/datum/job/roguetown/puritan,\
+	/datum/job/roguetown/inquisitor,\
 	/datum/job/roguetown/orthodoxist

@@ -1,6 +1,6 @@
-/datum/job/roguetown/puritan
+/datum/job/roguetown/inquisitor
 	title = "Inquisitor"
-	flag = PURITAN
+	flag = INQUISITOR
 	department_flag = INQUISITION
 	faction = "Station"
 	total_positions = 1
@@ -13,20 +13,20 @@
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
 
-	outfit = /datum/outfit/job/roguetown/puritan
-	display_order = JDO_PURITAN
-	advclass_cat_rolls = list(CTAG_PURITAN = 20)
+	outfit = /datum/outfit/job/roguetown/inquisitor
+	display_order = JDO_INQUISITOR
+	advclass_cat_rolls = list(CTAG_INQUISITOR = 20)
 	give_bank_account = 30
 	min_pq = 10
 	max_pq = null
 	round_contrib_points = 2
 
-/datum/outfit/job/roguetown/puritan
+/datum/outfit/job/roguetown/inquisitor
 	name = "Inquisitor"
-	jobtype = /datum/job/roguetown/puritan
+	jobtype = /datum/job/roguetown/inquisitor
 	allowed_patrons = list(/datum/patron/old_god)
 
-/datum/job/roguetown/puritan/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/inquisitor/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -37,14 +37,14 @@
 
 ////Classic Inquisitor with a much more underground twist. Use listening devices, sneak into places to gather evidence, track down suspicious individuals. Has relatively the same utility stats as Confessor, but fulfills a different niche in terms of their combative job as the head honcho. 
 
-/datum/advclass/puritan/inspector
+/datum/advclass/inquisitor/inspector
 	name = "The Eye of Psydon"
 	tutorial = "Your eternal service to fighting the FORCES OF HERESY has manifested within you into a profession of underground connections of Confessors, away from the prying eyes of others. Stop HERESY in their tracks, predict their movements, collect evidence through listening devices and, when the time comes - strike with impunity with your blade and swift dodging prowess."
-	outfit = /datum/outfit/job/roguetown/puritan/inspector
+	outfit = /datum/outfit/job/roguetown/inquisitor/inspector
 
-	category_tags = list(CTAG_PURITAN)
+	category_tags = list(CTAG_INQUISITOR)
 
-/datum/outfit/job/roguetown/puritan/inspector/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/inspector/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
@@ -53,13 +53,13 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	cloak = /obj/item/clothing/cloak/cape/puritan
+	cloak = /obj/item/clothing/cloak/cape/inquisitor
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/puritan
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	beltl = /obj/item/rogueweapon/sword/rapier
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
+	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
@@ -93,15 +93,15 @@
 
 ///The dirty, violent side of the Inquisition. Meant for confrontational, conflict-driven situations as opposed to simply sneaking around and asking questions. Templar with none of the miracles, but with all the muscles and more. 
 
-/datum/advclass/puritan/muscle
+/datum/advclass/inquisitor/muscle
 	name = "The Fist of Psydon"
 	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of PSYDON. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to PSYDON, and driving out the Daemons with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are the Fist of Psydon."
-	outfit = /datum/outfit/job/roguetown/puritan/muscle
+	outfit = /datum/outfit/job/roguetown/inquisitor/muscle
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
-	category_tags = list(CTAG_PURITAN)
+	category_tags = list(CTAG_INQUISITOR)
 
-/datum/outfit/job/roguetown/puritan/muscle/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/muscle/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/blk
@@ -116,7 +116,7 @@
 	head = /obj/item/clothing/head/roguetown/roguehood/psydon
 	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
 	beltl = /obj/item/rogueweapon/mace/silver
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
+	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
@@ -160,14 +160,14 @@
 
 
 
-/datum/advclass/puritan/gangster
+/datum/advclass/inquisitor/gangster
 	name = "The SOUL of Psydon"
 	tutorial = "You do everything, everywhere, all at once. You have no specialty, you have no specialized skill but what PSYDON has willed into your earthly flesh and bones. Only your faith guides you. RISE."
-	outfit = /datum/outfit/job/roguetown/puritan/gangster
+	outfit = /datum/outfit/job/roguetown/inquisitor/gangster
 
-	category_tags = list(CTAG_PURITAN)
+	category_tags = list(CTAG_INQUISITOR)
 
-/datum/outfit/job/roguetown/puritan/gangster/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/gangster/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
@@ -180,7 +180,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/otavan/inqgloves
 	beltl = /obj/item/rogueweapon/sword/rapier
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
+	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)

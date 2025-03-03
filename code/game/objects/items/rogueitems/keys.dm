@@ -376,8 +376,8 @@
 	icon_state = "greenkey"
 	lockid = "physician"
 
-/obj/item/roguekey/puritan
-	name = "puritan's key"
+/obj/item/roguekey/inquisitor
+	name = "inquisitor's key"
 	desc = "This is an intricate key." // i have no idea what is this key about
 	icon_state = "mazekey"
 	lockid = "puritan"
