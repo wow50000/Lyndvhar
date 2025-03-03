@@ -5,13 +5,7 @@
 	name = "Tiefling"
 	id = "tiefling"
 	desc = "<b>Tiefling</b><br>\
-	Tieflings, also known as \"Infernal-Spawn\" by the Dwarves, are a relatively new species in the lands. \
-	Having shown up sometime within the past two centuries, very little is known about their culture \
-	as many seem to seamlessly intergrate into whatever society they find themselves in. \
-	Despite this, Tieflings often cause strong disturbances wherever they go due to their fiendish appearances. \
-	Many have claimed that they are the spawn of a succubus (Or incubus) laying with a mortal. \
-	Due to this speculation, their species has suffered vast tragedy throughout their short history, \
-	facing harsh scrutiny, unfair judgement, and even outright genocide in the worst cases. This history of brutal treatment and prejudce has resulted in the damage of many a Tiefling's psyche, causing to most of their kind to seek a solitary life away from the judgemental eyes of others. Tieflings cannot reproduce with mortals, and as a result no half-breed exists. Tieflings tend to be extremely perceptive and paranoid, as luck is rarely on their side, and their unique biology makes them extremely susceptible to injury.<br>"
+	Crafted by the Archdaemon ZIZO and her cultists and lesser daemons during the Bloodwake as enslaved thralls, the race of Tieflings have suffered much discrimination and scrutiny over the centuries. Many a time tieflings have been excised from entire regions or suffered genocide for their past history. Despite all of this- the modern Tiefling is a hardy survivor, and a staunch supporter of anti-slavery policies culturally. They have found themselves home in many enclaves or cities across Llewyn and Yoheon since the Bloodwake, forming their own distinct cultures in each. They are incapable of reproduction with other races, and as a result there are not many to be seen.<br>"
 
 	skin_tone_wording = "Progenitor"
 
