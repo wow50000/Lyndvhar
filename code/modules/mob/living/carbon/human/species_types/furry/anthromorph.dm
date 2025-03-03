@@ -4,7 +4,8 @@
 /datum/species/anthromorph
 	name = "Wild-Kin"
 	id = "anthromorph"
-	desc = "The Mad God, at the beginning of his ceaseless and silent rage against mortalkind for the destruction of his woods, began to cast fell magics on the beasts of the realm. These magics went undetected for some time, before the animals slowly began to change, and morph. Many of them become fully sapient, walking on two-legs, and often harboring immense rage for those who despoil nature, seen many a time attacking settlements in groups. In old days it was not uncommon to even see a herd of cattle over time morph into the Wild-Kin, and destroy their farm. The Wild-Kin of today harbor much of the resentment that they were created with, and much resentment is still harbored to them. Despite this many Wild-Kin have found ways to calm themselves of Dendor’s rage- though it still lingers in the back of their minds, still attempting to break free..<br>"
+	desc = "<b>Wild-Kin</b><br>\
+	The Mad God, at the beginning of his ceaseless and silent rage against mortalkind for the destruction of his woods, began to cast fell magics on the beasts of the realm. These magics went undetected for some time, before the animals slowly began to change, and morph. Many of them become fully sapient, walking on two-legs, and often harboring immense rage for those who despoil nature, seen many a time attacking settlements in groups. In old days it was not uncommon to even see a herd of cattle over time morph into the Wild-Kin, and destroy their farm. The Wild-Kin of today harbor much of the resentment that they were created with, and much resentment is still harbored to them. Despite this many Wild-Kin have found ways to calm themselves of Dendor’s rage- though it still lingers in the back of their minds, still attempting to break free..<br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

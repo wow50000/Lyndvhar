@@ -4,7 +4,8 @@
 /datum/species/demihuman
 	name = "Half-Kin"
 	id = "demihuman"
-	desc = "With the advent and rise of more of the inhumen and denmorian races beginning to become larger communities in Llewyn and abroad, it was only natural that eventually half-humen and half-wild would begin to form. These beings retain much of their humen forms, however usually behave much in the same way of the animal or being that they are half of. Due to their union being one of humen they fair much better with other races, but their wild side often becomes a detriment due to differing tempers and behaviours. For this reason it is quite rare to see a half-kin in positions of power, usually working in lower-working jobs.<br>"
+	desc = "<b>Half-Kin</b><br>\
+	With the advent and rise of more of the inhumen and denmorian races beginning to become larger communities in Llewyn and abroad, it was only natural that eventually half-humen and half-wild would begin to form. These beings retain much of their humen forms, however usually behave much in the same way of the animal or being that they are half of. Due to their union being one of humen they fair much better with other races, but their wild side often becomes a detriment due to differing tempers and behaviours. For this reason it is quite rare to see a half-kin in positions of power, usually working in lower-working jobs.<br>"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)
