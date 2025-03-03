@@ -722,7 +722,7 @@
 
 /obj/item/rogueweapon/greatsword/zwei/steel
 	name = "steel zweihander"
-	desc = "A design perfected in Grenzelhoft, more easily maneuverable despite its lenght.
+	desc = "A design perfected in Grenzelhoft, more easily maneuverable despite its lenght."
 	icon_state = "steelzwei"
 	smeltresult = /obj/item/ingot/steel
 	wdefense = 4
