@@ -1,14 +1,12 @@
 /datum/advclass/knighterrant
-	name = "Knight Errant"
-  	tutorial = "Wandering knight from a different part of Beowricke."
- 	allowed_sexes = list(MALE, FEMALE)
-  	allowed_races = RACES_ALL_KINDS
-  	outfit = /datum/outfit/job/roguetown/adventurer/knighterrant
-  	traits_applied = list(TRAIT_OUTLANDER)
-  	category_tags = list(CTAG_ADVENTURER)
- 	cmode_music = 'sound/music/combat_guard.ogg' //placeholder music
-/datum/outfit/job/roguetown/adventurer/knighterrant/pre_equip(mob/living/carbon/human/H)
-    ..()
+	var/name = "Knight Errant"
+	var/outfit = /datum/outfit/job/roguetown/advclass/knighterrant
+	var/tutorial = "Choose me!"
+	var/list/allowed_sexes = list(MALE, FEMALE)
+	var/list/allowed_races = RACES_ALL_KINDS
+	var/pickprob = 10
+	var/maximum_possible_slots = 1
+/datum/outfit/job/roguetown/advclass/knighterrant
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	pants = /obj/item/clothing/under/roguetown/chainlegs
