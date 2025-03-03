@@ -5,7 +5,7 @@
 	name = "Kobold"
 	id = "kobold"
 	desc = "<b>Kobold</b><br>\
-	Short in stature and typically scrawny, this little lizards make up for it in their natural agility. People typically stereotype them as thieves, though...<br>"
+	Sharing common ancestry with Sissean and Drakian, the Kobold is considered the failure-state of a Drakian hatchery. Kobolds are small and relatively scrawny, but make up for this by living in large communities above and under the ground. Ever since the Drakians were subjugated by Naexidor, Kobolds have lived in relatively more isolated but large tribes in the frontiers of society. They scavenge, steal, and raid from whatever they find, with a culture almost entirely based around their kleptomania. They reproduce fast, and unlike the Drakian and Sissean, Kobolds simply make more Kobolds- and can only reproduce with other Kobolds. Due to being seen as little more than pests they face extreme scrutiny from other mortals, as many are still openly hostile to their kind due to the repeat raids from kobold settlements.<br>"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
