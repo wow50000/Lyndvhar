@@ -7,17 +7,19 @@
 
 /obj/item/clothing/neck/roguetown/coif
 	name = "coif"
+	desc = "A rough leather coif, often worn by laborers. Not very protective, or reassuring."
 	icon_state = "coif"
 	item_state = "coif"
 	flags_inv = HIDEHAIR
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	blocksound = SOFTHIT
 	body_parts_covered = NECK|HAIR|EARS|HEAD
-	armor = list("blunt" = 33, "slash" = 12, "stab" = 22, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	armor = list("blunt" = 20, "slash" = 20, "stab" = 25, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_TWIST, BCLASS_BITE)
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	sewrepair = TRUE
+	max_integrity = 150
 
 /obj/item/clothing/neck/roguetown/coif/AdjustClothes(mob/user)
 	if(loc == user)
@@ -47,8 +49,8 @@
 	slot_flags = ITEM_SLOT_NECK
 	blocksound = SOFTHIT
 	body_parts_covered = NECK
-	armor = list("blunt" = 100, "slash" = 70, "stab" = 40, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_SMASH)
+	armor = list("blunt" = 50, "slash" = 50, "stab" = 50, "piercing" = 50, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	sewrepair = TRUE
 	max_integrity = 150
 	salvage_result = /obj/item/natural/hide/cured
@@ -56,16 +58,17 @@
 
 /obj/item/clothing/neck/roguetown/chaincoif
 	name = "chain coif"
+	desc = "Interwoven chain links, capable of deflecting cuts and thrusts. The lack of padding makes for poor protection against blunt instruments."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
 	flags_inv = HIDEHAIR
-	armor = list("blunt" = 30, "slash" = 60, "stab" = 45, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 30, "slash" = 65, "stab" = 70, "piercing" = 75, "fire" = 0, "acid" = 0)
 
 	max_integrity = 200
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	body_parts_covered = NECK|HAIR|EARS|HEAD
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	blocksound = CHAINHIT
@@ -96,6 +99,7 @@
 /obj/item/clothing/neck/roguetown/chaincoif/iron
 	name = "iron chain coif"
 	icon_state = "ichaincoif"
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
@@ -107,6 +111,7 @@
 	resistance_flags = FIRE_PROOF
 	body_parts_covered = NECK|MOUTH|NOSE|HAIR|EARS|HEAD
 	adjustable = CAN_CADJUST
+	max_integrity = 300
 
 /obj/item/clothing/neck/roguetown/chaincoif/full/AdjustClothes(mob/user)
 	if(loc == user)
@@ -141,37 +146,36 @@
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"
 	icon_state = "bevor"
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 100, "slash" = 100, "stab" = 90, "piercing" = 90, "fire" = 0, "acid" = 0)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-
-	max_integrity = 300
+	max_integrity = 250
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK|MOUTH|NOSE
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
 	blocksound = PLATEHIT
 
 /obj/item/clothing/neck/roguetown/gorget
 	name = "gorget"
 	icon_state = "gorget"
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 80, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
 	anvilrepair = /datum/skill/craft/armorsmithing
 	max_integrity = 150
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	blocksound = PLATEHIT
 
 /obj/item/clothing/neck/roguetown/fencerguard
 	name = "fencer neckguard"
 	icon_state = "fencercollar"
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 100, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 85, "piercing" = 100, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
 	anvilrepair = /datum/skill/craft/armorsmithing
-	max_integrity = 150
+	max_integrity = 200
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK
@@ -182,6 +186,7 @@
 /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 	name = "forlorn collar"
 	desc = "A old reminder."
+	max_integrity = 300
 	icon_state = "iwolfcollaralt"
 
 /obj/item/clothing/neck/roguetown/gorget/steel
@@ -208,8 +213,11 @@
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
 	sellprice = 10
 	experimental_onhip = TRUE
+	max_integrity = 20 //Will prevent a first hit crit and nothing else.
 	anvilrepair = /datum/skill/craft/armorsmithing
 	grid_width = 32
 	grid_height = 32
@@ -346,6 +354,9 @@
 	desc = ""
 	icon_state = "horus"
 	//dropshrink = 0.75
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
+	max_integrity = 20 //Will prevent a first hit crit and nothing else.
 	resistance_flags = FIRE_PROOF
 	sellprice = 30
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -355,6 +366,9 @@
 	desc = ""
 	icon_state = "shalal"
 	//dropshrink = 0.75
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
+	max_integrity = 20 //Will prevent a first hit crit and nothing else.
 	resistance_flags = FIRE_PROOF
 	sellprice = 15
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -364,6 +378,9 @@
 	desc = "A beautiful amulet, made of solid gold."
 	icon_state = "ornateamulet"
 	//dropshrink = 0.75
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
+	max_integrity = 60
 	resistance_flags = FIRE_PROOF
 	sellprice = 100
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -393,6 +410,9 @@
 	desc = "Gold shaped into the form of a skull, made into an amulet."
 	icon_state = "skullamulet"
 	//dropshrink = 0.75
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
+	max_integrity = 60
 	resistance_flags = FIRE_PROOF
 	sellprice = 100
 	anvilrepair = /datum/skill/craft/armorsmithing

@@ -16,8 +16,8 @@
 	body_parts_covered = ARMS
 	icon_state = "bracers"
 	item_state = "bracers"
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 95, "piercing" = 95, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
 	max_integrity = 300
@@ -29,8 +29,8 @@
 	desc = "Standard leather bracers that offer some meager protection for the arms."
 	icon_state = "lbracers"
 	item_state = "lbracers"
-	armor = list("blunt" = 80, "slash" = 50, "stab" = 40, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 30, "slash" = 35, "stab" = 25, "piercing" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_TWIST, BCLASS_BITE)
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
@@ -44,8 +44,8 @@
 	name = "hardened leather bracers"
 	desc = "Hardened leather braces that will keep your wrists safe from bludgeoning."
 	icon_state = "albracers"
-	armor = list("blunt" = 100, "slash" = 70, "stab" = 50, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP, BCLASS_SMASH)
+	armor = list("blunt" = 50, "slash" = 50, "stab" = 55, "piercing" = 50, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP)
 	max_integrity = 250
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
@@ -104,8 +104,8 @@
 	body_parts_covered = ARMS
 	icon_state = "splintarms"
 	item_state = "splintarms"
-	armor = list("blunt" = 60, "slash" = 70, "stab" = 70, "piercing" = 60, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 60, "slash" = 80, "stab" = 70, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
 	blocksound = SOFTHIT
 	max_integrity = 250
 	anvilrepair = /datum/skill/craft/blacksmithing
