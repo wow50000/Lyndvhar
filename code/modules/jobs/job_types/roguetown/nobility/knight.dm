@@ -6,12 +6,12 @@
 	total_positions = 2
 	spawn_positions = 2
 	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Aasimar",
-		"Half-Kin"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/aasimar,
+		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)

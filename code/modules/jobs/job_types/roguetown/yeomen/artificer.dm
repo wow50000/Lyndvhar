@@ -7,12 +7,12 @@
 	spawn_positions = 2
 
 	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiefling",
-		"Dark Elf"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark
 	)
 
 	tutorial = "Hidden in the depths are ancient mechanical secrets, something your creed has taken it upon themselves to studying and understanding. To some these mechanical wonders may seem like magic, but you know their inner workings as well as you do stone, down to the last cog."

@@ -6,13 +6,13 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Dark Elf",
-		"Aasimar",
-		"Half-Kin"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/elf/dark,
+		/datum/species/aasimar,
+		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
 	tutorial = "Your lineage is noble, and generations of strong, loyal knights have come before you. You served your time \
