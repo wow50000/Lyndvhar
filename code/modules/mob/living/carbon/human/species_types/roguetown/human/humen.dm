@@ -5,13 +5,7 @@
 	name = "Humen"
 	id = "humen"
 	desc = "<b>Humen</b><br>\
-	Humens (or \"Humans\") are the eldest of the Weeping God's creations. Noted for their\
-	tenacity and overwhelming population, humens are the most commonly seen race across the lands, \
-	at a rate of about ten to one in regions such as Grenzelhoft. However, to the west \
-	the opposite is true. Humens come from a vast swathe of cultures and ethnicities, most of which \
-	have historically been at odds with one another. Being the eldest creations of the Weeping God, humens \
-	tend to find fortune easier than the other races, and are so diverse that no other racial traits \
-	are dominant in their species.<br>"
+	Those of Humenity are the second eldest of the Pantheon’s creations. They are mostly noted for their tenacity, as well as their ability to adapt to most if not all situations. Humens are the largest majority of mortal life in Beowricke, and come in many shapes, sizes, as well as different cultures and personal beliefs. They are the most diverse of the mortal creations, and are the majority presence in Lyndhardtia and beyond.<br>"
 
 	skin_tone_wording = "Ancestry"
 
