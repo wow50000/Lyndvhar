@@ -63,7 +63,7 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 					backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 					beltl = /obj/item/quiver/bolts
-			H.change_stat("perception", 3)
+			H.change_stat("perception", 2)
 			H.change_stat("speed", 2)
 
 		if("Assassin")
@@ -95,7 +95,6 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-			H.change_stat("perception", 2)
 			H.change_stat("speed", 2)
 			H.change_stat("endurance", 1)
 			H.set_blindness(0)
@@ -127,6 +126,6 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.change_stat("constitution", 1)
-			H.change_stat("strength", 2)
+			H.change_stat("strength", 1)
 			H.change_stat("intelligence", 2)
 			H.set_blindness(0)

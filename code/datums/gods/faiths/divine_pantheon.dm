@@ -1,7 +1,5 @@
 /datum/faith/divine
 	name = "Divine Pantheon"
-	desc = "The Pantheonic Church is the most widely common and accepted faith in all of Lyndhardtia. \n \n\
-		The <b>Mother Church</b>, slowly decaying due to the civil war, controls diosces across the continent.\
-		It is only through faith of the TRUE DIVINE that hope can be found in this collapsing realm."
+	desc = "The Pantheon is the de facto majority icon of worship in Lyndhardtia. As a result, Lyndvhar itself is nigh completely pantheonic worshippers. The Holy Mother Church of the Pantheonic Ten (Holy Mother Church, Pantheonic Church) is the centralized authority of this faith. They revere the Ten as the creators of Beowricke, destroyers of the Archdaemons in the Bloodwake, and the aspects of all life as we know it."
 	worshippers = "Lyndhardtians, commonfolk, nobility."
 	godhead = /datum/patron/divine/astrata

@@ -14,7 +14,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE) // Poles or maces if we're a wimp and don't want to engage with unarmed. Not ideal.
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE) // Poles or maces if we're a wimp and don't want to engage with unarmed. Not ideal.
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)  // Unarmed if we want to kick ass for the lord(you do, this is what you SHOULD DO!!)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
@@ -22,7 +22,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE) // We can substitute for a sawbones, but aren't as good and dont have access to surgical tools
+	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE) // We can substitute for a sawbones, but aren't as good and dont have access to surgical tools
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE) //We are the True Mathlete
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -40,8 +40,8 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
 	beltr = /obj/item/rogueweapon/katar
 	id = /obj/item/mattcoin
-	H.change_stat("strength", 2) // LETS WRASSLE
-	H.change_stat("endurance", 3) // This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
+	H.change_stat("strength", 1) // LETS WRASSLE
+	H.change_stat("endurance", 2) // This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
 	H.change_stat("constitution", 1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // We are going to be the lord's first heavy armor unarmed class
 

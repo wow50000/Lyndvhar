@@ -99,6 +99,7 @@
 			H.change_stat("strength", -1)
 			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 1)
+			H.change_stat("constitution", -1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 3)
 
@@ -115,7 +116,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 			head = /obj/item/clothing/head/roguetown/bardhat
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -188,6 +189,5 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
 			ADD_TRAIT (H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
-			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)

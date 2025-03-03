@@ -7,9 +7,9 @@
 	spawn_positions = 8
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS // same as town guard
+	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Responsible for the safety of the town and the enforcement of the law, you are the vanguard of the city faced with punishing those who defy the Viscount. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
+	tutorial = "Responsible for the safety of the port city and the enforcement of the law, you are the vanguard of the city faced with punishing those who defy the Viscount. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 
@@ -87,7 +87,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	head = /obj/item/clothing/head/roguetown/helmet
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 	beltr = /obj/item/rogueweapon/mace/cudgel
-	backr = /obj/item/rogueweapon/shield/buckler		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
+	backl = /obj/item/rogueweapon/shield/buckler		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltl = /obj/item/storage/keyring/guardcastle
 	belt = /obj/item/storage/belt/rogue/leather/black

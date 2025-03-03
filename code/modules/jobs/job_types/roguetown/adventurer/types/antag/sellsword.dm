@@ -9,13 +9,13 @@
 
 /datum/outfit/job/roguetown/bandit/sellsword/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -53,7 +53,10 @@
 			beltr = /obj/item/quiver/bolts
 			r_hand = /obj/item/rogueweapon/spear/billhook
 			head = /obj/item/clothing/head/roguetown/helmet/kettle
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Sword & Buckler")
 			backl= /obj/item/rogueweapon/shield/buckler
 			beltr = /obj/item/rogueweapon/sword
 			head = /obj/item/clothing/head/roguetown/helmet/sallet
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
