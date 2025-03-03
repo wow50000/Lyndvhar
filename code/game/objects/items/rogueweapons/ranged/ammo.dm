@@ -1,7 +1,7 @@
 #define ARROW_DAMAGE		50
 #define BOLT_DAMAGE			70
 #define BULLET_DAMAGE		80
-#define ARROW_PENETRATION	40
+#define ARROW_PENETRATION	20
 #define BOLT_PENETRATION	50
 #define BULLET_PENETRATION	100
 
@@ -31,12 +31,12 @@
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "bolt_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bolt
-	range = 15
+	range = 20
 	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	woundclass = BCLASS_STAB
 	flag = "piercing"
-	speed = 0.5
+	speed = 0.35
 
 /obj/projectile/bullet/reusable/bolt/on_hit(atom/target)
 	. = ..()
@@ -81,7 +81,7 @@
 	name = "arrow"
 	damage = 50
 	damage_type = BRUTE
-	armor_penetration = 40
+	armor_penetration = 20
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "arrow_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow
@@ -90,7 +90,7 @@
 	embedchance = 100
 	woundclass = BCLASS_STAB
 	flag = "piercing"
-	speed = 0.4
+	speed = 0.55
 
 /obj/projectile/bullet/reusable/arrow/on_hit(atom/target)
 	. = ..()
@@ -115,6 +115,7 @@
 /obj/projectile/bullet/reusable/arrow/stone
 	name = "stone arrow"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/stone
+	armor_penetration = 0
 
 /obj/item/ammo_casing/caseless/rogue/arrow/stone
 	name = "stone arrow"

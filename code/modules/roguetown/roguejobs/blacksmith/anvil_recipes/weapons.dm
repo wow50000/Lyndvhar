@@ -210,7 +210,7 @@
 	name = "Zweihander (+2 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel)
-	created_item = /obj/item/rogueweapon/greatsword/grenz
+	created_item = /obj/item/rogueweapon/greatsword/zwei/steel
 	craftdiff = 4
 
 /datum/anvil_recipe/weapons/estoc
@@ -223,8 +223,8 @@
 /datum/anvil_recipe/weapons/buckler
 	name = "Buckler (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
-	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel)
-	created_item = /obj/item/rogueweapon/greatsword/grenz
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/shield/buckler
 	craftdiff = 4
 
 /datum/anvil_recipe/weapons/steel/axe

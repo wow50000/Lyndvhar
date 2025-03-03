@@ -211,7 +211,7 @@
 	force = 16
 	possible_item_intents = list(/datum/intent/katar/cut, /datum/intent/katar/thrust)
 	name = "katar"
-	desc = "A blade that sits above the users fist. Commonly used by those proficient at unarmed fighting"
+	desc = "A blade that sits above the users fist. Commonly used by those proficient at unarmed fighting, it is capable of delivering rapid successive strikes."
 	icon_state = "katar"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	gripsprite = FALSE
@@ -224,14 +224,14 @@
 	associated_skill = /datum/skill/combat/unarmed
 	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
 	throwforce = 12
-	wdefense = 4
+	wdefense = 6
 	wbalance = 1
 	thrown_bclass = BCLASS_CUT
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	smeltresult = /obj/item/ingot/steel
 
 /datum/intent/katar
-	clickcd = 8
+	clickcd = 7
 
 /datum/intent/katar/cut
 	name = "cut"
@@ -242,8 +242,8 @@
 	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
 	penfactor = 0
 	chargetime = 0
+	clickcd = 6
 	swingdelay = 0
-	clickcd = 8
 	item_d_type = "slash"
 
 /datum/intent/katar/thrust
@@ -255,7 +255,6 @@
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 40
 	chargetime = 0
-	clickcd = 8
 	item_d_type = "stab"
 
 /obj/item/rogueweapon/katar/getonmobprop(tag)

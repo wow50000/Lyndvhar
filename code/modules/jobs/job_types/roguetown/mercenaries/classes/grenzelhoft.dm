@@ -38,7 +38,7 @@
 			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
 			H.change_stat("speed", -2)		//They get heavy armor now + sword option; so lower speed.
-			r_hand = /obj/item/rogueweapon/greatsword/grenz
+			r_hand = /obj/item/rogueweapon/greatsword/zwei/steel
 		if("Halberdier")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Halberdier from Grenzelhoft, a skilled user of poleamrs and axes. Though you prefer them combined.."))
