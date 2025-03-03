@@ -7,8 +7,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-	allowed_races = RACES_ALL_KINDS
-	allowed_ages = ALL_AGES_LIST
+	allowed_races = list(
+		"Humen",
+		"Elf",
+		"Half-Elf",
+		"Dwarf",
+		"Dark Elf",
+		"Half-Kin",
+		"Aasimar"
+	)
 
 	outfit = /datum/outfit/job/roguetown/archivist
 	display_order = JDO_ARCHIVIST
