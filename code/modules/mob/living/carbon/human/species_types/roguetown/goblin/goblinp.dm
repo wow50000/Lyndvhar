@@ -5,10 +5,7 @@
 	name = "Goblin"
 	id = "goblinp"
 	desc = "<b>Goblin</b><br>\
-	A clever and stubborn nature are two charitable qualities of a goblin - scheming and selfish are less so. The Fell Gods use them as an avatar of malice, sending out \
-	mindless, enthralled waves of the creatures to attack civilization from lunar portals. It leaves the typical goblinoid to cloister in their hidden away tribes, stealing \
-	from the scraps out of fear of reprisal while shooing away outsiders. The cities of Man typically shun them, but it's not unheard of to see one pushing their luck in a \
-	town square or out on a well-traveled road, as even the most backwater peasant can tell the difference between a sapient one and portal-spawn. Usually.<br>" 
+	From the ashes of the BLOODWAKE many warbands and raiding parties found themselves without leaders, being hunted by the armies of the PANTHEON and shunned by every living being, those who weren’t slaughtered in the years to come retreated wherever they could, into the woods, caves and secluded mountains. It is unclear what exactly happened in the following years, some scholars speculate that Malum and Eora had felt bad for the sad, misshapen forms of the goblins and shaped them into something greater, others argue that they simply adapted to their environment, the result is either way the same. Hobgoblins live on the fringes of society. Naturally craven and greedy, most still bear semblance to their barbaric kin or demonic overlords, and some still worship them in isolation and underground cults. Shunned and despised for that very reason, many cannot forget that they have spilled the blood of thousands.<br>" 
 	species_traits = list(EYECOLOR,LIPS,STUBBLE)
 	possible_ages = ALL_AGES_LIST
 	use_skintones = TRUE
