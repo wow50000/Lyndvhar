@@ -278,7 +278,7 @@
 //	color = "#514339"
 	body_parts_covered = CHEST|GROIN|VITALS
 	armor = list("blunt" = 40, "slash" = 50, "stab" = 40, "piercing" = 30, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST
+	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST)
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
@@ -295,7 +295,7 @@
 	desc = "A light armor of wildbeast hide. Far more durable than leather."
 	icon_state = "hidearmor"
 	armor = list("blunt" = 50, "slash" = 55, "stab" = 40, "piercing" = 40, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST
+	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST)
 	max_integrity = 250
 	armor_class = ARMOR_CLASS_LIGHT
 	sellprice = 30
