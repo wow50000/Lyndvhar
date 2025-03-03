@@ -8,7 +8,14 @@
 	display_order = 6
 	min_pq = 0
 	selection_color = JCOLOR_YEOMAN
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = list(
+		"Humen",
+		"Elf",
+		"Half-Elf",
+		"Dwarf",
+		"Tiefling",
+		"Dark Elf"
+	)
 	tutorial = "Cloth, linen, silk and leather. You've tirelessly studied and poured your life into \
 	sewing articles of protection, padding, and fashion for serf and noble alike."
 	display_order = JDO_TAILOR

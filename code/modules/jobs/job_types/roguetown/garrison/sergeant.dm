@@ -6,8 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = RACES_RESPECTED_UP
 	tutorial = "You are the most experienced of the Crown's Soldiery, leading the men-at-arms in maintaining order and attending to threats and crimes below the court's attention."
 	display_order = JDO_SERGEANT
 	whitelist_req = TRUE
