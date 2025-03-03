@@ -23,7 +23,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 5, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/steel
@@ -35,7 +35,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	id = /obj/item/mattcoin
 	H.change_stat("perception", 2)
-	H.change_stat("speed", 3)
+	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
 	var/weapons = list("Crossbow & Dagger", "Bow & Sword")
