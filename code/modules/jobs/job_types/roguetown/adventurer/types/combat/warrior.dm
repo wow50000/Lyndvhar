@@ -21,8 +21,8 @@
 
 	switch(classchoice)
 
-		if("Battlemaster")
-			to_chat(H, span_warning("You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt."))
+		if("Fighter")
+			to_chat(H, span_warning("Vagrant sellswords, deserters, and hardened vagabonds searching for purpose. Very few survive this life...many dying from their own foolish or desperate attempts at survival. Who will you be? "))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
@@ -36,7 +36,7 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			var/weapons = list("Iron Sword","Mace","Billhook","Hand Axe")
+			var/weapons = list("Iron Sword","Mace","Billhook","Hatchet")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Iron Sword")
@@ -49,9 +49,22 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/improvisedbillhook
 					backr = /obj/item/gwstrap
-				if("Hand Axe")
+				if("Hatchet")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					backr = /obj/item/rogueweapon/stoneaxe/handaxe
+				var/armors = list("Light Armor","Medium Armor")
+			var/armor_choice = input("Choose your armor.", "TAKE UP ARMS") as anything in armors
+			switch(armor_choice)
+				if("Light Armor")
+					shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+					pants = /obj/item/clothing/under/roguetown/trou/leather
+					gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+				
+				if("Medium Armor")
+					shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+					pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+					gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+					ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 2)
@@ -59,11 +72,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-			shoes = /obj/item/clothing/shoes/roguetown/boots
-			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+		    shoes = /obj/item/clothing/shoes/roguetown/boots
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 
