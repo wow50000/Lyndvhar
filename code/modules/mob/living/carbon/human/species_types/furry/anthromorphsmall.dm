@@ -4,7 +4,8 @@
 /datum/species/anthromorphsmall
 	name = "Verminvolk"
 	id = "anthromorphsmall"
-	desc = "A race akin to wild-kin, except afflicted with significantly smaller stature. A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Sissean.<br>"
+	desc = "<b>Verminvolk</b><br>\
+	Crafted in much the same way as the Wild-Kin, the Verminvolk, or Small-Wildlings, these beings face even more resentment and hatred compared to their Wild-Kin siblings, as they were formed from pest animals, such as rodents.<br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

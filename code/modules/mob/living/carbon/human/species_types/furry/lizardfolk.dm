@@ -5,11 +5,7 @@
 	name = "Sissean"
 	id = "lizardfolk"
 	desc = "<b>Sissean</b><br>\
-	Sisseans are semi-aquatic reptilian humanoids. \
-	Their flesh is covered in scales varying in color from dark green to shades of brown and gray. \
-	Taller than humans and powerfully built, sisseans are often between 6 and 7 feet tall. \
-	Sisseans have non-prehensile muscular tails that grow to three or four feet in length, and these are used for balance. \
-	They also have sharp claws and teeth.<br>"
+	Composed of scales resembling what could be seen in the common lizard, the Sissean is anything but this. Once the slave chattel of the Drakian of the Calmirixial province, they are a very industrious and martial race, having served under the direct oppression of Drakian overlordship for years. When Naexidor came to Calmirixial and destroyed Drakian hegemony over the region, what followed was a complete schism of Drakian and Sissean society. Sissean often kill their young that form into their draconic counterparts as a result of this deep hatred for each other.<br>"
 	skin_tone_wording = "Skin Colors"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_AGES_LIST

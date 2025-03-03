@@ -5,16 +5,7 @@
 	name = "Half-Elf"
 	id = "helf"
 	desc = "<b>Half Elf</b><br>\
-	The child of an Elf and Humen, Half-Elves are generally frowned \
-	upon by the more conservatively minded. However, as racial tensions lower, \
-	the rate of Half-Elf births has continues to increase. So common has it become that some scholars \
-	worry that someday it may be impossible to distinguish the Humens and Elves from one another. \
-	From physical to cultural characteristics, Half-Elves are an incredibly diverse people, \
-	thanks in no small part to the incredibly varied nature of their Humen halves. Indeed, no other race \
-	embodies the term \"melting pot\" quite like the Half-Elves. Due to their half-breed nature, their physical \
-	characteristics can be either more Elvish or more Humen, depending on which of their parents' genes \
-	are more predominant. In terms of cultural identity, a Half-Elf will typically choose to lean more \
-	towards either their Humen or Elvish heritages.<br>" 
+	The children of an Elf and a Humen, most conservative minds frown upon such a union. Half-Elves are distinguishable by their elf-ears yet humen appearance and features. However with the lack of a true cultural identity and pillar, they are often found either acting more as an elf or more as a humen. They are the embodiment of a “melting pot” of cultures, where the identity of humen and elf is blended into one.<br>" 
 
 	skin_tone_wording = "Identity"
 	default_color = "FFFFFF"
