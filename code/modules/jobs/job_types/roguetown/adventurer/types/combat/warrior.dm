@@ -178,7 +178,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
-			H.change_stat("strength", 2)
+			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", -1)
