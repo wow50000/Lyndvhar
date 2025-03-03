@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/mage
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
+	maximum_possible_slots = 2
 	traits_applied = list(TRAIT_OUTLANDER)
 	classes = list("Sorcerer" = "You are a learned mage and a scholar, having spent your life studying the arcane and its ways.", 
 					"Spellsinger" = "You belong to a school of bards renowned for their study of both the arcane and the arts.")
