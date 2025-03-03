@@ -4,7 +4,7 @@
 /datum/species/demihuman
 	name = "Half-Kin"
 	id = "demihuman"
-	desc = "The inevitable union between wildkin and some form of humanity or another. While they also experience animalistic tendencies akin to their full-blooded ancestors, their intermingling with others has stemmed the severity of such primordial impulses. (Half-kin are not a template race to play your own custom race. If you play a half-kin, you are expected to roleplay to the setting and the race's lore.)<br>"
+	desc = "With the advent and rise of more of the inhumen and denmorian races beginning to become larger communities in Llewyn and abroad, it was only natural that eventually half-humen and half-wild would begin to form. These beings retain much of their humen forms, however usually behave much in the same way of the animal or being that they are half of. Due to their union being one of humen they fair much better with other races, but their wild side often becomes a detriment due to differing tempers and behaviours. For this reason it is quite rare to see a half-kin in positions of power, usually working in lower-working jobs.<br>"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)
