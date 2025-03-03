@@ -11,8 +11,8 @@
 
 /datum/patron/inhumen/zizo
 	name = "Zizo"
-	domain = "Advancement, Hubris, Left Hand Magicks"
-	desc = "Snow Elf turned God- banished by the Ten for spreading unholy magicks and forbidden sciences. Her craft taught mortals to bend the natural world to their will, but destroyed the Snow Elf race.."
+	domain = "Archdaemon of Advancement, Hubris, Ambition, and Power"
+	desc = "The Archdaemon ZIZO was the first to be born from the sins of mortalkind. She represents the aspects of unbridled ambition, and the lust for more power. It was her forces that first breached through the Hells and into the realm of Beowricke proper, bringing destruction as she began to carve out a realm for herself. She and her cultists crafted the TIEFLING from her lesser daemons as well as mortals. "
 	worshippers = "Necromancers, Warlocks, and the Undead"
 	mob_traits = list(TRAIT_CABAL)
 	t1 = /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle
@@ -26,8 +26,8 @@
 
 /datum/patron/inhumen/graggar
 	name = "Graggar"
-	domain = "God of Conquest, War, Murder, Pillaging"
-	desc = "Orc turned deity, said by the Holy Ecclesial to have been blessed by Ravox himself. He took his blessings to rampage and tear down the Old Ten. Though some Graggarites might care for 'honor', most do not- what matters are results, and victory at any cost."
+	domain = "Archdaemon of Conquest, War, and Murder"
+	desc = "The Archdaemon GRAGGAR was the second to be born from the sins of mortalkind. He represents all aspects of total rage, wroth, destruction, as well as murderous conquest. The strongest fighter of the Archdaemons, he crafted the ORCS and the GOBLINS in his own image and visage to fight alongside the daemons and TIEFLINGS of ZIZO. "
 	worshippers = "Prisoners, Murderers and the Cruel"
 	mob_traits = list(TRAIT_HORDE, TRAIT_ORGAN_EATER)
 	confess_lines = list(
@@ -38,9 +38,9 @@
 
 /datum/patron/inhumen/matthios
 	name = "Matthios"
-	domain = "God of Robbery, Redistribution of Wealth, and Commerce"
-	desc = "The Man who stole fire from the Underworld and gave it in exchange for worship; the first Transaction, cutting a hole in the firmament and flooding ontological reality with the fact of Wealth. Take from the wealthy, give to the worthless, empower."
-	worshippers = "Highwaymen, Robbers, Downtrodden Peasants, Merchants"
+	domain = "Archdaemon of Robbery, Envy, and Pillaging"
+	desc = "The Archdaemon MATTHIOS was the third to be born from the sins of mortalkind. Matthios is the physical embodiment of mass theft, pillaging, and envy. Many of his cultist followers practice this through open banditry and thievery. Despite all this he is believed to also be the patron of the destitute and beggars– though there is always insidious intent to be found in an Archdaemon. "
+	worshippers = "Highwaymen, Robbers, Downtrodden Peasants"
 	mob_traits = list(TRAIT_COMMIE, TRAIT_SEEPRICES_SHITTY)
 	t0 = /obj/effect/proc_holder/spell/invoked/appraise
 	t1 = /obj/effect/proc_holder/spell/invoked/transact
@@ -54,8 +54,8 @@
 
 /datum/patron/inhumen/baotha
 	name = "Baotha"
-	domain = "Goddess of Degeneracy, Debauchery and Addiction"
-	desc = "Eora's crueler half, made be from her one true love having been unfaithful. Filled with bitterness, she separated from Eora in spirit and spiraled into a dark hole of crippling hedonism. She teaches her ilk to place their trust in no one, and do only as they please."
+	domain = "Archdaemon of Degeneracy, Debauchery and Addiction"
+	desc = "The Archdaemon BAOTHA was the final one to be born from the sins of mortalkind. She is the complete and physical embodiment of all unrestrained lust, as well as immense degeneracy. Destruction of the vow of marriage, mass addiction, and rape only follow in her wake, as her mere presence would awaken the worst aspects of the very things that Eora represents. Due to this, Baotha is an extreme opposite to her, and they are both mortal enemies. "
 	worshippers = "Perverts, Gamblers, Drunkards, and Bards"
 	mob_traits = list(TRAIT_DEPRAVED, TRAIT_CRACKHEAD)
 	confess_lines = list(
