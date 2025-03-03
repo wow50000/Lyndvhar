@@ -8,7 +8,7 @@
 	spawn_positions = 6
 
 	allowed_races = list(
-		"Humen",
+		"Human",
 		"Elf",
 		"Half-Elf",
 		"Dwarf",

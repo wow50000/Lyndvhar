@@ -9,7 +9,7 @@
 	min_pq = 0
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = list(
-		"Humen",
+		"Human",
 		"Elf",
 		"Half-Elf",
 		"Dwarf",

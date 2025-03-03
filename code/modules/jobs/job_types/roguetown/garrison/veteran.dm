@@ -8,7 +8,7 @@
 
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
 	allowed_races = list(
-		"Humen",
+		"Human",
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
