@@ -7,13 +7,13 @@
 	spawn_positions = 4
 
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiefling",
-		"Dark Elf",
-		"Half-Kin"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark,
+		/datum/species/demihuman
 	)
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	advclass_cat_rolls = list(CTAG_WAPPRENTICE = 20)

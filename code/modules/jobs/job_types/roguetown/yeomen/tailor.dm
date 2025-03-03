@@ -9,12 +9,12 @@
 	min_pq = 0
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiefling",
-		"Dark Elf"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark
 	)
 	tutorial = "Cloth, linen, silk and leather. You've tirelessly studied and poured your life into \
 	sewing articles of protection, padding, and fashion for serf and noble alike."

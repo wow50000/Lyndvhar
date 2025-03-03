@@ -8,13 +8,13 @@
 	spawn_positions = 6
 
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiefling",
-		"Dark Elf",
-		"Half-Kin"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark,
+		/datum/species/demihuman
 	)
 
 	tutorial = "Granted a life of comfortable servitude in the manor, you follow the Seneschal's commands and spend your day performing necessary but menial tasks. If it were not for your dutiful work, the noble court would have starved to death a long time ago."

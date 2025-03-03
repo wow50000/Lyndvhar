@@ -7,12 +7,12 @@
 	spawn_positions = 2
 
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiefling",
-		"Dark Elf"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark,
 	)
 	allowed_ages = list(AGE_ADULT)
 

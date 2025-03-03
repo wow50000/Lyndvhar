@@ -8,13 +8,14 @@
 	spawn_positions = 1
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Dark Elf",
-		"Half-Kin",
-		"Aasimar"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/tieberian,
+		/datum/species/elf/dark,
+		/datum/species/aasimar,
+		/datum/species/demihuman
 	)
 
 	outfit = /datum/outfit/job/roguetown/archivist

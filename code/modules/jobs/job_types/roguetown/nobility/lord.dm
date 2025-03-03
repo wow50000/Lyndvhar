@@ -11,10 +11,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
 	allowed_races = list(
-		"Human",
-		"Elf",
-		"Half-Elf",
-		"Dwarf"
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain
 	)
 	allowed_sexes = list(MALE, FEMALE)
 
