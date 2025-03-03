@@ -54,7 +54,7 @@
 					backr = /obj/item/rogueweapon/stoneaxe/battle
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
-			H.change_stat("constitution", 2)
+			H.change_stat("constitution", 1)
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -91,7 +91,6 @@
 				if("Dagger")
 					H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 					beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
-			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
@@ -181,8 +180,8 @@
 			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
-			H.change_stat("constitution", 1)
 			H.change_stat("intelligence", 1)
+			H.change_stat("speed", -1)
 			beltr = /obj/item/rogueweapon/sword/silver
 			backr = /obj/item/rogueweapon/sword
 			backl = /obj/item/storage/backpack/rogue/satchel/black
