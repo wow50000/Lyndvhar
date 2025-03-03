@@ -12,7 +12,6 @@
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
 		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
 		/datum/species/elf/dark,
 		/datum/species/aasimar,
 		/datum/species/demihuman
