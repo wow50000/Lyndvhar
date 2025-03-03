@@ -1,31 +1,31 @@
-/datum/job/roguetown/monk
+/datum/job/roguetown/acolyte
 	title = "Acolyte"
-	flag = MONK
+	flag = ACOLYTE
 	department_flag = CHURCHMEN
 	faction = "Station"
 	total_positions = 6
 	spawn_positions = 6
 
-	allowed_races = RACES_RESPECTED_UP
+	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_ACOLYTE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	outfit = /datum/outfit/job/roguetown/monk
+	outfit = /datum/outfit/job/roguetown/acolyte
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Priest in their daily tasks, maybe today will be the day something interesting happens."
 
-	display_order = JDO_MONK
+	display_order = JDO_ACOLYTE
 	give_bank_account = TRUE
 	min_pq = 1 //A step above Churchling, should funnel new players to the churchling role to learn miracles at a more sedate pace
 	max_pq = null
 	round_contrib_points = 2
 
-/datum/outfit/job/roguetown/monk
+/datum/outfit/job/roguetown/acolyte
 	name = "Acolyte"
-	jobtype = /datum/job/roguetown/monk
+	jobtype = /datum/job/roguetown/acolyte
 
 	allowed_patrons = list(/datum/patron/divine/pestra, /datum/patron/divine/astrata, /datum/patron/divine/eora, /datum/patron/divine/noc, /datum/patron/divine/necra, /datum/patron/divine/abyssor, /datum/patron/divine/malum) //Eora content from Stonekeep
 
 
-/datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/acolyte/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
