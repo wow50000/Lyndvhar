@@ -202,7 +202,7 @@
 	name = "Cackle Lash"
 	desc = "The chimes of this whip are said to sound as the trickster's laughter itself."
 	icon_state = "xylixwhip"
-	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash)
+	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash, /datum/intent/whip/punish/cackle)
 	force = 24
 	wbalance = 1.5
 	swingsound = list('sound/magic/webspin.ogg')
