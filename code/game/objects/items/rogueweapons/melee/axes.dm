@@ -25,6 +25,9 @@
 	swingdelay = 10
 	item_d_type = "slash"
 
+/datum/intent/axe/chop/scythe
+	reach = 2
+
 /datum/intent/axe/chop/stone
 	penfactor = 5
 
