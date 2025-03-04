@@ -1,6 +1,6 @@
 /datum/advclass/knighterrant
 	name = "Knight Errant"
-	tutorial = "Traveling nobility from other regions of the world."
+	tutorial = "You are a Knight-Errant, a wandering noble from a distant land. Your armor bears the crest of a great house, and your blade carries the weight of your chivalry. Whether driven by glory, a sense of adventure or a quest for purpose, your journey has brought you to Lyndhardtia."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/knight
@@ -8,7 +8,7 @@
 	pickprob = 30
 	traits_applied = list(TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ADVENTURER)
-
+/* Adventurer classes can't have an after_spawn apparently.
 /datum/advclass/knighterrant/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(ishuman(L))
@@ -28,7 +28,7 @@
 			honorary = "Dame"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
-
+*/
 /datum/outfit/job/roguetown/adventurer/knight/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You are a knight from a distant land, a scion of a noble house visiting Lyndhardtia for one reason or another."))
