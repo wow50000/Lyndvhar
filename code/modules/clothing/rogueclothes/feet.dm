@@ -21,7 +21,7 @@
 	icon_state = "blackboots"
 	item_state = "blackboots"
 	sewrepair = TRUE
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 30, "slash" = 20, "stab" = 20, "piercing" = 20, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	name = "psydonian boots"
@@ -29,9 +29,11 @@
 	icon_state = "psydonboots"
 	item_state = "psydonboots"
 	sewrepair = TRUE
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 50, "slash" = 30, "stab" = 30, "piercing" = 30, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_BITE)
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 45
 
 /obj/item/clothing/shoes/roguetown/nobleboot
 	name = "noble boots"
@@ -42,9 +44,11 @@
 	icon_state = "nobleboots"
 	item_state = "nobleboots"
 	sewrepair = TRUE
-	armor = list("blunt" = 35, "slash" = 15, "stab" = 25, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 35, "slash" = 30, "stab" = 30, "piercing" = 25, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BITE)
 	salvage_amount = 2
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 30
 
 /obj/item/clothing/shoes/roguetown/shortboots
 	name = "shortboots"
@@ -62,11 +66,14 @@
 	color = "#d5c2aa"
 	desc = ""
 	gender = PLURAL
+	armor = list("blunt" = 35, "slash" = 35, "stab" = 30, "piercing" = 30, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BITE)
 	icon_state = "ridingboots"
 	item_state = "ridingboots"
 	sewrepair = TRUE
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 30
 
 ///obj/item/clothing/shoes/roguetown/ridingboots/Initialize()
 //	. = ..()
@@ -134,9 +141,10 @@
 	icon_state = "leatherboots"
 	item_state = "leatherboots"
 	sewrepair = TRUE
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 30, "slash" = 20, "stab" = 20, "piercing" = 20, "fire" = 0, "acid" = 0)
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 20
 
 /obj/item/clothing/shoes/roguetown/boots/armor
 	name = "plated boots"
@@ -144,14 +152,15 @@
 	body_parts_covered = FEET
 	icon_state = "armorboots"
 	item_state = "armorboots"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	color = null
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
 	max_integrity = 300
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 95, "slash" = 100, "stab" = 90, "piercing" = 90, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
+	sellprice = 60
 
 /obj/item/clothing/shoes/roguetown/boots/armor/zizo
 	max_integrity = 500
@@ -175,13 +184,14 @@
 	body_parts_covered = FEET
 	icon_state = "fencerboots"
 	item_state = "fencerboots"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = SOFTHIT
 	max_integrity = 200
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 100, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 55, "slash" = 55, "stab" = 50, "piercing" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_CUT, BCLASS_BITE)
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 50
 
 /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	name = "iron plated boots"
@@ -189,13 +199,14 @@
 	body_parts_covered = FEET
 	icon_state = "armorironboots"
 	item_state = "armorironboots"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	color = null
 	blocksound = PLATEHIT
 	max_integrity = 200
-	armor = list("blunt" = 80, "slash" = 100, "stab" = 70, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 75, "slash" = 70, "stab" = 70, "piercing" = 70, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
+	sellprice = 35
 
 /obj/item/clothing/shoes/roguetown/jester
 	name = "funny shoes"
@@ -212,7 +223,9 @@
 	icon_state = "grenzelboots"
 	item_state = "grenzelboots"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
-	armor = list("blunt" = 15, "slash" = 15, "stab" = 15, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 50, "slash" = 50, "stab" = 50, "piercing" = 40, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_CUT, BCLASS_BITE)
+	sellprice = 35
 
 /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 	name = "fur lined boots"
@@ -221,9 +234,11 @@
 	icon_state = "furlinedboots"
 	item_state = "furlinedboots"
 	sewrepair = TRUE
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 55, "slash" = 50, "stab" = 40, "piercing" = 40, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST)
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/fur
+	sellprice = 40
 
 /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
 	name = "fur lined anklets"
@@ -232,7 +247,8 @@
 	icon_state = "furlinedanklets"
 	item_state = "furlinedanklets"
 	sewrepair = TRUE
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 40, "slash" = 40, "stab" = 20, "piercing" = 40, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_TWIST)
 	is_barefoot = TRUE
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/fur
@@ -258,17 +274,18 @@
 
 /obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots
 	name = "blacksteel plate boots"
-	desc = "Boots forged of durable blacksteel."
+	desc = "Boots forged of durable blacksteel. Unbending, unyielding."
 	body_parts_covered = FEET
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	icon_state = "bkboots"
 	item_state = "bkboots"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	color = null
 	blocksound = PLATEHIT
 	max_integrity = 400
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 105, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_STAB, BCLASS_SMASH, BCLASS_TWIST)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	resistance_flags = FIRE_PROOF
+	sellprice = 210

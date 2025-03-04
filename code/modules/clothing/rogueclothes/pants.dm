@@ -87,7 +87,7 @@
 
 /obj/item/clothing/under/roguetown/webs
 	name = "webbing"
-	desc = "a fine webbing made from spidersilk, popular fashion within the underdark"
+	desc = "A fine webbing made from spidersilk, popular fashion within the underdark"
 	gender = PLURAL
 	icon_state = "webs"
 	item_state = "webs"
@@ -102,7 +102,7 @@
 	item_state = "trou"
 //	adjustable = CAN_CADJUST
 	sewrepair = TRUE
-	armor = list("blunt" = 40, "slash" = 20, "stab" = 10, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 35, "slash" = 20, "stab" = 10, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT)
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
@@ -114,9 +114,9 @@
 
 /obj/item/clothing/under/roguetown/trou/leather
 	name = "leather trousers"
-	armor = list("blunt" = 80, "slash" = 50, "stab" = 40, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 30, "slash" = 35, "stab" = 30, "piercing" = 40, "fire" = 0, "acid" = 0)
 	icon_state = "leathertrou"
-	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_SMASH)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST)
 	max_integrity = 150
 	resistance_flags = FIRE_PROOF
 
@@ -128,10 +128,10 @@
 	icon_state = "roguepants"
 	item_state = "roguepants"
 	sewrepair = TRUE
-	armor = list("blunt" = 100, "slash" = 70, "stab" = 50, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
+	armor = list("blunt" = 55, "slash" = 70, "stab" = 55, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
 	blocksound = SOFTHIT
-	max_integrity = 200
+	max_integrity = 300
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
@@ -145,18 +145,18 @@
 	being less protective than full trousers."
 	icon_state = "rogueshorts"
 	item_state = "rogueshorts"
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
-	body_parts_covered = GROIN
+	armor = list("blunt" = 50, "slash" = 60, "stab" = 55, "fire" = 0, "acid" = 0)
+	max_integrity = 250
 
 /obj/item/clothing/under/roguetown/trou/otavan
 	name = "otavan leather trousers"
-	desc = "padded leather armor made by Otavan tailors, its quality is remarkable."
+	desc = "Padded leather armor made by Otavan tailors, its quality is remarkable."
 	icon_state = "fencerpants"
 	resistance_flags = FIRE_PROOF
-	armor = list("blunt" = 100, "slash" = 70, "stab" = 50, "piercing" = 20, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
+	armor = list("blunt" = 55, "slash" = 70, "stab" = 55, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
 	blocksound = SOFTHIT
-	max_integrity = 200
+	max_integrity = 300
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = TRUE
 	allowed_race = NON_DWARVEN_RACE_TYPES
@@ -201,6 +201,8 @@
 	desc = "Long, flowing, and modest."
 	icon_state = "skirt"
 	item_state = "skirt"
+	alternate_worn_layer = TABARD_LAYER
+	slot_flags = ITEM_SLOT_CLOAK|ITEM_SLOT_PANTS
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/pants.dmi'
 
 /obj/item/clothing/under/roguetown/skirt/random
@@ -226,8 +228,8 @@
 	icon_state = "chain_legs"
 	item_state = "chain_legs"
 	sewrepair = FALSE
-	armor = list("blunt" = 60, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 40, "slash" = 80, "stab" = 80, "piercing" = 85, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
 	blocksound = CHAINHIT
 	max_integrity = 300
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
@@ -248,8 +250,8 @@
 	icon_state = "splintlegs"
 	item_state = "splintlegs"
 	max_integrity = 250
-	armor = list("blunt" = 60, "slash" = 70, "stab" = 70, "piercing" = 60, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 70, "slash" = 70, "stab" = 70, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH, BCLASS_BITE, BCLASS_TWIST)
 	blocksound = SOFTHIT
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/blacksmithing
@@ -272,11 +274,10 @@
 	icon_state = "chain_bootyshorts"
 	item_state = "chain_bootyshorts"
 	sewrepair = FALSE
-	armor = list("blunt" = 70, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	body_parts_covered = GROIN
+	armor = list("blunt" = 30, "slash" = 80, "stab" = 80, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP)
 	blocksound = CHAINHIT
-	max_integrity = 300
+	max_integrity = 200
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
@@ -288,7 +289,8 @@
 /obj/item/clothing/under/roguetown/chainlegs/iron
 	name = "iron chain chausses"
 	icon_state = "ichain_legs"
-	max_integrity = 250
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
+	max_integrity = 200
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
@@ -300,10 +302,10 @@
 	item_state = "plate_legs"
 //	adjustable = CAN_CADJUST
 	sewrepair = FALSE
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST) //Thicc protection values, but few crit protection flags.
 	blocksound = PLATEHIT
-	max_integrity = 400
+	max_integrity = 350
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
@@ -322,7 +324,7 @@
 	name = "darksteel garments"
 	desc = "Leg garments worn by true anointed of the Dame of Progress. In Her name."
 	icon_state = "zizocloth"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_PICK)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
 
 /obj/item/clothing/under/roguetown/platelegs/zizo/Initialize()
 	. = ..()
@@ -343,16 +345,18 @@
 	desc = "Interlinked metal rings that drape down to the crotch and no farther."
 	icon_state = "chain_skirt"
 	item_state = "chain_skirt"
-	body_parts_covered = GROIN
-	armor_class = ARMOR_CLASS_LIGHT
+	armor = list("blunt" = 30, "slash" = 80, "stab" = 80, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP)
+	max_integrity = 200
 
 /obj/item/clothing/under/roguetown/platelegs/skirt
 	name = "steel plate skirt"
 	desc = "Reinforced armor that doesn't even protect the legs."
 	icon_state = "plate_skirt"
 	item_state = "plate_skirt"
-	body_parts_covered = GROIN
-	armor_class = ARMOR_CLASS_LIGHT
+	armor = list("blunt" = 80, "slash" = 80, "stab" = 80, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
+	max_integrity = 250
 
 /obj/item/clothing/under/roguetown/loincloth
 	name = "loincloth"
@@ -376,8 +380,8 @@
 	item_state = "grenzelpants"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
 	detail_tag = "_detail"
-	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT)
+	armor = list("blunt" = 30, "slash" = 30, "stab" = 30, "piercing" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_CUT)
 	var/picked = FALSE
 	armor_class = ARMOR_CLASS_LIGHT
 
@@ -424,21 +428,22 @@
 
 /obj/item/clothing/under/roguetown/platelegs/blacksteel
 	name = "blacksteel plate chausses"
-	desc = "Reinforced leg plates forged of durable blacksteel."
+	desc = "Reinforced leg plates forged of durable blacksteel. Unbending, unyielding."
 	gender = PLURAL
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	icon_state = "bklegs"
 	item_state = "bklegs"
 	sewrepair = FALSE
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
 	blocksound = PLATEHIT
 	max_integrity = 500
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2
+	sellprice = 340
 
 /obj/item/clothing/under/roguetown/trou/leather/pontifex
 	name = "pontifex's chaqchur"
