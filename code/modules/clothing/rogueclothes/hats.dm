@@ -34,7 +34,7 @@
 	slot_flags = ITEM_SLOT_HEAD
 	dynamic_hair_suffix = ""
 	max_integrity = 100
-	armor = list("blunt" = 16, "slash" = 19, "stab" = 15, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 15, "slash" = 20, "stab" = 15, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_TWIST)
 	anvilrepair = null
 	sewrepair = TRUE
@@ -74,7 +74,7 @@
 	alternate_worn_layer  = 8.9 //On top of helmet
 	body_parts_covered = HEAD|HAIR|EARS|NECK
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
-	armor = list("blunt" = 15, "slash" = 20, "stab" = 15, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 28, "slash" = 25, "stab" = 15, "fire" = 0, "acid" = 0)
 	dynamic_hair_suffix = ""
 	edelay_type = 1
 	adjustable = CAN_CADJUST
@@ -97,6 +97,9 @@
 	name = "heavy hood"
 	flags_inv = null
 	desc = "This thick lump of burlap completely shrouds your head, protecting it from harsh weather and nosey protagonists alike."
+	armor = list("blunt" = 35, "slash" = 30, "stab" = 25, "fire" = 0, "acid" = 0)
+	max_integrity = 200
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
 	color = CLOTHING_BROWN
 	item_state = "heavyhood"
 	icon_state = "heavyhood"
@@ -321,7 +324,7 @@
 	item_state = "papakha"
 	sewrepair = TRUE
 	flags_inv = HIDEEARS
-	armor = list("blunt" = 15, "slash" = 15, "stab" = 20, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 25, "slash" = 20, "stab" = 20, "fire" = 0, "acid" = 0)
 	blocksound = SOFTHIT
 
 /obj/item/clothing/head/roguetown/hatblu
@@ -394,6 +397,8 @@
 	desc = "A light cap made of leather, usually worn under a helmet."
 	icon_state = "armingcap"
 	item_state = "armingcap"
+	armor = list("blunt" = 15, "slash" = 25, "stab" = 20, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BITE, BCLASS_TWIST)
 	flags_inv = HIDEEARS
 	sewrepair = TRUE
 	salvage_result = /obj/item/natural/hide/cured
@@ -423,6 +428,8 @@
 	desc = "To keep ones vision away from the heavens, and focused on the sin beneath the soil."
 	icon_state = "inqhat"
 	item_state = "inqhat"
+	armor = list("blunt" = 15, "slash" = 25, "stab" = 20, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BITE, BCLASS_TWIST)
 	sewrepair = TRUE
 
 /obj/item/clothing/head/roguetown/headband/red
@@ -466,6 +473,9 @@
 	name = "champion's circlet"
 	desc = ""
 	icon_state = "sparrowcrown"
+	armor = list("blunt" = 30, "slash" = 50, "stab" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	max_integrity = 50
 	//dropshrink = 0
 	dynamic_hair_suffix = null
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -475,7 +485,9 @@
 /obj/item/clothing/head/roguetown/nyle
 	name = "jewel of nyle"
 	icon_state = "nile"
-	body_parts_covered = null
+	armor = list("blunt" = 30, "slash" = 50, "stab" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	max_integrity = 50
 	slot_flags = ITEM_SLOT_HEAD
 	dynamic_hair_suffix = null
 	sellprice = 100
@@ -492,6 +504,9 @@
 	name = "golden circlet"
 	icon_state = "circlet"
 	item_state = "circlet"
+	armor = list("blunt" = 30, "slash" = 50, "stab" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	max_integrity = 50
 	sellprice = 50
 
 /obj/item/clothing/head/roguetown/priesthat
@@ -534,7 +549,7 @@
 	name = "hennin"
 	desc = "A hat typically worn by women in nobility."
 	icon_state = "hennin"
-	sellprice = 19
+	sellprice = 22
 	dynamic_hair_suffix = "+generic"
 	sewrepair = TRUE
 
@@ -547,7 +562,7 @@
 	sleeved = null
 	body_parts_covered = HEAD|HAIR|EARS
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_NECK|ITEM_SLOT_HEAD
-	armor = list("blunt" = 35, "slash" = 15, "stab" = 25, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 35, "slash" = 25, "stab" = 25, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT)
 	blocksound = SOFTHIT
 	max_integrity = 75
@@ -565,23 +580,28 @@
 	sleevetype = null
 	sleeved = null
 	resistance_flags = FIRE_PROOF
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 90, "slash" = 80, "stab" = 95, "piercing" = 90, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	dynamic_hair_suffix = "+generic"
 	bloody_icon_state = "helmetblood"
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	blocksound = PLATEHIT
-	max_integrity = 200
+	max_integrity = 250
 	grid_height = 64
 	grid_width = 64
+	sellprice = 30
 
 /obj/item/clothing/head/roguetown/helmet/skullcap
 	name = "skull cap"
-	desc = "A helmet which covers the top of the head."
+	desc = "A simple iron helmet which covers the top of the head."
+	armor = list("blunt" = 60, "slash" = 60, "stab" = 75, "piercing" = 75, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_TWIST)
+	max_integrity = 175
 	icon_state = "skullcap"
 	body_parts_covered = HEAD|HAIR
 	smeltresult = /obj/item/ingot/iron
+	sellprice = 20
 
 /obj/item/clothing/head/roguetown/helmet/horned
 	name = "horned cap"
@@ -603,7 +623,6 @@
 	desc = "A steel helmet which protects the top and sides of the head."
 	icon_state = "kettle"
 	body_parts_covered = HEAD|HAIR|EARS
-	armor = list("blunt" = 80, "slash" = 90, "piercing" = 100, "stab" = 70, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/roguetown/helmet/kettle/attackby(obj/item/W, mob/living/user, params)
 	..()
@@ -767,6 +786,8 @@
 	icon_state = "bascinet_novisor"
 	item_state = "bascinet_novisor"
 	color = COLOR_ASSEMBLY_GOLD
+	max_integrity = 300
+	sellprice = 50
 
 /obj/item/clothing/head/roguetown/helmet/otavan
 	name = "otavan helmet"
@@ -781,6 +802,8 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	max_integrity = 300
+	sellprice = 55
 
 /obj/item/clothing/head/roguetown/helmet/otavan/AdjustClothes(mob/user)
 	if(loc == user)
@@ -815,11 +838,16 @@
 	item_state = "barbute"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
+	armor = list("blunt" = 105, "slash" = 90, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	max_integrity = 400
+	equip_delay_self = 10 SECONDS
+	unequip_delay_self = 10 SECONDS
+	equip_delay_other = 5 SECONDS
+	strip_delay = 8 SECONDS
+	sellprice = 50
 
 /obj/item/clothing/head/roguetown/helmet/heavy/zizo
 	name = "darksteel barbute"
@@ -869,6 +897,7 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	sellprice = 65
 
 /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
 	name = "barred helmet"
@@ -892,6 +921,11 @@
 	max_integrity = 300
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	equip_delay_self = 6 SECONDS
+	unequip_delay_self = 4 SECONDS
+	equip_delay_other = 4 SECONDS
+	strip_delay = 5 SECONDS
+	sellprice = 75
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
 	color = CLOTHING_GREY
@@ -965,6 +999,8 @@
 	icon_state = "topfhelm_gold"
 	item_state = "topfhelm_gold"
 	desc = "A full-head covering helm with the engravings of Ravox. Bravery. Justice. Ever Unyielding."
+	max_integrity = 450
+	sellprice = 110
 
 /obj/item/clothing/head/roguetown/helmet/heavy/bucket/ravox/attackby(obj/item/W, mob/living/user, params)
 	return
@@ -979,6 +1015,7 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	sellprice = 70
 
 /obj/item/clothing/head/roguetown/helmet/heavy/bucket/attackby(obj/item/W, mob/living/user, params)
 	..()
@@ -1153,6 +1190,7 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	sellprice = 70
 
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/AdjustClothes(mob/user)
 	if(loc == user)
@@ -1230,12 +1268,14 @@
 	max_integrity = 450
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+	sellprice = 85
 
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth/zizo
 	name = "darksteel froggemund"
 	desc = "A sleek and imposing darksteel froggemund. Called forth from the edge of what should be known. In Her name."
 	max_integrity = 650
 	icon_state = "zizofrogmouth"
+	sellprice = 6
 
 
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth/zizo/pickup(mob/living/user)
@@ -1286,30 +1326,20 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/head/roguetown/helmet/bascinet
-	name = "bascinet"
-	desc = "A steel bascinet helmet without a visor protecting the the head and ears."
-	icon_state = "bascinet_novisor"
-	item_state = "bascinet_novisor"
-	emote_environment = 3
-	body_parts_covered = HEAD|HAIR|EARS
-	flags_inv = HIDEHAIR
-	block2add = FOV_BEHIND
-	smeltresult = /obj/item/ingot/steel
-
 /obj/item/clothing/head/roguetown/helmet/leather
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
 	name = "leather helmet"
 	desc = "A helmet made of leather."
 	body_parts_covered = HEAD|HAIR|EARS|NOSE
 	icon_state = "leatherhelm"
-	armor = list("blunt" = 47, "slash" = 27, "stab" = 37, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 40, "slash" = 35, "stab" = 30, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_TWIST, BCLASS_BITE)
 	anvilrepair = null
 	smeltresult = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 12
 
 /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
@@ -1318,11 +1348,12 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	icon_state = "volfhead"
 	item_state = "volfhead"
-	armor = list("blunt" = 47, "slash" = 27, "stab" = 37, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 45, "slash" = 40, "stab" = 40, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	anvilrepair = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
+	sellprice = 25
 
 /obj/item/clothing/head/roguetown/helmet/leather/saiga
 	name = "saiga skull"
@@ -1336,6 +1367,7 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES
 	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES
+	sellprice = 25
 
 /obj/item/clothing/head/roguetown/helmet/leather/minershelm
 	name = "leather miners helmet"
@@ -1504,9 +1536,10 @@
 	detail_tag = "_detail"
 	dynamic_hair_suffix = ""
 	max_integrity = 150
-	armor = list("blunt" = 15, "slash" = 20, "stab" = 15, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 35, "slash" = 30, "stab" = 25, "fire" = 0, "acid" = 0)
 	sewrepair = TRUE
 	var/picked = FALSE
+	sellprice = 25
 
 /obj/item/clothing/head/roguetown/grenzelhofthat/attack_right(mob/user)
 	..()
@@ -1560,6 +1593,7 @@
 	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDEHAIR
 	dynamic_hair_suffix = ""
 	resistance_flags = FIRE_PROOF // Made of metal
+	sellprice = 45
 
 /obj/item/clothing/head/roguetown/eoramask/equipped(mob/living/carbon/human/user, slot) //Copying Eora bud pacifism
 	. = ..()
@@ -1583,15 +1617,16 @@
 /obj/item/clothing/head/roguetown/helmet/tricorn
 	slot_flags = ITEM_SLOT_HEAD
 	name = "tricorn"
-	desc = ""
+	desc = "A sturdy, puffy leather tricorn. Hats such as these have recently become fashionable among the Valorian Admiralty."
 	body_parts_covered = HEAD|HAIR|EARS|NOSE
 	icon_state = "tricorn"
-	armor = list("blunt" = 47, "slash" = 27, "stab" = 37, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 45, "slash" = 35, "stab" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	anvilrepair = null
 	smeltresult = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
+	sellprice = 15
 
 /obj/item/clothing/head/roguetown/helmet/tricorn/skull
 	icon_state = "tricorn_skull"
@@ -1600,7 +1635,7 @@
 /obj/item/clothing/head/roguetown/helmet/tricorn/lucky
 	name = "lucky tricorn"
 	desc = "A weathered tricorn that has seen many skirmishes. You'd feel lucky with this on your head."
-	armor = list("blunt" = 60, "slash" = 40, "stab" = 45, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 60, "slash" = 45, "stab" = 45, "piercing" = 50, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/roguetown/helmet/bandana
 	slot_flags = ITEM_SLOT_HEAD
@@ -1608,8 +1643,9 @@
 	desc = ""
 	body_parts_covered = HEAD|HAIR|EARS|NOSE
 	icon_state = "bandana"
-	armor = list("blunt" = 47, "slash" = 27, "stab" = 37, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 0, "slash" = 0, "stab" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	max_integrity = 100
 	anvilrepair = null
 	smeltresult = null
 	sewrepair = TRUE
@@ -1627,12 +1663,13 @@
 	item_state = "bkhelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 105, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
-	max_integrity = 425
+	max_integrity = 500
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2
+	sellprice = 310
 
 /obj/item/clothing/head/roguetown/roguehood/psydon
 	name = "psydonian hood"
@@ -1673,8 +1710,11 @@
 	name = "duelist's hat"
 	desc = "A feathered leather hat, to show them all your superiority."
 	icon_state = "duelhat"
+	armor = list("blunt" = 45, "slash" = 35, "stab" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST, BCLASS_BITE)
 	sewrepair = TRUE
 	salvage_result = /obj/item/natural/hide/cured
+	sellprice = 20
 
 
 /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
@@ -1688,6 +1728,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
+	sellprice = 85
 
 /obj/item/clothing/head/roguetown/helmet/heavy/volfplate/AdjustClothes(mob/user)
 	if(loc == user)

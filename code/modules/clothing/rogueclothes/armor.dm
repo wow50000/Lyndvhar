@@ -279,8 +279,8 @@
 	body_parts_covered = CHEST|GROIN|VITALS
 	armor = list("blunt" = 40, "slash" = 50, "stab" = 40, "piercing" = 30, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_BITE, BCLASS_TWIST)
-	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
+	blocksound = SOFTHIT
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
