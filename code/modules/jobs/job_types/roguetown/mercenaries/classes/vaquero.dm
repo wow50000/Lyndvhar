@@ -31,14 +31,14 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
 	head = /obj/item/clothing/head/roguetown/bardhat
 	mouth = /obj/item/alch/rosa
-	shoes = /obj/item/clothing/shoes/roguetown/boots
-	neck = /obj/item/clothing/neck/roguetown/gorget
+	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
+	neck = /obj/item/clothing/neck/roguetown/leather
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	belt = /obj/item/storage/belt/rogue/leather
-	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+	gloves = /obj/item/clothing/gloves/roguetown/otavan
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
 	cloak = /obj/item/clothing/cloak/half/rider/red
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/sword/rapier/vaquero

@@ -7,16 +7,16 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/sfighter
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
-	classes = list("Battlemaster" = "You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt.",
-					"Duelist"= "You are an esteemed swordsman who foregoes armor in exchange for a more nimble fighting style.",
-					"Barbarian" = "You are a brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
+	classes = list("Fighter" = "Vagrant sellswords, deserters, and hardened vagabonds searching for purpose. Very few survive this life...many dying from their own foolish or desperate attempts at survival. Who will you be? ",
+					"Duelist" = "A thrill seeking duelist who foregoes armor in exchange for a more nimble fighting style.",
+					"Barbarian" = "A brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
 					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.")
 
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter")
+	var/classes = list("Fighter","Duelist","Barbarian","Monster Hunter")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -50,6 +50,19 @@
 				if("Hatchet")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/handaxe
+					var/armor = list("Light", "Medium")
+					var/armor_choice = input ("Choose your armor","TAKE UP ARMS") as anything in armor
+					switch(armor_choice)
+						if("Light")
+							pants = /obj/item/clothing/under/roguetown/trou/leather
+							shirt = shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+							gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+							beltl = /obj/item/rogueweapon/huntingknife/idagger
+						if("Medium")
+							pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+							shirt = shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+							gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+							beltl = /obj/item/rogueweapon/huntingknife/idagger							
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 1)
 			belt = /obj/item/storage/belt/rogue/leather
@@ -88,19 +101,15 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
-			head = /obj/item/clothing/head/roguetown/duelhat
-			cloak = /obj/item/clothing/cloak/half
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			pants = /obj/item/clothing/under/roguetown/trou/leather
-			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			neck = /obj/item/clothing/neck/roguetown/gorget
-			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+			gloves = /obj/item/clothing/gloves/roguetown/otavan
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather
-			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
-
+			backpack_contents = list(/obj/item/flashlight/flare/torch = 1,/obj/item/storage/belt/rogue/pouch/coins/poor)
+                
 		if("Barbarian")
 			to_chat(H, span_warning("You are a brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling."))
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)

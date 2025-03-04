@@ -106,8 +106,8 @@
 	max_integrity = 200
 
 /obj/item/clothing/gloves/roguetown/otavan
-	name = "otavan leather gloves"
-	desc = "A pair of heavy Otavan leather gloves, commonly used by fencers, renowned for their quality."
+	name = "fencer gloves"
+	desc = "A pair of small and sturdy leather gloves. Commonly called fencer gloves due to them being commonly seen in fencing tourneys."
 	icon_state = "fencergloves"
 	item_state = "fencergloves"
 	armor = list("blunt" = 60, "slash" = 100, "stab" = 80, "piercing" = 20, "fire" = 0, "acid" = 0)

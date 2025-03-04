@@ -328,6 +328,17 @@
 	max_integrity = 300
 	sellprice = 25
 
+/obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
+	name = "vaquero's coat"
+	desc = "A sturdy leather coat commonly used by the vaqueros of Valoria."
+	icon_state = "leathercoat"
+	item_state = "leathercoat"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	armor = list("blunt" = 100, "slash" = 70, "stab" = 50, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH)
+	max_integrity = 300
+	sellprice = 25
+
 /obj/item/clothing/suit/roguetown/armor/leather/bikini
 	name = "leather bikini"
 	desc = "Flexible cowhide armor. Lightweight, better than nothing. Now in tasteful bikini shape."
