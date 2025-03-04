@@ -1,7 +1,7 @@
 /datum/advclass/weocilynhand
 	name = "Hand of Weocilyn"
-	tutorial = "You serve your lord as the royal hand, taking care of all diplomatic actions in your realm. \
-	maybe one day you will become lord too."
+	tutorial = "You serve your lord as the loyal hand of Weocilyn, taking care of all diplomatic actions in the barony. \
+	Maybe one day you will become a lord too."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/weocilynhand
@@ -40,8 +40,8 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.change_stat("strength", 2)
-		H.change_stat("perception", 3)
-		H.change_stat("intelligence", 3)
+		H.change_stat("perception", 1)
+		H.change_stat("intelligence", 2)
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
