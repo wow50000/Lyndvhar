@@ -78,15 +78,19 @@
 
 /obj/item/clothing/mask/rogue/wildguard
 	name = "wild guard"
-	desc = "A mask shaped after the beasts of dendor."
+	desc = "A bulky iron mask shaped after the beasts of Dendor, fastened to one's face through a series of latches."
 	icon_state = "wildguard"
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = 100
+	max_integrity = 200
 	resistance_flags = FIRE_PROOF
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 95, "slash" = 100, "stab" = 90, "piercing" = 95, "fire" = 0, "acid" = 0)
+	equip_delay_self = 8 SECONDS
+	unequip_delay_self = 10 SECONDS
+	equip_delay_other = 3 SECONDS
+	strip_delay = 4 SECONDS
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE
 	block2add = FOV_BEHIND
@@ -96,14 +100,15 @@
 
 /obj/item/clothing/mask/rogue/facemask
 	name = "iron mask"
+	desc = "A thin iron mask in the rough shape of a human face, sometimes used in the absence of a visor."
 	icon_state = "imask"
-	max_integrity = 100
+	max_integrity = 150
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	resistance_flags = FIRE_PROOF
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	armor = list("blunt" = 55, "slash" = 70, "stab" = 75, "piercing" = 75, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE
 	block2add = FOV_BEHIND
@@ -131,13 +136,17 @@
 
 /obj/item/clothing/mask/rogue/facemask/steel
 	name = "steel mask"
+	desc = "A smooth steel mask that easily slides into place. This design was popularized in the Ziggurat, where it is worn in conjunction with a keffiyeh."
+	armor = list("blunt" = 80, "slash" = 80, "stab" = 85, "piercing" = 80, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BITE, BCLASS_TWIST)
 	icon_state = "smask"
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/mask/rogue/facemask/goldmask
-	name = "Gold Mask"
+	name = "gold mask"
 	icon_state = "goldmask"
+	desc = ""
 	max_integrity = 150
 	sellprice = 100
 	smeltresult = /obj/item/ingot/gold
