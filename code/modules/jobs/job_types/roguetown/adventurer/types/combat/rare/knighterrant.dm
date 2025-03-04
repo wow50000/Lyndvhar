@@ -2,7 +2,7 @@
 	name = "Knight Errant"
 	tutorial = "You are a Knight-Errant, a wandering noble from a distant land. Your armor bears the crest of a great house, and your blade carries the weight of your chivalry. Whether driven by glory, a sense of adventure or a quest for purpose, your journey has brought you to Lyndhardtia."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/knight
 	maximum_possible_slots = 1
 	pickprob = 30
