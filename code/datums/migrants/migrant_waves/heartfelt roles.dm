@@ -110,7 +110,6 @@
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	cloak = /obj/item/clothing/cloak/weocilyn
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/winterjacket
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
