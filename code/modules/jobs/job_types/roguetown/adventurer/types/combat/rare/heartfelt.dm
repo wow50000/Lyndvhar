@@ -2,7 +2,7 @@
 /datum/advclass/weocilynlord
 	name = "Lord of Weocilyn"
 	tutorial = "You are the proud lord of Weocilyn \
-	but why did you come to the isle of enigma?"
+	but why did you come to the city of Lyndvhar?"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/weocilynlord
@@ -29,10 +29,7 @@
 						)
 	id = /obj/item/scomstone
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
@@ -48,7 +45,6 @@
 		H.change_stat("intelligence", 2)
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
-		H.change_stat("perception", 2)
 		H.change_stat("fortune", 5)
 
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
