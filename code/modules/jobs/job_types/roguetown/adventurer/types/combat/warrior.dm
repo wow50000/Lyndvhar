@@ -9,14 +9,13 @@
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	classes = list("Fighter" = "Vagrant sellswords, deserters, and hardened vagabonds searching for purpose. Very few survive this life...many dying from their own foolish or desperate attempts at survival. Who will you be? ",
 					"Duelist" = "A thrill seeking duelist who foregoes armor in exchange for a more nimble fighting style.",
-					"Barbarian" = "A brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
-					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.")
+					"Barbarian" = "A brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.")
 
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Fighter","Duelist","Barbarian","Monster Hunter")
+	var/classes = list("Fighter","Duelist","Barbarian")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
