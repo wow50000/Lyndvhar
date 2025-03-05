@@ -177,7 +177,7 @@
 				playsound(M.loc,  tempsound, 100, FALSE, -1)
 			else
 				playsound(M.loc,  "nodmg", 100, FALSE, -1)
-
+	user.rogfat_add(user.used_intent.releasedrain)
 	log_combat(user, M, "attacked", src.name, "(INTENT: [uppertext(user.used_intent.name)]) (DAMTYPE: [uppertext(damtype)])")
 	add_fingerprint(user)
 

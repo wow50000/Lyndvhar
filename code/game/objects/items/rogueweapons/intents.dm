@@ -431,12 +431,13 @@
 	icon_state = "ingrab"
 	attack_verb = list("grabs")
 	chargetime = 0
-	noaa = TRUE
 	rmb_ranged = TRUE
 	releasedrain = 10
 	misscost = 8
 	candodge = TRUE
 	canparry = TRUE
+	miss_text = "grabs at the air"
+	miss_sound = "punchwoosh"
 	item_d_type = "blunt"
 
 /datum/intent/unarmed/grab/rmb_ranged(atom/target, mob/user)
