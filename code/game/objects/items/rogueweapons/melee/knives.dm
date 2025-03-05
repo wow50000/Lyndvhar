@@ -15,6 +15,7 @@
 	swingdelay = 0
 	clickcd = 8
 	item_d_type = "slash"
+	releasedrain = 2
 
 /datum/intent/dagger/cut/seax
 	damfactor = 1.1
@@ -31,6 +32,7 @@
 	chargetime = 0
 	clickcd = 8
 	item_d_type = "stab"
+	releasedrain = 4
 
 /datum/intent/dagger/thrust/pick
 	name = "icepick stab"
@@ -42,6 +44,7 @@
 	swingdelay = 12
 	damfactor = 1.1
 	blade_class = BCLASS_PICK
+	releasedrain = 7
 
 /datum/intent/dagger/sucker_punch
 	name = "sucker punch"
@@ -56,6 +59,7 @@
 	item_d_type = "blunt"
 	canparry = FALSE
 	candodge = FALSE
+	releasedrain = 3
 
 /datum/intent/dagger/chop
 	name = "chop"

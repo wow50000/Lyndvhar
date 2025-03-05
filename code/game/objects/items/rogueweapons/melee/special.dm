@@ -232,6 +232,7 @@
 
 /datum/intent/katar
 	clickcd = 7
+	releasedrain = 4
 
 /datum/intent/katar/cut
 	name = "cut"
@@ -312,6 +313,7 @@
 	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
 	chargetime = 0
 	penfactor = 15
+	releasedrain = 3
 	swingdelay = 0
 	icon_state = "inpunch"
 	item_d_type = "blunt"

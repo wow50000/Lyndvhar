@@ -15,12 +15,12 @@
 /datum/intent/sword/cut/sabre
 	clickcd = 8
 	penfactor = 20
+	releasedrain = 4
 
 /datum/intent/sword/cut/falchion
 	clickcd = 10
 	penfactor = 30
 	swingdelay = 4
-
 
 
 /datum/intent/sword/cut/falx
@@ -50,6 +50,7 @@
 	swingdelay = 2
 	damfactor = 0.8
 	item_d_type = "blunt"
+	releasedrain = 4
 
 /datum/intent/sword/chop
 	name = "chop"
@@ -62,8 +63,11 @@
 	swingdelay = 8
 	damfactor = 1.0
 	item_d_type = "slash"
+	releasedrain = 7
+
 /datum/intent/sword/chop/falx
 	penfactor = 40
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
@@ -107,6 +111,7 @@
 /obj/item/rogueweapon/sword/falchion
 	name = "falchion"
 	desc = "A blade with a quilloned crossguard. Despite its heavy blade, each cut leads naturally into the next."
+	force = 25
 	parrysound = "bladedmedium"
 	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	icon_state = "falchion"
@@ -133,7 +138,6 @@
 	desc = "A valuable sword for celebrations and rites."
 	icon_state = "decsword1"
 	sellprice = 140
-
 
 
 /obj/item/rogueweapon/sword/decorated/Initialize()
@@ -563,11 +567,13 @@
 /datum/intent/sword/cut/short
 	clickcd = 9
 	damfactor = 1
+	releasedrain = 3
 
 /datum/intent/sword/thrust/short
 	clickcd = 8
 	damfactor = 1.1
 	penfactor = 25
+	releasedrain = 3
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
@@ -709,6 +715,7 @@
 /datum/intent/sword/cut/rapier
 	clickcd = 10
 	damfactor = 0.75
+	releasedrain = 3
 
 /datum/intent/sword/thrust/rapier
 	clickcd = 8

@@ -20,8 +20,8 @@
 	var/candodge = TRUE
 	var/chargetime = 0 //if above 0, this attack must be charged to reach full damage
 	var/chargedrain = 0 //how mcuh fatigue is removed every second when at max charge
-	var/releasedrain = 1 //drain when we go off, regardless
-	var/misscost = 1	//extra drain from missing only, ALSO APPLIED IF ENEMY DODGES
+	var/releasedrain = 5 //drain when we go off, regardless
+	var/misscost = 0	//extra drain from missing only, ALSO APPLIED IF ENEMY DODGES
 	var/tranged = 0
 	var/noaa = FALSE //turns off auto aiming, also turns off the 'swooshes'
 	var/warnie = ""

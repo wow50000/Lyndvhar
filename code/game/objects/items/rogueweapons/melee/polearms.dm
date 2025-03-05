@@ -16,6 +16,7 @@
 /datum/intent/spear/thrust/strong
 	penfactor = 65
 	chargetime = 6
+	releasedrain = 8
 
 /datum/intent/spear/bash
 	name = "bash"
@@ -35,6 +36,7 @@
 	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
 	reach = 2
 	item_d_type = "slash"
+	releasedrain = 4
 
 /datum/intent/spear/chop
 	name = "chop"
@@ -49,6 +51,7 @@
 	chargetime = 4
 	damfactor = 1.1
 	item_d_type = "slash"
+	releasedrain = 8
 
 /datum/intent/spear/chop/glaive
 	name = "cleave"
@@ -59,6 +62,7 @@
 	damfactor = 1.3
 	chargetime = 6
 	swingdelay = 12
+	releasedrain = 12
 
 /datum/intent/spear/cut/strong
 	damfactor = 1.0
@@ -77,14 +81,17 @@
 
 /datum/intent/sword/cut/zwei
 	reach = 2
+	releasedrain = 6
 
 /datum/intent/sword/thrust/zwei
 	reach = 2
 	chargetime = 0.6
+	releasedrain = 6
 
 /datum/intent/sword/chop/zwei
 	reach = 2
 	clickcd = 14
+	releasedrain = 8
 
 /datum/intent/sword/chop/great
 	name = "cleave"
@@ -114,6 +121,7 @@
 	chargetime = 1
 	recovery = 20
 	clickcd = 14
+	releasedrain = 8
 
 //polearm objs ฅ^•ﻌ•^ฅ
 
@@ -370,10 +378,9 @@
 	icon_state = "inpunish"
 	no_early_release = TRUE
 	damfactor = 1.4
-	penfactor = 60
+	penfactor = 50
 	chargetime = 16
-	releasedrain = 10
-	misscost = 8
+	releasedrain = 20
 	charging_slowdown = 1
 	clickcd = 16
 
@@ -474,6 +481,7 @@
 /datum/intent/mace/smash/eaglebeak
 	reach = 2
 	swingdelay = 12
+	releasedrain = 12
 
 /obj/item/rogueweapon/spear/bronze
 	name = "bronze spear"
