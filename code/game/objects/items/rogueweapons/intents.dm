@@ -433,7 +433,7 @@
 	chargetime = 0
 	rmb_ranged = TRUE
 	releasedrain = 10
-	misscost = 8
+	misscost = 0
 	candodge = TRUE
 	canparry = TRUE
 	miss_text = "grabs at the air"

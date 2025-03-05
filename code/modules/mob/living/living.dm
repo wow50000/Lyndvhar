@@ -403,6 +403,7 @@
 			O.icon_state = zone_selected
 			put_in_hands(O)
 			O.update_hands(src)
+			src.rogfat_add(10)
 			if(HAS_TRAIT(src, TRAIT_STRONG_GRABBER) || item_override)
 				supress_message = TRUE
 				C.grippedby(src)
