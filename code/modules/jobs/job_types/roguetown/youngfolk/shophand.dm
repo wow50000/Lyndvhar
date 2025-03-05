@@ -6,25 +6,7 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/demihuman,
-		/datum/species/akula,
-		/datum/species/lupian,
-		/datum/species/tabaxi,
-		/datum/species/vulpkanin,
-		/datum/species/dracon,
-		/datum/species/lizardfolk,
-		/datum/species/anthromorph,
-		/datum/species/anthromorphsmall,
-		/datum/species/goblinp,
-		/datum/species/kobold
-	)
+	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 
