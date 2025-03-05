@@ -122,9 +122,9 @@
 				user.do_attack_animation(M, visual_effect_icon = user.used_intent.animname)
 			return
 	if(istype(user.rmb_intent, /datum/rmb_intent/strong))
-		user.rogfat_add(7)
+		user.rogfat_add(5) //Used to be 10, now down to 5 since attacks by themselves cost proper stamina too.
 	if(istype(user.rmb_intent, /datum/rmb_intent/swift))
-		user.rogfat_add(7)
+		user.rogfat_add(5)
 	if(M.checkdefense(user.used_intent, user))
 		if(M.d_intent == INTENT_PARRY)
 			if(!M.get_active_held_item() && !M.get_inactive_held_item()) //we parried with a bracer, redirect damage
