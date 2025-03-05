@@ -15,6 +15,7 @@
 	swingdelay = 0
 	clickcd = 8
 	item_d_type = "slash"
+	releasedrain = 2
 
 /datum/intent/dagger/cut/seax
 	damfactor = 1.1
@@ -31,6 +32,7 @@
 	chargetime = 0
 	clickcd = 8
 	item_d_type = "stab"
+	releasedrain = 4
 
 /datum/intent/dagger/thrust/pick
 	name = "icepick stab"
@@ -42,6 +44,7 @@
 	swingdelay = 12
 	damfactor = 1.1
 	blade_class = BCLASS_PICK
+	releasedrain = 7
 
 /datum/intent/dagger/sucker_punch
 	name = "sucker punch"
@@ -56,6 +59,7 @@
 	item_d_type = "blunt"
 	canparry = FALSE
 	candodge = FALSE
+	releasedrain = 3
 
 /datum/intent/dagger/chop
 	name = "chop"
@@ -228,7 +232,16 @@
 	name ="plaguebringer sickle"
 	desc = "A wicked edge brings feculent delights."
 	icon_state = "pestrasickle"
+	possible_item_intents = list(/datum/intent/dagger/cut/sickle, /datum/intent/dagger/thrust) //No pick intent, very fast cuts.
 	max_integrity = 200
+	wdefense = 5
+	wbalance = 1.5
+
+/datum/intent/dagger/cut/sickle
+	clickcd = 6
+	penfactor = 15
+	releasedrain = -1 
+	misscost = -1
 
 /obj/item/rogueweapon/huntingknife/idagger/dtace
 	name = "'De Tace'"
@@ -401,7 +414,7 @@
 	max_integrity = 50
 	wdefense = 1
 	icon_state = "throw_knifei"
-	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 25, "embedded_fall_chance" = 10)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 15, "embedded_fall_chance" = 10)
 	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/chop)
 	smeltresult = null
 	sellprice = 1
@@ -416,7 +429,7 @@
 	max_integrity = 100
 	wdefense = 1
 	icon_state = "throw_knifes"
-	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 30, "embedded_fall_chance" = 10)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 20, "embedded_fall_chance" = 10)
 	smeltresult = null
 	sellprice = 2
 
@@ -430,7 +443,7 @@
 	max_integrity = 150
 	wdefense = 3
 	icon_state = "throw_knifep"
-	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 30, "embedded_fall_chance" = 10)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 20, "embedded_fall_chance" = 10)
 	is_silver = TRUE
 	sellprice = 6
 	smeltresult = null

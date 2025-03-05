@@ -21,6 +21,7 @@
 	swingdelay = 10
 	icon_state = "insmash"
 	item_d_type = "blunt"
+	releasedrain = 10
 
 /datum/intent/mace/rangedthrust
 	name = "thrust"
@@ -335,10 +336,14 @@
 	smelt_bar_num = 2
 
 /obj/item/rogueweapon/mace/goden/steel/ravox
-	name = "duel settler"
-	desc = "The tenets of ravoxian duels are enscribed upon the head of this maul."
+	name = "Duel Settler"
+	desc = "The tenets of ravoxian duels are inscribed upon the head of this maul. Its head seems unnaturally heavy, to the point it is nigh impossible to hold in one hand."
 	icon_state = "ravoxhammer"
 	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
+	minstr = 15
+	throwforce = 30 //0 AP, should be fine.
+	wbalance = -2
+	wdefense = 2.5
 
 /obj/item/rogueweapon/mace/goden/psymace
 	name = "psydonian grand mace"
@@ -417,3 +422,4 @@
 	penfactor = 80
 	damfactor = 0.9
 	item_d_type = "stab"
+	releasedrain = 8

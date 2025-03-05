@@ -13,6 +13,7 @@
 
 /datum/intent/axe/cut/fast
 	clickcd = 8
+	releasedrain = 4
 
 /datum/intent/axe/chop
 	name = "chop"
@@ -24,9 +25,7 @@
 	penfactor = 35
 	swingdelay = 10
 	item_d_type = "slash"
-
-/datum/intent/axe/chop/scythe
-	reach = 2
+	releasedrain = 6
 
 /datum/intent/axe/chop/stone
 	penfactor = 5
@@ -34,6 +33,7 @@
 /datum/intent/axe/chop/battle
 	damfactor = 1.2 //36 on battleaxe
 	penfactor = 40
+	releasedrain = 8
 
 /datum/intent/axe/cut/battle
 	penfactor = 25

@@ -15,12 +15,12 @@
 /datum/intent/sword/cut/sabre
 	clickcd = 8
 	penfactor = 20
+	releasedrain = 4
 
 /datum/intent/sword/cut/falchion
 	clickcd = 10
 	penfactor = 30
 	swingdelay = 4
-
 
 
 /datum/intent/sword/cut/falx
@@ -50,6 +50,7 @@
 	swingdelay = 2
 	damfactor = 0.8
 	item_d_type = "blunt"
+	releasedrain = 4
 
 /datum/intent/sword/chop
 	name = "chop"
@@ -62,8 +63,11 @@
 	swingdelay = 8
 	damfactor = 1.0
 	item_d_type = "slash"
+	releasedrain = 7
+
 /datum/intent/sword/chop/falx
 	penfactor = 40
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
@@ -107,6 +111,7 @@
 /obj/item/rogueweapon/sword/falchion
 	name = "falchion"
 	desc = "A blade with a quilloned crossguard. Despite its heavy blade, each cut leads naturally into the next."
+	force = 25
 	parrysound = "bladedmedium"
 	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	icon_state = "falchion"
@@ -133,7 +138,6 @@
 	desc = "A valuable sword for celebrations and rites."
 	icon_state = "decsword1"
 	sellprice = 140
-
 
 
 /obj/item/rogueweapon/sword/decorated/Initialize()
@@ -208,7 +212,7 @@
 	thrown_bclass = BCLASS_CUT
 	dropshrink = 0.75
 	smeltresult = /obj/item/ingot/steel
-	wdefense = 3.5
+	wdefense = 3
 
 /obj/item/rogueweapon/sword/long/death
 	color = CLOTHING_BLACK
@@ -260,10 +264,12 @@
 			if("onbelt") return list("shrink" = 0.3, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
 
 /obj/item/rogueweapon/sword/long/malumflamm
-	name = "forgefiend"
+	name = "Forgefiend"
 	desc = "This sword's creation took a riddle in its own making. A great sacrifice for perfect quality."
 	icon_state = "malumflamberge"
-	max_integrity = 200
+	max_integrity = 300
+	wbalance = 0.5
+	wdefense = 4
 
 /obj/item/rogueweapon/sword/long/zizo
 	name = "darksteel longsword"
@@ -490,12 +496,13 @@
 	slot_flags = ITEM_SLOT_BACK //Too big for hip
 
 /obj/item/rogueweapon/sword/long/exe/astrata
-	name = "solar judge"
+	name = "Solar Judge"
 	desc = "This wicked executioner's blade calls for order."
 	icon_state = "astratasword"
 	max_integrity = 200
+	force_wielded = 35
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
-	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/axe/chop/battle)
 
 /obj/item/rogueweapon/sword/long/exe/getonmobprop(tag)
 	. = ..()
@@ -560,11 +567,13 @@
 /datum/intent/sword/cut/short
 	clickcd = 9
 	damfactor = 1
+	releasedrain = 3
 
 /datum/intent/sword/thrust/short
 	clickcd = 8
 	damfactor = 1.1
 	penfactor = 25
+	releasedrain = 3
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
@@ -587,14 +596,12 @@
 	wdefense = 6
 	wbalance = 1
 
-/obj/item/rogueweapon/sword/sabre/nockhopesh
-	name = "moonlight khopesh"
+/obj/item/rogueweapon/sword/sabre/elf/nockhopesh
+	name = "Moonlight Khopesh"
 	icon_state = "nockhopesh"
 	desc = "Glittering moonlight upon blued steel."
-	wdefense = 7
 	force = 25
-	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/chop/falx)
-	max_integrity = 200
+	max_integrity = 250
 
 /obj/item/rogueweapon/sword/sabre/dec
 	icon_state = "decsaber"
@@ -708,6 +715,7 @@
 /datum/intent/sword/cut/rapier
 	clickcd = 10
 	damfactor = 0.75
+	releasedrain = 3
 
 /datum/intent/sword/thrust/rapier
 	clickcd = 8

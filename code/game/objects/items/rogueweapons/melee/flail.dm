@@ -30,6 +30,7 @@
 	penfactor = 5
 	icon_state = "instrike"
 	item_d_type = "slash"
+	releasedrain = 4
 
 /datum/intent/flail/strikerange
 	name = "ranged strike"
@@ -42,6 +43,7 @@
 	reach = 2
 	icon_state = "instrike"
 	item_d_type = "slash"
+	releasedrain = 8
 
 /datum/intent/flail/strike/smash
 	name = "smash"
@@ -58,6 +60,16 @@
 	attack_verb = list("smashes")
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	item_d_type = "blunt"
+	releasedrain = 8
+
+/datum/intent/flail/strike/smash/necra
+	name = "sever"
+	blade_class = BCLASS_CHOP
+	penfactor = 70
+	damfactor = 1.2 //Weaker because delimbs bypass protection flags and this can be really brutal.
+	releasedrain = 10
+	icon_state = "inchop"
+	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
 
 /datum/intent/flail/strike/smashrange
 	name = "ranged smash"
@@ -69,6 +81,7 @@
 	recovery = 10
 	damfactor = 1.2
 	reach = 2
+	releasedrain = 10
 	chargedloop = /datum/looping_sound/flailswing
 	keep_looping = TRUE
 	icon_state = "insmash"
@@ -95,9 +108,10 @@
 	minstr = 9
 
 /obj/item/rogueweapon/flail/necraflail
-	name = "swift journey"
+	name = "Swift Journey"
 	desc = "The striking head is full of teeth, rattling viciously with ever strike, with every rotation. Each set coming from one the wielder has laid to rest. Carried alongside them as a great show of respect."
 	icon_state = "necraflail"
+	force = 30
 
 /datum/intent/whip/lash
 	name = "lash"
@@ -106,6 +120,7 @@
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 7
+	releasedrain = 4
 	penfactor = 10
 	reach = 2
 	clickcd = 10
@@ -122,20 +137,22 @@
 	penfactor = 40
 	reach = 3
 	clickcd = 14
+	releasedrain = 6
 	icon_state = "incrack"
 	item_d_type = "slash"
 
 /datum/intent/whip/smash
-	name = "smash"
+	name = "strike"
 	blade_class = BCLASS_BLUNT
-	attack_verb = list("smashes")
+	attack_verb = list("smashes", "slaps", "blunts")
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 10
 	penfactor = 20
 	damfactor = 1.2
 	reach = 2
-	icon_state = "inpunish"
+	releasedrain = 8
+	icon_state = "instrike"
 	item_d_type = "blunt"
 
 /datum/intent/whip/punish
@@ -147,13 +164,20 @@
 	recovery = 10
 	damfactor = 0.3
 	penfactor = 0
+	releasedrain = 2
 	reach = 2
 	icon_state = "inpunish"
 	item_d_type = "blunt"
 
+/datum/intent/whip/punish/cackle
+	name = "cackle"
+	clickcd = 8
+	misscost = -1
+	releasedrain = 0
+
 /obj/item/rogueweapon/whip
 	force = 22
-	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash, /datum/intent/whip/punish)
+	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash, /datum/intent/whip/smash, /datum/intent/whip/punish)
 	name = "whip"
 	desc = "A leather whip. Built to last, with a sharp stone for a tip."
 	icon_state = "whip"
@@ -184,10 +208,13 @@
 				return list("shrink" = 0.3,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
 /obj/item/rogueweapon/whip/xylix
-	name = "cackle lash"
+	name = "Cackle Lash"
 	desc = "The chimes of this whip are said to sound as the trickster's laughter itself."
 	icon_state = "xylixwhip"
+	possible_item_intents = list(/datum/intent/whip/crack, /datum/intent/whip/lash, /datum/intent/whip/punish/cackle)
 	force = 24
+	wbalance = 1.5
+	swingsound = list('sound/magic/webspin.ogg')
 
 /obj/item/rogueweapon/whip/antique
 	force = 28

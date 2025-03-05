@@ -232,6 +232,7 @@
 
 /datum/intent/katar
 	clickcd = 7
+	releasedrain = 4
 
 /datum/intent/katar/cut
 	name = "cut"
@@ -276,7 +277,7 @@
 	name = "iron knuckles"
 	desc = "A mean looking pair of iron knuckles."
 	force = 15
-	possible_item_intents = list(/datum/intent/knuckles/strike,/datum/intent/knuckles/smash)
+	possible_item_intents = list(/datum/intent/knuckles/strike, /datum/intent/knuckles/smash)
 	icon = 'icons/roguetown/weapons/32.dmi'
 	gripsprite = FALSE
 	wlength = WLENGTH_SHORT
@@ -312,6 +313,7 @@
 	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
 	chargetime = 0
 	penfactor = 15
+	releasedrain = 3
 	swingdelay = 0
 	icon_state = "inpunch"
 	item_d_type = "blunt"
@@ -327,8 +329,12 @@
 	icon_state = "insmash"
 	item_d_type = "blunt"
 
+/datum/intent/knuckles/smash/eora
+	swingdelay = 2
+
 /obj/item/rogueweapon/knuckles/eora
-	name = "close caress"
+	name = "Close Caress"
 	desc = "Some times call for a more intimate approach."
+	possible_item_intents = list(/datum/intent/knuckles/strike, /datum/intent/knuckles/smash/eora)
 	force = 20
 	icon_state = "eoraknuckle"
