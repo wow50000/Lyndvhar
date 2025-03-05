@@ -3,7 +3,7 @@
 The wiki is nonexistent. This is nothing yet. Don't ask about it.
 
 ## Discord
-The discord is nonexistent. This is nothing yet. Don't ask about it.
+[(https://discord.gg/hzJWyGspUC)] The discord is not fully prepared yet, so do not expect much.
 
 ## TODO
 Mapping
