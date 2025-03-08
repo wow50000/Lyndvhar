@@ -51,7 +51,7 @@
 #define TRAIT_SEA_DRINKER "Denizen of the Deep"
 #define TRAIT_STUDENT		"Student"
 #define TRAIT_INTELLECTUAL "Intellectual"
-#define TRAIT_GRAVEROBBER "Experienced Grave Robber
+#define TRAIT_GRAVEROBBER "Experienced Grave Robber"
 
 
 //Hearthstone port (Tracking)
