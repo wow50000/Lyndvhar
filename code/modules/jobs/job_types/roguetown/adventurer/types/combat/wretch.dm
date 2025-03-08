@@ -148,6 +148,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 			H.set_blindness(0)
 			var/weapons = list("Bastard Sword","Mace","Flail")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
@@ -213,6 +214,7 @@
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 			ADD_TRAIT(H, TRAIT_ZOMBIE_IMMUNE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 			H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			if(H.age == AGE_OLD)
