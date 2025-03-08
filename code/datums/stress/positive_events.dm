@@ -123,11 +123,6 @@
 	desc = span_boldgreen("PURE moondust surges through me!")
 	timer = 4 MINUTES
 
-/datum/stressevent/campfire
-	stressadd = -1
-	desc = span_green("The warmth of the fire is comforting.")
-	timer = 5 MINUTES
-
 /datum/stressevent/puzzle_easy
 	stressadd = -1
 	desc = span_green("That puzzle was a nice distraction from this drudgery.")
