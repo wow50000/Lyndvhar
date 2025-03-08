@@ -106,7 +106,6 @@
 	name = "Iron Javelin (+1 Small Log)"
 	req_bar = /obj/item/ingot/iron
 	additional_items = list(/obj/item/grown/log/tree/small)
-	created_item = /obj/item/ammo_casing/caseless/rogue/javelin
 	craftdiff = 1
 
 /// STEEL WEAPONS
@@ -276,11 +275,10 @@
 	craftdiff = 0
 	createditem_num = 4
 
-/datum/anvil_recipe/weapons/steel/javelin
+/datum/anvil_recipe/weapons/iron/javelin
 	name = "Steel Javelin (+1 Small Log)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/grown/log/tree/small)
-	created_item = /obj/item/ammo_casing/caseless/rogue/javelin/steel
 	craftdiff = 2
 
 /datum/anvil_recipe/weapons/steel/fishspear
@@ -400,13 +398,6 @@
 	created_item = /obj/item/rogueweapon/huntingknife/throwingknife/psydon
 	craftdiff = 3
 	createditem_num = 4
-
-/datum/anvil_recipe/weapons/silver/javelin
-	name = "Silver Javelin (+1 Small Log)"
-	req_bar = /obj/item/ingot/silver
-	additional_items = list(/obj/item/grown/log/tree/small)
-	created_item = /obj/item/ammo_casing/caseless/rogue/javelin/silver
-	craftdiff = 3
 
 // ------ BRONZE ------
 
