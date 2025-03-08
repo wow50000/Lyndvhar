@@ -78,7 +78,12 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 			GLOB.outlawed_players += H.real_name
-
+			var/my_crime = input(H, "What is your crime?", "Crime") as text|null
+			if (!my_crime)
+				my_crime = "crimes against the Crown"
+			var/bounty_total
+			bounty_total = rand(151, 250)
+			add_bounty(H.real_name, bounty_total, FALSE, my_crime, "The Justiciary of Lyndvhar")
 		
 		if("Outlaw")
 			to_chat(H, span_warning("You're a seasoned criminal known for your heinous acts, your face plastered on wanted posters across the region. A life of theft, robbery, and ill-gotten-gains comes naturally to you."))
@@ -129,6 +134,12 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			GLOB.outlawed_players += H.real_name
+			var/my_crime = input(H, "What is your crime?", "Crime") as text|null
+			if (!my_crime)
+				my_crime = "crimes against the Crown"
+			var/bounty_total
+			bounty_total = rand(151, 250)
+			add_bounty(H.real_name, bounty_total, FALSE, my_crime, "The Justiciary of Lyndvhar")
 
 		if("Heretic")
 			to_chat(H, span_warning("You are a heretic, spurned by the church, cast out from society - frowned upon by Psydon and his children for your faith."))
@@ -184,6 +195,12 @@
 			C.grant_spells(H)
 			START_PROCESSING(SSobj, C)
 			GLOB.excommunicated_players += H.real_name
+			var/my_crime = input(H, "What is your crime?", "Crime") as text|null
+			if (!my_crime)
+				my_crime = "crimes against the Ten"
+			var/bounty_total
+			bounty_total = rand(151, 250)
+			add_bounty(H.real_name, bounty_total, FALSE, my_crime, "The Holy Inquisition of Lyndvhar")
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
@@ -230,4 +247,9 @@
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead/necromancer)
 			H.mind.adjust_spellpoints(1)
 			GLOB.excommunicated_players += H.real_name
-
+			var/my_crime = input(H, "What is your crime?", "Crime") as text|null
+			if (!my_crime)
+				my_crime = "crimes against the Ten"
+			var/bounty_total
+			bounty_total = rand(151, 250)
+			add_bounty(H.real_name, bounty_total, FALSE, my_crime, "The Holy Inquisition of Lyndvhar")
