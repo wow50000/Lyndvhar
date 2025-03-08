@@ -210,6 +210,7 @@
 "xF" = (/turf/open/floor/rogue/cobblerock,/area/rogue/under/cave/dungeon1/gethsmane)
 "xQ" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/pick/steel,/turf/open/floor/rogue/concrete,/area/rogue/under/cave/mazedungeon)
 "xS" = (/mob/living/carbon/human/species/skeleton/npc/ambush,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/mountains/decap)
+"xT" = (/obj/structure/fluff/traveltile{aportalgoesto = "decapout"; aportalid = "decapin"},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "xW" = (/obj/structure/stairs/stone/d,/turf/open/floor/rogue/metal/barograte,/area/rogue/under/cave/mazedungeon)
 "yb" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/outdoors/mountains/decap/stepbelow)
 "yc" = (/obj/structure/fluff/statue/gargoyle/candles,/obj/machinery/light/rogue/torchholder,/turf/open/floor/rogue/concrete,/area/rogue/under/cave/mazedungeon)
@@ -813,6 +814,6 @@ ababababababbtbtkDkDkDkDkDkDkDhYSsxsxshYSshYhYVnhYhYhYhYhYhYhYAeYpYpYpYpYpYpYpYp
 abababababbtkDkDkDkDkDkDkDabababhYxsxsxshYhYkDbtbtabababbtbtAeAeYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtAeAeAekDkDkDkDkDabababababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 ababababbtkDkDkDkDkDkDkDababababhYxsxshYhYbtkDkDabababababkDbtAeAeAeYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtbtkDkDkDababababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 btbtbtbtbtkDkDkDkDkDkDkDkDabababbthYxsxsbtkDkDkDkDkDabkDabkDkDbtbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtkDkDkDkDkDababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
-btbtbtbtbtkDkDkDkDkDkDkDkDkDkDbtbtxsxsxsbtkDkDkDkDkDkDkDkDkDkDkDkDbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtkDkDkDkDabkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
+btbtbtbtbtkDkDkDkDkDkDkDkDkDkDbtbtxTxTxTbtkDkDkDkDkDkDkDkDkDkDkDkDbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtkDkDkDkDabkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 btbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbt
 "}

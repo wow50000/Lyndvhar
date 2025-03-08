@@ -3,6 +3,7 @@
 "bk" = (/obj/structure/stairs,/obj/structure/fluff/railing/wood{dir = 8; pixel_x = -8},/turf/open/floor/rogue/twig/platform,/area/rogue/outdoors/bog)
 "bG" = (/obj/structure/flora/roguetree/wise,/turf/open/floor/rogue/grass,/area/rogue/outdoors/bog)
 "cc" = (/obj/structure/closet/crate/chest/neu_fancy,/obj/effect/spawner/lootdrop/roguetown/dungeon,/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,/turf/open/floor/rogue/dirt,/area/rogue/under/cavewet/bogcaves)
+"ct" = (/obj/structure/fluff/traveltile{aportalgoesto = "swampout"; aportalid = "swampin"},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/bog)
 "cI" = (/obj/machinery/light/rogue/firebowl/standing,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/bog)
 "cU" = (/obj/structure/closet/crate/chest/neu_iron,/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/bog)
 "dv" = (/obj/machinery/light/rogue/firebowl/standing,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cavewet/bogcaves)
@@ -46,6 +47,7 @@
 "tB" = (/obj/structure/flora/roguetree/burnt,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/bog)
 "tN" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/bog)
 "uj" = (/turf/open/floor/rogue/dirt,/area/rogue/under/cavewet/bogcaves)
+"uZ" = (/obj/structure/fluff/traveltile{aportalgoesto = "swampout"; aportalid = "swampin"},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/bog)
 "wj" = (/mob/living/carbon/human/species/goblin/npc/ambush,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/bog)
 "ww" = (/turf/closed/wall/mineral/rogue/tent,/area/rogue/outdoors/bog)
 "wF" = (/obj/structure/closet/crate/chest/neu_fancy,/obj/effect/spawner/lootdrop/roguetown/dungeon,/obj/effect/spawner/lootdrop/roguetown/dungeon,/turf/open/floor/rogue/dirt,/area/rogue/under/cavewet/bogcaves)
@@ -643,9 +645,9 @@ pQNYUjNYNYNYjSKNKNKNRxrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd
 pQNYUjUjUjNYNYhjhjhjNYKKrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
 pQpQNYNYNYNYNYhjhjhjNYNYKKrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
 pQpQNYNYcIhjhjhjNYNYNYNYjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
-pQNYhjhjhjhjNYNYUjNYNYUjjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
-pQhjhjhjhjNYNYNYUjNYNYUjNYKKrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
-pQhjNYNYNYNYNYUjNYNYNYUjNYjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
+pQcthjhjhjhjNYNYUjNYNYUjjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
+pQuZhjhjhjNYNYNYUjNYNYUjNYKKrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
+pQuZNYNYNYNYNYUjNYNYNYUjNYjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
 pQpQNYNYNYNYNYNYNYNYNYNYNYjSrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdpQ
 JCpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQpQ
 "}
