@@ -20,8 +20,8 @@
 	var/candodge = TRUE
 	var/chargetime = 0 //if above 0, this attack must be charged to reach full damage
 	var/chargedrain = 0 //how mcuh fatigue is removed every second when at max charge
-	var/releasedrain = 1 //drain when we go off, regardless
-	var/misscost = 1	//extra drain from missing only, ALSO APPLIED IF ENEMY DODGES
+	var/releasedrain = 5 //drain when we go off, regardless
+	var/misscost = 0	//extra drain from missing only, ALSO APPLIED IF ENEMY DODGES
 	var/tranged = 0
 	var/noaa = FALSE //turns off auto aiming, also turns off the 'swooshes'
 	var/warnie = ""
@@ -361,7 +361,7 @@
 	chargetime = 0
 	animname = "blank22"
 	hitsound = list('sound/combat/hits/punch/punch (1).ogg', 'sound/combat/hits/punch/punch (2).ogg', 'sound/combat/hits/punch/punch (3).ogg')
-	misscost = 5
+	misscost = 0
 	releasedrain = 5
 	swingdelay = 0
 	rmb_ranged = TRUE
@@ -431,12 +431,13 @@
 	icon_state = "ingrab"
 	attack_verb = list("grabs")
 	chargetime = 0
-	noaa = TRUE
 	rmb_ranged = TRUE
 	releasedrain = 10
-	misscost = 8
+	misscost = 0
 	candodge = TRUE
 	canparry = TRUE
+	miss_text = "grabs at the air"
+	miss_sound = "punchwoosh"
 	item_d_type = "blunt"
 
 /datum/intent/unarmed/grab/rmb_ranged(atom/target, mob/user)
