@@ -235,7 +235,6 @@
 "Ae" = (/turf/open/floor/rogue/volcanic,/area/rogue/outdoors/mountains/decap)
 "Af" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/reagent_containers/glass/cup,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
 "Ag" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/roguetown/dungeon/food,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
-"Ar" = (/obj/structure/fluff/traveltile{aportalgoesto = "decapout"; aportalid = "decapin"},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "Aw" = (/obj/machinery/light/rogue/hearth,/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/shelter/mountains/decap)
 "AC" = (/obj/structure/table/wood,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
 "AZ" = (/obj/structure/table/wood{icon_state = "map6"},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
@@ -348,6 +347,7 @@
 "Qv" = (/mob/living/carbon/human/species/skeleton/npc/ambush,/turf/open/floor/rogue/blocks,/area/rogue/outdoors/mountains/decap/stepbelow)
 "QD" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
 "QM" = (/obj/structure/fluff/railing/wood{dir = 8; pixel_x = -8},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/mazedungeon)
+"QR" = (/obj/structure/fluff/traveltile{aportalgoesto = "decapout"; aportalid = "decapin"},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "Re" = (/obj/structure/chair/wood/rogue/throne,/mob/living/carbon/human/species/skeleton/npc/no_equipment,/turf/open/floor/rogue/wood,/area/rogue/under/cave/mazedungeon)
 "RE" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cavelava)
 "RH" = (/turf/open/floor/rogue/blocks,/area/rogue/outdoors/mountains/decap/stepbelow)
@@ -770,7 +770,7 @@ QmOUOUOUOUOUOUOUOUOUOUOUOUOUXhXhICylICXhybXhXhXhXhexexexexexexNwNwNwNwNwexXhXhXh
 QmOUOUOUOUOUOUOUOUOUOUOUOUXhSmylylXhXhybybXhXhXhexexexexexexNwNwNwNwNwNwexexXhDmICICICybCeCeOUOUOUexexNwNwexexexybybybGJWJXhXhXhICICXhybczczybOUOUOUexexexNwYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYp
 QmOUOUOUOUOUOUOUOUOUOUOUOUXhylylICXhXhybXhXhXhexexNwexexexNwNwNwNwNwNwNwNwexXhXhICICybXhXhOUOUOUOUexNwNwexexCeXhybWJICICICXhXhICICICybybJbczybOUybOUOUOUexexYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYp
 QmOUOUOUOUOUOUOUOUOUOUOUXhXhICnuXhXhXhXhXhexexexYpNwNwNwNwNwNwNwexNwNwNwNwexexXhICybybXhOUOUOUOUexNwNwexexXhCeybybICICvkXhXhICICczXhXhybczylylOUybOUOUOUexexYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYp
-QmOUOUOUOUOUOUOUOUOUOUCeXhybybybybybXhexexexYpYpYpYpYpYpYpYpYpAeAeAeYpYpYpYpexICICybXhXhOUOUOUexexNwNwexCeCeCeSmXhWJXhXhDmICICICczczczczczRHRHXhybOUOUOUexNwYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYp
+QmOUOUOUOUOUOUOUOUOUOUCeXhybybybybybXhexexexYpYpYpYpAeYpYpYpYpAeAeAeYpYpYpYpexICICybXhXhOUOUOUexexNwNwexCeCeCeSmXhWJXhXhDmICICICczczczczczRHRHXhybOUOUOUexNwYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYp
 QmOUOUOUOUOUOUOUOUOUCeCeXhXhXhybybXhexexYpYpYpYpYpAeAeYpYpYpAeAehYAeYpYpYpYpexexXhXhXhOUOUOUexexNwNwexexCeybybXhXhXhcfXhXhICICXhczczRHXhRHRHbOXhybybOUexexNwYpYpYpYpAeAebtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbt
 QmOUOUOUOUOUOUOUOUOUCeCeXhXhybybexexexYpYpYpYpYpYpAeYpYpAeAeAehYhYAeAeYpYpYpNwexexXhOUOUOUexexNwNwNwexexXhybXhybHLHLcfXhICICybXhybybybybXhybybybOUOUOUexNwNwYpYpYpAebtbtOFOFOFOFOFOFOFOFOFOFOFOFOFOFOFbt
 QmOUOUOUOUOUOUOUOUCeCeCeXhybybexexexYpYpYpYpYpYpAeAeAeAeAeababhYhYhYAeYpYpYpYpNwexexOUOUexexNwNwNwexexXhybylbOXhXhXhXhICICICybXhGJnuczybOUOUOUOUOUOUexexYpYpYpYpabbtbtbtOFpRSfSfOFcQSfnpnpnpSfSfOFwuOFbt
@@ -814,6 +814,6 @@ ababababababbtbtkDkDkDkDkDkDkDhYSsxsxshYSshYhYVnhYhYhYhYhYhYhYAeYpYpYpYpYpYpYpYp
 abababababbtkDkDkDkDkDkDkDabababhYxsxsxshYhYkDbtbtabababbtbtAeAeYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtAeAeAekDkDkDkDkDabababababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 ababababbtkDkDkDkDkDkDkDababababhYxsxshYhYbtkDkDabababababkDbtAeAeAeYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtbtkDkDkDababababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 btbtbtbtbtkDkDkDkDkDkDkDkDabababbthYxsxsbtkDkDkDkDkDabkDabkDkDbtbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtkDkDkDkDkDababkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
-btbtbtbtbtkDkDkDkDkDkDkDkDkDkDbtbtArArArbtkDkDkDkDkDkDkDkDkDkDkDkDbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtkDkDkDkDabkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
+btbtbtbtbtkDkDkDkDkDkDkDkDkDkDbtbtQRQRQRbtkDkDkDkDkDkDkDkDkDkDkDkDbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtkDkDkDkDabkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDkDbt
 btbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpYpbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbt
 "}
