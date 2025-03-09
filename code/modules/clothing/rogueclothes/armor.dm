@@ -238,6 +238,13 @@
 	grid_width = 64
 	grid_height = 32
 
+/obj/item/clothing/suit/roguetown/armor/leather/jacket/tanned
+	name = "tanned jacket"
+	icon_state = "leatherjacketo"
+	desc = "A heavy leather jacket with wooden buttons, favored by commoners who can afford it."
+	
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"
 	desc = "More form over function, this armor is fit for demonstration of might rather than open combat. The aged gilding slowly tarnishes away."
