@@ -303,6 +303,17 @@
 /obj/structure/table/wood/poker/narsie_act()
 	..(FALSE)
 
+/obj/structure/table/cooling //cooling table made by artificers
+	name = "cooling table"
+	desc = "Used to keep your food cool and rot free."
+	icon = 'icons/roguetown/misc/tables.dmi'
+	icon_state = "tablewood_alt"
+	resistance_flags = FLAMMABLE
+	max_integrity = 40 //making this weak, its fragile
+	smooth = 0
+	debris = list(/obj/item/grown/log/tree/small, /obj/item/roguegear)
+	climb_offset = 10
+
 /obj/structure/table/wood/fancy
 	name = "fancy table"
 	desc = ""
