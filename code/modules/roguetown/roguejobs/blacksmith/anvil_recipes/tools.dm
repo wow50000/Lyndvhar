@@ -37,12 +37,14 @@
 	createditem_num = 3 // They can be refilled with fiber now
 	craftdiff = 0
 
+/* Movning under Engineering
 /datum/anvil_recipe/tools/iron/lockpicks
 	name = "Lockpicks x3"
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/lockpick
 	createditem_num = 3
 	craftdiff = 2
+*/
 
 /datum/anvil_recipe/tools/iron/lockpickring
 	name = "Lockpickrings x3"

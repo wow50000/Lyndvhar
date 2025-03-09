@@ -953,6 +953,9 @@
 /obj/item/clothing/cloak/raincloak/furcloak/black
 	color = "#66564d"
 
+/obj/item/clothing/cloak/raincloak/furcloak/darkgreen
+	color = "#264d26"
+
 /obj/item/clothing/cloak/raincloak/furcloak/woad
 	name = "Warden's fur cloak"
 	desc = "Usually sewn by the very wardens that wear them, this hue of blue is made to alart denizens of the forest to their presence."
