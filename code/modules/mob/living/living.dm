@@ -189,6 +189,12 @@
 			// Randomize con roll from -1 to +1 to make it less consistent
 			self_points += rand(-1, 1)
 
+			//Safety check for changing direction at the last step
+			if(src.dir != src.sprint_dir)
+				self_points -= 99
+				instafail = TRUE
+				to_chat(src, span_warning("I changed direction too late!"))
+
 			if(self_points > target_points)
 				L.Knockdown(1)
 			if(self_points < target_points)
@@ -403,6 +409,7 @@
 			O.icon_state = zone_selected
 			put_in_hands(O)
 			O.update_hands(src)
+			src.rogfat_add(10)
 			if(HAS_TRAIT(src, TRAIT_STRONG_GRABBER) || item_override)
 				supress_message = TRUE
 				C.grippedby(src)
@@ -861,6 +868,7 @@
 
 	if(m_intent == MOVE_INTENT_RUN)
 		sprinted_tiles++
+		sprint_dir = dir
 
 	if(wallpressed)
 		update_wallpress(T, newloc, direct)

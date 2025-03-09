@@ -21,8 +21,7 @@
 	display_order = JDO_GUARD_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
 
-	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard)
-	outfit = /datum/outfit/job/roguetown/captain
+	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard, /obj/effect/proc_holder/spell/self/convertrole/bog)
 
 	give_bank_account = 26
 	noble_income = 16
@@ -304,3 +303,11 @@
 	if(!.)
 		return
 	recruit.verbs |= /mob/proc/haltyell
+
+/obj/effect/proc_holder/spell/self/convertrole/bog
+	name = "Recruit Warden"
+	new_role = "Warden"
+	recruitment_faction = "Bog Guard"
+	recruitment_message = "Serve the Wardens, %RECRUIT!"
+	accept_message = "FOR THE GROVE!"
+	refuse_message = "I refuse."

@@ -102,6 +102,7 @@
 	armor = list("blunt" = 55, "slash" = 50, "stab" = 45, "piercing" = 40, "fire" = 0, "acid" = 0)
 	max_integrity = 250
 	sellprice = 30
+	color = "#976E6B"
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/otavan
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
@@ -225,7 +226,7 @@
 /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
 	name = "artificer jacket"
 	icon_state = "artijacket"
-	desc = "A thick leather jacket adorned with fur and cog decals. The height of Heartfelt fashion."
+	desc = "A thick leather jacket adorned with fur and cog decals. The height of Weocilyn fashion."
 
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"
@@ -694,10 +695,10 @@
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 3
 
-/obj/item/clothing/suit/roguetown/armor/heartfelt/lord
+/obj/item/clothing/suit/roguetown/armor/weocilyn/lord
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "coat of armor"
-	desc = "A lordly brigandine bearing the colors of Heartfelt. This one is of exquisite craftsmanship."
+	desc = "A lordly brigandine bearing the colors of Weocilyn. This one is of exquisite craftsmanship."
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	icon_state = "heartfelt"
 	item_state = "heartfelt"
@@ -713,10 +714,10 @@
 	smelt_bar_num = 4
 	sellprice = 200
 
-/obj/item/clothing/suit/roguetown/armor/heartfelt/hand
+/obj/item/clothing/suit/roguetown/armor/weocilyn/hand
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "coat of armor"
-	desc = "A lordly brigandine bearing the colors of Heartfelt."
+	desc = "A lordly brigandine bearing the colors of Weocilyn."
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	icon_state = "heartfelt_hand"
 	item_state = "heartfelt_hand"

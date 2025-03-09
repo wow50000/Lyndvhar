@@ -15,12 +15,12 @@
 /datum/intent/sword/cut/sabre
 	clickcd = 8
 	penfactor = 20
+	releasedrain = 4
 
 /datum/intent/sword/cut/falchion
 	clickcd = 10
 	penfactor = 30
 	swingdelay = 4
-
 
 
 /datum/intent/sword/cut/falx
@@ -50,6 +50,7 @@
 	swingdelay = 2
 	damfactor = 0.8
 	item_d_type = "blunt"
+	releasedrain = 4
 
 /datum/intent/sword/chop
 	name = "chop"
@@ -62,8 +63,11 @@
 	swingdelay = 8
 	damfactor = 1.0
 	item_d_type = "slash"
+	releasedrain = 7
+
 /datum/intent/sword/chop/falx
 	penfactor = 40
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
@@ -107,6 +111,7 @@
 /obj/item/rogueweapon/sword/falchion
 	name = "falchion"
 	desc = "A blade with a quilloned crossguard. Despite its heavy blade, each cut leads naturally into the next."
+	force = 25
 	parrysound = "bladedmedium"
 	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	icon_state = "falchion"
@@ -133,7 +138,6 @@
 	desc = "A valuable sword for celebrations and rites."
 	icon_state = "decsword1"
 	sellprice = 140
-
 
 
 /obj/item/rogueweapon/sword/decorated/Initialize()
@@ -208,7 +212,7 @@
 	thrown_bclass = BCLASS_CUT
 	dropshrink = 0.75
 	smeltresult = /obj/item/ingot/steel
-	wdefense = 3.5
+	wdefense = 3
 
 /obj/item/rogueweapon/sword/long/death
 	color = CLOTHING_BLACK
@@ -258,6 +262,30 @@
 			if("wielded") return list("shrink" = 0.6,"sx" = 9,"sy" = -4,"nx" = -7,"ny" = 1,"wx" = -9,"wy" = 2,"ex" = 10,"ey" = 2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 5,"sturn" = -190,"wturn" = -170,"eturn" = -10,"nflip" = 8,"sflip" = 8,"wflip" = 1,"eflip" = 0)
 			if("onback") return list("shrink" = 0.5, "sx" = -1, "sy" = 2, "nx" = 0, "ny" = 2, "wx" = 2, "wy" = 1, "ex" = 0, "ey" = 1, "nturn" = 0, "sturn" = 0, "wturn" = 70, "eturn" = 15, "nflip" = 1, "sflip" = 1, "wflip" = 1, "eflip" = 1, "northabove" = 1, "southabove" = 0, "eastabove" = 0, "westabove" = 0)
 			if("onbelt") return list("shrink" = 0.3, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
+
+/obj/item/rogueweapon/sword/long/malumflamm
+	name = "Forgefiend"
+	desc = "This sword's creation took a riddle in its own making. A great sacrifice for perfect quality."
+	icon_state = "malumflamberge"
+	max_integrity = 300
+	wbalance = 0.5
+	wdefense = 4
+
+/obj/item/rogueweapon/sword/long/zizo
+	name = "darksteel longsword"
+	desc = "A wicked and red blade. Called forth from the edge of what should be known. In Her name."
+	force = 30
+	force_wielded = 35
+	icon_state = "zizosword"
+
+/obj/item/rogueweapon/sword/long/zizo/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_CABAL))
+		to_chat(user, "<font color='purple'>UNWORTHY HANDS TOUCH THE SWORD, CEASE OR BE PUNISHED</font>")
+		if(loc == user)
+			user.adjust_fire_stacks(5)
+			user.IgniteMob()
+			user.Stun(40)
+	..()
 
 /obj/item/rogueweapon/sword/long/judgement
 	force = 27
@@ -467,6 +495,15 @@
 	minstr = 10
 	slot_flags = ITEM_SLOT_BACK //Too big for hip
 
+/obj/item/rogueweapon/sword/long/exe/astrata
+	name = "Solar Judge"
+	desc = "This wicked executioner's blade calls for order."
+	icon_state = "astratasword"
+	max_integrity = 200
+	force_wielded = 35
+	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/axe/chop/battle)
+
 /obj/item/rogueweapon/sword/long/exe/getonmobprop(tag)
 	. = ..()
 	if(tag)
@@ -530,11 +567,13 @@
 /datum/intent/sword/cut/short
 	clickcd = 9
 	damfactor = 1
+	releasedrain = 3
 
 /datum/intent/sword/thrust/short
 	clickcd = 8
 	damfactor = 1.1
 	penfactor = 25
+	releasedrain = 3
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
@@ -556,6 +595,13 @@
 	minstr = 5
 	wdefense = 6
 	wbalance = 1
+
+/obj/item/rogueweapon/sword/sabre/elf/nockhopesh
+	name = "Moonlight Khopesh"
+	icon_state = "nockhopesh"
+	desc = "Glittering moonlight upon blued steel."
+	force = 25
+	max_integrity = 250
 
 /obj/item/rogueweapon/sword/sabre/dec
 	icon_state = "decsaber"
@@ -669,6 +715,7 @@
 /datum/intent/sword/cut/rapier
 	clickcd = 10
 	damfactor = 0.75
+	releasedrain = 3
 
 /datum/intent/sword/thrust/rapier
 	clickcd = 8
@@ -974,12 +1021,12 @@
 			if("onbelt") 
 				return list("shrink" = 0.4,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
-/obj/item/rogueweapon/sword/long/eclipsum
+/obj/item/rogueweapon/sword/long/holysee
 	force = 34
 	force_wielded = 50
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
-	icon_state = "astratasword"
+	icon_state = "eclipsum"
 	name = "eclipsum sword"
 	desc = "A Pantheon relic and mutual effort of Noc and Astrata's followers, this blade was forged with both silver and gold alike. Blessed to hold strength and bring hope. Whether dae or nite."
 	is_silver = TRUE
