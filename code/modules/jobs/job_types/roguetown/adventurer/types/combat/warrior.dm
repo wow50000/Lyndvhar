@@ -72,7 +72,7 @@
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 
 		if("Duelist")
-			to_chat(H, span_warning("You are an esteemed swordsman who foregoes armor in exchange for a more nimble fighting style."))
+			to_chat(H, span_warning("A fighter who foregoes armor in exchange for a more nimble fighting style."))
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -96,10 +96,10 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
-			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
-			armor = /obj/item/clothing/suit/roguetown/armor/leather
+			head = /obj/item/clothing/head/roguetown/brimmed
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/tanned
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -164,43 +164,4 @@
 				beltl = /obj/item/rogueweapon/huntingknife
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 
-		if("Monster Hunter")
-			to_chat(H, span_warning("You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel."))
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
-			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
-			H.change_stat("strength", 1)
-			H.change_stat("endurance", 1)
-			H.change_stat("intelligence", 1)
-			H.change_stat("speed", -1)
-			beltr = /obj/item/rogueweapon/sword/silver
-			backr = /obj/item/rogueweapon/sword
-			backl = /obj/item/storage/backpack/rogue/satchel/black
-			wrists = /obj/item/clothing/neck/roguetown/psicross/silver
-			armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/steel
-			shoes = /obj/item/clothing/shoes/roguetown/boots
-			pants = /obj/item/clothing/under/roguetown/tights/black
-			cloak = /obj/item/clothing/cloak/cape/puritan
-			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-			head = /obj/item/clothing/head/roguetown/bucklehat
-			gloves = /obj/item/clothing/gloves/roguetown/angle
-			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
-			beltl = pick(/obj/item/reagent_containers/glass/alchemical/strpot, 
-						/obj/item/reagent_containers/glass/alchemical/conpot, 
-						/obj/item/reagent_containers/glass/alchemical/endpot,
-						/obj/item/reagent_containers/glass/alchemical/spdpot,
-						/obj/item/reagent_containers/glass/alchemical/perpot,
-						/obj/item/reagent_containers/glass/alchemical/intpot,
-						/obj/item/reagent_containers/glass/alchemical/lucpot)
+		

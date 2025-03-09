@@ -87,3 +87,14 @@
 	allow_quick_gather = TRUE
 	allow_quick_empty = TRUE
 	insert_preposition = "in"
+
+/datum/component/storage/concrete/roguetown/feet/boots
+	max_w_class = WEIGHT_CLASS_NORMAL
+	screen_max_rows = 4
+	screen_max_columns = 1
+	not_while_equipped = FALSE
+
+/datum/component/storage/concrete/roguetown/armor/leather/jacket/tanned
+	max_w_class = WEIGHT_CLASS_BULKY
+	screen_max_rows = 2
+	screen_max_columns = 2

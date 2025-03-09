@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/vaquero
 	name = "Vaquero"
-	tutorial = "A band of mercenaries hailing from Valoria, their name traced back to humble origins as cattle drivers."
+	tutorial = "A Valorian subculture of fencing, bounty hunting charismatic nomads who are known for their skill in mounted combat and their flashy yet practical clothing."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	cmode_music = 'sound/music/combat_vaquero.ogg'
