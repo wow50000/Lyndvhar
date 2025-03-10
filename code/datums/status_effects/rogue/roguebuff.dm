@@ -174,10 +174,6 @@
 /datum/status_effect/buff/starsugar/on_apply()
 	. = ..()
 	owner.add_stress(/datum/stressevent/starsugar)
-	if(!HAS_TRAIT(owner, TRAIT_DODGEEXPERT))
-		ADD_TRAIT(owner, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	else
-		haddodge = TRUE
 	if(!HAS_TRAIT(owner, TRAIT_DARKVISION))
 		ADD_TRAIT(owner, TRAIT_DARKVISION, TRAIT_GENERIC)
 	else
@@ -189,8 +185,6 @@
 
 
 /datum/status_effect/buff/starsugar/on_remove()
-	if(!haddodge)
-		REMOVE_TRAIT(owner, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	if(!haddarkvision)
 		REMOVE_TRAIT(owner, TRAIT_DARKVISION, TRAIT_GENERIC)
 	owner.remove_stress(/datum/stressevent/starsugar)
