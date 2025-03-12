@@ -220,7 +220,6 @@ GLOBAL_VAR_INIT(say_disabled, FALSE)
 	D.setDir(SOUTH)
 	for(var/job in subtypesof(/datum/job))
 		var/datum/job/JB = new job
-		switch(JB.title)
 		for(var/obj/item/I in D)
 			qdel(I)
 		randomize_human(D)
