@@ -390,7 +390,7 @@
 	metabolization_rate = 0.5
 
 /obj/item/reagent_containers/powder/purified_ozium
-	name = "Herozium"
+	name = "purified ozium"
 	desc = "Sweet unfeeling. Do you like to hurt other people? Outright banned and controlled in most regions."
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "purified_ozium"
