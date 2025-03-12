@@ -1036,7 +1036,7 @@
 	wdefense = 6
 	wbalance = 1
 
-/obj/item/rogueweapon/sword/long/eclipsum/getonmobprop(tag)
+/obj/item/rogueweapon/sword/long/holysee/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)

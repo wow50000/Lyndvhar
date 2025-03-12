@@ -45,7 +45,7 @@
 			return
 
 
-	msg = emoji_parse(msg)
+//	msg = emoji_parse(msg)
 
 	mob.log_talk(msg, LOG_LOOC)
 
