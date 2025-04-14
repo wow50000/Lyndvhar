@@ -11,4 +11,3 @@ Revamp of old content
 New Additions
 Porting Content (that isnt slop)
 Finishing the Discord
-Adding travel tiles to the new maps
