@@ -1,4 +1,4 @@
 <!-- Most valid html will work in here, excluding images. -->
-Lyndvhar Discord Server: <a href="https://discord.gg/hzJWyGspUC</a>
-Lyndvhar Patreon: <a href="https://www.patreon.com/c/lyndvhar/posts</a>
+Lyndvhar Discord Server: <a href="https://discord.gg/hzJWyGspUC"</a>
+Lyndvhar Patreon: <a href="https://www.patreon.com/c/lyndvhar/posts"</a>
 <center>* UNSTABLE PLAYTESTING - EXPECT RESTARTS AND ERRORS *</center>
