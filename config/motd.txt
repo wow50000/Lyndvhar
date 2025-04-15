@@ -3,7 +3,7 @@
 
 <center>* UNSTABLE PLAYTESTING - EXPECT ERRORS AND RESTARTS *</center>
 
-Lyndvhar Discord Server: <a href="https://discord.gg/hzJWyGspUC">Invite Link</a>
+<p>Lyndvhar Discord Server: <a href="https://discord.gg/hzJWyGspUC">Invite Link</a></p>
 
-Lyndvhar Patreon: <a href="https://www.patreon.com/c/lyndvhar/posts">Patreon Homepage</a>
+<p>Lyndvhar Patreon: <a href="https://www.patreon.com/c/lyndvhar/posts">Patreon Homepage</a></p>
 
