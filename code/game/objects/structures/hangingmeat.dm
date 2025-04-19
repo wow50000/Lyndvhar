@@ -2,7 +2,7 @@
 /obj/structure/fluff/hangingmeat
 	name = "hanging meat"
 	desc = ""
-	icon = 'icons/roguetown/topadd/Aria/Smoked_Meat1.dmi'
+	icon = 'icons/roguetown/topadd/aria/smoked_meat1.dmi'
 	icon_state = "smoked_meat"
 	density = FALSE
 	anchored = TRUE
