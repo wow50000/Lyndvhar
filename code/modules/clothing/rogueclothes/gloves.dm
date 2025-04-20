@@ -117,8 +117,8 @@
 	sellprice = 30
 
 /obj/item/clothing/gloves/roguetown/otavan
-	name = "otavan leather gloves"
-	desc = "A pair of heavy Otavan leather gloves, commonly used by fencers, renowned for their quality."
+	name = "valorian leather gloves"
+	desc = "A pair of heavy Valorian leather gloves, commonly used by fencers, renowned for their quality."
 	icon_state = "fencergloves"
 	item_state = "fencergloves"
 	armor = list("blunt" = 55, "slash" = 55, "stab" = 50, "piercing" = 35, "fire" = 0, "acid" = 0)

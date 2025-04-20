@@ -45,7 +45,7 @@
 #define TRAIT_TRAINED_SMITH "Trained Smith"
 #define TRAIT_DEATHBARGAIN "Death Bargain" // Used by UNDERMAIDEN'S BARGAIN
 #define TRAIT_RITUALIST "Ritualist"  // Allows use of ritual chalk
-#define TRAIT_INQUISITION "Member of the Otavan Inquisition"
+#define TRAIT_INQUISITION "Member of the Valorian Inquisition"
 #define TRAIT_GOODTRAINER "Good Trainer"
 #define TRAIT_OUTDOORSMAN "Outdoorsman"
 #define TRAIT_SEA_DRINKER "Denizen of the Deep"
