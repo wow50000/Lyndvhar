@@ -443,6 +443,19 @@
 	message_admins("[key_name_admin(usr)] toggled OOC.")
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle OOC", "[GLOB.ooc_allowed ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/datum/admins/proc/togglelooc()
+	set category = "Server" // You can change this to "Admin" if you prefer
+	set desc="Toggle dis bitch" 
+	set name="Toggle LOOC"
+
+	GLOB.looc_enabled = !GLOB.looc_enabled 
+	var/status = GLOB.looc_enabled ? "ENABLED" : "DISABLED" 
+	var/log_msg = "LOOC has been [status] by [key_name(usr)]."
+
+	log_admin(log_msg) 
+	message_admins(log_msg) 
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle LOOC", "[status]")) // Use status variable
+
 /datum/admins/proc/toggleoocdead()
 	set category = "Server"
 	set desc="Toggle dis bitch"
