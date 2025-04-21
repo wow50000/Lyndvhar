@@ -185,7 +185,7 @@
 
 /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 	name = "forlorn collar"
-	desc = "A old reminder."
+	desc = "All lower members of the Zaprixys are bound to a collar to exemplify their service."
 	max_integrity = 300
 	icon_state = "iwolfcollaralt"
 
