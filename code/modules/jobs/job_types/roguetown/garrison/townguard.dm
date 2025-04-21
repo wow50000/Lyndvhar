@@ -83,6 +83,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.change_stat("endurance", 1)
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)	//You get medium armor training to go with your armor.
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/helmet
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
@@ -126,6 +127,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.change_stat("speed", 1)
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)		//You don't get medium armor training, instead you get a bonus to light armor usage.
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/roguehood/red		//To-do: Make a guard hood come in kingdom's colors.
 	armor = /obj/item/clothing/suit/roguetown/armor/leather		//So they get default-dodge expert usage.
