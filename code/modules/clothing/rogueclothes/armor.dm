@@ -232,18 +232,18 @@
 	name = "tanned jacket"
 	icon_state = "leatherjacketo"
 	desc = "A heavy leather jacket with wooden buttons, favored by commoners who can afford it."
-	
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
-
-	grid_width = 64
-	grid_height = 32
-
-/obj/item/clothing/suit/roguetown/armor/leather/jacket/tanned
-	name = "tanned jacket"
-	icon_state = "leatherjacketo"
-	desc = "A heavy leather jacket with wooden buttons, favored by commoners who can afford it."
 	
-	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+/obj/item/clothing/armor/leather/jacket/tanned/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/storage/concrete)
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	if(STR)
+		STR.max_combined_w_class = 3
+		STR.max_w_class = WEIGHT_CLASS_NORMAL
+		STR.max_items = 3
+
+
 
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"

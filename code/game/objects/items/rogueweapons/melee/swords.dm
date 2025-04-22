@@ -613,7 +613,7 @@
 	desc = "A duelist's weapon derived from western battlefield instruments, it features a tapered \
 	blade with a specialized stabbing tip."
 	icon = 'icons/roguetown/weapons/64.dmi'
-	icon_state = "rapier"
+	icon_state = "rapier1"
 	bigboy = TRUE
 	pixel_y = -16
 	pixel_x = -16
@@ -633,7 +633,7 @@
 	wbalance = 1
 
 /obj/item/rogueweapon/sword/rapier/vaquero
-	desc = "A fairly new development originating in Etrusca, the cup hilt design of this weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
+	desc = "A rapier with a cup hilt design originating from Valoria. This weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "cup_hilt_rapier"
 	wdefense = 7
@@ -743,7 +743,7 @@
 
 /obj/item/rogueweapon/sword/cutlass
 	name = "cutlass"
-	desc = "Used by pirates and deckhands."
+	desc = "A blade commonly used by the pirates and sailors of Lyndhardtia's coast."
 	icon_state = "cutlass"
 	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	gripped_intents = null

@@ -72,7 +72,7 @@
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
 
 		if("Duelist")
-			to_chat(H, span_warning("A fighter who foregoes armor in exchange for a more nimble fighting style."))
+			to_chat(H, span_warning(" A thrill seeking swordsmen who foregoes armor in exchange for a more nimble fighting style."))
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -90,10 +90,10 @@
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Rapier")
-					H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					beltr = /obj/item/rogueweapon/sword/rapier
 				if("Dagger")
-					H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
 			H.change_stat("endurance", 1)
