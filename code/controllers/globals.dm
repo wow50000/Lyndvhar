@@ -8,6 +8,7 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 	var/list/gvars_datum_init_order
 
 	var/looc_enabled = FALSE 
+	var/restart_lock = FALSE
 
 /datum/controller/global_vars/New()
 	if(GLOB)
