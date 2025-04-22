@@ -381,6 +381,36 @@
 					to_chat(world, "Server restart - [init_by]")
 					world.TgsEndProcess()
 
+/datum/admins/proc/shutdown_server()
+    set category = "Server"
+    set name = "Shutdown Server (No Restart)"
+    set desc = "Attempts to shut the server down cleanly and signals external scripts NOT to restart."
+
+    if(!check_rights(R_SERVER))
+        return
+
+    var/confirm = alert(usr, "Are you absolutely sure you want to shut down the server? This attempts to Kill Dream Deamon.", "Confirm Shutdown", "Yes", "No")
+    if(confirm != "Yes")
+        return
+
+    var/reason = "Shutdown initiated by admin [key_name(usr)]"
+
+    // Log the action and inform other admins
+    log_admin(reason)
+    message_admins(span_boldwarning("[reason] - Engaging restart lock and initiating shutdown."))
+    SSblackbox.record_feedback("tally", "admin_verb", 1, "Shutdown Server") 
+
+    if(!GLOB.restart_lock)
+        GLOB.restart_lock = TRUE
+        message_admins("Server restart lock has been engaged by shutdown verb.")
+        log_admin("Server restart lock engaged by shutdown verb.")
+    else
+        message_admins("Server restart lock was already engaged.") 
+
+    to_chat(world, span_boldnotice("Server is shutting down NOW. Restart lock engaged."))
+
+    shutdown()
+
 /datum/admins/proc/end_round()
 	set category = "Server"
 	set name = "End Round"

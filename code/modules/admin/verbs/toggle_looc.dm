@@ -16,7 +16,7 @@
 			return
 	else //otherwise just toggle it
 		GLOB.looc_allowed = !GLOB.looc_allowed
-	message_admins("<B>The OOC channel has been globally [GLOB.looc_allowed ? "enabled" : "disabled"].</B>")
+	message_admins("<B>The LOOC channel has been globally [GLOB.looc_allowed ? "enabled" : "disabled"].</B>")
 
 	// Log the action and inform admins
 	log_admin(log_msg)
