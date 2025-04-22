@@ -401,6 +401,7 @@
 		to_chat(user, span_warning("I don't know anyone."))
 		revert_cast()
 		return
+	eligible_players = sortList(eligible_players)
 	var/input = input(user, "Who do you wish to contact?", src) as null|anything in eligible_players
 	if(isnull(input))
 		to_chat(user, span_warning("No target selected."))
@@ -970,6 +971,7 @@
 
 /obj/effect/proc_holder/spell/invoked/guidance
 	name = "Guidance"
+	overlay_state = "guidance"
 	desc = "Makes one's hand travel true, blessing them with arcyne luck in combat. (+10% chance to hit with melee, +10% chance to defend from melee)"
 	cost = 2
 	xp_gain = TRUE

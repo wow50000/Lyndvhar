@@ -149,8 +149,8 @@
 	max_integrity = 250
 
 /obj/item/clothing/under/roguetown/trou/otavan
-	name = "otavan leather trousers"
-	desc = "Padded leather armor made by Otavan tailors, its quality is remarkable."
+	name = "valorian leather trousers"
+	desc = "Padded leather armor made by Valorian tailors, its quality is remarkable."
 	icon_state = "fencerpants"
 	resistance_flags = FIRE_PROOF
 	armor = list("blunt" = 55, "slash" = 70, "stab" = 55, "fire" = 0, "acid" = 0)
@@ -304,6 +304,7 @@
 	sewrepair = FALSE
 	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST) //Thicc protection values, but few crit protection flags.
+	clothing_flags = CANT_SLEEP_IN
 	blocksound = PLATEHIT
 	max_integrity = 350
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'

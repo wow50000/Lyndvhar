@@ -117,8 +117,10 @@
 	sellprice = 30
 
 /obj/item/clothing/gloves/roguetown/otavan
+
 	name = "fencer gloves"
 	desc = "A pair of small and sturdy leather gloves. Commonly called fencer gloves due to them being commonly seen in fencing tourneys."
+
 	icon_state = "fencergloves"
 	item_state = "fencergloves"
 	armor = list("blunt" = 55, "slash" = 55, "stab" = 50, "piercing" = 35, "fire" = 0, "acid" = 0)
@@ -224,6 +226,6 @@
 
 /obj/item/clothing/gloves/roguetown/angle/pontifex
 	name = "rune-scrybed wrappings"
-	desc = "Paper and cloth bandages enscrybed with powerful naledian runes. They do an ample job of protecting their user's hands in combat."
+	desc = "Paper and cloth bandages enscrybed with Khazumian runes. They do an ample job of protecting their user's hands in combat."
 	icon_state = "clothwraps"
 	item_state = "clothwraps"

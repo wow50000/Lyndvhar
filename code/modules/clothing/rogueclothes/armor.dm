@@ -651,6 +651,7 @@
 	item_state = "halfplate"
 	armor = list("blunt" = 95, "slash" = 100, "stab" = 95, "piercing" = 95, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
+	clothing_flags = CANT_SLEEP_IN
 	nodismemsleeves = TRUE
 	max_integrity = 350
 	allowed_sex = list(MALE, FEMALE)
@@ -752,8 +753,8 @@
 
 /obj/item/clothing/suit/roguetown/armor/otavan
 	slot_flags = ITEM_SLOT_ARMOR
-	name = "otavan half-plate"
-	desc = "Half-plate armor with pauldrons, in the Otavan style."
+	name = "valorian half-plate"
+	desc = "Half-plate armor with pauldrons, in the Valorian style."
 	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "corsethalfplate"
 	item_state = "corsethalfplate"
