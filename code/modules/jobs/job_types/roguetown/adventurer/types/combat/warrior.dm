@@ -21,7 +21,7 @@
 
 	switch(classchoice)
 
-if("Battlemaster")
+		if("Battlemaster")
 			to_chat(H, span_warning("You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt."))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
