@@ -1465,7 +1465,7 @@
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/roguetown/articap
-	desc = "A sporting cap with a small gear adornment. Popular fashion amongst engineers."
+	desc = "A sporting cap, popular amongst the commoners of Vanderlin."
 	icon_state = "articap"
 
 /obj/item/clothing/head/roguetown/brimmed
