@@ -848,7 +848,7 @@
 
 /datum/crafting_recipe/roguetown/furcloak
 	name = "fur cloak"
-	result = /obj/item/clothing/cloak/raincloak/furcloak
+	result = list(/obj/item/clothing/cloak/raincloak/furcloak)
 	reqs = list(/obj/item/natural/fibers = 3,
 				/obj/item/natural/fur = 5,
 				/obj/item/natural/cloth = 3)
