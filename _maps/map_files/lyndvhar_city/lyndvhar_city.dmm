@@ -1210,7 +1210,7 @@
 "gRu" = (/obj/structure/roguemachine/withdraw,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/indoors/town/physician)
 "gRI" = (/turf/open/floor/rogue/cobble,/area/rogue/indoors/town/garrison)
 "gSo" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/reagent_containers/powder/ozium,/obj/item/reagent_containers/powder/ozium,/obj/effect/decal/cleanable/dirt/cobweb{dir = 8},/turf/open/floor/rogue/herringbone,/area/rogue/indoors/town/bath)
-"gSN" = (/obj/structure/mineral_door/wood/donjon{dir = 8; locked = 1; lockid = "steward"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/exposed/town/keep)
+"gSN" = (/obj/structure/mineral_door/wood/donjon{dir = 8; locked = 1; lockid = "manor"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/exposed/town/keep)
 "gTf" = (/obj/structure/table/wood,/obj/item/candle/yellow/lit,/turf/open/floor/rogue/blocks,/area/rogue/indoors/town)
 "gTw" = (/obj/structure/chair/wood/rogue/fancy{dir = 1},/turf/open/floor/rogue/carpet/lord/center,/area/rogue/indoors/town/manor)
 "gTG" = (/obj/structure/fluff/railing/border{dir = 8},/obj/structure/fluff/railing/border{dir = 4; pixel_x = 0; pixel_y = -3},/turf/open/floor/rogue/woodturned,/area/rogue/outdoors/beach)
