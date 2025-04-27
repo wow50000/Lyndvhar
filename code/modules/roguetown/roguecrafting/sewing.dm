@@ -494,6 +494,12 @@
 	craftdiff = 0
 	sellprice = 3
 
+/datum/crafting_recipe/roguetown/sewing/leash
+	name = "rope leash (rope) - (1 rope; NONE)"
+	result = list(/obj/item/leash = 1)
+	reqs = list(/obj/item/rope = 1)
+	craftdiff = 0
+
 /datum/crafting_recipe/roguetown/sewing/cape
 	name = "cape"
 	result = list(/obj/item/clothing/cloak/cape)
