@@ -51,7 +51,7 @@
 					backr = /obj/item/rogueweapon/spear/improvisedbillhook
 				if("Hatchet")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-					beltr = /obj/item/rogueweapon/stoneaxe/axe
+					beltr = /obj/item/rogueweapon/stoneaxe/woodcut
 					var/armor = list("Light", "Medium")
 					var/armor_choice = input ("Choose your armor","TAKE UP ARMS") as anything in armor
 					switch(armor_choice)
@@ -137,7 +137,7 @@
 					beltr = /obj/item/rogueweapon/katar
 				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-					beltr = /obj/item/rogueweapon/stoneaxe/handaxe
+					beltr = /obj/item/rogueweapon/stoneaxe/boneaxe
 				if ("MY BARE HANDS!!!")
 					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
