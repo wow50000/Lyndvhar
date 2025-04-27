@@ -419,6 +419,7 @@
 	desc = ""
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "jestershirt"
+	do_sound_bell = FALSE
 	icon = 'icons/roguetown/clothing/shirts.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/shirts.dmi'
@@ -497,6 +498,17 @@
 	desc = "A billowing tunic made of the finest silks and softest fabrics. Inlaid with golden thread, this is the height of fashion for the wealthiest of wearers."
 	icon_state = "stewardtunic"
 	item_state = "stewardtunic"
+
+/obj/item/clothing/suit/roguetown/shirt/exoticsilkbra
+	name = "exotic silk bra"
+	desc = "An exquisite bra crafted from the finest silk and adorned with gold rings. It leaves little to the imagination."
+	icon_state = "exoticsilkbra"
+	item_state = "exoticsilkbra"
+	body_parts_covered = CHEST
+	boobed = TRUE
+	sewrepair = TRUE
+	flags_inv = null
+	slot_flags = ITEM_SLOT_SHIRT
 
 //WEDDING CLOTHES
 /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/weddingdress

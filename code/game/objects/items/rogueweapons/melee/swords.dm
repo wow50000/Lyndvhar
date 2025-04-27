@@ -634,7 +634,7 @@
 
 /obj/item/rogueweapon/sword/rapier/vaquero
 	name = "cupped rapier"
-	desc = "A rapier with a cup hilt design originating from Valoria. This weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
+	desc = "A fairly new development originating in Valoria, the cup hilt design of this weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "cup_hilt_rapier"
 	wdefense = 7
