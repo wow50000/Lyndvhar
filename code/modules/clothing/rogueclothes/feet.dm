@@ -210,6 +210,7 @@
 
 /obj/item/clothing/shoes/roguetown/jester
 	name = "funny shoes"
+	do_sound_bell = FALSE
 	icon_state = "jestershoes"
 	resistance_flags = null
 	sewrepair = TRUE
