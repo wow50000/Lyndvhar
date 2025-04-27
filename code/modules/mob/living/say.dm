@@ -86,15 +86,14 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	var/static/list/unconscious_allowed_modes = list(MODE_CHANGELING = TRUE, MODE_ALIEN = TRUE)
 	var/talk_key = get_key(message)
 
-	var/static/list/one_character_prefix = list(MODE_HEADSET = TRUE, MODE_ROBOT = TRUE, MODE_WHISPER = TRUE)
+	var/static/list/one_character_prefix = list(MODE_HEADSET = TRUE, MODE_ROBOT = TRUE, MODE_WHISPER = TRUE, MODE_SING = TRUE)
 
 	var/ic_blocked = FALSE
 	if(client && !forced && CHAT_FILTER_CHECK(message))
 		//The filter doesn't act on the sanitized message, but the raw message.
 		ic_blocked = TRUE
+		//allow player to format their speech
 
-	if(sanitize)
-		message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
 	if(!message || message == "")
 		return
 
@@ -111,7 +110,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	if(one_character_prefix[message_mode])
 		message = copytext(message, 2)
-	else if(message_mode || saymode)
+	else if(message_mode || saymode) 
 		message = copytext(message, 3)
 	if(findtext_char(message, " ", 1, 2))
 		message = copytext(message, 2)
@@ -126,6 +125,15 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			client.dsay(message)
 		return
 
+	if(message_mode == MODE_SING)
+	#if DM_VERSION < 513
+		var/randomnote = "~"
+	#else
+		var/randomnote = pick("&#9835;", "&#9834;", "&#9836;")
+	#endif
+		spans |= SPAN_SINGING
+		message = "[randomnote] [message] [randomnote]"
+
 	if(stat == DEAD)
 		say_dead(original_message)
 		return
@@ -133,8 +141,8 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(check_emote(original_message, forced) || !can_speak_basic(original_message, ignore_spam, forced))
 		return
 
-	if(check_whisper(original_message, forced) || !can_speak_basic(original_message, ignore_spam, forced))
-		return
+	//if(check_whisper(original_message, forced) || !can_speak_basic(original_message, ignore_spam, forced))
+		//return
 	//RATWOOD SUBTLER START
 	if(check_subtler(original_message, forced) || !can_speak_basic(original_message, ignore_spam, forced))
 		return
@@ -194,14 +202,26 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	else
 		src.log_talk(message, LOG_SAY, forced_by=forced)
 
-	message = treat_message(message) // unfortunately we still need this
 	var/sigreturn = SEND_SIGNAL(src, COMSIG_MOB_SAY, args)
 	if (sigreturn & COMPONENT_UPPERCASE_SPEECH)
 		message = uppertext(message)
 	if(!message)
 		return
 
+	//apply various speech filters only on dialogue
+	var/speech_index = 0
+	speech_index = findtext(message, "*")
+	if (speech_index)
+		message = "[copytext(message, 1, speech_index)]*[treat_message(copytext(message, speech_index+1))]"
+	else
+		message = treat_message(message) // apply speech filters after accent
+
 	spans |= speech_span
+
+	if(sanitize)
+		message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	if(!message || message == "")
+		return
 
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]
@@ -229,6 +249,46 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		to_chat(src, compose_message(src, language, message, , spans, message_mode))
 
 	return 1
+
+/*
+	If a player types "//bold text//" into the chat then this proc recieves the following parameters due to regex:
+		group1 - "//"
+		group2 - "bold text"
+		group3 - "//"
+	The automatical capitalization and punctuation procs are then applied to group2, which then becomes:
+		"Bold text."
+	group2 is then recombined with group1 and group3 (if they exist) and stored in message:
+		"//Bold text.//"
+	Before being returned, this message is then passed through yet another regex replace proc and the slashes are converted to their correct tags:
+		return "<b>Bold text.</b>"
+	If the player only inputted slashes (e.g. "////////") the proc immediately returns null, and no chat message appears.
+*/
+/proc/format_dialogue(match, group1, group2, group3)
+	if (!group2)
+		return
+	var/message = capitalize(group2)
+	message = autopunct_bare(message)
+	if (group1)
+		message = group1 + message
+	if (group3)
+		message = message + group3
+	message = replacetextEx(message, regex(@"(///([^/]+?)///)|(//([^/]+?)//)|(/([^/]+?)/)", "g"), /proc/format_dialogue_html)
+	message = replacetextEx(message, regex(@"(\+([^+]+?)\+)", "g"), /proc/format_dialogue_html_2)
+	return message
+
+//replace designated player formatting characters with their corresponding html tags
+/proc/format_dialogue_html(match, group1, group2, group3, group4, group5, group6)
+	if (group5)
+		return "<i>" + group6 + "</i>"
+	else if (group3)
+		return "<b>" + group4 + "</b>"
+	else if (group1)
+		return "<i><b>" + group2 + "</b></i>"
+	return match
+/proc/format_dialogue_html_2(match, group1, group2)
+	if (group1)
+		return "<b>" + group2 + "</b>"
+	return match
 
 /datum/species/proc/get_span_language(datum/language/message_language)
 	if(!message_language)
@@ -258,7 +318,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			deaf_message = "<span class='name'>[speaker]</span> [speaker.verb_say] something but you cannot hear [speaker.p_them()]."
 			deaf_type = 1
 	else
-		deaf_message = span_notice("I can't hear yourself!")
+		deaf_message = span_notice("You can't hear yourself!")
 		deaf_type = 2 // Since you should be able to hear myself without looking
 
 	// Create map text prior to modifying message for goonchat
@@ -500,6 +560,8 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		. = "stammers"
 	else if(derpspeech)
 		. = "gibbers"
+	else if(message_mode == MODE_SING)
+		. = verb_sing
 	else
 		. = ..()
 

@@ -82,12 +82,12 @@
 	if(copytext_char(message, 1, 2) == "*")
 		emote(copytext_char(message, 2), intentional = !forced, custom_me = TRUE)
 		return 1
-
+/*
 /mob/proc/check_whisper(message, forced)
 	if(copytext_char(message, 1, 2) == "+")
 		whisper(copytext_char(message, 2),sanitize = FALSE)//already sani'd
 		return 1
-
+*/
 ///Check if the mob has a hivemind channel
 /mob/proc/hivecheck()
 	return 0
@@ -110,6 +110,8 @@
 		return MODE_WHISPER
 	else if(key == ";")
 		return MODE_HEADSET
+	else if(key == "%")
+		return MODE_SING
 	else if(length(message) > 2 && (key in GLOB.department_radio_prefixes))
 		var/key_symbol = lowertext(copytext_char(message, 2, 3))
 		return GLOB.department_radio_keys[key_symbol]

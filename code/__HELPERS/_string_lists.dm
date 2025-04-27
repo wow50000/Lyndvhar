@@ -27,6 +27,11 @@ GLOBAL_VAR(string_filename_current_key)
 /proc/strings_subkey_lookup(match, group1)
 	return pick_list(GLOB.string_filename_current_key, group1)
 
+/proc/special_chars_to_html_tags(list/strings)
+	for (var/key in strings)
+		strings[replacetext(key, "\'", "&#39;")] = strings[key]
+	return strings
+
 /proc/load_strings_file(filename, directory = "strings")
 	GLOB.string_filename_current_key = filename
 	if(filename in GLOB.string_cache)
@@ -37,5 +42,8 @@ GLOBAL_VAR(string_filename_current_key)
 
 	if(fexists("[directory]/[filename]"))
 		GLOB.string_cache[filename] = json_load("[directory]/[filename]")
-	else
-		CRASH("file not found: [directory]/[filename]")
+		/*
+		if (convert_HTML)
+			if ("full" in GLOB.string_cache[filename])
+				GLOB.string_cache[filename]["full"] = special_chars_to_html_tags(GLOB.string_cache[filename]["full"])
+		*/
