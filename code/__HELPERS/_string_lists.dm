@@ -47,5 +47,3 @@ GLOBAL_VAR(string_filename_current_key)
 			if ("full" in GLOB.string_cache[filename])
 				GLOB.string_cache[filename]["full"] = special_chars_to_html_tags(GLOB.string_cache[filename]["full"])
 		*/
-		else 
-			CRASH("file not found: [directory]/[filename]")
