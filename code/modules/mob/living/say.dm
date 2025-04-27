@@ -92,11 +92,8 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(client && !forced && CHAT_FILTER_CHECK(message))
 		//The filter doesn't act on the sanitized message, but the raw message.
 		ic_blocked = TRUE
-
-	if(sanitize)
-		message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
 		//allow player to format their speech
-		message = replacetextEx(message, regex(@"^([/+]*)(.*?)([/+]*)$"), /proc/format_dialogue)
+
 	if(!message || message == "")
 		return
 
@@ -113,7 +110,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	if(one_character_prefix[message_mode])
 		message = copytext(message, 2)
-	else if(message_mode || saymode)
+	else if(message_mode || saymode) 
 		message = copytext(message, 3)
 	if(findtext_char(message, " ", 1, 2))
 		message = copytext(message, 2)
@@ -205,14 +202,26 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	else
 		src.log_talk(message, LOG_SAY, forced_by=forced)
 
-	message = treat_message(message) // unfortunately we still need this
 	var/sigreturn = SEND_SIGNAL(src, COMSIG_MOB_SAY, args)
 	if (sigreturn & COMPONENT_UPPERCASE_SPEECH)
 		message = uppertext(message)
 	if(!message)
 		return
 
+	//apply various speech filters only on dialogue
+	var/speech_index = 0
+	speech_index = findtext(message, "*")
+	if (speech_index)
+		message = "[copytext(message, 1, speech_index)]*[treat_message(copytext(message, speech_index+1))]"
+	else
+		message = treat_message(message) // apply speech filters after accent
+
 	spans |= speech_span
+
+	if(sanitize)
+		message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	if(!message || message == "")
+		return
 
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]
@@ -309,7 +318,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			deaf_message = "<span class='name'>[speaker]</span> [speaker.verb_say] something but you cannot hear [speaker.p_them()]."
 			deaf_type = 1
 	else
-		deaf_message = span_notice("I can't hear yourself!")
+		deaf_message = span_notice("You can't hear yourself!")
 		deaf_type = 2 // Since you should be able to hear myself without looking
 
 	// Create map text prior to modifying message for goonchat
