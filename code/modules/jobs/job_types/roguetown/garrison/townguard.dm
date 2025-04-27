@@ -141,7 +141,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 /datum/advclass/watchman/footsman
 	name = "Watch Pikeman"
 	tutorial = "You are a Pikeman of the Town Watch. Given a polearm and some armor, you are expected to defend this town from all threats."
-	outfit = /datum/outfit/job/roguetown/guardsman/footsman
+	outfit = /datum/outfit/job/roguetown/guardsman/pikeman
 
 	category_tags = list(CTAG_WATCH)
 
@@ -169,12 +169,20 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
-	/obj/item/clothing/suit/roguetown/armor/leather/studded
-	beltr = /obj/item/rogueweapon/mace/cudgel
-	backl = /obj/item/rogueweapon/shield/wood		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
+	backl = /obj/item/rogueweapon/spear
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
+	
+	var/weapon = pickweight(list("Spear" = 5, "Bardiche" = 2, "Goedendag" = 3 ))
+	switch(weapontype)
+		if("Spear")
+			backl = /obj/item/rogueweapon/spear
+		if("Bardiche")
+			backl = /obj/item/rogueweapon/halberd/bardiche
+		if("Goedendag")
+			backl = /obj/item/rogueweapon/mace/goden
