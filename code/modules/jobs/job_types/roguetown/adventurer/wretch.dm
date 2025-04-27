@@ -38,7 +38,7 @@
 
 /datum/advclass/wretch/deserter
 	name = "Deserter"
-	to_chat(H, span_warning("You were once a venerated and revered knight - now, a traitor who abandoned your liege. You live the life of an outlaw, shunned and looked down upon by society."))
+	tutorial = "You were once a venerated and revered knight - now, a traitor who abandoned your liege. You live the life of an outlaw, shunned and looked down upon by society."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/deserter
@@ -123,7 +123,7 @@
 
 /datum/advclass/wretch/outlaw
 	name = "Outlaw"
-	to_chat(H, span_warning("You're a seasoned criminal known for your heinous acts, your face plastered on wanted posters across the region. A life of theft, robbery, and ill-gotten-gains comes naturally to you."))
+	tutorial = "You're a seasoned criminal known for your heinous acts, your face plastered on wanted posters across the region. A life of theft, robbery, and ill-gotten-gains comes naturally to you."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/outlaw
@@ -190,7 +190,7 @@
 
 /datum/advclass/wretch/poacher
 	name = "Poacher"
-	to_chat(H, span_warning("You have rejected society and its laws, choosing life in the wilderness instead. Simple thieving highwayman or freedom fighter, you take from those who have and give to the have-nots. Fancy, how the latter includes yourself!"))
+	tutorial = "You have rejected society and its laws, choosing life in the wilderness instead. Simple thieving highwayman or freedom fighter, you take from those who have and give to the have-nots. Fancy, how the latter includes yourself!"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/poacher
@@ -262,7 +262,7 @@
 
 /datum/advclass/wretch/heretic
 	name = "Heretic"
-	to_chat(H, span_warning("You are a heretic, spurned by the church, cast out from society - frowned upon by Psydon and his children for your faith."))
+	tutorial = "You are a heretic, spurned by the church, cast out from society - frowned upon by Psydon and his children for your faith."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/heretic
@@ -333,7 +333,7 @@
 
 /datum/advclass/wretch/necromancer
 	name = "Necromancer"
-	to_chat(H, span_warning("You have been ostracized and hunted by society for your dark magics and perversion of life."))
+	tutorial = "You have been ostracized and hunted by society for your dark magics and perversion of life."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/necromancer
@@ -388,7 +388,7 @@
 
 /datum/advclass/wretch/berserker
 	name = "Berserker"
-	to_chat(H, span_warning("You are a warrior feared for your brutality, dedicated to using your might for your own gain. Might equals right, and you are the reminder of such a saying."))
+	tutorial = "You are a warrior feared for your brutality, dedicated to using your might for your own gain. Might equals right, and you are the reminder of such a saying."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/berserker
