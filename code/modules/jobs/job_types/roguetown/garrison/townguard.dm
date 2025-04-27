@@ -145,7 +145,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 	category_tags = list(CTAG_WATCH)
 
-/datum/outfit/job/roguetown/guardsman/footsman/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/guardsman/pikeman/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
