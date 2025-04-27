@@ -1296,7 +1296,6 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rogue.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\trader.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\warrior.dm"
-#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\wretch.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\heartfelt.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\heartfelthand.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\knighterrant.dm"
