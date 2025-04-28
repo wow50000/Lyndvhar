@@ -11,7 +11,6 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "Responsible for the safety of the port city and the enforcement of the law, you are the vanguard of the city faced with punishing those who defy the Viscount. Though you've many lords to obey, as both the Church and the Marshal have great sway over your life."
 	display_order = JDO_TOWNGUARD
-	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/guardsman
 	advclass_cat_rolls = list(CTAG_WATCH = 20)
