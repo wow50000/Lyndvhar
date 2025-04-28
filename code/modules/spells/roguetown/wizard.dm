@@ -17,6 +17,9 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokelightning
 	associated_skill = /datum/skill/magic/arcane
+	spell_tier = 3
+	invocation = "Fulmen!"
+	invocation_type = "shout"
 	cost = 2
 	xp_gain = TRUE
 
@@ -70,6 +73,9 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
+	spell_tier = 3 // Doesn't matter for the most part
+	invocation = "Sanguis Sagitta!"
+	invocation_type = "shout"
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/blood
@@ -118,6 +124,9 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
+	spell_tier = 2
+	invocation = "Sanguis Furtum!"
+	invocation_type = "shout"
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/blood
@@ -174,6 +183,9 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
+	spell_tier = 3 // AOE
+	invocation = "Sphaera Ignis!"
+	invocation_type = "shout"
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokefire
 	associated_skill = /datum/skill/magic/arcane
@@ -222,6 +234,9 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = TRUE
+	spell_tier = 4 // Highest tier AOE
+	invocation = "Maior Sphaera Ignis!"
+	invocation_type = "shout"
 	chargedloop = /datum/looping_sound/invokefire
 	cost = 5
 	xp_gain = TRUE
@@ -250,6 +265,9 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
+	spell_tier = 2
+	invocation = "Evomere Flammas!"
+	invocation_type = "shout"
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokefire
 	associated_skill = /datum/skill/magic/arcane
@@ -284,6 +302,9 @@
 	warnie = "spellwarning"
 	overlay_state = "fetch"
 	no_early_release = TRUE
+	spell_tier = 2
+	invocation = "Recolligere"
+	invocation_type = "whisper"
 	charging_slowdown = 1
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/arcane
