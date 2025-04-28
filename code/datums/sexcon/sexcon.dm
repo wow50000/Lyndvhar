@@ -23,6 +23,7 @@
 	var/last_ejaculation_time = 0
 	var/last_moan = 0
 	var/last_pain = 0
+	var/aphrodisiac = 1 //1 by default, acts as a multiplier on arousal gain. If this is different than 1, set/freeze arousal is disabled.
 
 /datum/sex_controller/New(mob/living/carbon/human/owner)
 	user = owner
@@ -193,7 +194,9 @@
 		penis.update_erect_state()
 
 /datum/sex_controller/proc/adjust_arousal(amount)
-	set_arousal(arousal + amount)
+	if(aphrodisiac > 1 && amount > 0)
+		set_arousal(arousal + (amount * aphrodisiac))
+	else set_arousal(arousal + amount)
 
 /datum/sex_controller/proc/perform_deepthroat_oxyloss(mob/living/carbon/human/action_target, oxyloss_amt)
 	var/oxyloss_multiplier = 0
@@ -320,8 +323,14 @@
 	return TRUE
 
 /datum/sex_controller/proc/handle_passive_ejaculation()
+	var/mob/living/carbon/human/M = user
 	if(current_action) // Don't passively ejaculate if currently performing a specific sex action
 		return
+	if(M.check_handholding())
+		if(prob(5))
+			try_do_moan(3, 0, 1, 0)
+		if(arousal < AROUSAL_HARD_ON_THRESHOLD || aphrodisiac > 1)
+			adjust_arousal(0.7)
 	if(arousal < PASSIVE_EJAC_THRESHOLD)
 		return
 	if(is_spent())
@@ -430,10 +439,12 @@
 		if("toggle_finished")
 			do_until_finished = !do_until_finished
 		if("set_arousal")
-			var/amount = input(user, "Value above 120 will immediately cause orgasm!", "Set Arousal", arousal) as num
-			set_arousal(amount)
+			if(aphrodisiac == 1)
+				var/amount = input(user, "Value above 120 will immediately cause orgasm!", "Set Arousal", arousal) as num
+				set_arousal(amount)
 		if("freeze_arousal")
-			arousal_frozen = !arousal_frozen
+			if(aphrodisiac == 1)
+				arousal_frozen = !arousal_frozen
 	show_ui()
 
 /datum/sex_controller/proc/try_stop_current_action()
