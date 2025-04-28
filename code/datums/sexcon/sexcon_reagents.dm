@@ -1,6 +1,6 @@
 /datum/reagent/consumable/ethanol/beer/emberwine
 	name = "Emberwine"
-	boozepwr = 30
+	boozepwr = 80
 	taste_description = "searing sweetness"
 	taste_mult = 0.5
 	quality = DRINK_VERYGOOD
@@ -31,9 +31,9 @@
 		if(20)
 			to_chat(C, "<span class='aphrodisiac'>You feel a warm glow spreading through your stomach.</span>")
 		if(21 to 25)
-			S.adjust_arousal(10)
+			S.adjust_arousal(5)
 		if(26 to INFINITY)
-			C.apply_status_effect(/datum/status_effect/debuff/silver_curse)
+			C.apply_status_effect(/datum/status_effect/debuff/emberwine)
 			if(S.arousal_frozen)
 				S.arousal_frozen = FALSE
 			if(S.arousal < 51)
