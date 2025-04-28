@@ -174,4 +174,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
-	backl = pickweight(list(/obj/item/rogueweapon/halberd/bardiche = 2, /obj/item/rogueweapon/spear = 5, /obj/item/rogueweapon/mace/goden = 3))
+	backl = pickweight(list(
+		(prob(50)) =	/obj/item/rogueweapon/spear,	
+		(prob(30)) = 	/obj/item/rogueweapon/mace/goden,
+		(prob(20)) = /obj/item/rogueweapon/halberd/bardiche))
