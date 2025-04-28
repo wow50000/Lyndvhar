@@ -170,7 +170,6 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
-	backl = /obj/item/rogueweapon/spear
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	belt = /obj/item/storage/belt/rogue/leather
@@ -178,7 +177,8 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
 	
-	var/weapon = pickweight(list("Spear" = 5, "Bardiche" = 2, "Goedendag" = 3 ))
+	var/weapons = list("Spear", "Bardiche", "Goedendag")
+	var/weapontype = pickweight(list("Spear" = 5, "Bardiche" = 2, "Goedendag" = 3))
 	switch(weapontype)
 		if("Spear")
 			backl = /obj/item/rogueweapon/spear
