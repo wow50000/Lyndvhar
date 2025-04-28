@@ -33,6 +33,7 @@
 	var/charging_slowdown = 0
 	var/obj/inhand_requirement = null
 	var/overlay_state = null
+	var/ignore_los = TRUE
 
 
 /obj/effect/proc_holder/Initialize()
@@ -393,13 +394,39 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 			recharging = FALSE
 
 /obj/effect/proc_holder/spell/proc/perform(list/targets, recharge = TRUE, mob/user = usr) //if recharge is started is important for the trigger spells
+	if(!ignore_los)
+		if(length(targets))
+			var/radius
+			if(range > 0)	//accounts for touch / self spells that use negative range
+				radius = range
+			else
+				radius = 1
+			if(get_dist(targets[1], user) > radius)
+				to_chat(user, span_warning("It's too far!"))
+				revert_cast()
+				return
+			var/atom/A = targets[1]
+			var/turf/target_turf = get_turf(A)
+			var/turf/source_turf = get_turf(user)
+			if(A.z > user.z)
+				source_turf = get_step_multiz(source_turf, UP)
+			if(A.z < user.z)
+				source_turf = get_step_multiz(source_turf, DOWN)
+			if(!(target_turf in view(source_turf)))
+				to_chat(user, span_warning("I do not have line of sight! Casting on nearest tile."))
+				var/list/possible_targets = getline(source_turf, target_turf)
+				for(var/i = possible_targets.len; i > 0; i--) // Since turfs added by the getline are in ordered by distance, we need to start from the end
+					var/atom/closest_tile = possible_targets[i]
+					if(closest_tile in view(source_turf))
+						targets[1] = closest_tile
+						break; // Found furthest tile, do not self-frag
 	before_cast(targets, user = user)
-	invocation(user)
 	if(user && user.ckey)
 		user.log_message(span_danger("cast the spell [name]."), LOG_ATTACK)
 	if(recharge)
 		recharging = TRUE
 	if(cast(targets, user = user))
+		invocation(user)
 		start_recharge()
 		if(sound)
 			playMagSound()
