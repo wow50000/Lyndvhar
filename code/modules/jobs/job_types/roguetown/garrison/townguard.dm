@@ -176,8 +176,6 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
-	
-	var/weapons = list("Spear","Bardiche","Goedendag")
 	var/weapontype = pickweight(list("Spear" = 5, "Bardiche" = 2, "Goedendag" = 3))
 	switch(weapontype)
 		if("Spear")
