@@ -41,6 +41,19 @@
 			if(prob(8))
 				C.emote("sexmoanlight", forced = TRUE)
 				to_chat(C, "<span class='love_high'>[high_message]</span>")
+				if(istype(C.wear_armor, /obj/item/clothing))
+					var/obj/item/clothing/CL = C.wear_armor
+					switch(CL.armor_class)
+						if(3)
+							C.Immobilize(30)
+							C.set_blurriness(5)
+							C.rogfat_add(15)
+							to_chat(C, "<span class='warning'>Your armor chaffs uncomfortably against your skin and makes it difficult to breathe.</span>")
+						if(2)
+							C.Immobilize(15)
+							C.set_blurriness(2)
+							C.rogfat_add(5)
+							to_chat(C, "<span class='warning'>Your armor chaffs uncomfortably against your skin.</span>")
 			S.adjust_charge(8)
 	return ..()
 
@@ -76,7 +89,7 @@
 	SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/withdrawal_severe, name) //Not critical because they'll already be getting blueballed.
 	if(!S.arousal_frozen)
 		S.arousal_frozen = TRUE
-	C.sexcon.arousal = 36
+	C.sexcon.arousal = 40
 	if(S.aphrodisiac < 1.5)
 		S.aphrodisiac = 1.5
 	if(prob(10))
