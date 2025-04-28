@@ -37,7 +37,7 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			var/weapons = list("Iron Sword","Mace","Billhook","Hatchet")
+			var/weapons = list("Iron Sword","Mace","Spear","Axe")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Iron Sword")
@@ -46,32 +46,22 @@
 				if("Mace")
 					H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 					beltr = /obj/item/rogueweapon/mace
-				if("Billhook")
+				if("Spear")
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-					backr = /obj/item/rogueweapon/spear/improvisedbillhook
-				if("Hatchet")
+					backr = /obj/item/rogueweapon/spear
+				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/woodcut
-					var/armor = list("Light", "Medium")
-					var/armor_choice = input ("Choose your armor","TAKE UP ARMS") as anything in armor
-					switch(armor_choice)
-						if("Light")
-							pants = /obj/item/clothing/under/roguetown/trou/leather
-							shoes = /obj/item/clothing/shoes/roguetown/boots
-							shirt = shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-							gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-							beltl = /obj/item/rogueweapon/huntingknife/idagger
-						if("Medium")
-							pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-							shoes = /obj/item/clothing/shoes/roguetown/boots
-							shirt = shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-							gloves = /obj/item/clothing/gloves/roguetown/chain/iron
-							beltl = /obj/item/rogueweapon/huntingknife/idagger							
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 1)
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+			pants = /obj/item/clothing/under/roguetown/trou
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+			shoes = /obj/item/clothing/shoes/roguetown/boots
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
@@ -100,7 +90,7 @@
 				if("Dagger")
 					H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
-					beltr = /obj/item/rogueweapon/huntingknife/idagger
+					beltl = /obj/item/rogueweapon/huntingknife/idagger
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			head = /obj/item/clothing/head/roguetown/brimmed
