@@ -137,7 +137,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
-/datum/advclass/watchman/footsman
+/datum/advclass/watchman/pikeman
 	name = "Watch Pikeman"
 	tutorial = "You are a Pikeman of the Town Watch. Given a polearm and some armor, you are expected to defend this town from all threats."
 	outfit = /datum/outfit/job/roguetown/guardsman/pikeman
