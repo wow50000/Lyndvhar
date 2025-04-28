@@ -100,8 +100,8 @@
 	l_sleeve_status = SLEEVE_NORMAL
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-	name = "tinker suit"
-	desc = "Typical fashion of the best engineers."
+	name = "shirt and vest"
+	desc = "Typical apparel of the Lyndvhar"
 	icon_state = "artishirt"
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
@@ -136,8 +136,8 @@
 	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-	name = "tinker suit"
-	desc = "Typical fashion of the best engineers."
+	name = "collared shirt and vest"
+	desc = "Common attire amongst the rising members of the peasantry, of course such prospects are absurd."
 	icon_state = "artishirt"
 
 //Royal clothing:
@@ -185,7 +185,7 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "pristine dress"
-	desc = "A flowy, intricate dress made by the finest tailors in the land for the monarch's children."
+	desc = "A flowy, intricate dress made by the finest Lyndhardian tailors for the young and spoiled aristocracy."
 	icon_state = "princess"
 	boobed = TRUE
 	detail_color = CLOTHING_BLUE
@@ -194,7 +194,7 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "gilded dress shirt"
-	desc = "A gold-embroidered dress shirt specially tailored for the monarch's children."
+	desc = "A gold-embroidered dress shirt specially tailored for the young and spoiled aristocracy."
 	icon_state = "prince"
 	boobed = TRUE
 	detail_color = CLOTHING_MAJENTA
