@@ -4,7 +4,7 @@
 	taste_description = "searing sweetness"
 	taste_mult = 0.5
 	quality = DRINK_VERYGOOD
-	metabolization_rate = 0.1 * REAGENTS_METABOLISM
+	metabolization_rate = 0.02 * REAGENTS_METABOLISM
 	overdose_threshold = 18 
 	addiction_threshold = 12 //Three sips, or a full goblet if properly mixed with two other reagents to hide the taste.
 	addiction_permanent = TRUE
@@ -50,7 +50,7 @@
 		to_chat(C, "<span class='aphrodisiac'>You feel a warm glow spreading through your stomach.</span>")
 		sleep(10)
 	to_chat(C, "<span class='aphrodisiac'>The glow in your stomach spreads, rushing to your head and warming your face.</span>")
-	metabolization_rate = 0.5 //Purges faster while overdosing because this is really debilitating
+	metabolization_rate = 0.2 //Purges faster while overdosing because this is really debilitating
 	C.emote("sexmoanhvy", forced = TRUE)
 	C.sexcon.aphrodisiac += 1
 	C.charflaw = null
