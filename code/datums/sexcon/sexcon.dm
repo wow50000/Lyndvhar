@@ -327,7 +327,7 @@
 	if(current_action) // Don't passively ejaculate if currently performing a specific sex action
 		return
 	if(M.check_handholding())
-		if(prob(5))
+		if(prob(2)) //Yeah.
 			try_do_moan(3, 0, 1, 0)
 		if(arousal < AROUSAL_HARD_ON_THRESHOLD || aphrodisiac > 1)
 			adjust_arousal(0.7)
