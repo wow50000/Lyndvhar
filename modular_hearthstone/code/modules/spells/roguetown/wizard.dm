@@ -414,17 +414,16 @@
 	no_early_release = TRUE
 	movement_interrupt = FALSE
 	charging_slowdown = 2
-	spell_tier = 4
+	spell_tier = 3
 	invocation = "Obmolior!"
 	invocation_type = "shout"
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/arcane
 	overlay_state = "repulse"
-	var/stun_amt = 5
 	var/maxthrow = 3
 	var/sparkle_path = /obj/effect/temp_visual/gravpush
-	var/repulse_force = MOVE_FORCE_EXTREMELY_STRONG
-	var/push_range = 1
+	var/repulse_force = MOVE_FORCE_VERY_STRONG
+	var/push_range = 3
 
 /obj/effect/proc_holder/spell/invoked/push_spell/cast(list/targets, mob/user)
 	var/list/thrownatoms = list()
@@ -459,7 +458,11 @@
 			new sparkle_path(get_turf(AM), get_dir(user, AM)) //created sparkles will disappear on their own
 			if(isliving(AM))
 				var/mob/living/M = AM
-				M.Paralyze(stun_amt)
+				if(M.STACON > 10)
+					M.Immobilize(10) //Immobilizes for 1 second
+				else
+					M.Knockdown(10)
+					M.Immobilize(10)
 				to_chat(M, "<span class='danger'>You're thrown back by [user]!</span>")
 			AM.safe_throw_at(throwtarget, ((CLAMP((maxthrow - (CLAMP(distfromcaster - 2, 0, distfromcaster))), 3, maxthrow))), 1,user, force = repulse_force)//So stuff gets tossed around at the same time.
 
@@ -482,6 +485,7 @@
 	spell_tier = 2 // AOE, but this is essential for PVE
 	invocation = "Erumpere Gladios!"
 	invocation_type = "shout"
+	range = 5
 	var/delay = 14
 	var/damage = 125 //if you get hit by this it's your fault
 	var/area_of_effect = 1
