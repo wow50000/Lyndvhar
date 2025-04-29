@@ -116,7 +116,7 @@
 		first_cast = TRUE
 	. = ..()
 	
-/obj/effect/proc_holder/spell/self/dendor_shapeshift
+/obj/effect/proc_holder/spell/targeted/shapeshift/dendor
 	name = "Beast Form"
 	desc = "Take on the form of one of Dendor's sacred beasts."
 	overlay_state = "tamebeast"
