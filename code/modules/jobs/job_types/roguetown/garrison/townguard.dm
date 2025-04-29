@@ -177,6 +177,6 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	var/weapontype = pickweight(list("Spear" = 6, "Bardiche" = 4)) // Rolls for either a spear or a bardiche
 	switch(weapontype)
 		if("Spear")
-			backr = /obj/item/rogueweapon/polearm/spear
+			backr = /obj/item/rogueweapon/spear
 		if("Bardiche")
-			backr = /obj/item/rogueweapon/polearm/halberd/bardiche
+			backr = /obj/item/rogueweapon/halberd/bardiche
