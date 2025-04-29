@@ -11,6 +11,7 @@
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
 		/datum/species/dwarf/mountain
+		/datum/species/demihuman
 	)	//Maybe a system to force-pick lineage based on king and queen should be implemented.
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
