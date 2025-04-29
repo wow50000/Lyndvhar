@@ -40,6 +40,7 @@
 	attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg','sound/combat/wooshes/blunt/wooshhuge (3).ogg')
 	dodgetime = 6 SECONDS //Can only dodge once per 6 seconds
 	aggressive = 1
+	rot_type = null
 //	stat_attack = UNCONSCIOUS
 
 	can_have_ai = FALSE //disable native ai
