@@ -692,7 +692,7 @@
 "dNl" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/blocks/green,/area/rogue/under/town/sewer)
 "dNA" = (/obj/structure/roguemachine/scomm/r,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town)
 "dOV" = (/obj/structure/rack/rogue,/obj/item/rope,/obj/item/rope,/obj/item/rope,/obj/item/rope,/turf/open/floor/rogue/cobble,/area/rogue/under/town/basement/keep)
-"dPG" = (/obj/effect/landmark/start/barkeep,/turf/open/floor/rogue/ruinedwood/herringbone,/area/rogue/indoors/town/tavern)
+"dPG" = (/obj/effect/landmark/start/barkeeper,/turf/open/floor/rogue/ruinedwood/herringbone,/area/rogue/indoors/town/tavern)
 "dPQ" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/whip,/obj/item/rogueweapon/huntingknife/chefknife,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/church)
 "dPT" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/rope/chain,/turf/open/floor/rogue/woodturned,/area/rogue/under/town/basement/keep)
 "dPW" = (/obj/structure/closet/crate/chest/neu,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town)
