@@ -613,7 +613,7 @@
 	desc = "A duelist's weapon derived from western battlefield instruments, it features a tapered \
 	blade with a specialized stabbing tip."
 	icon = 'icons/roguetown/weapons/64.dmi'
-	icon_state = "rapier1"
+	icon_state = "rapier"
 	bigboy = TRUE
 	pixel_y = -16
 	pixel_x = -16
