@@ -182,7 +182,7 @@
 		RH = get_bodypart(BODY_ZONE_PRECISE_R_HAND)
 		if(LH || RH)
 			for(var/obj/item/grabbing/G in src.grabbedby)
-				if(G.limb_grabbed == LH || RH)
+				if(G.limb_grabbed == LH || G.limb_grabbed == RH)
 					return TRUE
 
 /mob/proc/check_leg_grabbed()
