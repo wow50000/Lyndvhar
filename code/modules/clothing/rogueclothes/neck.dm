@@ -226,13 +226,15 @@
 /obj/item/clothing/neck/roguetown/gorget/prisoner/Initialize()
 	. = ..()
 	name = "cursed collar"
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	ADD_TRAIT(src, TRAIT_NO_SELF_UNEQUIP, CURSED_ITEM_TRAIT)
 
+/*
 /obj/item/clothing/neck/roguetown/gorget/prisoner/dropped(mob/living/carbon/human/user)
 	. = ..()
 	if(QDELETED(src))
 		return
 	qdel(src)
+*/
 
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
@@ -419,17 +421,19 @@
 	. = ..()
 	name = "cursed collar"
 	resistance_flags = FIRE_PROOF
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	ADD_TRAIT(src, TRAIT_NO_SELF_UNEQUIP, CURSED_ITEM_TRAIT)
 	clothing_flags = ITEM_SLOT_NECK
 	icon = 'modular/icons/obj/items/leashes_collars.dmi'
 	mob_overlay_icon = 'modular/icons/mob/collars_leashes.dmi'
 	icon_state = "leathercollar"
 
+/*
 /obj/item/clothing/neck/roguetown/collar/leather/cursed/dropped(mob/living/carbon/human/user)
 	. = ..()
 	if(QDELETED(src))
 		return
 	qdel(src)
+*/
 
 /obj/item/clothing/neck/roguetown/collar/leather/bell
 	name = "jingly leather collar"
