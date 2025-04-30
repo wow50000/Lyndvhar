@@ -159,17 +159,16 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.change_stat("strength", 1)
-	H.change_stat("constitution", 1)
 	H.change_stat("endurance", 2)
 
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)	//You get medium armor training to go with your armor.
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
+	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 6, /obj/item/clothing/suit/roguetown/armor/chainmail/iron = 4))
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
-	beltr = /obj/item/rogueweapon/sword/short
+	beltr = /obj/item/rogueweapon/sword/iron/short
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
