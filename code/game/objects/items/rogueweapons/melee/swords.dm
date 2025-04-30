@@ -535,6 +535,10 @@
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver
 
+/obj/item/rogueweapon/sword/long/psysword/ComponentInitialize()
+	. = ..()								//+3 force, +50 int, +1 def, make silver
+	AddComponent(/datum/component/psyblessed, FALSE, 3, FALSE, 50, 1, TRUE)
+
 /obj/item/rogueweapon/sword/iron
 	name = "sword"
 	desc = "A simple iron sword, the most classical war weapon."
