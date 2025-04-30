@@ -23,14 +23,14 @@
 			to_chat(user, span_info("The reliquary lock takes my key as it opens, I take a moment to ponder what power was delivered to us..."))
 			playsound(loc, 'sound/foley/doors/lock.ogg', 60)
 			to_chat(user,)
-			var/relics = list("Melancholic Crankbox - Antimagic", "Daybreak - Silver Whip", "Golgatha - SYON Shard Censer")
+			var/relics = list("Melancholic Crankbox - Antimagic", "Daybreak - Silver Whip", "Golgatha - Shard Censer")
 			var/relicchoice = input(user, "Choose your tool", "RELICS") as anything in relics
 			switch(relicchoice)
 				if("Melancholic Crankbox - Antimagic")
 					user.put_in_hands(new /obj/item/psydonmusicbox(user))
 				if("Daybreak - Silver Whip")
 					user.put_in_hands(new /obj/item/rogueweapon/whip/antique/psywhip(user))
-				if("Golgatha - SYON Shard Censer")
+				if("Golgatha - Shard Censer")
 					user.put_in_hands(new /obj/item/flashlight/flare/torch/lantern/psycenser(user))
 			to_chat(user, span_info("I have chosen the relic, may HE guide my hand."))
 			opened = TRUE
@@ -221,7 +221,7 @@
 
 /obj/item/flashlight/flare/torch/lantern/psycenser
 	name = "Golgatha"
-	desc = "A masterfully-crafted thurible that, when opened, emits a ghastly perfume that reinvigorates the flesh-and-steel of Psydonites. It is said to contain a volatile fragment of the Comet Syon, which - if mishandled - can lead to unforeseen consequences."
+	desc = "A masterfully-crafted thurible that, when opened, emits a ghastly perfume that reinvigorates the flesh-and-steel of Psydonites. It is said to contain a volatile fragment of religious importance, which - if mishandled - can lead to unforeseen consequences."
 	icon_state = "psycenser"
 	item_state = "psycenser"
 	light_outer_range = 8
@@ -297,7 +297,7 @@
 /obj/item/flashlight/flare/torch/lantern/psycenser/afterattack(atom/movable/A, mob/user, proximity)
 	. = ..()	//We smashed a guy with it turned on. Bad idea!
 	if(ismob(A) && on && (user.used_intent.type == /datum/intent/flail/strike/smash/golgotha) && user.cmode)
-		user.visible_message(span_warningbig("[user] smashes the exposed [src], shattering the shard of SYON!"))
+		user.visible_message(span_warningbig("[user] smashes the exposed [src], shattering the shard of Faith!"))
 		explosion(get_turf(A),devastation_range = 2, heavy_impact_range = 3, light_impact_range = 4, flame_range = 2, flash_range = 4, smoke = FALSE)
 		fuel = 0
 		turn_off()
@@ -359,9 +359,9 @@
 		
 /datum/component/psyblessed/proc/on_examine(datum/source, mob/user, list/examine_list)
 	if(!is_blessed)
-		examine_list += span_info("<font color = '#cfa446'>This object may be blessed by the lingering shard of COMET SYON. Until then, its impure alloying of silver-and-steel cannot blight inhumen foes on its own.</font>")
+		examine_list += span_info("<font color = '#cfa446'>This object may be blessed by a fragmemt of faith. Until then, its impure alloying of silver-and-steel cannot blight inhumen foes on its own.</font>")
 	if(is_blessed)
-		examine_list += span_info("<font color = '#46bacf'>This object has been blessed by COMET SYON.</font>")
+		examine_list += span_info("<font color = '#46bacf'>This object has been blessed by He.</font>")
 		if(silver)
 			examine_list += span_info("It has been imbued with <b>silver</b>.")
 
@@ -377,7 +377,7 @@
 	if(isitem(parent))
 		var/obj/item/I = parent
 		playsound(I, 'sound/magic/holyshield.ogg', 100)
-		I.visible_message(span_notice("[I] glistens with power as dust of COMET SYON lands upon it!"))
+		I.visible_message(span_notice("[I] glistens with power as dust of FAITH lands upon it!"))
 
 /datum/component/psyblessed/proc/apply_bless()
 	if(isitem(parent))

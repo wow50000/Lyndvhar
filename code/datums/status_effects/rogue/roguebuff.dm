@@ -408,8 +408,8 @@
 	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
 
 /atom/movable/screen/alert/status_effect/buff/censerbuff
-	name = "Inspired by SYON."
-	desc = "The shard of the great comet had inspired me to ENDURE."
+	name = "Orthodoxist Blessing."
+	desc = "A shard of his blessings has inspired me to ENDURE!"
 	icon_state = "censerbuff"
 
 /datum/status_effect/buff/censerbuff
