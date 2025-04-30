@@ -554,9 +554,6 @@
 			var/mob/living/carbon/H = user
 			H.update_inv_shirt()
 
-
-
-
 /obj/item/clothing/suit/roguetown/shirt/grenzelhoft/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
