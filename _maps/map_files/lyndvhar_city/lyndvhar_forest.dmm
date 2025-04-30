@@ -25,6 +25,7 @@
 "bK" = (/obj/structure/flora/rock/jungle{pixel_x = -14; pixel_y = -19},/obj/item/natural/stone{pixel_y = 7; pixel_x = -7},/turf/open/floor/rogue/cobble/mossy,/area/rogue/outdoors/woods)
 "bP" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/woods)
 "bT" = (/obj/structure/mineral_door/wood/deadbolt,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/woods)
+"bV" = (/mob/living/carbon/human/species/goblin/npc/ambush,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/grass,/area/rogue/indoors/shelter/woods)
 "bX" = (/mob/living/simple_animal/hostile/retaliate/rogue/troll,/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods)
 "ca" = (/obj/structure/stairs/stone{dir = 1},/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods)
 "cb" = (/turf/closed/wall/mineral/rogue/wooddark/end{dir = 4; icon_state = "endwooddark"},/area/rogue/indoors/shelter/woods)
@@ -100,7 +101,6 @@
 "hg" = (/obj/structure/fluff/railing/border{dir = 8},/mob/living/carbon/human/species/skeleton/npc/ambush,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter/woods)
 "hj" = (/obj/structure/fluff/railing/wood{dir = 1; pixel_y = -1},/obj/effect/decal/cobbleedge{dir = 10; icon_state = "cobbleedge-e"},/turf/open/floor/rogue/wood/nosmooth,/area/rogue/outdoors/town/roofs)
 "hm" = (/obj/structure/ladder,/obj/structure/ladder,/turf/open/floor/rogue/wood/nosmooth,/area/rogue/indoors/shelter/woods)
-"hq" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/grass,/area/rogue/indoors/shelter/woods)
 "hr" = (/obj/structure/fluff/railing/fence,/turf/open/floor/rogue/twig,/area/rogue/outdoors/town/roofs)
 "hs" = (/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods)
 "hC" = (/obj/structure/rack/rogue,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
@@ -148,7 +148,7 @@
 "ku" = (/obj/structure/fluff/railing/wood,/turf/open/transparent/openspace,/area/rogue/outdoors/town/roofs)
 "kv" = (/turf/closed/mineral/rogue/bedrock,/area/rogue)
 "kC" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/town/roofs)
-"kE" = (/obj/structure/flora/rock/jungle,/obj/structure/flora/rock/jungle{pixel_x = 13; pixel_y = 12},/obj/item/natural/stone,/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
+"kE" = (/obj/structure/flora/rock/jungle,/obj/structure/flora/rock/jungle{pixel_x = 13; pixel_y = 12},/obj/item/natural/stone,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
 "kG" = (/obj/structure/bed/rogue,/obj/item/bedsheet/rogue/wool,/obj/machinery/light/rogue/torchholder/l,/obj/effect/landmark/start/bogguardsman{name = "Warden"; dir = 8; jobspawn_override = list("Bog Master","Bog Guard","Warden")},/turf/open/floor/rogue/wood/nosmooth,/area/rogue/indoors/shelter/woods)
 "kJ" = (/obj/structure/fluff/railing/border{dir = 8},/turf/open/transparent/openspace,/area/rogue/outdoors/woods)
 "kK" = (/obj/structure/stairs/stone{dir = 8},/obj/structure/spider/stickyweb,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dungeon1)
@@ -314,7 +314,7 @@
 "xk" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/outdoors/town/roofs)
 "xm" = (/obj/structure/fluff/railing/fence{dir = 8},/turf/open/floor/rogue/wood/nosmooth,/area/rogue/outdoors/woods)
 "xu" = (/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/quiver/arrows,/obj/item/quiver/arrows,/obj/item/quiver/arrows,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,/obj/item/quiver/arrows,/obj/item/quiver/arrows,/obj/item/quiver/arrows,/obj/item/quiver/arrows,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter/woods)
-"xB" = (/obj/effect/decal/cobbleedge{dir = 9},/obj/structure/fluff/nest,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods)
+"xB" = (/obj/effect/decal/cobbleedge{dir = 9},/obj/structure/fluff/nest,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods)
 "xE" = (/obj/machinery/light/rogue/torchholder/c,/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods)
 "xF" = (/turf/closed/wall/mineral/rogue/stone/moss,/area/rogue/outdoors/town/roofs)
 "xG" = (/obj/structure/closet/crate/drawer/inn{density = 0},/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter/woods)
@@ -342,7 +342,7 @@
 "zR" = (/obj/structure/bars,/turf/open/floor/rogue/concrete,/area/rogue/indoors/shelter/woods)
 "zU" = (/turf/open/floor/rogue/twig,/area/rogue/outdoors/town/roofs)
 "zW" = (/obj/effect/decal/remains/human,/turf/open/water/swamp,/area/rogue/outdoors/woods)
-"zY" = (/mob/living/carbon/human/species/goblin/npc/ambush,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/grass,/area/rogue/indoors/shelter/woods)
+"zY" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/grass,/area/rogue/indoors/shelter/woods)
 "Aa" = (/obj/structure/bed/rogue,/obj/item/bedsheet/rogue/wool,/obj/effect/landmark/start/bogguardsman{name = "Warden"; dir = 8; jobspawn_override = list("Bog Master","Bog Guard","Warden")},/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/woods)
 "Ab" = (/obj/structure/fluff/railing/border{dir = 1},/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods)
 "Ao" = (/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,/area/rogue/under/cave/dungeon1)
@@ -377,7 +377,7 @@
 "Cc" = (/obj/structure/chair/bench/church,/turf/open/floor/rogue/hexstone,/area/rogue/under/cave/dungeon1)
 "Cd" = (/obj/structure/fluff/railing/border{dir = 5},/turf/open/transparent/openspace,/area/rogue)
 "Ci" = (/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
-"Cl" = (/obj/effect/decal/cobbleedge{dir = 9},/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods)
+"Cl" = (/obj/effect/decal/cobbleedge{dir = 9},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods)
 "Cn" = (/obj/structure/fermenting_barrel/random/water,/turf/open/floor/rogue/hexstone,/area/rogue/under/cave/dungeon1)
 "Cp" = (/turf/open/floor/rogue/blocks,/area/rogue/under/cave/dungeon1)
 "Cq" = (/obj/structure/closet/crate/roguecloset/dark{locked = 1; lockid = "warden"; keylock = 1},/obj/item/rogueweapon/shovel,/obj/item/rogueweapon/stoneaxe/woodcut,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter/woods)
@@ -421,7 +421,6 @@
 "Fz" = (/turf/open/transparent/openspace,/area/rogue/under/cave/dungeon1)
 "FE" = (/obj/structure/fluff/railing/wood{dir = 1; pixel_y = -1},/turf/open/floor/rogue/wood/nosmooth,/area/rogue/outdoors/woods)
 "FF" = (/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/woods)
-"FJ" = (/obj/effect/decal/cobbleedge{dir = 2},/obj/structure/flora/rock/pile,/turf/open/floor/rogue/cobble/mossy,/area/rogue/outdoors/woods)
 "FN" = (/obj/structure/fluff/railing/border{dir = 1},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
 "FR" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/hay,/area/rogue)
 "FU" = (/turf/open/floor/rogue/woodturned/nosmooth,/area/rogue/outdoors/town/roofs)
@@ -451,7 +450,7 @@
 "Hv" = (/obj/structure/fluff/railing/wood{dir = 8},/obj/effect/decal/cobbleedge{icon_state = "cobbleedge-sread"},/turf/open/floor/rogue/twig,/area/rogue/outdoors/town/roofs)
 "Hy" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods)
 "Hz" = (/obj/effect/decal/cobbleedge{dir = 10; icon_state = "cobbleedge-w"},/turf/open/floor/rogue/dirt/ambush,/area/rogue/outdoors/woods)
-"HG" = (/obj/structure/flora/rock/jungle,/obj/item/natural/stone,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
+"HG" = (/obj/structure/flora/rock/jungle,/obj/item/natural/stone,/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods)
 "HH" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/rogue/grassyel,/area/rogue/outdoors/woods)
 "HJ" = (/obj/structure/well,/turf/open/floor/rogue/dirt/ambush,/area/rogue/outdoors/woods)
 "HL" = (/turf/open/floor/rogue/cobble/mossy,/area/rogue/outdoors/town/roofs)
@@ -674,6 +673,7 @@
 "XX" = (/obj/structure/fluff/railing/border{dir = 1},/turf/open/transparent/openspace,/area/rogue/outdoors/woods)
 "Yc" = (/obj/structure/fluff/railing/wood,/obj/structure/closet/crate/chest/wicker,/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,/turf/open/floor/rogue/wood/nosmooth,/area/rogue/outdoors/woods)
 "Ye" = (/obj/structure/bed/rogue,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter/woods)
+"Yi" = (/obj/effect/decal/cobbleedge{dir = 2},/obj/structure/flora/rock/pile,/turf/open/floor/rogue/cobble/mossy,/area/rogue/outdoors/woods)
 "Yp" = (/obj/structure/fluff/railing/fence{dir = 4},/turf/open/floor/rogue/grass,/area/rogue/outdoors/woods)
 "Yr" = (/obj/structure/flora/newtree,/turf/open/water/swamp,/area/rogue/outdoors/woods)
 "YD" = (/obj/structure/fluff/railing/border{dir = 4},/turf/open/transparent/openspace,/area/rogue)
@@ -978,7 +978,7 @@ KLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNVeVNkJuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNhchc
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNVedQQnuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNIcIcsOIcIcIcIcvkvkIcIcIcIcIcWsWshsnkWsIcIcIcIcBIBIBIIcsOIcIcIcIcIcIcIcIcsOIcIcIcIcsOnkIcnkIcIcIcIcIcIcIcIcIcvkvkIcIcIcIcIcIcIcIcIcvkIcIcIcIcIcIcIcIcIcIcIcndndndIcIcIcIcIcIcsOIcIcIcIchcKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuhchchchchchcJuJuJuJuJuJuJuIcndndIcIczIzIzIzIiZiZIcIcvkndIcIcsOIcnkIcIcIcnkIcIcIcIcIcIcIcnkIcsOIcvkIcIcIchcKLKLKL
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNYVuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNIcIcIcIcIcIcIcIcIcIcvkvkvkvkIcIcIcWshshsnkWsIcIcIcBIvhGXvhBIIcIcIcIcIcIcIcIcIcIcIcQzIcIcIcIcnkIcIcvkIcIcIcIcIcvkvkIcIcIcIcsOIcIcIcIcIcvkvkIcIcIcIcIcIcIcIcIcIcndndndndIcIcIcIcIcIcIcIcIcIcIcKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuhcJuJuJuJuJuJuJuJuJuJuIcIcndIcIcIczIzIzIiZiZIcIcvkIcIcIcIcIcIcIcndIcIcsOIcIcIcIcvkIcIcIcIcIcIcIcvkIchchcKLKLKL
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNSquzuNuNuNuNuNuNuNuNuNuNuNuNuNuNIcIcIcIcsOIcIcIcIcIcIcsOIcvkvkvkvkIcsOWsWshsnkWsIcIcIcBIGXjtbeBIIcIcIcIcIcQzIcIcIcIcIcIcIcnkIcnkIcIcIcvkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkvkIcsOIcIcIcIcIcIcIcIcIcndndndIcIcIcIcIcIcnkIcIcIcIcIcKLKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuIcnkIcsOIczIzIzIzIiZIcvkvkIcnkIcnknkIcIcIcIcIcIcIcIcIcIcIcvkIcsOIcIcIcIcIcvkvkhchcKLKLKL
-KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNSquzVeuNWzuNuNuNuNuNuNuNuNIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkvksOvkIcIcWsIchsWsWsIcIcBIvhGXjthqvhBIIcIcIcIcIcIcIcIcIcIcIcnkIcIcIcIcIcvkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkIcIcnkIcDdIcIcIcIcIcIcIcndndndIcIcIcsOIcIcIcnkIcIcIcIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuIcIcndIcIczIzIzIzIiZiZIcvkIcIcnkIcIcIcIcIcYrIcIcIcsOIcIcsOIcvkvkIcIcIcIcsOIcIcvkhchcKLKLKL
+KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNSquzVeuNWzuNuNuNuNuNuNuNuNIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkvksOvkIcIcWsIchsWsWsIcIcBIvhGXjtzYvhBIIcIcIcIcIcIcIcIcIcIcIcnkIcIcIcIcIcvkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkIcIcnkIcDdIcIcIcIcIcIcIcndndndIcIcIcsOIcIcIcnkIcIcIcIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuIcIcndIcIczIzIzIzIiZiZIcvkIcIcnkIcIcIcIcIcYrIcIcIcsOIcIcsOIcvkvkIcIcIcIcsOIcIcvkhchcKLKLKL
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNSquzVeVNkJuNuNuNuNuNIcIcIcIcIcIcsOnkIcIcIcIcIcvkvkIcIcIcIcIcvksOvkvkWsWshsWsWsnknknkBIvhbejtjtvhBIIcsOIcIcIcIcIcIcnknkUOIcIcIcIcvkvkIcIcIcIcsOIcIcIcIcIcIcIcIcIcIcvkvkIcIcIcIcnkIcIcIcIcIcIcndndndndIcIcIcIcIcIcIcIcnkIcIcvkIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuJuJuJuJuJuJuJuJuIcndndIczIzIzIzIzIiZIcIcsOIcIcIcnksOIcIcIcndIcvkIcIcIcIcIcIcIcvkvkvkvkIcIcIcIcIcIchcKLKLKL
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNTfgBgBgBMtLbIcIcIcIcIcIcnknkIcIcIcnkIcIcIcIcIcIcvkIcIcIcIcIcvkvkvkvkWsWshsWssOnknknknkBIjtjtGXBIIcIcIcIcnknknknkIcocIcIcIcvkvkvkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcndndndndIcIcIcIcIcIcIcIcnkIcIcIcvkIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLJuJuJuJuJuIcsOndIcIczIzIzIzIiZiZIcIcIcIcIcndIcIcIcIcIcIcIcvkIcnknknknksOnkIcIcIcvkIcIcIcIcIcsOhcKLKLKL
 KLKLKLKLKLKLhchchchchchcIcIcIcZxhshshshsDWDWIcIcIcnkIcIcnkIcIcIcIcIcIcUOnknknkvkvksOIcnkIcIcvkIcIcIcWsIcWsnknkIcnknkBIvhjtvhBIIcIcIcIcIcIcIcBIAHBIIcIcIcIcIcIcsOIcIcIcIcIcIcWsWsndWsIcIcIcIcIcIcIcIcIcsOIcIcIcnkIcIcsOIcndndndIcIctBIcIcIcIcIcnkIcIcIcvkvkIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcndIczIzIzIzIiZIcIcIcIcnkIcnkIcIcIcsOIcIcIcvkvkIcIcIcIcIcIcIcUOIcIcIcIcIcIcIcIchcKLKLKL
@@ -993,7 +993,7 @@ KLKLKLKLKLIcsOIcIcsOsOUOnknkUOUOvksOsOAQWsWsWsDWhshshshshshsWsWsIcIcIcsOIcIcIcIc
 KLKLKLKLKLIcIcIcIcnkUOIcIcIcnkIcIcIcsOsOsOIcWsDWDWDWhshshshshsWsWsnkIcIcZxWsIcIcIcWsWsWsWsWsWshshsnknkIcWsWsIcIcIcIcWsWsAQWsWsWsWsWsWsIcIcIcvkvkvkvktBtBIcIcIcIcWsWsWsWsWsAQWsWsIcIcIcIcIcIcIcIctBtBvkvkIcnknkIcnknkIcIcIcvkvkIcIcnkIcIcIcIcIcIchchcZFhchchcKLKLhchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcndIcIcIcpazIzIzIzIIcIcIcIcIcIcIcIcIcIcnkUOnknknkIcIcIcIcIcIcIcIcIcIcIcIcnkIcIcIcsOIcKLKLKLKLKLKLKL
 KLKLKLKLKLIcIcIcnknkIcIcIcIcIcIcIcIcIcIcvkvkIcIcDWDWDWhshshshsWsnknknkWsWshshsWsWsIcIchshshshshsIcWsWsIcWsIcIcvkvkIcIcWsWsIcIcsOBIAHBIIcIctBtBvkvktBtBIcIcIcIcIcIcIcWsWsWsWsWsIcIcIcIcIcIcIctBtBtBvkvkIcIcnkIcnkIcIcIcIcIcIcIcnknkIcsOIcIcIcIchchcKLKLZFhcKLKLKLKLhchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcIcIcsOIcpazIzIzIzIIcIcIcsOIcIcIcIcsOIcnkndnknknkIcIcIcIcIcIcIcIcsOIcIcIcIcIcIcIcIcIcKLKLKLKLKLKLKL
 KLKLKLKLKLvkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkvkvkIcIcDWDWhshsnkndndndndndhshshshshshshshsWsWsWsWsWsWsWsWsWsIcvkvktBvkIcIcIcIcIcvhBIjtBIvhIcIctBtBsOtBIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkvkIcnkIcnknkIcnknkIcnkIcnknkIcIcIcIcIcIcIchchcKLKLKLKLKLKLLPKLhchchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcsOIcIcIcIcIcpazIzIzIzIIcIcvkIcIcIcIcndIcIcnknknknkIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIchcKLKLKLKLKLKLKL
-KLKLKLKLKLvkvkIcIcIcIcIcvkvkIcIcIcIcIcsOIcIcIcvkIcIcIchshsWsndndndndndndnkWssOWsWsWsWsWsWsndIcIcndndndndIcvkvktBtBtBIcsOIcIcIcBIsbjtzYBIIcsOIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcsOIcIcnknkIcIcIcIcIcIcIcIcIcIcsOIcIcIcIcIcIchcKLKLKLKLRuTqTqhchchchchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcvkIcIcIcIcpapazIzIzIIcIcIcvkIcIcIcIcIcIcnknknkUOIcIcIcIcIcIcIcvkvkIcIcIcIcIcIcIcIchchcKLKLKLKLKLKLKL
+KLKLKLKLKLvkvkIcIcIcIcIcvkvkIcIcIcIcIcsOIcIcIcvkIcIcIchshsWsndndndndndndnkWssOWsWsWsWsWsWsndIcIcndndndndIcvkvktBtBtBIcsOIcIcIcBIsbjtbVBIIcsOIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcsOIcIcnknkIcIcIcIcIcIcIcIcIcIcsOIcIcIcIcIcIchcKLKLKLKLRuTqTqhchchchchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcvkIcIcIcIcpapazIzIzIIcIcIcvkIcIcIcIcIcIcnknknkUOIcIcIcIcIcIcIcvkvkIcIcIcIcIcIcIcIchchcKLKLKLKLKLKLKL
 KLKLKLKLKLvkIcnkIcnkIcIcsOsOvkIcIcIcIcIcnkIcIcIcIcIcIcWsWsnknkndndndndnknkWssOsOZxIcIcIcIcndndndIcIcIcIcIcvktBtBvktBIcIcIcIcsOBIbejtsbBIIcIcIcIcIcIcIcIcIctBIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcnknkIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkIcIcIcIcKLKLKLKLTqTqTqTqTqhchchcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcIcvkvkIcIcvkvkIcpazIzIzIIcIcIcvkvkIcndndndIcIcnknkIcIcIcIcsOIcIcsOIcIcvkvkIcIcIcIcIcIchchcKLKLKLKLKLKLKL
 KLKLKLKLKLvkIcnknknkIcIcsOsOsOvkIcIcIcIcnknknkIcnksOIcWsWsWsndWsWshshshsWsIcsOsOsOIcIcsOIcIcndIcIcIcIcIcIcIctBvkvkIcIcIcIcIcIcvhBIsbBIvhIcIcIcIcsOIcIcIcIctBtBvkIcIcIcIcIcIcIcIcIcsOIcvkIcIcIcIcIcIcIcIcsOIcIcIcIcIcIcIcsOIcIcIcIctBIcIcIcKLKLKLKLKLKLmZTqTqKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcIcvkvkIcIcIcnkvkIcpazIzIzIIcIcIcsOvkIcndIcsOIcIcIcIcIcIcIcIcIcIcIcIcIcIcIcvkIcsOIcIcIcIchchcKLKLKLKLKLKLKL
 KLKLKLKLKLvkvkIcUOIcIcsOsOsOvkvkIcvkvkIcIcnknknknkIcIcIcIcIcIcIcWsWsWsWsIcIcIcsOsOIcIcIcIcIcndIcIcIcIcIcIcIcIcvkIcIcIcIcIcIcIcIcBIBIBIIcIcIcIcIcIcIcIcAQIctBvkvkIcsOIcIcIctBtBIcIcIcvkvkIcIcIcIcIcIcIcIcIcIcIcIcvkvkIcIcIcIcIcIctBtBIcIcKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLKLIcvkvkIcIcIcIcUOvkIcpazIzIzIzIIcIcIcvkvkIcIcIcIcIcIcsOIcvkvkvkIcIcIcIcIcIcsOvkIcIcIcIcIcIchchcKLKLKLKLKLKLKL
@@ -1155,7 +1155,7 @@ KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuN
 KLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNclCibGCZCZvoclieTqTqIcIcIcIcIcIcnknknksOIcIcIcIcIcIcIcIcIcIcIcIcIcWsWsvkvkIcnksOIcIcIcIcIcndIcIcvkJuJuJuJuJuuNuNuNJuhchchchchchcJuJuJuJuJuJuJuJuzIzIiZnkIcIcvkvkIcIcnknkIcvkvkIcIcIcIcIcIcIcIcIcIcIcIcIcnknkKLKL
 KLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNclclsfwuclsfZyclclTqTqTqvksOsOsOsOIcIcIcIcvkvksOsOIcIcIcIcIcIcIcsOsOIcWsvknkIcIcIcIcIcIcndYrndIcvkvkJuJuJuJuJuuNuNuNJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuMizIiZnkIcIcIcvkIcIcIcIcvkvkIcIcIcvkvkIcvkIcIcIcIcIcIcIcnkKLKLKL
 KLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNclclDIBxcfFNozcfqeclclTqTqvksOsOsOsOsOsOIcvkvksOsOsOsOIcIcIcIcIcIcIcIcIcWsWsnkIcIcIcIcIcIcnknkIcIcvkJuJuhchcJuJuJuuNJuJuJuJuJuJuJuJuJuJuJuJuJuJuJuzIzIiZiZnkIcIcIcIcIcIcIcIcIcIcIcIcsOIcIcvkvkIcsOIcIcIcIcnknkKLKLKL
-KLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNVUTvWOIWPnRHbGbGIbFJNEuNuNuNuNuNsOsOsOsOsOsOsOsOuNsOsOsOsOvkvkIcIcIcIcIcIcWsWsIcIcsOIcIcIcYrnkIcIcvkJuhchchchcJuJuhchchcJuJuJuJuJuJuJuJuJuJuJuJuJuzIzIiZnknkIcIcIcIcIcIcIcsOIcIcIcIcIcIcIcIcIchchchcIcuNuNKLKLKLKLKL
+KLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNVUTvWOIWPnRHbGbGIbYiNEuNuNuNuNuNsOsOsOsOsOsOsOsOuNsOsOsOsOvkvkIcIcIcIcIcIcWsWsIcIcsOIcIcIcYrnkIcIcvkJuhchchchcJuJuhchchcJuJuJuJuJuJuJuJuJuJuJuJuJuzIzIiZnknkIcIcIcIcIcIcIcsOIcIcIcIcIcIcIcIcIchchchcIcuNuNKLKLKLKLKL
 KLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNEJbGgcTqDWckmEbGawDWWSuNuNuNuNuNuNuNuNuNuNuNuNuNuNsOsOsOsOsOsOsOsOsOIcIcIcIcWsWsIcIcIcIcIcndIcIcIcIcJuhchchchchcJuhchchcJuJuJuJuJuJuJuJuJuJuJuJuJuzIzIiZnknkIcIcsOIcIcIcIcIcIcIcIcIcIcIcIcIchchcuNuNuNuNuNuNKLKLKLKL
 KLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNEJbGurIEDWDWDWDWTqiWWSuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNsOsOIcIcIcIcvkvkIcIcIcIcIcIcIcIcIcJuhchchchchcJuJuJuhchchcJuJuJuJuJuJuJuJuJuJuJuzIzIzInknkIcIcIcIcIcIcvkvkIcIcIchchchcIcuNuNuNuNuNuNuNuNuNKLKLKLKL
 KLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNclclkEtWbKDWDWTqClclcluNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNsOsOIcIcnkndvkvkIcndIcIcIcIcIcJuJuJuhchchcJuJuJuJuJuhchchchcJuJuJuJuJuJuJuJuJuzIzIMinkIcIcIcIcIcvkvkIcIcIchchchcuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKL
@@ -1170,7 +1170,7 @@ KLKLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuN
 KLKLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNsOsOIcIcnkIcIcvkhcJuJuJuJuhchcJuJuJuhchchcJuJuJuJuJuJuJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKLKL
 KLKLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNsOvkIcnknksOIcIchcJuJuJuhchcuNJuJuJuJuhchchchchcJuJuJuJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKLKL
 KLKLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNvkvkIcnkIcIcIcIchcJuJuJuuNuNuNuNuNJuJuJuJuhchchcJuJuJuJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKLKL
-KLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNIcvkIcIcnknkIcIcIchcJuJuJuuNuNuNuNuNuNJuJuJuhchchchcJuJuJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKLKL
+KLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNZxvkIcIcnknkIcIcIchcJuJuJuuNuNuNuNuNuNJuJuJuhchchchcJuJuJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKLKL
 KLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNJnWsIcsOIcnknkIcIcIchcJuJuuNuNuNuNuNuNuNJuJuJuJuhchchchcJuJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKL
 KLKLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNJnWsWsWsWsnknknksOIchcJuJuuNuNuNuNuNuNJuJuJuJuhchchchchchcJuuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKL
 KLKLKLKLKLKLKLKLuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNIcIcIcIcsOIcIcIcIchcJuJuJuuNuNuNuNJuJuhchchchchcJuJuhchchcuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNuNKLKLKLKLKLKL
