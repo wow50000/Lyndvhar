@@ -879,9 +879,9 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	max_integrity = 400
-	equip_delay_self = 10 SECONDS
-	unequip_delay_self = 10 SECONDS
-	equip_delay_other = 5 SECONDS
+	equip_delay_self = 4 SECONDS
+	unequip_delay_self = 4 SECONDS
+	equip_delay_other = 4 SECONDS
 	strip_delay = 8 SECONDS
 	sellprice = 50
 
@@ -955,7 +955,7 @@
 	max_integrity = 300
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
-	equip_delay_self = 6 SECONDS
+	equip_delay_self = 4 SECONDS
 	unequip_delay_self = 4 SECONDS
 	equip_delay_other = 4 SECONDS
 	strip_delay = 5 SECONDS
