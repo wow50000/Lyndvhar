@@ -48,7 +48,7 @@
 					beltr = /obj/item/rogueweapon/mace
 				if("Spear")
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-					backr = /obj/item/rogueweapon/spear
+					r_hand = /obj/item/rogueweapon/spear
 				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/woodcut
