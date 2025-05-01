@@ -154,7 +154,7 @@
 		/datum/sprite_accessory/horns/smallramhornsthree,
 		/datum/sprite_accessory/horns/stabbers,
 		/datum/sprite_accessory/horns/tiefling,
-		/datum/sprite_accessory/horns/tieflingalt
+		/datum/sprite_accessory/horns/tieflingalt,
 		/datum/sprite_accessory/horns/uni,
 		/datum/sprite_accessory/horns/unihorn,
 		)

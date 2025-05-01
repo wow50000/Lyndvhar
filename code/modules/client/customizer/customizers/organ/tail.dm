@@ -131,7 +131,7 @@
 		/datum/sprite_accessory/tail/rabbit,
 		/datum/sprite_accessory/tail/raccoon,
 		/datum/sprite_accessory/tail/raptor,
-		/datum/sprite_accessory/tail/rattlesnake
+		/datum/sprite_accessory/tail/rattlesnake,
 		/datum/sprite_accessory/tail/redpanda,
 		/datum/sprite_accessory/tail/sabresune,
 		/datum/sprite_accessory/tail/sergal,
@@ -197,7 +197,7 @@
 		/datum/sprite_accessory/tail/rabbit,
 		/datum/sprite_accessory/tail/raccoon,
 		/datum/sprite_accessory/tail/raptor,
-		/datum/sprite_accessory/tail/rattlesnake
+		/datum/sprite_accessory/tail/rattlesnake,
 		/datum/sprite_accessory/tail/redpanda,
 		/datum/sprite_accessory/tail/sabresune,
 		/datum/sprite_accessory/tail/sergal,
