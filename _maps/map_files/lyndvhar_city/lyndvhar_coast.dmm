@@ -1,5 +1,6 @@
 "ab" = (/obj/structure/table/vtable/v2,/obj/item/roguegem/random,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "ae" = (/obj/structure/chair/stool/rogue,/mob/living/carbon/human/species/human/northern/searaider/ambush,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
+"ah" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "ak" = (/obj/structure/table/wood,/turf/open/floor/rogue/churchbrick,/area/rogue/under/cave/mazedungeon{first_time_text = "UNIDENTIFIED RUIN"})
 "am" = (/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
 "ao" = (/obj/structure/fluff/railing/border{dir = 9},/turf/open/transparent/openspace,/area/rogue/outdoors/beach)
@@ -13,6 +14,7 @@
 "aN" = (/obj/structure/closet/crate/chest/old_crate,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/outdoors/beach)
 "aO" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/under/cave/orcdungeon)
 "aQ" = (/obj/structure/chair/wood/rogue/chair3{dir = 4},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
+"aT" = (/obj/structure/fermenting_barrel/random,/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "bd" = (/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/outdoors/beach)
 "bj" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
 "br" = (/obj/structure/fluff/railing/border{dir = 10},/turf/open/transparent/openspace,/area/rogue/outdoors/beach)
@@ -47,6 +49,7 @@
 "ex" = (/obj/structure/table/wood{icon_state = "tablewood2"; dir = 10},/obj/item/reagent_containers/glass/bottle/rogue/healthpot,/turf/open/floor/rogue/hexstone,/area/rogue/under/cave/dukecourt)
 "eF" = (/obj/structure/fluff/signage{name = "LILAC BAY"},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
 "eG" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
+"eO" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "eT" = (/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "fc" = (/obj/structure/fluff/railing/wood,/turf/open/floor/rogue/grass,/area/rogue/outdoors/beach/forest)
 "fe" = (/obj/effect/decal/cleanable/blood/gibs/old,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/rogue/twig/platform,/area/rogue/indoors/shelter)
@@ -60,6 +63,7 @@
 "ge" = (/obj/structure/fluff/statue/gargoyle,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/outdoors/beach)
 "gk" = (/turf/open/water/swamp,/area/rogue/outdoors/beach)
 "gB" = (/turf/open/floor/rogue/cobble/mossy,/area/rogue/under/cave/dukecourt)
+"gE" = (/obj/structure/closet/crate/chest/neu_fancy,/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/obj/machinery/light/rogue/torchholder/c,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "gI" = (/obj/structure/chair/wood/rogue/fancy{dir = 1},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "gJ" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/cave)
 "gO" = (/obj/structure/fermenting_barrel/random/water,/turf/open/floor/rogue/cobble/mossy,/area/rogue/under/cave/dukecourt)
@@ -72,6 +76,7 @@
 "hr" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/under/cave/orcdungeon)
 "hB" = (/turf/closed/wall/mineral/rogue/wooddark,/area/rogue/outdoors/beach/forest)
 "hH" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dukecourt)
+"hJ" = (/obj/structure/mineral_door/wood/deadbolt{dir = 4},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "hQ" = (/obj/structure/rack/rogue,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/dukecourt)
 "hY" = (/obj/machinery/light/rogue/campfire,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
 "ib" = (/obj/effect/decal/cleanable/dirt/cobweb{dir = 8},/obj/structure/closet/crate/chest/gold,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/turf/open/floor/rogue/dirt,/area/rogue/indoors/cave)
@@ -119,6 +124,7 @@
 "lg" = (/obj/structure/closet/crate/chest,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "ll" = (/obj/structure/fluff/statue/knight/interior/r,/turf/open/floor/rogue/herringbone,/area/rogue/under/cave/orcdungeon)
 "lp" = (/obj/machinery/light/rogue/wallfire/candle/blue/r,/obj/structure/fermenting_barrel,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dukecourt)
+"lF" = (/mob/living/carbon/human/species/human/northern/searaider/ambush,/obj/machinery/light/rogue/torchholder/c,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "lR" = (/obj/structure/fluff/railing/border{icon_state = "border"; dir = 5},/turf/open/transparent/openspace,/area/rogue/outdoors/beach)
 "lT" = (/obj/effect/landmark/mapGenerator/rogue/cave,/turf/closed/mineral/rogue/bedrock,/area/rogue/indoors/cave)
 "lW" = (/obj/structure/winch{gid = "graggaritegate"; redstone_id = "graggaritegate"},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
@@ -140,6 +146,7 @@
 "nl" = (/obj/structure/chair/wood/rogue{dir = 8; icon_state = "chair2"},/turf/open/floor/rogue/ruinedwood/chevron,/area/rogue/under/cave/dukecourt)
 "nm" = (/obj/structure/boatbell/fluff{desc = ""},/turf/closed/wall/mineral/rogue/wooddark/vertical,/area/rogue/indoors/shelter)
 "no" = (/obj/structure/closet/crate/chest/neu_fancy,/obj/effect/spawner/lootdrop/roguetown/dungeon/spells,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dukecourt)
+"np" = (/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "nr" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "nu" = (/obj/item/roguestatue/gold/loot,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dragonden)
 "nv" = (/obj/structure/table/wood,/obj/item/rogueweapon/stoneaxe/battle{name = "gutspiller"; desc = "A steel battleaxe of war. Has a wicked edge. Stained in the blood of countless victims."},/obj/item/roguestatue/gold/loot{pixel_x = -6; pixel_y = 13},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
@@ -155,6 +162,7 @@
 "nZ" = (/obj/structure/closet/crate/chest/lootbox,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "ob" = (/obj/structure/rack/rogue,/obj/effect/spawner/lootdrop/roguetown/dungeon,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dukecourt)
 "of" = (/obj/machinery/light/rogue/firebowl/standing/blue,/turf/open/floor/rogue/tile/masonic/single,/area/rogue/under/cave/dukecourt)
+"ok" = (/obj/structure/mineral_door/wood/deadbolt{dir = 8},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "oq" = (/obj/structure/table/wood{icon_state = "map6"},/turf/open/floor/rogue/churchbrick,/area/rogue/under/cave/mazedungeon{first_time_text = "UNIDENTIFIED RUIN"})
 "or" = (/obj/structure/handcart,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/mazedungeon{first_time_text = "UNIDENTIFIED RUIN"})
 "oz" = (/obj/structure/table/wood{icon_state = "longtable"; dir = 1},/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/turf/open/floor/rogue/tile/masonic/single,/area/rogue/under/cave/dukecourt)
@@ -174,6 +182,7 @@
 "py" = (/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "pG" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/twig/platform,/area/rogue/indoors/shelter)
 "pL" = (/obj/structure/closet/crate/chest/crate,/obj/item/roguegem/random,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cavelava{first_time_text = "CAVERNOUS CALDERA"})
+"pQ" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "pT" = (/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
 "qb" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/turf/open/floor/rogue/tile/masonic/single,/area/rogue/under/cave/dukecourt)
 "qc" = (/obj/structure/chair/bench/church/r,/turf/open/floor/rogue/blocks/stonered,/area/rogue/under/cave/mazedungeon{first_time_text = "UNIDENTIFIED RUIN"})
@@ -222,6 +231,7 @@
 "tz" = (/obj/machinery/light/rogue/torchholder{pixel_y = 32},/turf/open/floor/rogue/twig/platform,/area/rogue/indoors/shelter)
 "tB" = (/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,/obj/effect/decal/cleanable/blood/gibs,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "tC" = (/obj/structure/roguetent,/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/shelter)
+"tE" = (/obj/structure/closet/crate/roguecloset,/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "tF" = (/obj/structure/table/wood{icon_state = "longtable"; dir = 1},/obj/item/book/rogue/abyssor,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "tT" = (/mob/living/carbon/human/species/goblin/npc/ambush/cave,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
 "tU" = (/obj/structure/handcart,/turf/open/floor/rogue/concrete,/area/rogue/under/cavelava{first_time_text = "CAVERNOUS CALDERA"})
@@ -312,6 +322,7 @@
 "AJ" = (/obj/structure/table/vtable,/obj/effect/spawner/lootdrop/roguetown/dungeon/spells,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "AL" = (/obj/structure/fluff/walldeco/innsign{pixel_x = -32},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "AR" = (/mob/living/carbon/human/species/human/northern/searaider/ambush,/obj/structure/bed/rogue/shit,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue/indoors/shelter)
+"AU" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "AW" = (/obj/machinery/light/rogue/firebowl/standing,/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/cave)
 "AY" = (/obj/structure/rack/rogue/shelf/biggest,/obj/structure/rack/rogue/shelf/notdense,/obj/item/reagent_containers/glass/bottle/rogue/whitewine,/obj/item/reagent_containers/glass/cup/wooden{pixel_x = -6; pixel_y = 20},/obj/item/reagent_containers/glass/cup/wooden{pixel_x = 6; pixel_y = 21},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/shelter)
 "AZ" = (/turf/open/floor/rogue/dirt,/area/rogue/indoors/cave)
@@ -375,6 +386,7 @@
 "Gm" = (/obj/machinery/light/rogue/campfire/densefire,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
 "Gn" = (/obj/structure/flora/roguetree/wise,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest)
 "Gs" = (/mob/living/carbon/human/species/human/northern/searaider/ambush,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter)
+"GL" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "GP" = (/obj/structure/fermenting_barrel,/turf/open/floor/rogue/blocks/paving,/area/rogue/under/cave/dukecourt)
 "GQ" = (/obj/machinery/light/rogue/torchholder{dir = 8},/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/indoors/shelter)
 "GX" = (/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
@@ -402,9 +414,11 @@
 "Ju" = (/obj/structure/table/wood,/obj/effect/spawner/lootdrop/roguetown/dungeon/spells,/turf/open/floor/rogue/ruinedwood/chevron,/area/rogue/under/cave/dukecourt)
 "Jw" = (/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/grass,/area/rogue/outdoors/beach/forest)
 "JQ" = (/obj/structure/chair/wood/rogue/chair3,/turf/open/floor/rogue/tile/masonic/single,/area/rogue/under/cave/dukecourt)
+"JT" = (/turf/closed/wall/mineral/rogue/wooddark,/area/rogue/indoors/cave)
 "JV" = (/obj/item/rogueweapon/greatsword/psygsword,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dragonden)
 "JW" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 9},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "Kh" = (/obj/structure/bed/rogue/inn/double,/obj/item/bedsheet/rogue/fabric_double,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
+"Km" = (/obj/structure/fermenting_barrel/random,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "Kt" = (/obj/structure/stairs/stone{dir = 1},/turf/open/floor/rogue/concrete,/area/rogue/under/cave/dragonden)
 "Kv" = (/obj/structure/mineral_door/wood/red{locked = 1},/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/under/cave/orcdungeon)
 "KB" = (/mob/living/simple_animal/hostile/rogue/skeleton/guard,/turf/open/floor/rogue/concrete,/area/rogue/under/cavelava{first_time_text = "CAVERNOUS CALDERA"})
@@ -428,6 +442,7 @@
 "LB" = (/obj/structure/chair/wood/rogue/throne,/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager{name = "Orc Chief"; health = 650},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "LG" = (/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "LJ" = (/obj/structure/fluff/railing/wood,/turf/open/floor/rogue/twig/platform,/area/rogue/indoors/shelter)
+"LL" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "LN" = (/obj/structure/fluff/alch,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "LT" = (/obj/structure/roguewindow/stained/zizo,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/mazedungeon{first_time_text = "UNIDENTIFIED RUIN"})
 "LV" = (/obj/structure/mineral_door/wood/violet,/obj/structure/bars{max_integrity = 2000; name = "reinforced bars"},/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dukecourt)
@@ -437,6 +452,7 @@
 "Mb" = (/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dukecourt)
 "Me" = (/obj/structure/fluff/railing/fence{icon_state = "fence"; dir = 4},/turf/open/floor/rogue/grass,/area/rogue/outdoors/beach/forest)
 "Mn" = (/obj/structure/table/wood{icon_state = "tablewood2"; dir = 10},/obj/item/roguegem/random,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dukecourt)
+"Mu" = (/obj/structure/bed/rogue/inn/hay,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "MC" = (/obj/structure/chair/wood/rogue/chair3{dir = 8},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "MD" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "MG" = (/obj/structure/closet/crate/chest/neu_fancy,/obj/effect/spawner/lootdrop/roguetown/dungeon/money,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dukecourt)
@@ -510,6 +526,7 @@
 "SA" = (/obj/machinery/light/rogue/firebowl/standing/blue,/turf/open/floor/rogue/blocks/platform,/area/rogue/under/cave/dukecourt)
 "SF" = (/obj/structure/table/vtable,/obj/item/book/rogue/noc,/turf/open/floor/rogue/tile/masonic/single,/area/rogue/under/cave/dukecourt)
 "SG" = (/obj/effect/spawner/lootdrop/roguetown/dungeon,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
+"SM" = (/obj/structure/closet/crate/chest/old_crate,/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "SQ" = (/obj/structure/rack/rogue,/obj/item/reagent_containers/glass/bottle/rogue/healthpot,/obj/item/reagent_containers/glass/bottle/rogue/healthpot{pixel_x = -6},/obj/item/reagent_containers/glass/bottle/rogue/healthpot{pixel_x = 5},/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "SU" = (/obj/item/roguestatue/gold,/turf/open/floor/rogue/concrete,/area/rogue/under/cave/dragonden)
 "Tb" = (/obj/structure/roguetent,/turf/open/floor/rogue/twig/platform,/area/rogue/indoors/shelter)
@@ -561,6 +578,7 @@
 "Wz" = (/obj/item/restraints/legcuffs/beartrap/armed,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "WI" = (/obj/structure/table/wood,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/orcdungeon)
 "WJ" = (/obj/structure/fluff/alch,/turf/open/floor/rogue/cobble,/area/rogue/under/cave/dukecourt)
+"WK" = (/obj/structure/fermenting_barrel/random,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter)
 "WQ" = (/obj/machinery/light/rogue/wallfire/candle/blue,/obj/structure/fermenting_barrel,/turf/open/floor/rogue/cobble/mossy,/area/rogue/under/cave/dukecourt)
 "WR" = (/mob/living/carbon/human/species/skeleton/npc/ambush,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave/dukecourt)
 "WY" = (/mob/living/carbon/human/species/skeleton/npc/ambush,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/cave)
@@ -960,22 +978,22 @@ hhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhaCGXGXtT
 hhhhhhhhGXhhGXGXhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhGXGXGXGXGXGXhYGXGXGXhhhhhhhhhhGXGXGXGXGXGXGXzozozoGXGXtThhhhhhhhGXzozozohhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
 hhhhhhhhGXhhGXhhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhhhhhGXGXGXGXhhGXNlGXGXGXGXGXtTGXGXhhhhhhhhhhhhGXGXtTGXhhhhhhzozoGXhhhhhhhhhhhhhhhhzozozozozoGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
 hhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXGXGXhhhhhhGXGXGXGXGXGXGXGXGXhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhzohhhhhhhhhhhhzozozoGXzozoGXSGhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhGXGXGXGXhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhGXGXGXtTGXGXqUGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhzozozohhhhhhzozohhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCiRyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhGXGXGXhhhhhhhhhhhhGXGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhtTGXhhhhhhhhhhhhhhzozozozohhzohhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhGXGXhhhhhhhhhhhhhhhhGXhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhGXhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhGXGXGXGXGXGXhhhhhhhhhhzozohhzozozozohhhhhhhhhhhhhhhhGXtThhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhGXGXhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhtTGXhYGXGXGXGXGXVphhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhzohhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhGXGXGXhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhGXGXhhGXhhhhhhhhhhNlGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXGXGXtThhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhGXGXhhhhhhhhhhGXSGGXGXGXGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXhhGXGXhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhGXGXhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhGXGXtTGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhGXGXGXhhhhGXhhhhhhhhhhhhhhzozoGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhGXGXGXhhhhhhhhhhhhhhGXGXGXhhhhhhhhGXGXGXGXhhGXhhhhhhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXGXhhhhGXSGGXGXGXhhhhzozohhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCdTPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXGXhhhhGXGXhhGXhhhhhhhhhhhhGXGXhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhGXGXGXGXzozoGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCiRyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXWYGXGXGXGXGXGXGXGXGXGXhhGXhhGXGXGXhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozozoGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXWYGXGXGXGXGXGXGXGXGXGXGXhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXGXWYcjcjcjGXGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhtThhhhhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhGXGXzoGXhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCdTPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhrBIzcjoJcjIzrBGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhhhzozoGXGXGXGXhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhGXrBrBcjcjcjrBrBGXGXhhhhhhGXGXhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozozozozohhhhzozohhzoGXGXhhhhhhhhhhhhhhhhhhhhhhyCyCiRyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhGXhhGXGXhhhhhhhhhhhhhhhhhhrBiUiUiUrBGXGXhhhhhhhhhhGXGXGXhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzohhhhhhzozozozozoGXzohhGXGXGXGXhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
-hhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhrBLjLjLjrBhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhzozozozozohhhhhhGXGXGXhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhGXGXGXGXhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhGXGXGXtTGXGXqUGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhzozozohhhhhhzozohhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCiRyCPpPpPpPpPpPpPpPpPpmbmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhGXGXGXhhhhhhhhhhhhGXGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhtTGXhhhhhhhhhhhhhhzozozozohhzohhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpPpmbmbgEmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhGXGXhhhhhhhhhhhhhhhhGXhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhGXhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhGXGXGXGXGXGXhhhhhhhhhhzozohhzozozozohhhhhhhhhhhhhhhhGXtThhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpmbmbeOVuAUmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhGXGXhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhtTGXhYGXGXGXGXGXVphhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhzohhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCPpPpPpPpPpPpmbnpVujzVupQmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhGXGXGXhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhGXGXhhGXhhhhhhhhhhNlGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXGXGXtThhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpmbVuLLmbGLVumbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhGXGXhhhhhhhhhhGXSGGXGXGXGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXhhGXGXhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpmbmbVuSMmbahVumbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhGXGXhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhGXGXtTGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhGXGXGXhhhhGXhhhhhhhhhhhhhhzozoGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpmbKmVuSMmbSMVuKmmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhGXGXGXhhhhhhhhhhhhhhGXGXGXhhhhhhhhGXGXGXGXhhGXhhhhhhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXGXhhhhGXSGGXGXGXhhhhzozohhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhJTyCyCyCyCyCyCdTPpPpPpmbaTVuVulFVuVuWKmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXGXhhhhGXGXhhGXhhhhhhhhhhhhGXGXhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhGXGXGXGXzozoGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCiRyCyCyCPpPpPpPpPpmbKmVuVuVuVuVuKmmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXWYGXGXGXGXGXGXGXGXGXGXhhGXhhGXGXGXhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozozoGXGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpmbmbmbmbVumbmbmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhGXhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXWYGXGXGXGXGXGXGXGXGXGXGXhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCyCPpPpPpmbMupQmbVumbnpMumbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhGXGXWYcjcjcjGXGXGXGXGXGXGXGXGXhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhtThhhhhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhGXGXzoGXhhhhhhhhhhhhhhhhhhhhhhhhJTyCyCyCyCyCyCdTPpPpPpmbtEVuokVuhJVutEmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhrBIzcjoJcjIzrBGXGXGXGXGXGXhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhhhzozoGXGXGXGXhhhhhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpmbMuVumbVUmbVuMumbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhGXrBrBcjcjcjrBrBGXGXhhhhhhGXGXhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzozozozozohhhhzozohhzoGXGXhhhhhhhhhhhhhhhhhhhhhhyCyCiRyCyCyCPpPpPpPpmbmbmbmbmbmbmbmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhGXhhGXGXhhhhhhhhhhhhhhhhhhrBiUiUiUrBGXGXhhhhhhhhhhGXGXGXhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhhhzohhhhhhzozozozozoGXzohhGXGXGXGXhhhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpmbmbmbmbmbmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
+hhhhhhhhhhhhhhhhGXGXGXGXhhhhhhhhhhhhhhrBLjLjLjrBhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhGXGXGXhhhhhhhhhhhhhhhhhhhhzozohhhhhhhhzozozozozohhhhhhGXGXGXhhhhhhhhhhhhhhhhyCyCyCyCyCPpPpPpPpPpPpmbmbmbmbmbmbmbPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
 hhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhrBrBrBrBrBhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXGXGXGXGXGXtTGXhhhhzozohhhhhhhhzohhzozohhhhhhhhhhGXGXGXhhhhhhhhhhhhhhyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
 hhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhhhhhhhGXGXGXtTGXhhhhGXGXGXhhzozohhhhhhhhzohhzozohhhhhhhhhhhhhhGXGXhhGXhhhhhhyCyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
 hhhhhhhhhhhhhhhhhhhhhhhhhhGXhhhhhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhGXGXhhhhhhhhhhhhhhhhhhGXzozohhhhhhhhhhhhhhzozozohhhhhhhhhhhhhhGXGXGXhhhhhhyCyCyCyCyCyCyCPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPp
@@ -1104,8 +1122,8 @@ aEeqeqGadmGaeqeqsNeqeqeqKZGaGaeqeqeqGaGaGaGaGaGaGaeqLZLZvTLZGaGaeqGaeqLZLZmbuWZh
 aEeqeqeqsNeqeqGasNeqeqeqKWGaptptptptpteqsNsNGaGaeqeqLZLZLZeqeqeqeqeqLZfDLZLZLZZhuWskheskWkWkoYRONtGaGaByeqeqGasNeqdmGaeqeqeqGaGasNsNGaeqsNGaGaeqGaGaeqeqeqeqLZeqLZLZLZLZLZLZLZLZLZLZqYqYqYqYqYqYqYqYqYqYqYKYZocviKuWARiKZowuBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
 aEeqeqGaGaeqGaeqsNGaeqGaKZeqUgycpGZAgaeqGasNsNGaGaeqLZLZeqeqeqTjTjeqeqLZLZeqLZLZLZskskskWuUZVuVuNtGaGaByeqeqeqsNGasNGaGaGaGaGasNsNeqGaeqdmGadmGaGasNGaeqeqeqLZeqLZLZeqeqLZLZLZLZLZLZqYqYqYqYqYqYqYqYqYqYqYmbZoiKZouWiKiKiKmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
 aEeqeqGaeqeqeqGaGaeqeqGaKZeqUgpGZAZATbeqGaGaGavTGaeqfDLZLZeqTjTjTjTjeqLZLZLZeqLZLZLZeqrRVujzVuVuNtGaGaByeqGaGasNGaeqeqGaeqeqdmGadmeqGaeqGaeqsNGaGasNeqeqeqeqeqeqeqLZeqeqeqeqeqameqeqhBBJBJBJBJBJBJhBBJBJBJmbNtBDNtmbNtBDNtmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
-aEeqeqGaeqdmsNsNdmeqeqeqKWeqUgwiZAnYgaeqeqeqeqGaeqeqLZLZLZeqTjTjTjTjeqeqLZLZLZLZLZLZLZZhuWZhVUVUNtGaGaByeqGaGaGasNeqdmGaeqsNeqsNeqsNeqeqGaGaGaeqdmGaGaeqeqeqeqLZeqLZeqGasNGaeqeqeqeqeqBJBJBJBJBJBJBJBJBJBJmbDuVuVuVuVuVuwXmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
-aEeqeqeqGasNGaGadmGaeqeqKZeqUgYFwiZAgaeqeqeqeqeqeqLZLZeqeqeqTjTjTjTjTjTjeqLZeqLZLZLZfDeqLZNtZhZhNteqGaByeqeqGaGaeqeqGaGaGasNeqeqeqGadmGaGadmGaGasNeqGaeqGaGaLZLZLZLZeqGaeqsNsNGaGaeqeqBJBJBJBJBJBJBJBJBJBJmbmbVuVuVuVuVumbmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
+aEeqeqGaeqdmsNsNdmeqeqeqKWeqUgwiZAnYgaeqeqeqeqGaeqeqLZLZLZeqTjTjTjTjeqeqLZLZLZLZLZLZLZZhuWZhVUVUNtGaGaByeqGaGaGasNeqdmGaeqsNeqsNeqsNeqeqGaGaGaeqdmGaGaeqeqeqeqLZeqLZeqGasNGaeqeqeqeqeqBJBJBJBJBJBJBJBJBJBJmbDuVuVuiHVuVuwXmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
+aEeqeqeqGasNGaGadmGaeqeqKZeqUgYFwiZAgaeqeqeqeqeqeqLZLZeqeqeqTjTjTjTjTjTjeqLZeqLZLZLZfDeqLZNtZhZhNteqGaByeqeqGaGaeqeqGaGaGasNeqeqeqGadmGaGadmGaGasNeqGaeqGaGaLZLZLZLZeqGaeqsNsNGaGaeqeqBJBJBJBJBJBJBJBJBJBJmbmbVuVuVUVuVumbmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
 aEeqGaGaeqsNeqGaGasNeqeqKWeqoXoXoXoXoXeqeqLZLZLZLZLZeqeqTjTjTjTjTjTjTjTjeqLZeqfDLZLZLZLZLZZhuWuWZheqeqByeqGaeqGaeqdmeqsNGaeqsNeqGaeqGadmGaeqeqGaeqeqGaGaGaeqLZLZLZeqeqGaGaGasNeqGaeqeqBJBJBJBJBJBJBJBJBJBJBJmbOLDuABdqncmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
 aEeqGaeqGaeqGaeqGadmeqeqKWeqeqeqeqeqeqeqLZLZLZLZameqeqTjTjTjTjeqTjTjTjeqeqLZeqeqeqeqLZLZLZLZeqeqeqeqGaByGaGaeqGaGadmGasNGaeqeqGaGaeqGaeqsNHMsNdmeqGaGaeqeqeqLZLZeqeqsNsNeqGaGaGaeqeqeqBJBJBJBJBJBJBJBJBJBJBJmbmbmbmbmbmbmbBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
 aEeqeqeqsNeqGaeqdmeqeqeqKWeqeqeqeqeqeqLZLZfDLZeqeqeqTjTjTjTjeqGneqTjTjTjeqeqeqGaeqeqamLZeqLZLZLZLZGaGaByGaeqeqeqeqGaeqeqsNsNGaGaGaGaGaeqdmeqdmeqeqGaeqGaLZLZLZLZLZeqGaeqeqGaGasNeqeqeqBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJ
