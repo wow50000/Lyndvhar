@@ -685,7 +685,6 @@
 	desc = "A battered set of bronze plate armor. Intricate runes and carvings once adorned the pieces, but most have faded with age."
 	icon_state = "aasimarplate"
 	item_state = "aasimarplate"
-	allowed_race = list("aasimar")
 	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS
 	max_integrity = 500

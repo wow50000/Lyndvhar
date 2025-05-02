@@ -554,10 +554,9 @@
 	item_state = "aasimarhead"
 	worn_x_dimension = 64
 	worn_y_dimension = 64
-	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
-	body_parts_covered = HEAD|EARS|HAIR
-	flags_inv = HIDEEARS
-	allowed_race = list("aasimar")
+	emote_environment = 3
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS|HIDEHAIR
 	blocksound = PLATEHIT
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
