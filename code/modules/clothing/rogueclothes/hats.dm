@@ -580,11 +580,6 @@
 	sellprice = 5
 	sewrepair = TRUE
 
-/obj/item/clothing/head/roguetown/nun/battlenun
-	icon_state = "battlenun"
-	allowed_sex = list(FEMALE)
-	item_state = "battlenun"
-	armor = list("blunt" = 0, "slash" = 35, "stab" = 35, "piercing" = 10, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/roguetown/hennin
 	name = "hennin"
@@ -1328,6 +1323,17 @@
 		if(get_altdetail_color())
 			pic2.color = get_altdetail_color()
 		add_overlay(pic2)
+
+/obj/item/clothing/head/roguetown/helmet/nun
+	name = "chainmaile habbit"
+	desc = "Armored headware for the silent sisterhood"
+	icon_state = "battlenun"
+	allowed_sex = list(FEMALE)
+	item_state = "battlenun"
+	blocksound = CHAINHIT
+	body_parts_covered = HEAD|HAIR|EARS|NECK
+	armor = list("blunt" = 70, "slash" = 55, "stab" = 55, "piercing" = 30, "fire" = 0, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
 	name = "noc helmet"
