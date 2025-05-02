@@ -680,6 +680,23 @@
 	smelt_bar_num = 4
 	sellprice = 240
 
+/obj/item/clothing/suit/roguetown/armor/plate/hoplite
+	name = "ancient plate armor"
+	desc = "A battered set of bronze plate armor. Intricate runes and carvings once adorned the pieces, but most have faded with age."
+	icon_state = "aasimarplate"
+	item_state = "aasimarplate"
+	allowed_race = list("aasimar")
+	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	max_integrity = 500
+	anvilrepair = /datum/skill/craft/armorsmithing
+	equip_delay_self = 6 SECONDS
+	unequip_delay_self = 6 SECONDS
+	equip_delay_other = 3 SECONDS
+	strip_delay = 4 SECONDS
+	armor_class = ARMOR_CLASS_HEAVY
+	sellprice = 300
+
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/zizo
 	name = "darksteel fullplate"

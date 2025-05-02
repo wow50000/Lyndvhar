@@ -129,6 +129,16 @@
 	item_state = "sandals"
 	sewrepair = TRUE
 
+/obj/item/clothing/shoes/roguetown/hoplite
+	name = "ancient sandals"
+	desc = "Worn sandals lined with bronze, ready to march ever onwards."
+	gender = PLURAL
+	icon_state = "aasimarfeet"
+	item_state = "aasimarfeet"
+	sewrepair = TRUE
+	sellprice = 20
+
+
 /obj/item/clothing/shoes/roguetown/shalal
 	name = "babouche"
 	desc = ""
