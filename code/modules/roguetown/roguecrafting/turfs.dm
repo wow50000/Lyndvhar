@@ -14,7 +14,8 @@
 	if(isclosedturf(T))
 		return
 	if(!istype(T, /turf/open/floor/rogue))
-		if(!istype(T, /turf/open/transparent/openspace))
+		return
+	if(!istype(T, /turf/open/transparent/openspace))
 		return
 	return TRUE
 
@@ -81,7 +82,8 @@
 	if(isclosedturf(T))
 		return
 	if(!istype(T, /turf/open/floor/rogue))
-		if(!istype(T, /turf/open/transparent/openspace))
+		return
+	if(!istype(T, /turf/open/transparent/openspace))
 		return
 	return TRUE
 
@@ -216,7 +218,8 @@
 	if(isclosedturf(T))
 		return
 	if(!istype(T, /turf/open/floor/rogue))
-		if(!istype(T, /turf/open/transparent/openspace))
+		return
+	if(!istype(T, /turf/open/transparent/openspace))
 		return
 	return TRUE
 
