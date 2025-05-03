@@ -172,12 +172,12 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
 	neck = /obj/item/clothing/neck/roguetown/psicross/silver
-	shoes = /obj/item/clothing/shoes/roguetown/otavan/inqboots
+	shoes = /obj/item/clothing/shoes/roguetown/valorian/inqboots
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/inqhat
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/inqgloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/inqgloves
 	beltl = /obj/item/rogueweapon/sword/rapier
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
 	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
