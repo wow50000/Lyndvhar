@@ -58,6 +58,7 @@
 			L.apply_status_effect(/datum/status_effect/buff/whispered)
 		else
 			L.visible_message(span_warning("[L] shivers, but remains standing"), span_userdanger("That was extremely unsettling..")) 
+			L.apply_status_effect(/datum/status_effect/buff/whispered)
 
 /datum/status_effect/buff/whispered
 	id = "whispered"
