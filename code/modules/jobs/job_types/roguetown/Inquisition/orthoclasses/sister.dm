@@ -1,6 +1,6 @@
 /datum/advclass/sister
 	name =  "Nun"
-	tutorial = "A Silent Nun of the Valorian Silent Sisterhood, your rarely whispered voice disrupts witches"
+	tutorial = "A Nun of the Valorian Silent Sisterhood, your whispers alone strikes fear into witches and warlocks"
 	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_RESPECTED_UP
 	outfit = /datum/outfit/job/roguetown/sister
@@ -45,6 +45,7 @@
 		ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MUTE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_ANTIMAGIC, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			
 /datum/outfit/job/roguetown/sister/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
