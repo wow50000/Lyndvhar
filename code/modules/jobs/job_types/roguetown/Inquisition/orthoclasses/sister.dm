@@ -1,5 +1,5 @@
 /datum/advclass/sister
-	name = "Psydonian Nun"
+	name =  "Nun"
 	tutorial = "A Silent Nun of the Valorian Silent Sisterhood, your rarely whispered voice disrupts witches"
 	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_RESPECTED_UP
@@ -10,6 +10,11 @@
 	..()
 	if(H.mind)
 		has_loadout = TRUE
+		var/prev_real_name = H.real_name
+		var/prev_name = H.name
+		H.real_name = "Sister [prev_real_name]"
+		H.name = "Sister [prev_name]"
+
 		neck = /obj/item/clothing/neck/roguetown/psicross/silver
 		pants = /obj/item/clothing/under/roguetown/chainlegs
 		wrists = /obj/item/clothing/wrists/roguetown/bracers
@@ -21,7 +26,7 @@
 		head = /obj/item/clothing/head/roguetown/helmet/nun
 		cloak = /obj/item/clothing/cloak/battlenun
 		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-		backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1)
+		backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1, /obj/item/gwstrap = 1)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
@@ -40,11 +45,15 @@
 		ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MUTE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_ANTIMAGIC, TRAIT_GENERIC)
-
+			
 /datum/outfit/job/roguetown/sister/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Mace", "Spear")
 	var/weapon_choice = input(H,"Choose your PSYDON weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
+	var/prev_real_name = H.real_name
+	var/prev_name = H.name
+	H.real_name = "Sister [prev_real_name]"
+	H.name = "Sister [prev_name]"
 	switch(weapon_choice)
 		if("Mace")
 			H.put_in_hands(new /obj/item/rogueweapon/mace/goden/psymace(H), TRUE)
