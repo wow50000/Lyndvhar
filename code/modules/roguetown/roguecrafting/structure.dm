@@ -205,7 +205,7 @@
 	verbage_simple = "make"
 	verbage = "makes"
 	craftdiff = 0
-/*
+
 /datum/crafting_recipe/roguetown/structure/stairs
 	name = "stairs (up)"
 	result = /obj/structure/stairs
@@ -234,7 +234,7 @@
 		if(S.density)
 			return FALSE
 	return TRUE
-*/
+
 /datum/crafting_recipe/roguetown/structure/stairsd
 	name = "wooden stairs (down)"
 	result = /obj/structure/stairs/d

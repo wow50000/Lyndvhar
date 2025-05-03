@@ -1208,6 +1208,9 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
 
+/obj/item/clothing/cloak/templar/astrata/alt
+	icon_state = "tabard_astrata" //I really need a better version of implementing this
+
 /obj/item/clothing/cloak/templar/noc
 	name = "noc tabard"
 	desc = "An outer garment commonly worn by soldiers. This one has the symbol of Noc on it."
