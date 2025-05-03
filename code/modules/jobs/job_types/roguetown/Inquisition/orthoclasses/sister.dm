@@ -14,19 +14,19 @@
 		var/prev_name = H.name
 		H.real_name = "Sister [prev_real_name]"
 		H.name = "Sister [prev_name]"
-
 		neck = /obj/item/clothing/neck/roguetown/psicross/silver
 		pants = /obj/item/clothing/under/roguetown/chainlegs
 		wrists = /obj/item/clothing/wrists/roguetown/bracers
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 		belt = /obj/item/storage/belt/rogue/leather/black
+		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 		id = /obj/item/clothing/ring/silver
 		backl = /obj/item/storage/backpack/rogue/satchel
 		head = /obj/item/clothing/head/roguetown/helmet/nun
 		cloak = /obj/item/clothing/cloak/battlenun
 		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-		backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1, /obj/item/gwstrap = 1)
+		backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
@@ -50,10 +50,6 @@
 	. = ..()
 	var/weapons = list("Mace", "Spear")
 	var/weapon_choice = input(H,"Choose your PSYDON weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
-	var/prev_real_name = H.real_name
-	var/prev_name = H.name
-	H.real_name = "Sister [prev_real_name]"
-	H.name = "Sister [prev_name]"
 	switch(weapon_choice)
 		if("Mace")
 			H.put_in_hands(new /obj/item/rogueweapon/mace/goden/psymace(H), TRUE)
