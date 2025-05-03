@@ -99,7 +99,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			gloves = /obj/item/clothing/gloves/roguetown/otavan
+			gloves = /obj/item/clothing/gloves/roguetown/valorian
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1,/obj/item/storage/belt/rogue/pouch/coins/poor)
@@ -117,7 +117,7 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-			H.cmode_music = 'sound/music/combat_gronn.ogg'
+			H.cmode_music = 'sound/music/combat_rhaenvalian.ogg'
 			H.set_blindness(0)
 			var/weapons = list("Katar","Axe","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons

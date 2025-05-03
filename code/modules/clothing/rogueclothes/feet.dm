@@ -199,7 +199,7 @@
 		return
 	qdel(src)
 
-/obj/item/clothing/shoes/roguetown/otavan
+/obj/item/clothing/shoes/roguetown/valorian
 	name = "valorian leather boots"
 	desc = "Boots of outstanding craft, your fragile feet has never felt so protected and comfortable before."
 	body_parts_covered = FEET
@@ -320,7 +320,7 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "piercing" = 0, "fire" = 0, "acid" = 0)
 
-/obj/item/clothing/shoes/roguetown/otavan/inqboots
+/obj/item/clothing/shoes/roguetown/valorian/inqboots
 	name = "inquisitorial boots"
 	desc = "Finely crafted boots, made to stomp out darkness."
 	icon_state = "inqboots"
