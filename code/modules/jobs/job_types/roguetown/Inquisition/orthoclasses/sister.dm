@@ -1,6 +1,6 @@
 /datum/advclass/sister
 	name = "Psydonian Nun"
-	tutorial = "A Mute Nun of the Valorian Silent Sisterhood, your sole presence nullifies magiks and brings suffering to the Witch, Heretic, and Wizard."
+	tutorial = "A Silent Nun of the Valorian Silent Sisterhood, your rarely whispered voice disrupts witches"
 	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_RESPECTED_UP
 	outfit = /datum/outfit/job/roguetown/sister
@@ -31,6 +31,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/whisper)
 		H.change_stat("intelligence", 1)
 		H.change_stat("strength", 1)
 		H.change_stat("endurance", 1)
