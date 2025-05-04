@@ -116,7 +116,7 @@
 	max_integrity = 200
 	sellprice = 30
 
-/obj/item/clothing/gloves/roguetown/otavan
+/obj/item/clothing/gloves/roguetown/valorian
 
 	name = "fencer gloves"
 	desc = "A pair of small and sturdy leather gloves. Commonly called fencer gloves due to them being commonly seen in fencing tourneys."
@@ -136,7 +136,7 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	sellprice = 40
 
-/obj/item/clothing/gloves/roguetown/otavan/inqgloves
+/obj/item/clothing/gloves/roguetown/valorian/inqgloves
 	name = "inquisitorial leather gloves"
 	desc = "Masterfully crafted leather gloves, psycross included."
 	icon_state = "inqgloves"

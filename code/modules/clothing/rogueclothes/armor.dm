@@ -52,7 +52,7 @@
 /obj/item/clothing/suit/roguetown/armor/armordress/alt
 	icon_state = "armordressalt"
 
-//otavan brute skin
+//Valorian brute skin
 /obj/item/clothing/suit/roguetown/armor/skin_armor/monk_skin/Initialize(mapload)
 	. = ..()
 	name = "monk's skin"
@@ -104,7 +104,7 @@
 	sellprice = 30
 	color = "#976E6B"
 
-/obj/item/clothing/suit/roguetown/armor/gambeson/otavan
+/obj/item/clothing/suit/roguetown/armor/gambeson/valorian
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "fencer gambeson"
 	desc = "A large shirt with heavy padding meant to be used below armor."
@@ -751,7 +751,7 @@
 	smelt_bar_num = 4
 	sellprice = 160
 
-/obj/item/clothing/suit/roguetown/armor/otavan
+/obj/item/clothing/suit/roguetown/armor/valorian
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "valorian half-plate"
 	desc = "Half-plate armor with pauldrons, in the Valorian style."
@@ -773,7 +773,7 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	sellprice = 150
 
-/obj/item/clothing/suit/roguetown/armor/otavan/AdjustClothes(mob/user)
+/obj/item/clothing/suit/roguetown/armor/valorian/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/foley/dropsound/cloth_drop.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)

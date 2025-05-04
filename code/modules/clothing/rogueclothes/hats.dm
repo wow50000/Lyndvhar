@@ -825,7 +825,7 @@
 	max_integrity = 300
 	sellprice = 50
 
-/obj/item/clothing/head/roguetown/helmet/otavan
+/obj/item/clothing/head/roguetown/helmet/valorian
 	name = "valorian helmet"
 	desc = ""
 	icon_state = "otavahelm"
@@ -841,7 +841,7 @@
 	max_integrity = 300
 	sellprice = 55
 
-/obj/item/clothing/head/roguetown/helmet/otavan/AdjustClothes(mob/user)
+/obj/item/clothing/head/roguetown/helmet/valorian/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/items/visor.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)
