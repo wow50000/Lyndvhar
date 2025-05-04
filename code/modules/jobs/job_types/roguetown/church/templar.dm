@@ -10,7 +10,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	outfit = /datum/outfit/job/roguetown/templar
-	min_pq = 3 //Deus vult, but only according to the proper escalation rules
+	min_pq = 5
 	max_pq = null
 	round_contrib_points = 2
 	total_positions = 3
