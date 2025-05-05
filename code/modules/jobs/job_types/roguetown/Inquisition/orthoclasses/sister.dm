@@ -1,6 +1,6 @@
 /datum/advclass/sister
 	name =  "Nun"
-	tutorial = "A Nun of the Valorian Silent Sisterhood, your whispers alone strikes fear into witches and warlocks"
+	tutorial = "A Nun of the Valorian Silent Sisterhood, your whispers alone strikes fear into witches and warlocks."
 	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_RESPECTED_UP
 	outfit = /datum/outfit/job/roguetown/sister
