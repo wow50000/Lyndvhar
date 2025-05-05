@@ -1,12 +1,14 @@
 //Boat
 
-/obj/vehicle/ridden/lavaboat
+/obj/vehicle/ridden/boat
 	name = "boat"
 	desc = ""
 	icon_state = "goliath_boat"
 	icon = 'icons/obj/lavaland/dragonboat.dmi'
 	var/allowed_turf = /turf/open/water
-	can_buckle = TRUE
+	can_buckle = TRUE 
+	drag_slowdown = 6
+	vehicle_move_delay = 5
 	legs_required = 0
 	arms_required = 0
 
