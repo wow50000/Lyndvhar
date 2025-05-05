@@ -164,7 +164,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
-	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 4, /obj/item/clothing/suit/roguetown/armor/chainmail/iron = 3, /obj/item/clothing/suit/roguetown/armor/plate/half = 2))
+	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 4, /obj/item/clothing/suit/roguetown/armor/chainmail/iron = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 2))
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	beltr = /obj/item/rogueweapon/sword/iron/short
