@@ -667,8 +667,8 @@
 	max_integrity = 250
 
 /obj/item/rogueweapon/spear/hoplite
-	force = 20 // Unique weapon from rare job, less unwieldy if used with one hand
-	force_wielded = 25
+	force = 25 // Unique weapon from rare job, less unwieldy if used with one hand
+	force_wielded = 30
 	name = "ancient spear"
 	desc = "A humble spear with a bronze head, a rare survivor from the battles long past that nearly destroyed Beowricke."
 	icon_state = "bronzespear"

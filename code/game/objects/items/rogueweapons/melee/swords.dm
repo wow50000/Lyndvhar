@@ -1141,9 +1141,9 @@
 // Hoplite Kophesh
 /obj/item/rogueweapon/sword/khopesh
 	name = "ancient khopesh"
-	desc = "A bronze weapon of war from the era of Apotheosis. This blade is older than a few elven generations, but has been very well-maintained and still keeps a good edge."
+	desc = "A bronze weapon of war from the era of Bloodwake. This blade is older than a few elven generations, but has been very well-maintained and still keeps a good edge."
 	force = 22 // Unique weapon from rare job, slightly more force than most one-handers
-	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/chop, /datum/intent/sword/strike)
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/chop, /datum/intent/sword/strike)
 	gripped_intents = null
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "khopesh"

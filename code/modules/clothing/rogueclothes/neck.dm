@@ -241,7 +241,7 @@
 	desc = "A heavy collar of bronze alloy, meant to protect the neck."
 	icon_state = "aasimarneck"
 	item_state = "aasimarneck"
-	armor = list("melee" = 90, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 80, "fire" = 0, "acid" = 0)
 	max_integrity = 250
 	smeltresult = null // No bronze ingots yet
 
