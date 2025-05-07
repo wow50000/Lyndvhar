@@ -84,7 +84,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
-	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 5, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 5))
+	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 7))
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	backl = /obj/item/rogueweapon/shield/wood		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
 	backr = /obj/item/storage/backpack/rogue/satchel
@@ -106,7 +106,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)		//Why master? Because all it does is effect draw time, which is strength x skill / 1.2. (Bow is just skill / 1.0). You get poor bonus strength, so you get skill to offset.
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 	1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
@@ -171,7 +171,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
-	var/weapontype = pickweight(list("Spear" = 4, "Bardiche" = 2, "Goedendag" = 3, "Lucerne" = 1)) //pooors
+	var/weapontype = pickweight(list("Spear" = 5, "Bardiche" = 3, "Lucerne" = 2)) //pooors
 	switch(weapontype)
 		if("Spear")
 			r_hand = /obj/item/rogueweapon/spear
@@ -179,8 +179,6 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 		if("Bardiche")
 			r_hand = /obj/item/rogueweapon/halberd/bardiche
 			backl = /obj/item/gwstrap
-		if("Goedendag")
-			backl = /obj/item/rogueweapon/mace/goden
 		if("Lucerne")
 			backl = /obj/item/gwstrap
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
