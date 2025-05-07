@@ -11,9 +11,10 @@
 		/datum/species/human/northern,
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain
+		/datum/species/dwarf/mountain,
+		/datum/species/demihuman
 	)
-	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Viscount's most trusted confidant--and likely friend--throughout your marriage. Your loyalty and perhaps even your love will be tested this day... for the daggers that threaten your beloved are as equally pointed at your own throat."
+	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Viscount's most trusted confidant--and likely friend--throughout your marriage. Your loyalty and perhaps even your love will be tested this week... for the daggers that threaten your beloved are as equally pointed at your own throat."
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant, /obj/effect/proc_holder/spell/self/grant_nobility)
 	outfit = /datum/outfit/job/roguetown/lady
@@ -21,7 +22,7 @@
 	display_order = JDO_LADY
 	give_bank_account = 50
 	noble_income = 22
-	min_pq = 5
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 3
 
@@ -67,7 +68,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
@@ -75,8 +76,7 @@
 		H.change_stat("endurance", 3)
 		H.change_stat("speed", 2)
 		H.change_stat("perception", 2)
-		H.change_stat("fortune", 5)
-
+		H.change_stat("fortune", 1)
 /obj/effect/proc_holder/spell/self/convertrole/servant
 	name = "Recruit Servant"
 	new_role = "Servant"

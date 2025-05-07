@@ -10,7 +10,8 @@
 		/datum/species/human/northern,
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain
+		/datum/species/dwarf/mountain,
+		/datum/species/demihuman
 	)	//Maybe a system to force-pick lineage based on king and queen should be implemented.
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
@@ -21,7 +22,7 @@
 	display_order = JDO_PRINCE
 	give_bank_account = 30
 	noble_income = 20
-	min_pq = 1
+	min_pq = -1
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_noble.ogg'

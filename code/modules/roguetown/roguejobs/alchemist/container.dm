@@ -14,6 +14,9 @@
 /obj/item/reagent_containers/glass/bottle/rogue/water
 	list_reagents = list(/datum/reagent/water = 48)
 
+/obj/item/reagent_containers/glass/bottle/rogue/leechrepellent
+	list_reagents = list(/datum/reagent/medicine/leechrepellent = 48)
+
 //vanderlin potion stuff//
 /obj/item/reagent_containers/glass/bottle/rogue/strongmanapot
 	list_reagents = list(/datum/reagent/medicine/strongmana = 45)
@@ -124,6 +127,10 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfblue = 48)
 	desc = "A bottle gilded with a golden cork-seal. This is the legendary Valmora Blue from the Vineyard of Valmora, headed by a sainted Dark-Elf swordsmaster. This bottle would swoon Gods over!"
 
+/obj/item/reagent_containers/glass/bottle/rogue/emberwine
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/emberwine = 24)
+	desc = "A bottle with an unmarked, tannin-tinted cork-seal. Zybantu red or another such cheap wine, in all likelihood."
+
 //AZURE DRINKS
 /obj/item/reagent_containers/glass/bottle/rogue/beer/jagdtrunk
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/jagdtrunk = 48)
@@ -141,8 +148,8 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/nred = 48)
 	desc = "A bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Rhaenval."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer/gronnmead = 48)
+/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/rhaenvalianmead = 48)
 	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to far northern Rhaenvalian highlands."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead

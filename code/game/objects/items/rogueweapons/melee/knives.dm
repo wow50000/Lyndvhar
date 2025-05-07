@@ -94,7 +94,7 @@
 	gripsprite = FALSE
 	//dropshrink = 0.75
 	wlength = WLENGTH_SHORT
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
 	max_blade_int = 100
 	max_integrity = 175
@@ -110,6 +110,10 @@
 
 	grid_height = 64
 	grid_width = 32
+
+/obj/item/rogueweapon/huntingknife/Initialize()
+	. = ..()
+	AddElement(/datum/element/tipped_item)
 
 /obj/item/rogueweapon/huntingknife/getonmobprop(tag)
 	. = ..()
@@ -181,9 +185,8 @@
 
 /obj/item/rogueweapon/huntingknife/combat
 	force = 16
-	name = "seax"
-	desc = "A fighting knife used amongst the Grenzels and Northerners for centuries, serving dual purpose as a \
-	tool of daily life and as a capable fighting knife."
+	name = "combat knife"
+	desc = "A crude, thick knife popularized by the more unsavory parts of Lyndhardia's society. its now used as a highly effective self defense weapon for citizens who can afford it."
 	possible_item_intents = list(/datum/intent/dagger/cut/seax, /datum/intent/dagger/chop/cleaver, /datum/intent/dagger/sucker_punch,)
 	icon_state = "combatknife"
 	icon = 'icons/roguetown/weapons/32.dmi'
@@ -292,6 +295,10 @@
 	max_blade_int = 100
 	max_integrity = 210
 	wdefense = 5
+	
+/obj/item/rogueweapon/huntingknife/idagger/silver/psydagger/ComponentInitialize()
+	. = ..()				//It's preblessed with silver only. Mostly redundant, but safely prevents double-blessing.
+	AddComponent(/datum/component/psyblessed, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE)
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/pickup(mob/user)
 	. = ..()

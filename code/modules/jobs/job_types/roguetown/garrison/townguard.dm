@@ -16,7 +16,7 @@
 	advclass_cat_rolls = list(CTAG_WATCH = 20)
 
 	give_bank_account = 16
-	min_pq = 1 //Introductory guard role, but still requires knowledge of escalation.
+	min_pq = 1
 	max_pq = null
 	round_contrib_points = 2
 
@@ -39,13 +39,14 @@
 			S.name = "watchman tabard ([index])"
 
 /datum/outfit/job/roguetown/guardsman
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/chainlegs
 	cloak = /obj/item/clothing/cloak/stabard/guard
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	neck = /obj/item/clothing/neck/roguetown/coif
+	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	belt = /obj/item/storage/belt/rogue/leather	//Would seperate to leather bracers for archer for dodge but - funnily, armor class doesn't exist on bracers.
-	backr = /obj/item/storage/backpack/rogue/satchel
+	belt = /obj/item/storage/belt/rogue/leather/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather		//Would seperate to leather bracers for archer for dodge but - funnily, armor class doesn't exist on bracers.
+	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(/obj/item/signal_horn = 1)
 
 /*Design philosophy: Men and women from various areas of life, from hunters to street-brawlers and more 'veteran' levy-men. Know less skills overall than Bog, but far more specialized.
@@ -60,7 +61,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
@@ -86,12 +87,12 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
 	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 5, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 5))
 	beltr = /obj/item/rogueweapon/mace/cudgel
-	backl = /obj/item/rogueweapon/shield/wood		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/rogueweapon/shield/buckler		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
+	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltl = /obj/item/storage/keyring/guardcastle
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
 
 /datum/advclass/watchman/archer
@@ -130,12 +131,13 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	armor = /obj/item/clothing/suit/roguetown/armor/leather		//So they get default-dodge expert usage.
 	beltr = /obj/item/quiver/arrows
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltl = /obj/item/storage/keyring/guardcastle
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
+
 /datum/advclass/watchman/pikeman
 	name = "Watch Pikeman"
 	tutorial = "You are a Pikeman of the Town Watch. Given a polearm and some armor, you are expected to defend this town from all threats."
@@ -184,3 +186,11 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 		if("Lucerne")
 			backl = /obj/item/gwstrap
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
+   H.verbs |= /mob/proc/haltyell
+
+
+// Added to baliff under assumption townguard.dm will not be enabled.
+// /mob/proc/haltyell()
+//	set name = "HALT!"
+//	set category = "Noises"
+//	emote("haltyell")
