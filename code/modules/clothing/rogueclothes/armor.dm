@@ -52,7 +52,7 @@
 /obj/item/clothing/suit/roguetown/armor/armordress/alt
 	icon_state = "armordressalt"
 
-//otavan brute skin
+//Valorian brute skin
 /obj/item/clothing/suit/roguetown/armor/skin_armor/monk_skin/Initialize(mapload)
 	. = ..()
 	name = "monk's skin"
@@ -104,7 +104,7 @@
 	sellprice = 30
 	color = "#976E6B"
 
-/obj/item/clothing/suit/roguetown/armor/gambeson/otavan
+/obj/item/clothing/suit/roguetown/armor/gambeson/valorian
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "fencer gambeson"
 	desc = "A large shirt with heavy padding meant to be used below armor."
@@ -228,6 +228,23 @@
 	icon_state = "artijacket"
 	desc = "A thick leather jacket adorned with fur and cog decals. The height of Weocilyn fashion."
 
+/obj/item/clothing/suit/roguetown/armor/leather/jacket/tanned
+	name = "tanned jacket"
+	icon_state = "leatherjacketo"
+	desc = "A heavy leather jacket with wooden buttons, favored by commoners who can afford it."
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+	
+/obj/item/clothing/armor/leather/jacket/tanned/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/storage/concrete)
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	if(STR)
+		STR.max_combined_w_class = 3
+		STR.max_w_class = WEIGHT_CLASS_NORMAL
+		STR.max_items = 3
+
+
+
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"
 	desc = "More form over function, this armor is fit for demonstration of might rather than open combat. The aged gilding slowly tarnishes away."
@@ -335,6 +352,17 @@
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS
 	max_integrity = 300
 	sellprice = 55
+
+/obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
+	name = "vaquero's coat"
+	desc = "A sturdy leather coat commonly used by the vaqueros of Valoria."
+	icon_state = "leathercoat"
+	item_state = "leathercoat"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	armor = list("blunt" = 100, "slash" = 70, "stab" = 50, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP, BCLASS_SMASH)
+	max_integrity = 300
+	sellprice = 25
 
 /obj/item/clothing/suit/roguetown/armor/leather/bikini
 	name = "leather bikini"
@@ -723,7 +751,7 @@
 	smelt_bar_num = 4
 	sellprice = 160
 
-/obj/item/clothing/suit/roguetown/armor/otavan
+/obj/item/clothing/suit/roguetown/armor/valorian
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "valorian half-plate"
 	desc = "Half-plate armor with pauldrons, in the Valorian style."
@@ -745,7 +773,7 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	sellprice = 150
 
-/obj/item/clothing/suit/roguetown/armor/otavan/AdjustClothes(mob/user)
+/obj/item/clothing/suit/roguetown/armor/valorian/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/foley/dropsound/cloth_drop.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)
@@ -842,7 +870,7 @@
 	icon_state = "coat_of_plates"
 	blocksound = PLATEHIT
 	body_parts_covered = CHEST|GROIN|VITALS|ARMS
-	armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
 	max_integrity = 350
 	anvilrepair = /datum/skill/craft/armorsmithing

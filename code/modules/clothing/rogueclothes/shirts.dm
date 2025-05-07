@@ -100,8 +100,8 @@
 	l_sleeve_status = SLEEVE_NORMAL
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-	name = "tinker suit"
-	desc = "Typical fashion of the best engineers."
+	name = "shirt and vest"
+	desc = "Typical apparel of the Lyndvhar"
 	icon_state = "artishirt"
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
@@ -136,8 +136,8 @@
 	boobed = TRUE
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-	name = "tinker suit"
-	desc = "Typical fashion of the best engineers."
+	name = "collared shirt and vest"
+	desc = "Common attire amongst the rising members of the peasantry, of course such prospects are absurd."
 	icon_state = "artishirt"
 
 //Royal clothing:
@@ -147,7 +147,7 @@
 	icon = 'icons/roguetown/clothing/shirts_royalty.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts_royalty.dmi'
 	name = "royal gown"
-	desc = "An elaborate ball gown, a favoured fashion of queens and elevated nobility in Enigma."
+	desc = "An elaborate ball gown, a favoured fashion of queens and elevated nobility in Lyndvhar."
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "royaldress"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts_royalty.dmi'
@@ -185,7 +185,7 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "pristine dress"
-	desc = "A flowy, intricate dress made by the finest tailors in the land for the monarch's children."
+	desc = "A flowy, intricate dress made by the finest Lyndhardian tailors for the young and spoiled aristocracy."
 	icon_state = "princess"
 	boobed = TRUE
 	detail_color = CLOTHING_BLUE
@@ -194,12 +194,62 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "gilded dress shirt"
-	desc = "A gold-embroidered dress shirt specially tailored for the monarch's children."
+	desc = "A gold-embroidered dress shirt specially tailored for the young and spoiled aristocracy."
 	icon_state = "prince"
 	boobed = TRUE
 	detail_color = CLOTHING_MAJENTA
 
 // End royal clothes
+
+/obj/item/clothing/suit/roguetown/shirt/dress/silkydress
+	name = "silky dress"
+	desc = "Despite not actually being made of silk, the legendary expertise needed to sew this puts the quality on par."
+	body_parts_covered = null
+	slot_flags = ITEM_SLOT_ARMOR
+	icon_state = "silkydress"
+	item_state = "silkydress"
+	sleevetype = null
+	sleeved = null
+
+/obj/item/clothing/suit/roguetown/shirt/dress/gown
+	icon = 'icons/roguetown/clothing/shirts_gown.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts_gown.dmi'
+	name = "spring gown"
+	desc = "A delicate gown that captures the essence of the season’s renewal."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "springgown"
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts_gown.dmi'
+	boobed = TRUE
+	detail_tag = "_detail"
+	detail_color = CLOTHING_DARK_GREEN
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	var/picked = FALSE
+
+/obj/item/clothing/suit/roguetown/shirt/dress/gown/summergown
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	name = "summer gown"
+	desc = "A breezy, flowing gown fit for warm weathers."
+	icon_state = "summergown"
+	boobed = TRUE
+	detail_color = "#e395bb"
+
+/obj/item/clothing/suit/roguetown/shirt/dress/gown/fallgown
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	name = "fall gown"
+	desc = "A long sleeved, solemn gown signifies the season's nearing end."
+	icon_state = "fallgown"
+	boobed = TRUE
+	detail_color = "#8b3f00"
+
+/obj/item/clothing/suit/roguetown/shirt/dress/gown/wintergown
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	name = "winter gown"
+	desc = "A warm, elegant gown adorned with soft fur for cold."
+	icon_state = "wintergown"
+	boobed = TRUE
+	detail_color = "#45749d"
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
 	icon_state = "sailorblues"
@@ -423,10 +473,40 @@
 	icon = 'icons/roguetown/clothing/shirts.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/shirts.dmi'
-	boobed = TRUE
+	boobed = FALSE // for some reason when boobed, the game likes to get rid of the detail and altdetail. I went ahead and just merged it into the main icon.
+	detail_tag = "_detail"
+	altdetail_tag = "_detailalt"
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	flags_inv = HIDECROTCH|HIDEBOOB
+	detail_color = CLOTHING_WHITE
+	color = CLOTHING_AZURE
+	altdetail_color = CLOTHING_WHITE
+
+/obj/item/clothing/suit/roguetown/shirt/jester/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/suit/roguetown/shirt/jester/lordcolor(primary,secondary)
+	detail_color = secondary
+	color = primary
+	update_icon()
+
+/obj/item/clothing/suit/roguetown/shirt/jester/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/suit/roguetown/shirt/jester/Destroy()
+	GLOB.lordcolor -= src
+	return ..()
 
 /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
@@ -473,9 +553,6 @@
 		if(loc == user && ishuman(user))
 			var/mob/living/carbon/H = user
 			H.update_inv_shirt()
-
-
-
 
 /obj/item/clothing/suit/roguetown/shirt/grenzelhoft/update_icon()
 	cut_overlays()

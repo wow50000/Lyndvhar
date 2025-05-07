@@ -213,8 +213,8 @@
 	if(cmode_music)
 		H.cmode_music = cmode_music
 
-	if(H.mind.special_role == "Court Agent" || H.mind.assigned_role == "Bandit")	//For obfuscating Court Agents & Bandits in Actors list
-		GLOB.actors_list[H.mobid] = "[H.real_name] as Adventurer<BR>"
+	if(H.mind.special_role == "Court Agent" || H.mind.assigned_role == "Bandit" || H.mind.assigned_role == "Wretch")	//For obfuscating Court Agents & Bandits in Actors list
+		GLOB.actors_list[H.mobid] = "[H.real_name] as Outlander<BR>"
 	else
 		GLOB.actors_list[H.mobid] = "[H.real_name] as [H.mind.assigned_role]<BR>"
 

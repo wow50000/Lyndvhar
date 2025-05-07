@@ -80,7 +80,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/adventurerlate
 	name = "Adventurerlate"
 	icon_state = "arrow"
-	jobspawn_override = list("Skeleton", "Pilgrim", "Adventurer", "Migrant")
+	jobspawn_override = list("Skeleton", "Pilgrim", "Outlander", "Migrant")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
@@ -381,7 +381,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/adventurer
-	name = "Adventurer"
+	name = "Outlander"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/courtagent
@@ -475,6 +475,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	. = ..()
 	GLOB.delf_starts += loc
 
+/obj/effect/landmark/start/wretch
+	name = "wretch"
+	icon_state = "arrow"
+	jobspawn_override = list("Wretch")
+
+/obj/effect/landmark/start/wretchlate
+	name = "wretch"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	jobspawn_override = list("Wretch")
 
 /obj/effect/landmark/start/nukeop_leader
 	name = "nukeop leader"

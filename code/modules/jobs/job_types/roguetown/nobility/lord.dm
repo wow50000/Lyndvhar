@@ -14,7 +14,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/datum/species/human/northern,
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain
+		/datum/species/dwarf/mountain,
+		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
 
@@ -29,14 +30,14 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated into overlordship of the city through a web of intrigue and political upheaval, you are the absolute authority of these lands ever since the succession crisis and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error of their ways."
+	tutorial = "At one point you were merely a vassal to the Ruby Throne, given special status and overseen by the Empress herself. However since her death there has been almost no communication outside of the city. You have had to take increasing amounts of autocratic power in order to sustain your port, so much so that many see you as effectively a monarch in your own right. And many want to take this from you, or use it to their advantage- keep your family alive and your power secure, and Lyndvhar may live to see another dae."
 	whitelist_req = FALSE
-	min_pq = 10
+	min_pq = 5
 	max_pq = null
 	round_contrib_points = 4
 	give_bank_account = 1000
 	required = TRUE
-	cmode_music = 'sound/music/combat_noble.ogg'
+	cmode_music = 'sound/music/viscount.ogg'
 
 /datum/job/roguetown/exlord //just used to change the lords title
 	title = "Viscount Emeritus"
@@ -91,7 +92,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		if(H.mind)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
@@ -108,7 +109,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 1)
 			H.change_stat("perception", 2)
-			H.change_stat("fortune", 5)
+			H.change_stat("fortune", 4)
 		H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	else
 		pants = /obj/item/clothing/under/roguetown/tights/black

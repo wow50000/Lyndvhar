@@ -535,6 +535,10 @@
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver
 
+/obj/item/rogueweapon/sword/long/psysword/ComponentInitialize()
+	. = ..()								//+3 force, +50 int, +1 def, make silver
+	AddComponent(/datum/component/psyblessed, FALSE, 3, FALSE, 50, 1, TRUE)
+
 /obj/item/rogueweapon/sword/iron
 	name = "sword"
 	desc = "A simple iron sword, the most classical war weapon."
@@ -633,6 +637,7 @@
 	wbalance = 1
 
 /obj/item/rogueweapon/sword/rapier/vaquero
+	name = "cupped rapier"
 	desc = "A fairly new development originating in Valoria, the cup hilt design of this weapon is both simpler to produce and more protective than the traditional 'swept' design more common in these lands."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "cup_hilt_rapier"
@@ -743,7 +748,7 @@
 
 /obj/item/rogueweapon/sword/cutlass
 	name = "cutlass"
-	desc = "Used by pirates and deckhands."
+	desc = "A blade commonly used by the pirates and sailors of Lyndhardtia's coast."
 	icon_state = "cutlass"
 	possible_item_intents = list(/datum/intent/sword/cut/falchion, /datum/intent/sword/thrust)
 	gripped_intents = null

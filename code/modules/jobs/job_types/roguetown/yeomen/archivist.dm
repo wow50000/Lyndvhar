@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/job/roguetown/archivist
 	display_order = JDO_ARCHIVIST
 	give_bank_account = 15
-	min_pq = 1 // Please do not read smut while brewing bottle bombs. It upsets the maids when they have to scrape archivists off the ceiling.
+	min_pq = 1
 	max_pq = null
 	round_contrib_points = 3
 
@@ -53,7 +53,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
-		H.mind.adjust_spellpoints(1)
+		H.mind.adjust_spellpoints(3)
 		H.grant_language(/datum/language/elvish)
 		H.grant_language(/datum/language/dwarvish)
 		H.grant_language(/datum/language/celestial)
@@ -65,6 +65,7 @@
 		ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
 		ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
 		H.change_stat("strength", -1)
 		H.change_stat("constitution", -1)
 		H.change_stat("intelligence", 4)

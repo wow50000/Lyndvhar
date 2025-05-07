@@ -23,6 +23,10 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 30, "slash" = 20, "stab" = 20, "piercing" = 20, "fire" = 0, "acid" = 0)
 
+/obj/item/clothing/shoes/roguetown/boots/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/storage/concrete/roguetown/boots)
+
 /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	name = "psydonian boots"
 	desc = "Blacksteel-heeled boots. The leather refuses to be worn down, no matter how far you march through these lands."
@@ -178,7 +182,24 @@
 		return
 	qdel(src)
 
-/obj/item/clothing/shoes/roguetown/otavan
+/obj/item/clothing/shoes/roguetown/boots/armor/matthios
+	max_integrity = 500
+	name = "gilded boots"
+	desc = "Gilded tombs do worm enfold."
+	icon_state = "matthiosboots"
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 80, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/boots/armor/matthios/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+
+/obj/item/clothing/shoes/roguetown/boots/armor/matthios/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(QDELETED(src))
+		return
+	qdel(src)
+
+/obj/item/clothing/shoes/roguetown/valorian
 	name = "valorian leather boots"
 	desc = "Boots of outstanding craft, your fragile feet has never felt so protected and comfortable before."
 	body_parts_covered = FEET
@@ -212,12 +233,37 @@
 	name = "funny shoes"
 	do_sound_bell = FALSE
 	icon_state = "jestershoes"
+	detail_tag = "_detail"
 	resistance_flags = null
 	sewrepair = TRUE
+	detail_color = CLOTHING_WHITE
+	color = CLOTHING_AZURE
 
-/obj/item/clothing/shoes/roguetown/jester/Initialize(mapload)
+/obj/item/clothing/shoes/roguetown/jester/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/shoes/roguetown/jester/lordcolor(primary,secondary)
+	detail_color = secondary
+	color = primary
+	update_icon()
+
+/obj/item/clothing/shoes/roguetown/jester/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_JINGLE_BELLS)
+	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_JINGLE_BELLS, 2)
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/shoes/roguetown/jester/Destroy()
+	GLOB.lordcolor -= src
+	return ..()
 
 /obj/item/clothing/shoes/roguetown/grenzelhoft
 	name = "grenzelhoft boots"
@@ -274,7 +320,7 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "piercing" = 0, "fire" = 0, "acid" = 0)
 
-/obj/item/clothing/shoes/roguetown/otavan/inqboots
+/obj/item/clothing/shoes/roguetown/valorian/inqboots
 	name = "inquisitorial boots"
 	desc = "Finely crafted boots, made to stomp out darkness."
 	icon_state = "inqboots"
