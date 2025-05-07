@@ -6,13 +6,14 @@
 	icon_state = "goliath_boat"
 	icon = 'icons/obj/lavaland/dragonboat.dmi'
 	var/allowed_turf = /turf/open/water
-	can_buckle = TRUE 
-	drag_slowdown = 6
-	vehicle_move_delay = 5
+	can_buckle = TRUE
+	drag_slowdown = 3
+	last_vehicle_move = 0
+	vehicle_move_delay = 3
 	legs_required = 0
 	arms_required = 0
 
-/obj/vehicle/ridden/lavaboat/Initialize()
+/obj/vehicle/ridden/boat/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.keytype = /obj/item/oar
