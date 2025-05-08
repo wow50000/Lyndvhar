@@ -670,7 +670,7 @@
 
 /datum/crafting_recipe/roguetown/structure/boat
 	name = "boat"
-	result = /obj/vehicle/ridden/lavaboat	
+	result = /obj/vehicle/ridden/boat
 	reqs = list(/obj/item/grown/log/tree/small = 7, /obj/item/rope)
 	verbage_simple = "build"
 	verbage = "build"
