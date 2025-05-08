@@ -853,19 +853,19 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/captain.dmi'
 	detail_tag = "_detail"
-	detail_color = CLOTHING_BERRY_BLUE
+	detail_color = CLOTHING_BLUE
 	blocksound = SOFTHIT
 	equip_delay_self = 4 SECONDS
 	unequip_delay_self = 4 SECONDS
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-	sellprice = VALUE_BRIGANDINE
+	sellprice = 170
 	clothing_flags = CANT_SLEEP_IN
-	armor_class = AC_HEAVY
-	armor = ARMOR_PLATE_BAD
-	body_parts_covered = COVERAGE_ALL_BUT_LEGS
-	max_integrity = INTEGRITY_STRONGEST
-	prevent_crits = ALL_EXCEPT_STAB
+	armor_class = ARMOR_CLASS_HEAVY
+	armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	max_integrity = 450
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
 	do_sound_plate = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/captain/update_icon()

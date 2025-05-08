@@ -1016,7 +1016,7 @@
 	icon_state = "capcloak"
 	detail_tag = "_detail"
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
-	detail_color = CLOTHING_BERRY_BLUE
+	detail_color = CLOTHING_BLUE
 
 /obj/item/clothing/cloak/captain/update_icon()
 	cut_overlays()
