@@ -14,7 +14,7 @@
 	domain = "Archdaemon of Advancement, Hubris, Ambition, and Power"
 	desc = "The Archdaemon ZIZO was the first to be born from the sins of mortalkind. She represents the aspects of unbridled ambition, and the lust for more power. It was her forces that first breached through the Hells and into the realm of Beowricke proper, bringing destruction as she began to carve out a realm for herself. She and her cultists crafted the TIEFLING from her lesser daemons as well as mortals. "
 	worshippers = "Necromancers, Warlocks, and the Undead"
-	mob_traits = list(TRAIT_CABAL)
+	mob_traits = list(TRAIT_CABAL, TRAIT_LEECHIMMUNE)
 	t1 = /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle
 	t2 = /obj/effect/proc_holder/spell/invoked/raise_lesser_undead/miracle
 	t3 = /obj/effect/proc_holder/spell/invoked/rituos/miracle

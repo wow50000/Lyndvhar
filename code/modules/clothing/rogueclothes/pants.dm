@@ -149,7 +149,7 @@
 	armor = list("blunt" = 50, "slash" = 60, "stab" = 55, "fire" = 0, "acid" = 0)
 	max_integrity = 250
 
-/obj/item/clothing/under/roguetown/trou/otavan
+/obj/item/clothing/under/roguetown/trou/valorian
 	name = "valorian leather trousers"
 	desc = "Padded leather armor made by Valorian tailors, its quality is remarkable."
 	icon_state = "fencerpants"

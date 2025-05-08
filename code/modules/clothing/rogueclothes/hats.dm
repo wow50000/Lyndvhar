@@ -597,6 +597,7 @@
 	sellprice = 5
 	sewrepair = TRUE
 
+
 /obj/item/clothing/head/roguetown/hennin
 	name = "hennin"
 	desc = "A hat typically worn by women in nobility."
@@ -842,7 +843,7 @@
 	max_integrity = 300
 	sellprice = 50
 
-/obj/item/clothing/head/roguetown/helmet/otavan
+/obj/item/clothing/head/roguetown/helmet/valorian
 	name = "valorian helmet"
 	desc = ""
 	icon_state = "otavahelm"
@@ -858,7 +859,7 @@
 	max_integrity = 300
 	sellprice = 55
 
-/obj/item/clothing/head/roguetown/helmet/otavan/AdjustClothes(mob/user)
+/obj/item/clothing/head/roguetown/helmet/valorian/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/items/visor.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)
@@ -1339,6 +1340,17 @@
 		if(get_altdetail_color())
 			pic2.color = get_altdetail_color()
 		add_overlay(pic2)
+
+/obj/item/clothing/head/roguetown/helmet/nun
+	name = "chainmaile habbit"
+	desc = "Armored headware for the silent sisterhood"
+	icon_state = "battlenun"
+	allowed_sex = list(FEMALE)
+	item_state = "battlenun"
+	blocksound = CHAINHIT
+	body_parts_covered = HEAD|HAIR|EARS|NECK
+	armor = list("blunt" = 70, "slash" = 55, "stab" = 55, "piercing" = 30, "fire" = 0, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
 	name = "noc helmet"
