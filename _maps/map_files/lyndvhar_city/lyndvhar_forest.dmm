@@ -4219,6 +4219,9 @@
 	})
 "HA" = (
 /obj/item/restraints/legcuffs/beartrap/armed,
+/obj/structure/fluff/railing/fence{
+	dir = 4
+	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
@@ -4590,8 +4593,10 @@
 	first_time_text = "DRAGUIPPE FOREST"
 	})
 "KC" = (
-/obj/item/restraints/legcuffs/beartrap/armed,
-/turf/open/water/swamp,
+/obj/structure/fluff/railing/fence{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
@@ -133256,7 +133261,7 @@ jQ
 jz
 Dq
 nd
-KC
+nd
 ap
 Ic
 Ws
@@ -133860,7 +133865,7 @@ Ic
 Ic
 Ic
 Ic
-KC
+nd
 nd
 Ic
 ap
@@ -135483,7 +135488,7 @@ Ts
 Ts
 XQ
 vh
-Ws
+KC
 XG
 Mz
 XG
