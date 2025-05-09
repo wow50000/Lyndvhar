@@ -18,7 +18,6 @@
 	backl = /obj/item/storage/backpack/rogue/satchel/black
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	armor = /obj/item/clothing/suit/roguetown/armor/skin_armor/monk_skin
-	head = /obj/item/clothing/head/roguetown/headband
 	mask = /obj/item/clothing/mask/rogue/facemask/psydonmask
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
