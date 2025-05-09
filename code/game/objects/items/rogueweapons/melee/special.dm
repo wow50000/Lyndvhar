@@ -279,6 +279,7 @@
 	force = 15
 	possible_item_intents = list(/datum/intent/knuckles/strike, /datum/intent/knuckles/smash)
 	icon = 'icons/roguetown/weapons/32.dmi'
+	icon_state = "brass"
 	gripsprite = FALSE
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_SMALL
