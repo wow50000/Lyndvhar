@@ -1,4 +1,4 @@
-/datum/advclass/psydoniantemplar // A shaman/brawler, but for the Inquisition
+/datum/advclass/psydonianbrawler // A shaman/brawler, but for the Inquisition
 	name = "Warrior Monk"
 	tutorial = "You are the fist of the Holy Inquisition. You serve as a militant under the local Inquisitor to forward the goals of the Valorian Orthodoxy. PSYDON Endures."
 	allowed_sexes = list(MALE, FEMALE)
@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_INQUISITION)
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
-/datum/outfit/job/roguetown/psydoniantemplar/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/psydonianbrawler/pre_equip(mob/living/carbon/human/H)
 	..()
 	has_loadout = TRUE
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
