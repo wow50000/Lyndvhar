@@ -408,7 +408,7 @@
 	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
 
 /atom/movable/screen/alert/status_effect/buff/censerbuff
-	name = "Orthodoxist Blessing."
+	name = "Orthodoxist Blessing"
 	desc = "A shard of his blessings has inspired me to ENDURE!"
 	icon_state = "censerbuff"
 
