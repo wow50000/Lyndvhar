@@ -22,7 +22,7 @@
 	mask = /obj/item/clothing/mask/rogue/facemask/psydonmask
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
-	beltr = /obj/item/rogueweapon/knuckles
+	l_hand = /obj/item/rogueweapon/knuckles
 	id = /obj/item/clothing/ring/silver
 	backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1)
 	if(H.mind)

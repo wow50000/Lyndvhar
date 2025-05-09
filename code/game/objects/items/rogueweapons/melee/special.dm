@@ -275,7 +275,7 @@
 
 /obj/item/rogueweapon/knuckles // no actual sprite for this yet so its just the basis for the eora knuckles + for later futureproofing
 	name = "knuckles"
-	desc = "A mean looking pair of iron knuckles."
+	desc = "A mean looking pair of steel knuckles."
 	force = 15
 	possible_item_intents = list(/datum/intent/knuckles/strike, /datum/intent/knuckles/smash)
 	icon = 'icons/roguetown/weapons/32.dmi'
