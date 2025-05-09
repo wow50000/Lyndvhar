@@ -861,6 +861,54 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
+/obj/item/clothing/suit/roguetown/armor/captain
+	name = "captain's brigandine"
+	desc = "A coat with plates specifically tailored and forged for the captain of Lyndvhar."
+	icon_state = "capplate"
+	icon = 'icons/roguetown/clothing/special/captain.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	detail_tag = "_detail"
+	detail_color = CLOTHING_BLUE
+	blocksound = SOFTHIT
+	equip_delay_self = 4 SECONDS
+	unequip_delay_self = 4 SECONDS
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	sellprice = 170
+	clothing_flags = CANT_SLEEP_IN
+	armor_class = ARMOR_CLASS_HEAVY
+	armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	max_integrity = 450
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
+	do_sound_plate = TRUE
+
+/obj/item/clothing/suit/roguetown/armor/captain/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/suit/roguetown/armor/captain/lordcolor(primary,secondary)
+	detail_color = primary
+	update_icon()
+
+/obj/item/clothing/suit/roguetown/armor/captain/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/suit/roguetown/armor/captain/Destroy()
+	GLOB.lordcolor -= src
+	return ..()
+
+
 /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/Initialize()
 	. = ..()
 	if(GLOB.lordprimary)

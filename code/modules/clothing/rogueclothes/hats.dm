@@ -1046,6 +1046,14 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
+//................. Captain's Helmet .............. //
+/obj/item/clothing/head/roguetown/helmet/visored/captain
+	name = "captain's helmet"
+	desc = "An elegant barbute, fitted with the gold trim and polished metal of nobility."
+	icon = 'icons/roguetown/clothing/special/captain.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	icon_state = "capbarbute"
+	
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
 	name = "armet"
 	desc = "Holy lamb, sacrificial hero, blessed idiot - Psydon endures. Will you endure alongside Him, as a knight of humenity, or crumble before temptation?"

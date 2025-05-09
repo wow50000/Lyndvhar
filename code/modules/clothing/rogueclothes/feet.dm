@@ -54,6 +54,13 @@
 	salvage_result = /obj/item/natural/hide/cured
 	sellprice = 30
 
+/obj/item/clothing/shoes/roguetown/nobleboot/thighboots
+	name = "thigh boots"
+	icon_state = "thighboot"
+	icon = 'icons/roguetown/clothing/special/hand.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/hand.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/hand.dmi'
+
 /obj/item/clothing/shoes/roguetown/shortboots
 	name = "shortboots"
 	color = "#d5c2aa"
