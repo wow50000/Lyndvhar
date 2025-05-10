@@ -12,4 +12,4 @@
 /datum/virtue/items/arsonist
 	name = "Arsonist"
 	desc = "I like to watch the world burn, and I've stowed away two powerful firebombs to help me achieve that fact."
-	added_stashed_items = list("Firebomb One" = /obj/item/bomb, "Firebomb One" = /obj/item/bomb)
+	added_stashed_items = list("Firebomb One" = /obj/item/bomb, "Firebomb Two" = /obj/item/bomb)
