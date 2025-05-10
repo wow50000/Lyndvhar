@@ -526,6 +526,46 @@
 	icon_state = "psybracelet"
 	item_state = null
 
+/obj/item/clothing/neck/roguetown/elfears
+	name = "elfear necklace"
+	desc = "A grim necklace made to show off the wearer's macabre collection of cut off elf ears."
+	icon_state = "elfears"
+
+/obj/item/clothing/neck/roguetown/menears
+	name = "menear necklace"
+	desc = "A grim necklace made to show off the wearer's macabre collection of cut off humen ears."
+	icon_state = "menears"
+
+/obj/item/clothing/neck/roguetown/mercmedal/zybatine
+	name = "desert rider chain"
+	desc = "A small, gilded neck-chain used to identify fellow slavers."
+	icon_state = "goldchain"
+
+/obj/item/clothing/neck/roguetown/mercmedal/grenzelhoft
+	name = "grenzelhoft gryphon of valor"
+	desc = "The fearsome beast of the Black Empire's heraldry, cast in brass. These service awards have lost much of their value since mercenaries started receiving them."
+	icon_state = "gryphon"
+
+/obj/item/clothing/neck/roguetown/mercmedal/underdweller
+	name = "underdweller compass"
+	desc = "A non-functional compass carried by seasoned miners as keepsake. Greed will light the way."
+	icon_state = "compass"
+
+/obj/item/clothing/neck/roguetown/mercmedal/blackoak
+	name = "black oak seedpouch"
+	desc = "A dark acorn resting in a canvas pouch. May your final resting place be the one life you give back to this world."
+	icon_state = "seedpouch"
+
+/obj/item/clothing/neck/roguetown/mercmedal/steppesman
+	name = "steppe effigy"
+	desc = "This straw doll is claimed to be a representation of Astrata. In truth, a homage to the steppe's wild spirits of yore."
+	icon_state = "effigy"
+
+/obj/item/clothing/neck/roguetown/mercmedal/jannisary
+	name = "jannisary medal"
+	desc = "Proof of veterancy among the Forvheipal Janissaries."
+	icon_state = "dogmedal"
+
 /*/obj/item/clothing/neck/roguetown/collar
 	name = "collar"
 	desc = "A band of leather which signifies bondage to another."

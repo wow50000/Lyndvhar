@@ -228,3 +228,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/cloth_blindfold
 	name = "Cloth Blindfold"
 	path = /obj/item/clothing/mask/rogue/blindfold
+
+/datum/loadout_item/elfears
+	name = "Elfear Necklace"
+	path = /obj/item/clothing/neck/roguetown/elfears
+
+/datum/loadout_item/menears
+	name = "Menear Necklace
+	path = /obj/item/clothing/neck/roguetown/menears
