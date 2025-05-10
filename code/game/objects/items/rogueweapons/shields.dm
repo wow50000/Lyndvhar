@@ -199,6 +199,12 @@
 	else
 		..()
 
+/obj/item/rogueweapon/shield/tower/spidershield
+	name = "spider shield"
+	desc = "A bulky shield of spike-like lengths molten together. The motifs evoke anything but safety and protection."
+	icon_state = "spidershield"
+	coverage = 55
+
 /obj/item/rogueweapon/shield/buckler
 	name = "buckler shield"
 	desc = "A sturdy buckler shield. Will block anything you can imagine."

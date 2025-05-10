@@ -199,6 +199,13 @@
 	sewrepair = TRUE
 	sellprice = 35
 
+/obj/item/clothing/gloves/roguetown/chain/iron/shadowgauntlets
+	name = "darkplate gauntlets"
+	desc = "Gauntlets with gilded fingers fashioned into talons. The tips are all too dull to be of harm."
+	icon_state = "shadowgauntlets"
+	allowed_race = list(/datum/species/elf/dark, /datum/species/elf/wood)
+	max_integrity = 300
+
 /obj/item/clothing/gloves/roguetown/grenzelgloves/blacksmith
 	name = "forge gauntlets"
 	desc = "Cured leather with plenty of internal padding to insulate against the forge's heat."
