@@ -6,15 +6,9 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/demihuman
-	)
+	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_races = RACES_TOLERATED
+	allowed_sexes = list(MALE, FEMALE)
 
 	tutorial = "Servitude unto death; that is your motto. You have worked tirelessly in the court of Lyndvhar as a servant, and this had not gone unrecognized. You have become the de-facto head of the serving staff, with power over the lesser courtiers. For if it were not for you and your underlings, the nobles would have starved to death long ago."
 	outfit = /datum/outfit/job/roguetown/seneschal

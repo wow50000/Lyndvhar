@@ -15,6 +15,7 @@
 		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
+	allowed_patrons = ALL_DIVINE_PATRONS
 	tutorial = "Your lineage is noble, and generations of strong, loyal knights have come before you. You served your time \
 	gracefully as knight of the Viscount, and now you've grown into a role which many men can only dream of becoming. \
 	Lead your men to victory--and keep them in line--and you will see this realm prosper under a thousand suns."
