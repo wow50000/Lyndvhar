@@ -12,7 +12,7 @@
 /datum/virtue/items/arsonist
 	name = "Arsonist"
 	desc = "I like to watch the world burn, and I've stowed away two powerful firebombs to help me achieve that fact."
-/datum/virtue/items/arsonist/on_apply(mob/living/carbon/human/character, silent)
+/datum/virtue/items/arsonist/apply_to_human(mob/living/carbon/human/recipient)
 	character.mind.special_items["Firebomb One"] = /obj/item/bomb
 	character.mind.special_items["Firebomb Two"] = /obj/item/bomb
 	character.mind.adjust_skillrank_up_to(/datum/skill/misc/alchemy, 1, TRUE)
