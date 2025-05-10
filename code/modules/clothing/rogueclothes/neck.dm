@@ -57,6 +57,43 @@
 					H.update_inv_neck()
 					H.update_inv_head()
 
+/obj/item/clothing/neck/roguetown/coif/cloth
+	name = "padded coif"
+	desc = "A simple coif made of cloth. Not very effective armor, but may soften weak blows and keeps the head and neck warm."
+	icon_state = "ccoif"
+	item_state = "ccoif"
+	flags_inv = HIDEHAIR
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
+	blocksound = SOFTHIT
+	body_parts_covered = NECK|HAIR|EARS|HEAD
+	armor = list("blunt" = 20, "slash" = 20, "stab" = 25, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_TWIST, BCLASS_BITE)
+	adjustable = CAN_CADJUST
+	toggle_icon_state = TRUE
+	sewrepair = TRUE
+	max_integrity = 150
+
+/obj/item/clothing/neck/roguetown/coif/cloth/AdjustClothes(mob/user)
+	if(loc == user)
+		if(adjustable == CAN_CADJUST)
+			adjustable = CADJUSTED
+			if(toggle_icon_state)
+				icon_state = "[initial(icon_state)]_t"
+			flags_inv = null
+			body_parts_covered = NECK
+			if(ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_neck()
+				H.update_inv_head()
+		else if(adjustable == CADJUSTED)
+			ResetAdjust(user)
+			flags_inv = HIDEHAIR
+			if(user)
+				if(ishuman(user))
+					var/mob/living/carbon/H = user
+					H.update_inv_neck()
+					H.update_inv_head()
+
 /obj/item/clothing/neck/roguetown/leather
 	name = "hardened leather gorget"
 	desc = "Sturdy. Durable. Will protect your neck from some good lumbering."
