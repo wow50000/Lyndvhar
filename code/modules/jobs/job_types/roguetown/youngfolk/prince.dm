@@ -13,7 +13,6 @@
 		/datum/species/dwarf/mountain,
 		/datum/species/demihuman
 	)	//Maybe a system to force-pick lineage based on king and queen should be implemented.
-	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
