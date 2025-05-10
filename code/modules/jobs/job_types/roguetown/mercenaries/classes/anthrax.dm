@@ -2,7 +2,7 @@
 	name = "Anthrax"
 	tutorial = "With the brutal dismantlement of drow society, the talents of the redeemed Anthraxi were no longer needed. Yet where one door closes, another opens - the decadent mortals of the overworld clamber over each other to bid for your blade. Show them your craft."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = /datum/species/elf/dark
+	allowed_races = list(/datum/species/elf/dark)
 	outfit = /datum/outfit/job/roguetown/mercenary/anthrax
 	category_tags = list(CTAG_MERCENARY)
 	maximum_possible_slots = 5
