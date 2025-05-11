@@ -15,6 +15,7 @@
 	)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
+	allowed_patrons = ALL_DIVINE_PATRONS
 	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the city as the Viscount's personal household guard. You listen to your Liege and the Captain of the Guard, defending your Lord and city."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
