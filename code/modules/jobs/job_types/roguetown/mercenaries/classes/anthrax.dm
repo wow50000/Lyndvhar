@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/anthrax
 	name = "Anthrax"
-	tutorial = "With the brutal dismantlement of drow society, the talents of the redeemed Anthraxi were no longer needed. Yet where one door closes, another opens - the decadent mortals of the overworld clamber over each other to bid for your blade. Show them your craft."
+	tutorial = "The brutal nature of Drow society is mostly unknown to outsiders, however sometimes excursions from below are sent outwards- whether good or bad. You are a member of the Anthraxi order, a militant society of mercenary Dark Elves that sell themselves to the highest bidder. Known throughout Llewyn as professional torturers and killers, your reputation is one shrouded in darkness and efficiency. Show these aboveground dwellers your craft."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(/datum/species/elf/dark)
 	outfit = /datum/outfit/job/roguetown/mercenary/anthrax
@@ -30,7 +30,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-		H.verbs |= /mob/living/carbon/human/proc/torture_victim //Secret police training owing to their origins.
+		H.verbs |= /mob/living/carbon/human/proc/torture_victim //Professional torturers, no?
 
 		if(H.gender == FEMALE) //Melee defense-oriented brute, heavy lean towards non-lethal takedowns and capture.
 			mask = /obj/item/clothing/mask/rogue/facemask/shadowfacemask
@@ -45,10 +45,10 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 
-			H.change_stat("strength", 2) //Grenz merc statline but with maluses.
+			H.change_stat("strength", 2) //Dark elf women.
 			H.change_stat("constitution", 1)
 			H.change_stat("endurance", 1)
-			H.change_stat("intelligence", -1) //Brutebrain, relies on archer for healing, lockpicking and crafting.
+			H.change_stat("intelligence", -1) //Reliant on the male counterpart for the more crafty side.
 			H.change_stat("speed", -1)
 
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
