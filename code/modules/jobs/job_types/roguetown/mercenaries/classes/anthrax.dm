@@ -5,6 +5,7 @@
 	allowed_races = list(/datum/species/elf/dark)
 	outfit = /datum/outfit/job/roguetown/mercenary/anthrax
 	category_tags = list(CTAG_MERCENARY)
+	traits_applied = list(TRAIT_OUTLANDER)
 	maximum_possible_slots = 5
 
 	cmode_music = 'sound/music/combat_delf.ogg'
