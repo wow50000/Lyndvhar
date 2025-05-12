@@ -3487,7 +3487,7 @@
 "rYU" = (/obj/machinery/light/rogue/wallfire/candle/blue/l,/turf/open/floor/rogue/herringbone,/area/rogue/indoors/town/bath)
 "rYW" = (/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/grass,/area/rogue/outdoors/exposed/town/keep)
 "rZn" = (/obj/effect/landmark/mapGenerator/rogue/roguetownfield,/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/rtfield{first_time_text = "CITY OUTSKIRTS"})
-"rZo" = (/obj/structure/closet/crate/chest/neu_iron,/obj/item/reagent_containers/glass/bottle/waterskin/purifier,/turf/open/floor/rogue/cobble,/area/rogue/indoors/town/dwarfin)
+"rZo" = (/obj/structure/closet/crate/chest/neu_iron,/obj/item/reagent_containers/glass/bottle/waterskin/purifier,/obj/machinery/light/rogue/torchholder/l{dir = 8},/turf/open/floor/rogue/cobble,/area/rogue/indoors/town/dwarfin)
 "rZy" = (/obj/item/reagent_containers/food/snacks/smallrat,/turf/open/water/swamp,/area/rogue/under/cave)
 "sad" = (/obj/machinery/light/rogue/wallfire/candle/weak/l,/obj/item/roguebin/water/gross,/turf/open/floor/rogue/blocks/stonered/tiny,/area/rogue/indoors/town/bath)
 "saj" = (/obj/structure/fluff/railing/wood{dir = 1; pixel_y = -1},/obj/structure/flora/roguegrass,/turf/open/floor/rogue/cobble/mossy,/area/rogue/outdoors/town)
