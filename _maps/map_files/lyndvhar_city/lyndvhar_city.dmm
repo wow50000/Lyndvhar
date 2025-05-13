@@ -1658,7 +1658,7 @@
 "iEI" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/town)
 "iEJ" = (/obj/effect/landmark/start/servant{dir = 1; icon_state = "arrow"},/turf/open/floor/rogue/tile{icon_state = "tile"},/area/rogue/indoors/town/manor)
 "iEX" = (/turf/closed/wall/mineral/rogue/roofwall/outercorner,/area/rogue/outdoors/town/roofs)
-"iFB" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/dirt,/area/rogue/indoors/town/dwarfin)
+"iFB" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/blocks,/area/rogue/indoors/town/dwarfin)
 "iFZ" = (/obj/machinery/light/rogue/hearth,/obj/item/cooking/pan,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/cobble,/area/rogue/indoors/town/garrison)
 "iGz" = (/obj/structure/fluff/railing/border{dir = 8},/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/bow{pixel_x = 5; pixel_y = 0},/obj/item/quiver/arrows,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue/indoors/town/garrison)
 "iGU" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/under/town/basement/keep)
