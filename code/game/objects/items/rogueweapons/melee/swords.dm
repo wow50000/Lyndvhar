@@ -612,6 +612,11 @@
 	sellprice = 140
 	wbalance = 1.2 //ENGRAVINGS, they provide *some* tactical advantage whatsoever.
 
+/obj/item/rogueweapon/sword/sabre/stalker
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/short)
+	desc = "A once elegant blade of mythril, diminishing under the suns gaze"
+	icon_state = "spidersaber"
+
 /obj/item/rogueweapon/sword/rapier
 	name = "rapier"
 	desc = "A duelist's weapon derived from western battlefield instruments, it features a tapered \

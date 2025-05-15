@@ -54,7 +54,7 @@
 
 /datum/outfit/job/roguetown/psydoniantemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Sword", "Axe", "Whip", "Flail", "Mace", "Spear")
+	var/weapons = list("Sword", "Axe", "Whip", "Flail")
 	var/weapon_choice = input(H,"Choose your PSYDON weapon.", "TAKE UP PSYDON'S ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Sword")
