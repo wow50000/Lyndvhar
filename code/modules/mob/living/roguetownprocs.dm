@@ -545,7 +545,7 @@
 
 		if(client?.prefs.showrolls)
 			var/text = "Roll to dodge... [prob2defend]%"
-			if(defender_dualw)
+			if(attacker_dualw)
 				text += " Twice! Disadvantage!"
 			to_chat(src, span_info("[text]"))
 
