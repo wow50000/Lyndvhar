@@ -526,16 +526,13 @@
 
 		//------------Duel Wielding Checks------------
 		var/attacker_dualw
-		var/defender_dualw
 		var/extraattroll
-		var/extradefroll
 		var/mainhand = L.get_active_held_item()
 		var/offhand	= L.get_inactive_held_item()
 		//Duel Wielder defense disadvantage
 		if(mainhand && offhand)
 			if(HAS_TRAIT(src, TRAIT_DUALWIELDER) && istype(offhand, mainhand))
-				extradefroll = prob(prob2defend)
-				defender_dualw = TRUE
+				prob2defend -= 20
 
 		//dual-wielder attack advantage
 		var/obj/item/mainh = U.get_active_held_item()
@@ -554,15 +551,11 @@
 			to_chat(src, span_info("[text]"))
 
 		var/dodge_status = FALSE
-		if((defender_dualw && attacker_dualw) || (!defender_dualw && !attacker_dualw)) //They cancel each other out
-			if(prob(prob2defend))
-				dodge_status = TRUE
-		else if(attacker_dualw)
-			if(!prob(prob2defend) || !extraattroll)
+		if(prob(prob2defend))
+			dodge_status = TRUE
+		if(attacker_dualw)
+			if(!extraattroll)
 				dodge_status = FALSE
-		else if(defender_dualw)
-			if(prob(prob2defend) && extradefroll)
-				dodge_status = TRUE
 
 		if(!dodge_status)
 			return FALSE
