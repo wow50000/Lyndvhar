@@ -220,7 +220,6 @@
 
 			//Dual Wielding
 			var/attacker_dualw
-			var/defender_dualw
 			var/extraattroll
 
 			//Dual Wielder defense disadvantage
@@ -237,7 +236,7 @@
 
 			if(src.client?.prefs.showrolls)
 				var/text = "Roll to parry... [prob2defend]%"
-				if((defender_dualw || attacker_dualw))
+				if(attacker_dualw)
 					text += " Twice! Disadvantage!"
 				to_chat(src, span_info("[text]"))
 			

@@ -136,7 +136,7 @@
 		if(hurt)
 			take_bodypart_damage(10,check_armor = TRUE)
 			visible_message(span_danger("[src] [pick("slams", "crashes", "flies")] against [hit_atom]!"), \
-				span_userdanger("I am sent [pick("flying", "crashing")] against [hit_atom]!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE, user)
+				span_userdanger("I am sent [pick("flying", "crashing")] against [hit_atom]!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
 	if(iscarbon(hit_atom) && hit_atom != src)
 		var/mob/living/carbon/victim = hit_atom
 		if(victim.movement_type & FLYING)
