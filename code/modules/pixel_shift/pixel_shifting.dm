@@ -6,7 +6,7 @@
 	var/passthroughable = NONE
 
 /datum/keybinding/mob/pixel_shift
-	hotkey_keys = list() // purposefully left blank
+	hotkey_keys = list("B") // purposefully left blank // Not anymore!
 	name = "pixel_shift"
 	full_name = "Pixel Shift"
 	description = "Shift your characters offset."
