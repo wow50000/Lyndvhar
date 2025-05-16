@@ -120,12 +120,15 @@
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_rhaenvalian.ogg'
 			H.set_blindness(0)
-			var/weapons = list("Katar","Axe","MY BARE HANDS!!!")
+			var/weapons = list("Katar","Steel Duster","Axe","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if ("Katar")
 					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					beltr = /obj/item/rogueweapon/katar
+				if ("Steel Duster")
+					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+					beltr = /obj/item/rogueweapon/knuckles
 				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/boneaxe

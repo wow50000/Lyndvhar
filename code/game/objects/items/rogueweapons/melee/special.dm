@@ -274,6 +274,7 @@
 	force = 20
 
 /obj/item/rogueweapon/knuckles // no actual sprite for this yet so its just the basis for the eora knuckles + for later futureproofing
+	slot_flags = ITEM_SLOT_HIP
 	name = "steel knuckles"
 	desc = "A mean looking pair of steel knuckles."
 	force = 15
