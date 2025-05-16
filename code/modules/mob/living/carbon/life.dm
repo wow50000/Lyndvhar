@@ -98,7 +98,7 @@
 						if(fallingas > 15)
 							Sleeping(300)
 				else
-					rogstam_add(sleepy_mod * 10)
+					rogstam_add(sleepy_mod * 20)
 			// Resting on the ground (not sleeping or with eyes closed and about to fall asleep)
 			else if(!(mobility_flags & MOBILITY_STAND))
 				if(eyesclosed)
@@ -121,11 +121,11 @@
 						if(fallingas > 25)
 							Sleeping(300)
 				else
-					rogstam_add(10)
+					rogstam_add(20)
 			else if(fallingas)
 				fallingas = 0
 		else if(HAS_TRAIT(src, TRAIT_NOSLEEP) && !(mobility_flags & MOBILITY_STAND))
-			rogstam_add(5)
+			rogstam_add(10)
 
 		handle_brain_damage()
 
@@ -158,9 +158,6 @@
 	if(HAS_TRAIT(src, TRAIT_NOPAIN))
 		return
 	if(!stat)
-		var/pain_threshold = STAEND * 10
-		if(has_flaw(/datum/charflaw/masochist)) // Masochists handle pain better by about 1 endurance point
-			pain_threshold += 10
 		var/painpercent = get_complex_pain() / pain_threshold
 		painpercent = painpercent * 100
 
@@ -241,7 +238,7 @@
 	for(var/obj/item/bodypart/limb as anything in bodyparts)
 		if(limb.status == BODYPART_ROBOTIC || limb.skeletonized)
 			continue
-		var/bodypart_pain = ((limb.brute_dam + limb.burn_dam) / limb.max_damage) * 100
+		var/bodypart_pain = ((limb.brute_dam + (limb.burn_dam/2)) / limb.max_damage) * 100
 		for(var/datum/wound/wound as anything in limb.wounds)
 			bodypart_pain += wound.woundpain
 		bodypart_pain = min(bodypart_pain, 100) //tops out at 100 per limb
