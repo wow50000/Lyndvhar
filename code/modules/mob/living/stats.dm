@@ -79,7 +79,7 @@
 				change_stat("intelligence", 2)
 		if(STAEND > 10)
 			pain_threshold = STAEND * 25
-			if(has_flaw(/datum/charflaw/masochist)) // Masochists handle pain better by about 1 endurance point
+			if(has_flaw(/datum/charflaw/masochist))
 				pain_threshold += 25
 		
 
