@@ -352,7 +352,7 @@
 	sellprice = 55
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/black
-	color = CLOTHING_BLACK
+	color = "#646464"
 
 /obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
 	name = "vaquero's coat"
