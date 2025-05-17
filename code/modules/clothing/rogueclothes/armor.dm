@@ -351,6 +351,9 @@
 	max_integrity = 300
 	sellprice = 55
 
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/black
+	color = CLOTHING_BLACK
+
 /obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
 	name = "vaquero's coat"
 	desc = "A sturdy leather coat commonly used by the vaqueros of Valoria."
