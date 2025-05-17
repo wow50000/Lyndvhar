@@ -600,6 +600,8 @@
 /mob/proc/get_punch_dmg()
 	return
 
+/mob/proc/get_punch_ap()
+	return
 
 /mob/proc/add_family_hud(antag_hud_type, antag_hud_name)
 	var/datum/atom_hud/antag/hud = GLOB.huds[antag_hud_type]
