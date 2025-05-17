@@ -489,9 +489,6 @@
 				to_chat(M, span_green("[user] gives me a friendly wave."))
 	return
 
-/datum/intent/simple
-	unarmed = TRUE
-
 /datum/intent/simple/headbutt
 	name = "headbutt"
 	icon_state = "instrike"

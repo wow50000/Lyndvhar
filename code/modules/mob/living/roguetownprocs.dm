@@ -193,8 +193,6 @@
 					prob2defend -= (attacker_skill * 20)
 					if(user.STASPD > src.STASPD)
 						prob2defend -= ((user.STASPD - src.STASPD)*10) //In line with D&D, unarmed attacks are finesseable.
-					if(user.STASTR > src.STASTR)
-						drained += ((user.STASTR - src.STASTR)*2.5) //Unarmed attacks also cost additional stamina to parry if the user is stronger, by default they cost 2 less to parry.
 
 
 			if(HAS_TRAIT(src, TRAIT_GUIDANCE))
@@ -212,7 +210,7 @@
 					var/mob/living/carbon/human/SH = H
 					var/sentinel = SH.calculate_sentinel_bonus()
 					prob2defend += sentinel
-			if(intenty.unarmed)
+			if(intenty.unarmed || istype(U, /mob/living/simple_animal))
 				prob2defend = clamp(prob2defend, 5, 95) //Parrying clumsy unarmed attacks is more consistent
 				drained -= 2
 			else
@@ -258,6 +256,10 @@
 				if(intenty.masteritem)
 					if(intenty.masteritem.wbalance < 0 && user.STASTR > src.STASTR) //enemy weapon is heavy, so get a bonus scaling on strdiff
 						drained = drained + ( intenty.masteritem.wbalance * ((user.STASTR - src.STASTR) * -5) )
+				else
+					if(intenty.unarmed)
+						if(user.STASTR > src.STASTR)
+							drained += ((user.STASTR - src.STASTR)*2.5) //Unarmed attacks also cost additional stamina to parry if the user is stronger, by default they cost 2 less to parry.
 			else
 				to_chat(src, span_warning("The enemy defeated my parry!"))
 				if(HAS_TRAIT(src, TRAIT_MAGEARMOR))
