@@ -214,7 +214,7 @@
 "eC" = (/obj/structure/closet/crate/chest/wicker,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/food/snacks/butter,/obj/item/reagent_containers/food/snacks/butter,/turf/open/floor/rogue/tile{icon_state = "chess"},/area/rogue/indoors)
 "eO" = (/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/grass,/area/rogue/outdoors/banditcamp)
 "eS" = (/obj/structure/flora/roguetree,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/banditcamp)
-"eV" = (/obj/structure/table/wood{icon_state = "tablewood3"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/banditcamp)
+"eV" = (/obj/structure/table/wood{icon_state = "tablewood3"},/obj/item/mattcoin,/obj/item/mattcoin,/obj/item/mattcoin,/obj/item/mattcoin,/obj/item/mattcoin,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/banditcamp)
 "eW" = (/obj/structure/fluff/railing/fence,/obj/structure/fluff/railing/fence{dir = 8},/turf/open/floor/rogue/dirt,/area/rogue/outdoors/banditcamp)
 "eY" = (/obj/structure/table/vtable/v2,/obj/structure/fluff/walldeco/rpainting/forest{pixel_x = 32},/turf/open/floor/rogue/hexstone,/area/rogue/indoors)
 "fi" = (/obj/structure/table/wood{icon_state = "tablewood2"; dir = 10},/obj/item/rogueweapon/eaglebeak,/obj/item/rogueweapon/eaglebeak,/obj/item/rogueweapon/eaglebeak,/turf/open/floor/rogue/cobble,/area/rogue)
