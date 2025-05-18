@@ -198,6 +198,8 @@
 						emote("painmoan")
 						mob_timers["painstun"] = world.time + 20 SECONDS
 						add_stress(/datum/stressevent/painmax)
+						if(!(mobility_flags & MOBILITY_STAND))
+							to_chat(src, span_boldwarning("I can't keep going for much longer!"))
 
 /mob/living/carbon/proc/handle_roguebreath()
 	return
