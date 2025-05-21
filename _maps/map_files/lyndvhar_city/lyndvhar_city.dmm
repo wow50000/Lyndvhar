@@ -2863,7 +2863,7 @@
 /area/rogue/indoors/town/bath)
 "cgt" = (
 /obj/machinery/light/rogue/oven/west,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "cgP" = (
 /obj/structure/fluff/railing/border{
@@ -5846,7 +5846,7 @@
 /area/rogue/indoors/town/manor)
 "eyA" = (
 /obj/machinery/tanningrack,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "eyG" = (
 /obj/structure/fluff/railing/fence{
@@ -7041,9 +7041,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
-"fok" = (
-/turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/magician)
 "foy" = (
 /obj/structure/roguemachine/mail{
 	mailtag = "Streets (East)";
@@ -8081,7 +8078,7 @@
 /obj/item/reagent_containers/glass/bucket/pot{
 	name = "cauldron"
 	},
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "gfX" = (
 /obj/machinery/light/rogue/wallfire/candle,
@@ -10951,7 +10948,7 @@
 /obj/item/reagent_containers/food/snacks/grown/onion/rogue,
 /obj/item/reagent_containers/food/snacks/grown/potato/rogue,
 /obj/item/reagent_containers/food/snacks/grown/potato/rogue,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "ilX" = (
 /obj/structure/fluff/railing/border,
@@ -14210,7 +14207,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/cooking/pan,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "kIr" = (
 /turf/open/floor/rogue/ruinedwood{
@@ -16561,7 +16558,7 @@
 /obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
 /obj/item/reagent_containers/food/snacks/grown/potato/rogue,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "mtW" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
@@ -29457,7 +29454,7 @@
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "whZ" = (
 /obj/structure/fluff/railing/wood{
@@ -31760,7 +31757,7 @@
 /obj/structure/fluff/millstone{
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "xXv" = (
 /turf/open/water/cleanshallow,
@@ -167044,8 +167041,8 @@ nup
 wqx
 ilQ
 mtU
-fok
-fok
+jYG
+jYG
 ngK
 blU
 blU
@@ -167204,9 +167201,9 @@ nup
 nup
 nup
 fTE
-fok
-fok
-fok
+jYG
+jYG
+jYG
 gfJ
 nId
 blU
@@ -167366,9 +167363,9 @@ emI
 eAI
 nup
 fTE
-fok
-fok
-fok
+jYG
+jYG
+jYG
 xXs
 nId
 blU
