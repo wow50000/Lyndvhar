@@ -29333,6 +29333,10 @@
 /obj/structure/mineral_door/wood/deadbolt/shutter{
 	dir = 2
 	},
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
+	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
