@@ -134,21 +134,20 @@
 
 
 /datum/outfit/job/roguetown/wretch/outlaw/pre_equip(mob/living/carbon/human/H)
-	head = /obj/item/clothing/head/roguetown/helmet/kettle
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	pants = /obj/item/clothing/under/roguetown/trou/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/raincloak/mortus
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	backl = /obj/item/storage/backpack/rogue/satchel
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	mask = /obj/item/clothing/mask/rogue/ragmask/black
 	beltr = /obj/item/quiver/bolts
-	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/lockpickring/mundane = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1)
+	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/lockpickring/mundane = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1,  /obj/item/roguekey/inhumen = 1)
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 5, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
@@ -206,7 +205,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/darkgreen
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	backl = /obj/item/storage/backpack/rogue/satchel
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/gorget
@@ -214,8 +213,8 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	beltl = /obj/item/quiver/arrows
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	backpack_contents = list(/obj/item/bait = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1)
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	backpack_contents = list(/obj/item/bait = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1, /obj/item/roguekey/inhumen = 1)
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -306,15 +305,15 @@
 	if (istype (H.patron, /datum/patron/inhumen/zizo))
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
 		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
-	cloak = /obj/item/clothing/cloak/cape/crusader
-	gloves = /obj/item/clothing/gloves/roguetown/chain/blk
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
+	cloak = /obj/item/clothing/cloak/raincloak/mortus
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/shield/tower
@@ -410,7 +409,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1,  /obj/item/roguekey/inhumen = 1)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
