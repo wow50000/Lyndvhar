@@ -6106,6 +6106,7 @@
 	pixel_x = 18;
 	pixel_y = -1
 	},
+/obj/effect/landmark/start/councillor,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/manor)
 "eHR" = (
@@ -28534,6 +28535,7 @@
 	pixel_x = -18;
 	pixel_y = 0
 	},
+/obj/effect/landmark/start/councillor,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/manor)
 "vyW" = (
