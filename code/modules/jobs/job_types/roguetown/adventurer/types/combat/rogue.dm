@@ -174,7 +174,7 @@
 			beltl = /obj/item/flashlight/flare/torch/lantern
 			beltr = /obj/item/rogueweapon/sword/cutlass
 			backpack_contents = list(/obj/item/bomb = 1, /obj/item/lockpick = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/parrying = 1)
-			H.cmode_music = 'sound/music/jukeboxes/oldschool/Sea_Shanty2.ogg'
+			H.cmode_music = 'sound/music/combat_swashbuckler.ogg'
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 4, TRUE)
