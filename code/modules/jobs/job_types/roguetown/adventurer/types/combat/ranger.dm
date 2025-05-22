@@ -27,7 +27,7 @@
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
+			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/raincloak/green
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltr = /obj/item/flashlight/flare/torch/lantern
@@ -106,14 +106,12 @@
 			head = /obj/item/clothing/head/roguetown/roguehood
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/mageorange
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			beltr = /obj/item/flashlight/flare/torch/lantern
 			beltl = /obj/item/rogueweapon/mace/cudgel
-			backpack_contents = list(/obj/item/bomb = 4, /obj/item/rogueweapon/huntingknife = 1)
+			backpack_contents = list(/obj/item/bomb = 4, /obj/item/rogueweapon/huntingknife = 1, /obj/item/flashlight/flare/torch = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)

@@ -34,14 +34,12 @@
 		if("Monk")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a wandering acolyte, versed in both miracles and martial arts. You forego the heavy armor paladins wear in favor of a more nimble approach to combat, utilizing your fists."))
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			gloves = /obj/item/clothing/gloves/roguetown/chain
-			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather
-			beltr = /obj/item/flashlight/flare/torch/lantern
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -95,12 +93,12 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/rogueweapon/shield/tower
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			gloves = /obj/item/clothing/gloves/roguetown/chain
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
@@ -179,7 +177,7 @@
 			head = /obj/item/clothing/head/roguetown/bardhat
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 			backl = /obj/item/storage/backpack/rogue/satchel
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -330,9 +328,9 @@
 		if(/datum/patron/divine/eora)
 			neck = /obj/item/clothing/neck/roguetown/psicross/eora
 		if(/datum/patron/inhumen/zizo)
-			H.cmode_music = 'sound/music/combat_cult.ogg'
+			H.cmode_music = 'sound/music/combat_blackstar.ogg'
 			neck = /obj/item/roguekey/inhumen
 		if (/datum/patron/inhumen/matthios)
-			H.cmode_music = 'sound/music/combat_cult.ogg'
+			H.cmode_music = 'sound/music/combat_bandit.ogg'
 
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
