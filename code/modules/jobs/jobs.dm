@@ -129,7 +129,7 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Grabber",
 	"Nightmaster",
 	"Tapster",
-	"Bathhouse Attendant",
+	"Nightmaiden",
 	"Docker",
 	"Prisoner",
 	"Beggar",
