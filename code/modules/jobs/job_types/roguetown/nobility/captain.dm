@@ -29,7 +29,7 @@
 	cmode_music = 'sound/music/combat_knight.ogg'
 
 /datum/outfit/job/roguetown/captain
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	armor = /obj/item/clothing/suit/roguetown/armor/captain
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/platelegs/captain
@@ -51,10 +51,11 @@
 			if(!index)
 				index = H.real_name
 			S.name = "captain cape ([index])"
-		var/prev_real_name = H.real_name
-		var/prev_name = H.name
-		H.real_name = "Captain [prev_real_name]"
-		H.name = "Captain [prev_name]"
+		var/honorary = "Ser"
+		if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
+			honorary = "Dame"
+		H.real_name = "[honorary] [prev_real_name]"
+		H.name = "[honorary] [prev_name]"
 
 		for(var/X in peopleknowme)
 			for(var/datum/mind/MF in get_minds(X))
