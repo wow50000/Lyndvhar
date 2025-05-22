@@ -50,7 +50,9 @@
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "captain cape ([index])"
+			S.name = "captain's cape ([index])"
+		var/prev_real_name = H.real_name
+		var/prev_name = H.name
 		var/honorary = "Ser"
 		if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 			honorary = "Dame"
