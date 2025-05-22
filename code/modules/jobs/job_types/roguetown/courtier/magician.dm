@@ -7,16 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/aasimar,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation, /obj/effect/proc_holder/spell/invoked/projectile/fireball/greater)
 	display_order = JDO_MAGICIAN
@@ -65,7 +56,6 @@
 		H.change_stat("intelligence", 4)
 		H.mind.adjust_spellpoints(11)
 		ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 		if(H.age == AGE_OLD)
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 			H.change_stat("speed", -1)

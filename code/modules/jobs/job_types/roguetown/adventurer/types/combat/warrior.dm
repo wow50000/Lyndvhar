@@ -118,7 +118,7 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-			H.cmode_music = 'sound/music/combat_rhaenvalian.ogg'
+			H.cmode_music = 'sound/music/combat_steppe.ogg'
 			H.set_blindness(0)
 			var/weapons = list("Katar","Steel Duster","Axe","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons

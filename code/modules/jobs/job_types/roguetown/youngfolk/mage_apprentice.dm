@@ -6,15 +6,7 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	advclass_cat_rolls = list(CTAG_WAPPRENTICE = 20)
 

@@ -62,6 +62,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
+	H.cmode_music = 'sound/music/combat_routier.ogg'
 	var/weapons = list("Estoc","Mace + Shield","Flail + Shield","Lucerne","Battle Axe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)

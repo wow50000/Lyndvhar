@@ -132,16 +132,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark
-	)
-
+	allowed_races = RACES_SHUNNED_UP
 	tutorial = "You've studied for many decades under quite a number of master smiths. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will."
 
 	outfit = /datum/outfit/job/roguetown/blacksmith
