@@ -35,7 +35,7 @@
 	pants = /obj/item/clothing/under/roguetown/platelegs/captain
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	cloak = /obj/item/clothing/cloak/captain
 
@@ -69,9 +69,7 @@
 
 /datum/advclass/captain/infantry
 	name = "Infantry Captain"
-	tutorial = "You've fought shoulder to shoulder with the realm's worthiest while embedded directly within \
-	massed infantry formations. As a peerless armed combatant and tactician both, you are a formidable presence \
-	on any battlefield."
+	tutorial = "You've fought shoulder to shoulder with the soldiery of Lyndhardtia while embedded directly within massed infantry formations in expedition. As a peerless armed combatant and tactician both, you are a formidable presence on any battlefield."
 	outfit = /datum/outfit/job/roguetown/captain/infantry
 	category_tags = list(CTAG_CAPTAIN)
 
@@ -146,8 +144,7 @@
 
 /datum/advclass/captain/cavalry
 	name = "Cavalry Captain"
-	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through \
-	the soft flanks of enemy formations."
+	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
@@ -161,7 +158,7 @@
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
