@@ -58,11 +58,11 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-			armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			pants = /obj/item/clothing/under/roguetown/trou
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
