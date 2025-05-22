@@ -1,5 +1,5 @@
 /datum/job/roguetown/knight
-	title = "Household Guard"		//Knights, but their role is far more clear this way.
+	title = "Household Retinue"		//Knights, but their role is far more clear this way.
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -16,7 +16,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_patrons = ALL_DIVINE_PATRONS
-	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the city as the Viscount's personal household guard. You listen to your Liege and the Captain of the Guard, defending your Lord and city."
+	tutorial = "You have served from squire all the way to where you stand now. After years of training, you were officially knighted by the Viscount and placed at their side as one of their formal Retinue. You are the last line of defense against any threat that may harm this city and its denizens, and would rather die than see such harm befall them."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight
