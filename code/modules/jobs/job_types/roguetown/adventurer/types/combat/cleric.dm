@@ -93,12 +93,12 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/rogueweapon/shield/tower
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			gloves = /obj/item/clothing/gloves/roguetown/chain
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
@@ -177,7 +177,7 @@
 			head = /obj/item/clothing/head/roguetown/bardhat
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 			backl = /obj/item/storage/backpack/rogue/satchel
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			pants = /obj/item/clothing/under/roguetown/trou/leather
