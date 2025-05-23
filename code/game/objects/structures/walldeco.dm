@@ -48,7 +48,7 @@
 	. = ..()
 	if(user.Adjacent(src))
 		if(SSrole_class_handler.bandits_in_round)
-			. += span_bold("I already know the faces of the local bandits well.")
+			. += span_bold("I see that bandits are active in the region.")
 			return
 		. += span_bold("I now know the faces of the local bandits.")
 		ADD_TRAIT(user, TRAIT_WANTED_POSTER_READ, TRAIT_GENERIC)
