@@ -826,8 +826,8 @@
 		if(mind.special_role == "Bandit")
 			if(HAS_TRAIT(examiner, TRAIT_COMMIE))
 				villain_text = span_notice("Free man!")
-			/*else
-				villain_text = span_userdanger("BANDIT!")*/
+			if(HAS_TRAIT(src, TRAIT_OUTLAW) && HAS_TRAIT(usr, TRAIT_WANTED_POSTER_READ))
+				villain_text = span_userdanger("BANDIT!")
 		if(mind.special_role == "Vampire Lord")
 			var/datum/antagonist/vampirelord/VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
 			if(VD) 
