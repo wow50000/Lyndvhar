@@ -156,7 +156,7 @@
 	set category = "Priest"
 	if(stat)
 		return
-	var/inputty = input("Make an announcement", "ROGUETOWN") as text|null
+	var/inputty = input("Make an announcement", "LYNDVHAR") as text|null
 	if(inputty)
 		if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
 			to_chat(src, span_warning("I need to do this from the chapel."))

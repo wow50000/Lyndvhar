@@ -1772,7 +1772,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							continue
 						crap += bla
 
-					var/result = input(user, "Select a race", "Roguetown") as null|anything in crap
+					var/result = input(user, "Select a race", "LYNDVHAR") as null|anything in crap
 
 					if(result)
 						set_new_race(result, user)
@@ -1791,7 +1791,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
 							continue
 						virtue_choices[V.name] = V
-					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+					var/result = input(user, "Select a virtue", "LYNDVHAR") as null|anything in virtue_choices
 
 					if (result)
 						var/datum/virtue/virtue_chosen = virtue_choices[result]
@@ -1810,7 +1810,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
 							continue
 						virtue_choices[V.name] = V
-					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+					var/result = input(user, "Select a virtue", "LYNDVHAR") as null|anything in virtue_choices
 
 					if (result)
 						var/datum/virtue/virtue_chosen = virtue_choices[result]
@@ -1823,7 +1823,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 
 				if("charflaw")
 					var/list/coom = GLOB.character_flaws.Copy()
-					var/result = input(user, "Select a flaw", "Roguetown") as null|anything in coom
+					var/result = input(user, "Select a flaw", "LYNDVHAR") as null|anything in coom
 					if(result)
 						result = coom[result]
 						var/datum/charflaw/C = new result()
@@ -2253,7 +2253,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 								if(!name)
 									name = "Slot[i]"
 								choices[name] = i
-					var/choice = input(user, "CHOOSE A HERO","ROGUETOWN") as null|anything in choices
+					var/choice = input(user, "CHOOSE A HERO","LYNDVHAR") as null|anything in choices
 					if(choice)
 						choice = choices[choice]
 						if(!load_character(choice))
