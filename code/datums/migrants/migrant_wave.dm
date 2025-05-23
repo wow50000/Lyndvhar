@@ -102,7 +102,7 @@
 		/datum/migrant_role/adventurer = 1,
 	)
 	greet_text = "Together with a party of trusted friends we decided to venture out, seeking thrills, glory and treasure, ending up in the misty and damp bog underneath Lyndvhar, perhaps getting ourselves into more than what we bargained for."
-/*
+
 /datum/migrant_wave/bandit
 	name = "Bandit Raid"
 	downgrade_wave = /datum/migrant_wave/bandit_down_one
@@ -111,7 +111,8 @@
 	roles = list(
 		/datum/migrant_role/bandit = 4,
 	)
-
+	greet_text = "We have been wandering the decayed and decrepit roads of what once was for a while now, stealing from those we deemed worthless along the way. Our misadventure of greed has found us stumbling upon the Draguippe.."
+/*
 /datum/migrant_wave/bandit_down_one
 	name = "Bandit Raid"
 	downgrade_wave = /datum/migrant_wave/bandit_down_two
