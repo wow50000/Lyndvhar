@@ -196,6 +196,14 @@
 "agp" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/town/physician)
+"agR" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "ahb" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /obj/structure/closet/crate/chest/neu_iron,
@@ -379,6 +387,14 @@
 /obj/effect/spawner/roguemap/stump,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/exposed/town/keep)
+"alQ" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "alX" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/wood/herringbone,
@@ -2882,6 +2898,9 @@
 /obj/item/natural/feather,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
+/obj/structure/fluff/walldeco/customflag{
+	pixel_x = 32
+	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "cis" = (
@@ -2908,28 +2927,6 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town)
-"cjG" = (
-/obj/structure/rack/rogue/shelf/biggest,
-/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunlager,
-/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunsake{
-	pixel_x = 6
-	},
-/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead{
-	pixel_y = 32
-	},
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = -6;
-	pixel_y = 38
-	},
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = 8;
-	pixel_y = 38
-	},
-/obj/structure/rack/rogue/shelf,
-/turf/open/floor/rogue/wood/nosmooth,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "cka" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8
@@ -3904,6 +3901,14 @@
 /mob/living/carbon/human/species/goblin/npc/cave,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/cave)
+"dcA" = (
+/obj/structure/roguewindow/openclose/reinforced{
+	dir = 1
+	},
+/turf/closed/wall/mineral/rogue/decowood/vert,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "dcG" = (
 /obj/structure/closet/crate/chest/neu,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -4925,6 +4930,14 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
+"dSs" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "dTA" = (
 /obj/machinery/light/rogue/smelter,
 /turf/open/floor/rogue/blocks,
@@ -5041,6 +5054,10 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"dXf" = (
+/obj/structure/globe,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "dYY" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
@@ -5533,14 +5550,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
-"eqb" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/turf/open/floor/rogue/wood/nosmooth,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "eqk" = (
 /obj/structure/fermenting_barrel/random/beer,
 /turf/open/floor/rogue/cobble,
@@ -7941,10 +7950,9 @@
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
 "geM" = (
-/obj/structure/fluff/railing/border{
-	dir = 9
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -8121,14 +8129,6 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/town/roofs)
-"gog" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "gow" = (
 /obj/effect/decal/cobbleedge{
 	dir = 5
@@ -8184,6 +8184,14 @@
 	icon_state = "tablewood1"
 	},
 /turf/open/floor/carpet/inn,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
+"grN" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -8844,43 +8852,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/exposed/town/keep)
-"gSW" = (
-/obj/structure/rack/rogue/shelf/big{
-	icon_state = "shelf_biggest";
-	pixel_y = 0
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 7;
-	pixel_y = -8
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_y = 3;
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 6;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 7;
-	pixel_y = -8
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "gTf" = (
 /obj/structure/table/wood,
 /obj/item/candle/yellow/lit,
@@ -9152,6 +9123,10 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"hdb" = (
+/obj/structure/roguewindow/openclose,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town)
 "hdj" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 8
@@ -9627,6 +9602,10 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"hsB" = (
+/obj/structure/roguemachine/mail/r,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "hsR" = (
 /obj/item/reagent_containers/glass/bucket/wooden{
 	pixel_x = -6;
@@ -10683,6 +10662,14 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/bath)
+"ifu" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "igb" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/cobble,
@@ -10780,6 +10767,14 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/garrison)
+"ikN" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "ikT" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -10953,8 +10948,10 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "iqy" = (
-/obj/structure/mineral_door/swing_door,
-/turf/open/floor/rogue/blocks/stonered/tiny,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -11123,21 +11120,6 @@
 	icon_state = "weird1"
 	},
 /area/rogue/indoors/town/physician)
-"ixF" = (
-/obj/machinery/light/rogue/wallfire/candle,
-/obj/structure/rack/rogue,
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = -8;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "ixJ" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -15274,6 +15256,28 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"lFP" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunlager,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunsake{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead{
+	pixel_y = 32
+	},
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = -6;
+	pixel_y = 38
+	},
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = 8;
+	pixel_y = 38
+	},
+/obj/structure/rack/rogue/shelf,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "lFT" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -18103,6 +18107,11 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"nGE" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "nGW" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/tile,
@@ -18366,6 +18375,14 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/town/basement/keep)
+"nUo" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "nUz" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -19690,6 +19707,14 @@
 /obj/item/rogueweapon/thresher,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church)
+"oQw" = (
+/obj/structure/closet/crate/roguecloset/inn,
+/obj/item/clothing/suit/roguetown/shirt/undershirt/random,
+/obj/item/clothing/suit/roguetown/shirt/undershirt/random,
+/obj/item/clothing/suit/roguetown/shirt/shortshirt/random,
+/obj/item/clothing/suit/roguetown/shirt/shortshirt/random,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "oQA" = (
 /obj/effect/decal/cleanable/blood/gibs/limb{
 	dir = 4
@@ -19720,6 +19745,43 @@
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
+"oRV" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 7;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 3;
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 7;
+	pixel_y = -8
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "oSj" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/woodturned,
@@ -20636,13 +20698,11 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
 "pBf" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 1
+/obj/structure/fluff/walldeco/customflag{
+	pixel_x = 32
 	},
-/turf/closed/wall/mineral/rogue/decowood/vert,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "pBs" = (
 /obj/structure/roguemachine/scomm/r,
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -21717,9 +21777,9 @@
 /area/rogue/indoors/town)
 "quV" = (
 /obj/structure/fluff/railing/border{
-	dir = 9
+	dir = 1
 	},
-/turf/open/floor/rogue/wood/nosmooth,
+/turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -22046,10 +22106,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "qGw" = (
-/obj/structure/fluff/railing/border{
-	dir = 1
-	},
-/turf/open/floor/rogue/wood/nosmooth,
+/obj/structure/mineral_door/swing_door,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -22948,14 +23006,6 @@
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
-"rnK" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "roa" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -23510,6 +23560,14 @@
 /obj/structure/bed/rogue/bedroll,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/sewer)
+"rLO" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "rMi" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/effect/spawner/lootdrop/potion_ingredient/herb,
@@ -24074,14 +24132,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
-"shO" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "shX" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/machinery/light/rogue/wallfire/candle,
@@ -24717,6 +24767,22 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"sPE" = (
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/cup,
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/machinery/light/rogue/wallfire/candle/weak/r,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "sPH" = (
 /obj/effect/landmark/start/gravedigger,
 /obj/machinery/light/rogue/torchholder/r,
@@ -24753,13 +24819,6 @@
 	icon_state = "bfloorz"
 	},
 /area/rogue/indoors/town/manor)
-"sQp" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/turf/open/floor/rogue/wood/nosmooth,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "sQu" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -25013,11 +25072,11 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/church/chapel)
 "sYP" = (
-/obj/structure/fermenting_barrel/random/beer,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
+/obj/structure/handcart{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/indoors/town)
 "sZm" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -25614,6 +25673,12 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
+"txB" = (
+/obj/structure/fermenting_barrel/random/beer,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "tyc" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/reagent_containers/glass/bottle/waterskin,
@@ -27046,6 +27111,12 @@
 /obj/item/clothing/cloak/stabard/guard,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
+"uKb" = (
+/obj/machinery/light/rogue/wallfire/candle/weak/l,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "uKj" = (
 /obj/structure/fermenting_barrel/random/water,
 /turf/open/floor/rogue/dirt,
@@ -27103,14 +27174,6 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/mountains)
-"uLr" = (
-/obj/structure/fluff/railing/border{
-	dir = 8
-	},
-/turf/open/floor/rogue/wood/nosmooth,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "uLV" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/reagent_containers/food/snacks/rogue/meat/mince,
@@ -27943,18 +28006,6 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
-"voG" = (
-/obj/structure/roguewindow/openclose/reinforced,
-/turf/closed/wall/mineral/rogue/decowood/vert,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
-"vpL" = (
-/obj/machinery/light/rogue/wallfire/candle/weak/l,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "vpW" = (
 /obj/structure/fluff/walldeco/barbersignreverse,
 /turf/open/floor/rogue/cobble,
@@ -28084,22 +28135,6 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
-"vuv" = (
-/obj/structure/rack/rogue,
-/obj/item/reagent_containers/glass/cup,
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/glass/cup{
-	pixel_x = -8;
-	pixel_y = -2
-	},
-/obj/machinery/light/rogue/wallfire/candle/weak/r,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "vuG" = (
 /obj/structure/stairs{
 	dir = 4
@@ -29226,14 +29261,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
-"wmD" = (
-/obj/structure/fluff/railing/border{
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "wnd" = (
 /turf/closed/wall/mineral/rogue/wooddark/end{
 	dir = 4
@@ -30079,6 +30106,16 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
 "wTJ" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/glass/cup{
+	pixel_x = 7;
+	pixel_y = 5
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
@@ -30089,6 +30126,12 @@
 /obj/structure/mirror,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/church/chapel)
+"wUC" = (
+/obj/structure/roguewindow/openclose/reinforced,
+/turf/closed/wall/mineral/rogue/decowood/vert,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "wVf" = (
 /obj/structure/fluff/statue/small,
 /turf/open/floor/rogue/carpet,
@@ -30478,6 +30521,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
 /turf/open/water/cleanshallow,
 /area/rogue/indoors/cave)
+"xlg" = (
+/obj/structure/roguewindow/openclose{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town)
 "xlk" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8;
@@ -31729,14 +31778,6 @@
 	dir = 4
 	},
 /area/rogue/outdoors/town/roofs)
-"ykF" = (
-/obj/structure/fluff/railing/border{
-	dir = 8
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "THE FOOL'S FLAGON"
-	})
 "ykO" = (
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/cobble,
@@ -93079,7 +93120,7 @@ mEE
 jIy
 hSC
 gaM
-wmD
+quV
 fby
 oEV
 qqb
@@ -93240,8 +93281,8 @@ ePA
 jIy
 jIy
 nQE
-gSW
-wmD
+oRV
+quV
 mRs
 oEV
 sZx
@@ -93402,8 +93443,8 @@ iIs
 jIy
 cvW
 mRs
-ykF
-geM
+agR
+dSs
 hSC
 cKK
 oEV
@@ -94373,7 +94414,7 @@ mRs
 xGg
 iEg
 jIy
-iqy
+qGw
 mgI
 mgI
 nQE
@@ -98303,7 +98344,7 @@ nEs
 sSY
 utZ
 utZ
-utZ
+sYP
 jdj
 lsc
 fBg
@@ -119006,7 +119047,7 @@ ujR
 hMk
 sbs
 hSC
-shO
+rLO
 mRs
 kTZ
 tit
@@ -119167,8 +119208,8 @@ aZH
 aZH
 qpW
 sbs
-ixF
 wTJ
+nGE
 mRs
 lIE
 tit
@@ -119492,7 +119533,7 @@ aZH
 uPj
 sbs
 aOp
-wTJ
+nGE
 qQe
 mRs
 eMH
@@ -121937,7 +121978,7 @@ mRs
 blU
 qWd
 qWd
-bfF
+hdb
 xpO
 uNJ
 rBz
@@ -122106,7 +122147,7 @@ bfF
 tpH
 bfF
 bfF
-bfF
+xlg
 bfF
 tpH
 qWd
@@ -122763,10 +122804,10 @@ qWd
 qWd
 xte
 dHB
-fBg
-dHB
-fBg
-fBg
+vvw
+vvw
+vvw
+vvw
 dHB
 fBg
 dHB
@@ -122925,7 +122966,7 @@ qWd
 qWd
 xte
 fBg
-uAT
+oQw
 pFm
 uAT
 uAT
@@ -123415,8 +123456,8 @@ fPP
 cio
 kEz
 uAT
-uAT
-aew
+hsB
+dXf
 fBg
 blU
 qWd
@@ -124225,7 +124266,7 @@ eSl
 uAT
 sAu
 uAT
-uAT
+pBf
 egZ
 fBg
 blU
@@ -144925,10 +144966,10 @@ cak
 cak
 cak
 mRs
-vpL
-gog
+uKb
+ifu
 uAn
-qGw
+alQ
 mRs
 cak
 cak
@@ -145086,12 +145127,12 @@ cak
 cak
 cak
 cak
-voG
+wUC
 oEV
 sZx
-uLr
-quV
-pBf
+iqy
+grN
+dcA
 cak
 cak
 cak
@@ -145249,10 +145290,10 @@ cak
 cak
 cak
 mRs
-cjG
+lFP
 njO
 njO
-rnK
+ikN
 mRs
 cak
 cak
@@ -145411,10 +145452,10 @@ cak
 cak
 cak
 mRs
-sQp
-eqb
-vuv
-sYP
+geM
+nUo
+sPE
+txB
 mRs
 cak
 uxk
