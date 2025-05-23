@@ -107,6 +107,7 @@
 #define TRAIT_SILVER_BLESSED "Silver Blessed"
 #define TRAIT_OUTLANDER "Outlander"
 #define TRAIT_OUTLAW "Outlaw"
+#define TRAIT_WANTED_POSTER_READ "Read Wanted Poster"
 #define TRAIT_BIGGUY "Giantism"
 #define TRAIT_RESIDENT "Resident"
 #define TRAIT_COUNTERCOUNTERSPELL "Counter Counterspell"

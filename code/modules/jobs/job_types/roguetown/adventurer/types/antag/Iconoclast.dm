@@ -43,8 +43,8 @@
 	H.change_stat("strength", 1) // LETS WRASSLE
 	H.change_stat("endurance", 2) // This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
 	H.change_stat("constitution", 1)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // We are going to be the lord's first heavy armor unarmed class
-
+	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC) // We are going to be the lord's first heavy armor unarmed class
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_monk(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
