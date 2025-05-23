@@ -1076,6 +1076,7 @@
 	name = "chasuble"
 	desc = ""
 	icon_state = "chasuble"
+	item_state = "chasuble"
 	body_parts_covered = CHEST|GROIN|ARMS
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	sleevetype = "shirt"
@@ -1089,6 +1090,7 @@
 	name = "stole"
 	desc = ""
 	icon_state = "stole_gold"
+	item_state = "stole_gold"
 	sleeved = null
 	sleevetype = null
 	body_parts_covered = null
@@ -1096,9 +1098,11 @@
 
 /obj/item/clothing/cloak/stole/red
 	icon_state = "stole_red"
+	item_state = "stole_red"
 
 /obj/item/clothing/cloak/stole/purple
 	icon_state = "stole_purple"
+	item_state = "stole_purple"
 
 /obj/item/clothing/cloak/black_cloak
 	name = "fur overcoat"
