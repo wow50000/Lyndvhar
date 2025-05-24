@@ -651,6 +651,13 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
+"awm" = (
+/obj/structure/mineral_door/wood/fancywood{
+	lockid = "manor";
+	locked = 1
+	},
+/turf/open/floor/rogue/carpet,
+/area/rogue/indoors/town/manor)
 "awq" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -9493,7 +9500,8 @@
 "hpa" = (
 /obj/structure/mineral_door/wood/fancywood{
 	lockid = "manor";
-	name = "Butler's Chambers"
+	name = "Butler's Chambers";
+	locked = 1
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
@@ -31334,7 +31342,8 @@
 "xQF" = (
 /obj/structure/mineral_door/wood{
 	lockid = "walls";
-	name = "Archer's Lookout"
+	name = "Archer's Lookout";
+	locked = 1
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/manor)
@@ -116052,7 +116061,7 @@ dgT
 dgT
 mcV
 sur
-wyG
+awm
 poC
 sur
 sur
