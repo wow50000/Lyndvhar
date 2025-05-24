@@ -627,7 +627,7 @@
 						if(status.effectedstats["intelligence"] > 0)
 							fakeint -= status.effectedstats["intelligence"]
 		if(fakeint > 10)
-			var/bonus = round(((fakeint - 10) / 2)) * 10
+			var/bonus = ((fakeint - 10) / 2) * 10
 			if(bonus > 0)
 				if(HAS_TRAIT(src, TRAIT_HEAVYARMOR) || HAS_TRAIT(src, TRAIT_MEDIUMARMOR) || HAS_TRAIT(src, TRAIT_DODGEEXPERT) || HAS_TRAIT(src, TRAIT_CRITICAL_RESISTANCE))
 					bonus = clamp(bonus, 0, 25)
