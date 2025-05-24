@@ -10074,7 +10074,7 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
-/turf/closed/wall/mineral/rogue/decowood/vert,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
@@ -20690,7 +20690,7 @@
 /area/rogue/indoors/town/bath)
 "pBt" = (
 /obj/structure/roguewindow/openclose/reinforced,
-/turf/closed/wall/mineral/rogue/decowood/vert,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
