@@ -20767,6 +20767,15 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
+"pDv" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "pDN" = (
 /obj/structure/rack/rogue,
 /obj/item/quiver/arrows,
@@ -94451,7 +94460,7 @@ xGg
 iEg
 jIy
 pBf
-mgI
+pDv
 mgI
 nQE
 oEV
