@@ -2636,6 +2636,13 @@
 /obj/item/storage/fancy/cigarettes/zig,
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/cave)
+"bUe" = (
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "bUN" = (
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/dirt/road,
@@ -3538,6 +3545,10 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"cNa" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "cNg" = (
 /obj/machinery/light/rogue/oven/west,
 /turf/open/floor/rogue/tile,
@@ -5987,6 +5998,12 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/town/keep)
+"eFY" = (
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "eGL" = (
 /obj/machinery/anvil/crafted,
 /turf/open/floor/rogue/cobble,
@@ -7030,6 +7047,13 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/mountains)
+"ftd" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/river{
+	dir = 1;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "ftj" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8;
@@ -7614,6 +7638,13 @@
 	dir = 4
 	},
 /area/rogue/indoors/town)
+"fRW" = (
+/obj/structure/roguerock,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "fSq" = (
 /mob/living/simple_animal/hostile/rogue/deepone/arm{
 	health = 500;
@@ -10544,6 +10575,10 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
+"hYW" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "hZc" = (
 /obj/structure/bed/rogue,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -12361,6 +12396,12 @@
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement/keep)
+"jnU" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/rtfield{
+	first_time_text = "CITY OUTSKIRTS"
+	})
 "joe" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/water/swamp,
@@ -12933,6 +12974,13 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
+"jJd" = (
+/obj/structure/flora/rock/pile,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "jJf" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -13141,12 +13189,11 @@
 	first_time_text = "CITY OUTSKIRTS"
 	})
 "jUp" = (
-/obj/structure/flora/newtree,
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/rtfield{
-	first_time_text = "CITY OUTSKIRTS"
-	})
+/turf/open/water/river{
+	dir = 1;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "jUv" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -16175,6 +16222,10 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
+"mmh" = (
+/obj/structure/flora/newtree,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "mmw" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/bookcase/random,
@@ -16286,6 +16337,10 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"mqG" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "mqI" = (
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/bath)
@@ -17021,6 +17076,13 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
+"mPW" = (
+/obj/structure/flora/rock/pile,
+/turf/open/water/river{
+	dir = 1;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "mQi" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -18000,6 +18062,13 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"nzL" = (
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/water/river{
+	dir = 1;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "nzP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/carpet,
@@ -19913,6 +19982,13 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"oVO" = (
+/obj/structure/flora/rock,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "oVP" = (
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblack,
@@ -20963,7 +21039,7 @@
 "pLn" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
-/turf/open/floor/rogue/grass,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
@@ -21172,6 +21248,10 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
+"pVE" = (
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "pVH" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/reagent_containers/glass/bottle/rogue/wine,
@@ -22604,12 +22684,15 @@
 	},
 /area/rogue/indoors/town/magician)
 "qVK" = (
-/obj/structure/flora/newtree,
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/rtfield{
-	first_time_text = "CITY OUTSKIRTS"
-	})
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
+"qVL" = (
+/obj/structure/flora/rock,
+/turf/open/water/river{
+	dir = 1;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "qVM" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/pelt,
@@ -24556,6 +24639,13 @@
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/exposed/town/keep)
+"sCf" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "sCj" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble,
@@ -27116,6 +27206,9 @@
 /obj/structure/table/wood,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"uGW" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/river)
 "uHb" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8
@@ -27780,6 +27873,11 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
+	})
+"vde" = (
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/rtfield{
+	first_time_text = "CITY OUTSKIRTS"
 	})
 "vdu" = (
 /obj/effect/decal/cobbleedge{
@@ -74508,7 +74606,7 @@ gXs
 gXs
 gXs
 gXs
-plu
+gXs
 gXs
 gXs
 gXs
@@ -74670,7 +74768,7 @@ gXs
 gXs
 gXs
 gXs
-plu
+gXs
 gXs
 gXs
 gXs
@@ -74830,10 +74928,10 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
+gXs
 gXs
 gXs
 gXs
@@ -74993,10 +75091,10 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
+gXs
 gXs
 gXs
 gXs
@@ -75156,9 +75254,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
 gXs
 gXs
 gXs
@@ -75319,9 +75417,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
 gXs
 gXs
 gXs
@@ -75481,10 +75579,10 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
+gXs
 gXs
 gXs
 plu
@@ -75643,11 +75741,11 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
-plu
+gXs
+gXs
+gXs
+gXs
+gXs
 plu
 plu
 plu
@@ -75806,10 +75904,10 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+gXs
+gXs
+eFY
+eFY
 plu
 plu
 plu
@@ -75969,9 +76067,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76131,9 +76229,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76293,9 +76391,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76455,9 +76553,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76617,9 +76715,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76779,9 +76877,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -76941,9 +77039,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77103,9 +77201,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77265,9 +77363,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77427,9 +77525,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77589,9 +77687,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77751,9 +77849,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -77913,9 +78011,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 plu
 plu
@@ -78075,9 +78173,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 plu
 wgX
 wgX
@@ -78237,9 +78335,9 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
+eFY
+eFY
+eFY
 wgX
 wgX
 wgX
@@ -78399,7 +78497,7 @@ plu
 plu
 plu
 plu
-plu
+eFY
 wgX
 wgX
 wgX
@@ -85524,8 +85622,8 @@ gVv
 gVv
 cce
 cce
-gVv
-gVv
+wFk
+wFk
 mqX
 mqX
 mqX
@@ -85686,8 +85784,8 @@ sje
 wFk
 cce
 cce
-gVv
-gVv
+wFk
+wFk
 gVv
 gVv
 gVv
@@ -85846,10 +85944,10 @@ mqC
 gVv
 gVv
 gVv
-gVv
-gVv
-gVv
-gVv
+wFk
+wFk
+wFk
+wFk
 gVv
 qmT
 gVv
@@ -86008,7 +86106,7 @@ mqC
 wtr
 gVv
 gVv
-gVv
+wFk
 cce
 wFk
 cce
@@ -86177,7 +86275,7 @@ wFk
 bDE
 cce
 wFk
-wFk
+cce
 gVv
 mqX
 mqX
@@ -87473,7 +87571,7 @@ mqC
 mqC
 mqC
 gVv
-gVv
+qmT
 gVv
 mqX
 mqX
@@ -87631,9 +87729,9 @@ mqC
 mqC
 mqC
 mqC
-gVv
-gVv
-gVv
+wFk
+wFk
+wFk
 wFk
 bDE
 gVv
@@ -87792,7 +87890,7 @@ mqC
 mqC
 mqC
 wtr
-gVv
+wFk
 gVv
 gVv
 wFk
@@ -87953,14 +88051,14 @@ gVv
 mqC
 mqC
 mqC
-gVv
-gVv
-gVv
 wFk
-wFk
+cce
+cce
+gVv
+mqG
 jUp
-qmT
-gVv
+jUp
+jUp
 mqX
 mqX
 mqX
@@ -88115,14 +88213,14 @@ gVv
 mqC
 mqC
 mqC
-gVv
-gVv
-gVv
 wFk
-bDE
-qmT
+cce
 gVv
-gVv
+qVK
+qVK
+jUp
+ftd
+jUp
 mqX
 mqX
 mqX
@@ -88280,11 +88378,11 @@ mqC
 gVv
 gVv
 gVv
-cce
-wFk
-wFk
-wFk
-gVv
+eFY
+nzL
+jUp
+jUp
+jUp
 mqX
 mqX
 mqX
@@ -88442,12 +88540,12 @@ mqC
 mqC
 gVv
 gVv
+eFY
+fRW
+eFY
 gVv
-wFk
-bDE
 gVv
-mqX
-mqX
+gVv
 mqX
 mqX
 mqX
@@ -88602,15 +88700,15 @@ mqC
 mqC
 mqC
 mqC
-qmT
-gVv
-wFk
-wFk
 cce
 gVv
-mqX
-mqX
-mqX
+eFY
+eFY
+eFY
+gVv
+wFk
+cce
+wFk
 mqX
 mqX
 mqX
@@ -88763,17 +88861,17 @@ mqC
 mqC
 mqC
 mqC
-gVv
-gVv
-wFk
-wFk
 wFk
 wFk
 gVv
-mqX
-mqX
-mqX
-mqX
+eFY
+sCf
+eFY
+gVv
+cce
+wFk
+wFk
+wFk
 mqX
 mqX
 mqX
@@ -88925,18 +89023,18 @@ gVv
 mqC
 mqC
 mqC
-gVv
-gVv
-wFk
 wFk
 cce
-wFk
+qmT
+eFY
+eFY
+eFY
 gVv
-mqX
-mqX
-mqX
-mqX
-mqX
+gVv
+cce
+qmT
+wFk
+wFk
 mqX
 mqX
 "}
@@ -89087,18 +89185,18 @@ mqC
 mqC
 mqC
 mqC
-gVv
 wFk
 cce
-wFk
 gVv
-gVv
+sCf
+eFY
+sCf
 gVv
 qmT
+qVK
+qVK
+qVK
 gVv
-gVv
-mqX
-mqX
 mqX
 mqX
 "}
@@ -89249,18 +89347,18 @@ mqC
 mqC
 mqC
 mqC
-wFk
-wFk
+cce
+cce
 pLn
-aHX
-qmT
-qmT
+fRW
+eFY
+eFY
+qVK
+qVK
+qVK
+qVK
+qVK
 gVv
-gVv
-gVv
-gVv
-nkn
-mqX
 mqX
 mqX
 "}
@@ -89413,17 +89511,17 @@ mqC
 mqC
 wFk
 gVv
-wFk
-wFk
-wFk
-cce
-cce
-cce
-wFk
-wFk
+jnU
+eFY
+eFY
+eFY
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
 gVv
-mqX
-mqX
 mqX
 "}
 (36,1,3) = {"
@@ -89573,19 +89671,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
 gVv
-wFk
-wFk
-wFk
-wFk
-cce
-cce
-wFk
-wFk
-hwd
+jnU
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+hYW
+mqG
+qVK
+qVK
 gVv
-mqX
 mqX
 "}
 (37,1,3) = {"
@@ -89735,19 +89833,19 @@ wtr
 mqC
 mqC
 mqC
-wFk
 gVv
-qmT
-cce
+qVK
+qVK
+mqG
+qVK
+qVK
+mqG
+qVK
+qVK
+qVK
+pVE
+qVK
 gVv
-wFk
-qmT
-gVv
-wFk
-wFk
-bDE
-gVv
-mqX
 mqX
 "}
 (38,1,3) = {"
@@ -89897,19 +89995,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
 gVv
+qVK
+qVK
+qVK
+pVE
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
 gVv
-qmT
-gVv
-gVv
-qmT
-gVv
-wFk
-wFk
-wFk
-gVv
-mqX
 mqX
 "}
 (39,1,3) = {"
@@ -90059,19 +90157,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
-qmT
-qmT
 gVv
-qmT
+qVK
+mqG
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+mqG
 gVv
-qmT
-gVv
-cce
-wFk
-wFk
-bDE
-mqX
 mqX
 "}
 (40,1,3) = {"
@@ -90221,19 +90319,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
-qmT
 gVv
+qVK
+qVK
+qVK
+qVK
+mqG
+qVK
+mqG
+qVK
+qVK
+qVK
+qVK
 gVv
-gVv
-qmT
-gVv
-qmT
-qmT
-wFk
-wFk
-gVv
-mqX
 mqX
 "}
 (41,1,3) = {"
@@ -90383,19 +90481,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
 gVv
-qmT
-gVv
-gVv
-qmT
-qmT
 qVK
-tuy
-wFk
-wFk
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+cNa
+qVK
+qVK
+qVK
 gVv
-mqX
 mqX
 "}
 (42,1,3) = {"
@@ -90545,19 +90643,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
 gVv
-qmT
+qVK
+qVK
+qVK
+mqG
+qVK
+mmh
+qVK
+qVK
+qVK
+qVK
+mqG
 gVv
-gVv
-qmT
-qmT
-gVv
-qmT
-gVv
-wFk
-hwd
-mqX
 mqX
 "}
 (43,1,3) = {"
@@ -90707,19 +90805,19 @@ gVv
 mqC
 mqC
 mqC
-wFk
 gVv
-qmT
-wFk
-qmT
+qVK
+mqG
+qVK
+qVK
+qVK
+qVK
+mqG
+qVK
+qVK
+qVK
+qVK
 gVv
-gVv
-gVv
-qmT
-gVv
-wFk
-wFk
-mqX
 mqX
 "}
 (44,1,3) = {"
@@ -90869,19 +90967,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
 gVv
+qVK
+qVK
+hYW
+qVK
+qVK
+qVK
+qVK
+qVK
+mqG
+qVK
+qVK
 gVv
-qmT
-gVv
-gVv
-gVv
-qmT
-wFk
-gVv
-wFk
-wFk
-mqX
 mqX
 "}
 (45,1,3) = {"
@@ -91031,19 +91129,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
-wFk
 gVv
-qmT
+qVK
+qVK
+qVK
+qVK
+mqG
+pVE
+qVK
+qVK
+qVK
+qVK
+hYW
 gVv
-gVv
-gVv
-qmT
-wFk
-gVv
-bDE
-gVv
-mqX
 mqX
 "}
 (46,1,3) = {"
@@ -91193,19 +91291,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
-wFk
 gVv
-qmT
-qmT
+jnU
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+mqG
+qVK
+qVK
+qVK
 gVv
-gVv
-gVv
-qmT
-gVv
-wFk
-nkn
-mqX
 mqX
 "}
 (47,1,3) = {"
@@ -91355,19 +91453,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
-wFk
-gVv
-wFk
 cce
+jnU
+qVK
+mqG
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
+qVK
 gVv
 gVv
-wFk
-cce
-cce
-gVv
-mqX
-mqX
 mqX
 "}
 (48,1,3) = {"
@@ -91517,19 +91615,19 @@ mqC
 mqC
 mqC
 mqC
-wFk
-wFk
-wFk
-wFk
-cce
-wFk
-wFk
-wFk
-wFk
 cce
 gVv
-mqX
-mqX
+jnU
+qVK
+qVK
+qVK
+pVE
+qVK
+pVE
+qVK
+qVK
+gVv
+gVv
 mqX
 "}
 (49,1,3) = {"
@@ -91679,19 +91777,19 @@ mqC
 mqC
 mqC
 mqC
-gVv
+cce
 gVv
 qmT
-wFk
-bDE
-wFk
-wFk
+qVK
+qVK
+qVK
+mqG
+qVK
+qVK
+qVK
 gVv
 gVv
-gVv
-mqX
-mqX
-mqX
+wFk
 mqX
 "}
 (50,1,3) = {"
@@ -91841,19 +91939,19 @@ gVv
 mqC
 mqC
 mqC
+wFk
+cce
+qmT
+cce
+mqG
+qVK
+qVK
+qVK
 gVv
 gVv
 gVv
 wFk
-wFk
-gVv
-wFk
-gVv
-mqX
-mqX
-mqX
-mqX
-mqX
+cce
 mqX
 "}
 (51,1,3) = {"
@@ -92003,18 +92101,18 @@ gVv
 mqC
 mqC
 mqC
-wtr
-gVv
+jDE
+wFk
+wFk
+cce
+qVK
+qVK
+qVK
+qVK
 gVv
 wFk
 wFk
-bDE
-gVv
-gVv
-mqX
-mqX
-mqX
-mqX
+wFk
 mqX
 mqX
 "}
@@ -92167,15 +92265,15 @@ mqC
 mqC
 mqC
 gVv
+wFk
+cce
+gVv
+eFY
+eFY
+eFY
 gVv
 wFk
-wFk
-gVv
-gVv
-gVv
-mqX
-mqX
-mqX
+cce
 mqX
 mqX
 mqX
@@ -92332,12 +92430,12 @@ mqC
 gVv
 wFk
 gVv
+eFY
+eFY
+eFY
 gVv
-gVv
-gVv
-mqX
-mqX
-mqX
+cce
+wFk
 mqX
 mqX
 mqX
@@ -92491,15 +92589,15 @@ mqC
 mqC
 mqC
 mqC
+qmT
+qmT
 gVv
+fRW
+bUe
+eFY
 gVv
-gVv
-gVv
-gVv
-gVv
-mqX
-mqX
-mqX
+wFk
+wFk
 mqX
 mqX
 mqX
@@ -92654,11 +92752,11 @@ mqC
 mqC
 mqC
 gVv
+qmT
 gVv
-gVv
-mqX
-mqX
-mqX
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -92818,9 +92916,9 @@ mqC
 gVv
 gVv
 gVv
-mqX
-mqX
-mqX
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -92980,9 +93078,9 @@ mqC
 mqC
 gVv
 mqX
-mqX
-mqX
-mqX
+eFY
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -93142,9 +93240,9 @@ mqC
 mqC
 gVv
 mqX
-mqX
-mqX
-mqX
+eFY
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -93304,9 +93402,9 @@ mqC
 mqC
 gVv
 gVv
-wFk
-gVv
-gVv
+eFY
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -93464,11 +93562,11 @@ gVv
 gVv
 mqC
 mqC
-gVv
+wFk
 hPx
-bDE
-qmT
-gVv
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -93626,11 +93724,11 @@ gVv
 gVv
 mqC
 mqC
+wFk
 gVv
-wFk
-cce
-cce
-wFk
+eFY
+oVO
+eFY
 mqX
 mqX
 mqX
@@ -93788,11 +93886,11 @@ gVv
 gVv
 mqC
 mqC
+wFk
 gVv
-cce
-cce
-jUp
-gVv
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -93950,11 +94048,11 @@ gVv
 wtr
 mqC
 mqC
+wFk
 gVv
-gVv
-bDE
-gVv
-gVv
+eFY
+eFY
+bUe
 mqX
 mqX
 mqX
@@ -94112,11 +94210,11 @@ gVv
 gVv
 mqC
 mqC
+wFk
 gVv
-gVv
-gVv
-gVv
-gVv
+uGW
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -94274,11 +94372,11 @@ gVv
 gVv
 mqC
 mqC
+wFk
 gVv
-gVv
-gVv
-mqX
-mqX
+uGW
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -94436,11 +94534,11 @@ gVv
 gVv
 mqC
 mqC
+wFk
 gVv
-gVv
-gVv
-mqX
-mqX
+qVK
+eFY
+sCf
 mqX
 mqX
 mqX
@@ -94600,9 +94698,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-wFk
-gVv
+qVK
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -94762,9 +94860,9 @@ mqC
 mqC
 mqC
 gVv
-cce
-cce
-gVv
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -94923,10 +95021,10 @@ gVv
 mqC
 mqC
 mqC
-wFk
-cce
-wFk
 gVv
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -95085,10 +95183,10 @@ gVv
 mqC
 mqC
 mqC
-bDE
-gVv
-gVv
-gVv
+nkn
+qVK
+jJd
+eFY
 mqX
 mqX
 mqX
@@ -95248,9 +95346,9 @@ gVv
 mqC
 mqC
 gVv
-gVv
-gVv
-mqX
+pVE
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -95410,9 +95508,9 @@ gVv
 mqC
 mqC
 gVv
-wFk
-gVv
-mqX
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -95572,9 +95670,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-gVv
-mqX
+mqG
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -95734,9 +95832,9 @@ mqC
 mqC
 mqC
 wtr
-gVv
-gVv
-mqX
+mqG
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -95896,9 +95994,9 @@ mqC
 mqC
 mqC
 gVv
-wFk
-gVv
-mqX
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -96058,9 +96156,9 @@ mqC
 mqC
 mqC
 gVv
-cce
-wFk
-mqX
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -96220,9 +96318,9 @@ gVv
 mqC
 mqC
 gVv
-cce
-wFk
-gVv
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -96382,9 +96480,9 @@ mqC
 mqC
 mqC
 gVv
-wFk
-gVv
-gVv
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -96544,9 +96642,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-gVv
-mqX
+uGW
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -96706,9 +96804,9 @@ mqC
 mqC
 mqC
 mqC
-gVv
-gVv
-mqX
+uGW
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -96868,9 +96966,9 @@ mqC
 mqC
 mqC
 mqC
-qmT
-gVv
-mqX
+qVK
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -97030,9 +97128,9 @@ mqC
 mqC
 mqC
 mqC
-gVv
-wFk
-gVv
+uGW
+eFY
+sCf
 mqX
 mqX
 mqX
@@ -97192,9 +97290,9 @@ mqC
 mqC
 mqC
 mqC
-gVv
-wFk
-gVv
+uGW
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -97354,9 +97452,9 @@ wtr
 mqC
 mqC
 gVv
-gVv
-bDE
-wFk
+qVK
+eFY
+jJd
 mqX
 mqX
 mqX
@@ -97516,9 +97614,9 @@ gVv
 mqC
 mqC
 gVv
-gVv
-wFk
-wFk
+eFY
+eFY
+sCf
 mqX
 mqX
 mqX
@@ -97678,9 +97776,9 @@ gVv
 mqC
 mqC
 mqC
-gVv
-cce
-gVv
+jJd
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -97839,10 +97937,10 @@ gVv
 gVv
 mqC
 mqC
-gVv
-gVv
-gVv
-gVv
+eUT
+eFY
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -98001,10 +98099,10 @@ wFk
 gVv
 mqC
 mqC
-mqC
-mqC
-mqC
-mqC
+srQ
+vde
+vde
+vde
 srQ
 mqX
 mqX
@@ -98163,10 +98261,10 @@ wFk
 gVv
 mqC
 mqC
-mqC
-mqC
-mqC
-mqC
+srQ
+vde
+vde
+vde
 srQ
 mqX
 mqX
@@ -98325,10 +98423,10 @@ sje
 gVv
 mqC
 mqC
-mqC
-mqC
-mqC
-mqC
+srQ
+vde
+vde
+vde
 srQ
 mqX
 mqX
@@ -98488,9 +98586,9 @@ gVv
 mqC
 mqC
 gVv
-gVv
-gVv
-eUT
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -98650,9 +98748,9 @@ gVv
 mqC
 mqC
 gVv
-gVv
-qmT
-gVv
+eFY
+sCf
+eFY
 mqX
 mqX
 mqX
@@ -98812,9 +98910,9 @@ gVv
 mqC
 mqC
 gVv
-wFk
-wFk
-gVv
+eFY
+bUe
+eFY
 mqX
 mqX
 mqX
@@ -98973,10 +99071,10 @@ bDE
 gVv
 mqC
 mqC
-cce
-wFk
-cce
-gVv
+qmT
+jJd
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -99135,10 +99233,10 @@ wFk
 gVv
 mqC
 mqC
-wFk
-wFk
-bDE
 gVv
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -99297,10 +99395,10 @@ bDE
 gVv
 mqC
 mqC
-bDE
-cce
-wFk
-gVv
+nkn
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -99460,9 +99558,9 @@ gVv
 mqC
 mqC
 gVv
-wFk
-wFk
-gVv
+eFY
+sCf
+uGW
 mqX
 mqX
 mqX
@@ -99622,9 +99720,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-cce
-gVv
+eFY
+eFY
+uGW
 mqX
 mqX
 mqX
@@ -99784,9 +99882,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-sje
-gVv
+eFY
+eFY
+uGW
 mqX
 mqX
 mqX
@@ -99946,9 +100044,9 @@ mqC
 mqC
 mqC
 qmT
-gVv
-wFk
-gVv
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -100108,9 +100206,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-gVv
-gVv
+eFY
+eFY
+eFY
 mqX
 mqX
 mqX
@@ -100270,9 +100368,9 @@ mqC
 mqC
 mqC
 gVv
-gVv
-bDE
-wFk
+uGW
+eFY
+sCf
 gVv
 gVv
 gVv
@@ -100432,9 +100530,9 @@ mqC
 gVv
 gVv
 gVv
-bDE
-wFk
-cce
+uGW
+eFY
+bUe
 gVv
 gVv
 gVv
@@ -100594,9 +100692,9 @@ gVv
 gVv
 gVv
 gVv
-wFk
-wFk
-bDE
+eFY
+jJd
+eFY
 wFk
 gVv
 gVv
@@ -100756,9 +100854,9 @@ cce
 cce
 gVv
 qmT
-wFk
-wFk
-gVv
+eFY
+eFY
+sCf
 cce
 gVv
 gVv
@@ -100917,10 +101015,10 @@ gVv
 wFk
 gVv
 wFk
-bDE
-gVv
-gVv
-wFk
+nkn
+sCf
+eFY
+uGW
 gVv
 gVv
 gVv
@@ -101079,10 +101177,10 @@ bDE
 gVv
 wFk
 bDE
-wFk
 gVv
-gVv
-gVv
+uGW
+eFY
+uGW
 gVv
 gVv
 gVv
@@ -101239,12 +101337,12 @@ bDE
 gVv
 cce
 gVv
-gVv
 wFk
 wFk
-qmT
 gVv
-gVv
+uGW
+eFY
+eFY
 gVv
 gVv
 tuy
@@ -101401,12 +101499,12 @@ sje
 wFk
 wFk
 wFk
+wFk
+wFk
 gVv
-gVv
-gVv
-gVv
-gVv
-gVv
+uGW
+sCf
+eFY
 gVv
 tuy
 tuy
@@ -101563,12 +101661,12 @@ wFk
 cce
 gVv
 wFk
-qmT
+cce
+wFk
 gVv
-gVv
-gVv
-gVv
-gVv
+bUe
+eFY
+eFY
 tuy
 tuy
 tuy
@@ -101724,11 +101822,11 @@ gVv
 cce
 wFk
 bDE
+wFk
+wFk
 gVv
 gVv
-gVv
-gVv
-gVv
+sCf
 tuy
 tuy
 tuy
@@ -101886,8 +101984,8 @@ wFk
 gVv
 wFk
 wFk
-gVv
-gVv
+wFk
+wFk
 gVv
 gVv
 tuy
@@ -102047,7 +102145,7 @@ gVv
 bDE
 wFk
 qmT
-gVv
+wFk
 gVv
 gVv
 gVv
@@ -113882,11 +113980,11 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
-hNJ
+qVL
+jUp
+jUp
+jUp
+jUp
 hNJ
 "}
 (27,1,4) = {"
@@ -114044,11 +114142,11 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
-hNJ
+jUp
+jUp
+qVL
+jUp
+mPW
 hNJ
 "}
 (28,1,4) = {"
@@ -114206,11 +114304,11 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
-hNJ
+jUp
+mPW
+jUp
+mPW
+jUp
 hNJ
 "}
 (29,1,4) = {"
@@ -114367,8 +114465,8 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -114529,9 +114627,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -114691,10 +114789,10 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -114853,10 +114951,10 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -115018,8 +115116,8 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
+gKA
+gKA
 hNJ
 hNJ
 "}
@@ -115180,8 +115278,8 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
+gKA
+gKA
 hNJ
 hNJ
 "}
@@ -115342,9 +115440,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (36,1,4) = {"
@@ -115504,9 +115602,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (37,1,4) = {"
@@ -115666,9 +115764,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (38,1,4) = {"
@@ -115828,9 +115926,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (39,1,4) = {"
@@ -115990,9 +116088,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (40,1,4) = {"
@@ -116152,9 +116250,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (41,1,4) = {"
@@ -116314,9 +116412,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (42,1,4) = {"
@@ -116476,9 +116574,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (43,1,4) = {"
@@ -116638,9 +116736,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (44,1,4) = {"
@@ -116800,9 +116898,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (45,1,4) = {"
@@ -116962,9 +117060,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (46,1,4) = {"
@@ -117124,9 +117222,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (47,1,4) = {"
@@ -117286,9 +117384,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 "}
 (48,1,4) = {"
@@ -117447,10 +117545,10 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
 hNJ
 "}
 (49,1,4) = {"
@@ -117609,10 +117707,10 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
 hNJ
 "}
 (50,1,4) = {"
@@ -117770,11 +117868,11 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
+gKA
 hNJ
 "}
 (51,1,4) = {"
@@ -117932,10 +118030,10 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
+gKA
 hNJ
 hNJ
 "}
@@ -118094,9 +118192,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -118256,9 +118354,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
@@ -118418,9 +118516,9 @@ gKA
 gKA
 gKA
 gKA
-hNJ
-hNJ
-hNJ
+gKA
+gKA
+gKA
 hNJ
 hNJ
 hNJ
