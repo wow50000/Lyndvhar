@@ -21667,7 +21667,7 @@
 /area/rogue/outdoors/town)
 "qnJ" = (
 /obj/structure/roguewindow/openclose{
-	dir = 4
+	dir = 8
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
