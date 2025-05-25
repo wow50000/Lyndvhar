@@ -10874,9 +10874,10 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/obj/item/rope/chain,
-/obj/item/rope/chain,
 /obj/structure/fluff/wallclock,
+/obj/item/roguekey/mercenary,
+/obj/item/roguekey/mercenary,
+/obj/item/roguekey/mercenary,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town/sargoth{
 	first_time_text = "MERCENARY GUILD"
@@ -19797,6 +19798,8 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/natural/feather,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town/sargoth{
 	first_time_text = "MERCENARY GUILD"
@@ -24443,8 +24446,6 @@
 	dir = 6;
 	icon_state = "largetable"
 	},
-/obj/item/roguekey/mercenary,
-/obj/item/roguekey/mercenary,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/shelter/town/sargoth{
 	first_time_text = "MERCENARY GUILD"
