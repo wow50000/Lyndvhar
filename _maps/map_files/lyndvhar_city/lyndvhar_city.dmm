@@ -29250,7 +29250,7 @@
 /area/rogue/indoors/town)
 "wcW" = (
 /obj/structure/roguewindow/openclose/reinforced,
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church/chapel)
 "wdC" = (
 /obj/structure/fluff/railing/border{
@@ -168857,7 +168857,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
@@ -169019,7 +169019,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
@@ -169181,7 +169181,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
@@ -169343,7 +169343,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
@@ -169505,7 +169505,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
@@ -169667,7 +169667,7 @@ qWd
 qWd
 qWd
 qWd
-qWd
+cak
 cak
 cak
 cak
