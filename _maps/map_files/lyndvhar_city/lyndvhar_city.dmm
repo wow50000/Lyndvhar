@@ -12210,6 +12210,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town)
+"jfx" = (
+/obj/structure/fermenting_barrel/water,
+/obj/structure/fluff/railing/border{
+	pixel_y = -6
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/garrison)
 "jfE" = (
 /obj/structure/roguewindow/stained/silver,
 /turf/open/floor/rogue/church,
@@ -29666,6 +29673,12 @@
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"wvo" = (
+/obj/structure/fluff/railing/border{
+	pixel_y = -6
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/garrison)
 "wvJ" = (
 /obj/structure/flora/roguegrass,
 /obj/effect/decal/cobbleedge{
@@ -94883,7 +94896,7 @@ ecy
 tnH
 nXx
 nDr
-gRI
+wvo
 lSu
 vFk
 wdM
@@ -95045,7 +95058,7 @@ ecy
 plK
 nXx
 cKy
-gRI
+wvo
 bmy
 vFk
 wdM
@@ -95207,7 +95220,7 @@ lUs
 lUs
 nXx
 cKy
-div
+jfx
 cIk
 vFk
 wdM
