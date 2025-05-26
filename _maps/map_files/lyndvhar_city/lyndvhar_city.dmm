@@ -3737,6 +3737,10 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"cOx" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
 "cOA" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -4035,6 +4039,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
+"dcc" = (
+/obj/structure/flora/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/beach)
 "dcv" = (
 /mob/living/carbon/human/species/goblin/npc/cave,
 /turf/open/floor/rogue/dirt/road,
@@ -14961,6 +14969,10 @@
 /obj/structure/closet/crate/chest/neu,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/physician)
+"kUD" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/beach)
 "kVf" = (
 /obj/structure/bed/rogue,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -19310,6 +19322,10 @@
 	},
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/town)
+"nYE" = (
+/obj/structure/flora/roguegrass/herb/random,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/beach)
 "nYJ" = (
 /obj/structure/fluff/walldeco/painting/seraphina,
 /turf/closed/wall/mineral/rogue/craftstone,
@@ -21220,6 +21236,10 @@
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
+"psf" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/beach)
 "psn" = (
 /obj/structure/rack/rogue,
 /obj/item/natural/bundle/cloth{
@@ -22910,7 +22930,7 @@
 /obj/structure/stairs/stone{
 	dir = 8
 	},
-/turf/open/floor/rogue/sand,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/beach)
 "qCn" = (
 /turf/open/water/swamp,
@@ -23778,6 +23798,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
+"rff" = (
+/obj/structure/flora/roguegrass/herb/random,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/beach)
 "rft" = (
 /obj/structure/rack/rogue,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
@@ -24616,6 +24640,9 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
+"rOM" = (
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/beach)
 "rOY" = (
 /obj/structure/bookcase/random/archive,
 /turf/open/floor/rogue/blocks,
@@ -25626,6 +25653,10 @@
 "sFN" = (
 /turf/open/floor/rogue/twig/platform,
 /area/rogue/outdoors/mountains)
+"sFQ" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/beach)
 "sGo" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = -32;
@@ -27769,6 +27800,10 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
+"uqv" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/beach)
 "uqy" = (
 /obj/structure/mineral_door/wood/violet{
 	locked = 1;
@@ -29155,6 +29190,10 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
+"vor" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/beach)
 "vpW" = (
 /obj/structure/fluff/walldeco/barbersignreverse,
 /turf/open/floor/rogue/cobble,
@@ -29860,6 +29899,10 @@
 "vOT" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/mountains)
+"vOW" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/beach)
 "vPG" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -76191,7 +76234,7 @@ wTA
 wTA
 gXs
 aPM
-ogl
+sFQ
 fQU
 gXs
 gXs
@@ -76680,7 +76723,7 @@ aPM
 ogl
 ogl
 fQU
-fQU
+rff
 gXs
 gXs
 gXs
@@ -76974,7 +77017,7 @@ gXs
 gXs
 gXs
 gXs
-wTA
+cOx
 rXk
 wTA
 gXs
@@ -77001,7 +77044,7 @@ gXs
 gXs
 gXs
 fQU
-fQU
+rff
 fQU
 ogl
 ogl
@@ -77011,10 +77054,10 @@ gXs
 uRm
 uRm
 vfi
-vfi
+nYE
 ogl
 ogl
-vfi
+nYE
 gXs
 "}
 (112,1,2) = {"
@@ -77138,7 +77181,7 @@ gXs
 gXs
 wTA
 rXk
-wTA
+cOx
 gXs
 gXs
 gXs
@@ -77487,7 +77530,7 @@ gXs
 gXs
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -77499,7 +77542,7 @@ uRm
 vfi
 sBl
 ogl
-vfi
+nYE
 vfi
 gXs
 "}
@@ -77655,7 +77698,7 @@ qVK
 qVK
 plu
 fQU
-uRm
+rYr
 ngm
 uRm
 fQU
@@ -77970,7 +78013,7 @@ gXs
 gXs
 gXs
 plu
-plu
+vor
 plu
 qVK
 qVK
@@ -78082,11 +78125,11 @@ gXs
 gXs
 plu
 plu
+dcc
 plu
 plu
 plu
-plu
-plu
+vor
 plu
 plu
 plu
@@ -78145,7 +78188,7 @@ uRm
 uRm
 uRm
 fQU
-fQU
+rff
 plu
 plu
 plu
@@ -78244,22 +78287,22 @@ gXs
 plu
 plu
 plu
+vor
 plu
 plu
 plu
 plu
 plu
 plu
+dcc
+uqv
 plu
 plu
 plu
+vor
 plu
 plu
-plu
-plu
-plu
-plu
-plu
+dcc
 plu
 plu
 plu
@@ -78279,7 +78322,7 @@ gXs
 gXs
 nDG
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -78302,14 +78345,14 @@ qVK
 qVK
 plu
 plu
-fQU
+rff
 uRm
 uRm
 ngm
 fQU
 plu
 plu
-plu
+vOW
 plu
 gXs
 "}
@@ -78376,9 +78419,9 @@ wgX
 wgX
 wgX
 wgX
+vor
 plu
-plu
-plu
+uqv
 gXs
 gXs
 gXs
@@ -78415,16 +78458,16 @@ plu
 plu
 plu
 plu
+vor
 plu
 plu
 plu
 plu
 plu
+uqv
 plu
 plu
-plu
-plu
-plu
+dcc
 plu
 plu
 plu
@@ -78445,7 +78488,7 @@ plu
 plu
 qVK
 plu
-plu
+vor
 plu
 plu
 gXs
@@ -78462,7 +78505,7 @@ qVK
 aJr
 qVK
 qVK
-plu
+vor
 plu
 fQU
 uRm
@@ -78540,10 +78583,10 @@ wgX
 wgX
 plu
 plu
+vor
+vor
 plu
 plu
-plu
-plu
 gXs
 gXs
 gXs
@@ -78565,7 +78608,7 @@ gXs
 gXs
 plu
 plu
-plu
+vor
 plu
 plu
 fiV
@@ -78578,6 +78621,9 @@ plu
 plu
 plu
 plu
+dcc
+plu
+vOW
 plu
 plu
 plu
@@ -78585,10 +78631,7 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+vor
 plu
 plu
 plu
@@ -78610,11 +78653,11 @@ qVK
 plu
 plu
 plu
-plu
-plu
-plu
-plu
-plu
+kUD
+rOM
+rOM
+rOM
+kUD
 plu
 plu
 plu
@@ -78623,7 +78666,7 @@ qVK
 qVK
 qVK
 qVK
-plu
+fQU
 plu
 plu
 fQU
@@ -78707,7 +78750,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 gXs
@@ -78745,7 +78788,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -78780,12 +78823,12 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 qVK
 qVK
-plu
-plu
+sBl
+fQU
 plu
 plu
 plu
@@ -78795,7 +78838,7 @@ uRm
 plu
 plu
 plu
-plu
+vor
 plu
 gXs
 "}
@@ -78866,11 +78909,11 @@ wgX
 wgX
 wgX
 plu
+dcc
 plu
 plu
 plu
-plu
-plu
+dcc
 plu
 plu
 plu
@@ -78883,10 +78926,10 @@ gXs
 gXs
 gXs
 gXs
+uqv
 plu
 plu
-plu
-plu
+dcc
 plu
 plu
 hLt
@@ -78910,7 +78953,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -78923,9 +78966,9 @@ tpH
 hoZ
 hoZ
 tpH
+dcc
 plu
-plu
-plu
+vor
 plu
 qVK
 qVK
@@ -78934,19 +78977,19 @@ qVK
 qVK
 plu
 plu
-plu
+dcc
 plu
 plu
 plu
 qVK
 qVK
+fQU
+fQU
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+vfi
+vfi
 plu
 plu
 plu
@@ -79029,12 +79072,12 @@ wgX
 wgX
 wgX
 plu
+vor
 plu
 plu
 plu
 plu
-plu
-plu
+uqv
 plu
 plu
 plu
@@ -79067,7 +79110,7 @@ hLt
 fsL
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -79088,7 +79131,7 @@ tpH
 plu
 plu
 plu
-plu
+fQU
 roN
 qVK
 mtC
@@ -79103,21 +79146,21 @@ qVK
 qVK
 qVK
 qVK
+fQU
+fQU
+dcc
 plu
 plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+dcc
 plu
 uRm
 uRm
 uRm
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -79193,13 +79236,13 @@ wgX
 plu
 plu
 plu
+vOW
 plu
 plu
+vor
 plu
 plu
-plu
-plu
-plu
+dcc
 plu
 plu
 plu
@@ -79207,10 +79250,10 @@ gXs
 gXs
 plu
 plu
+vor
 plu
 plu
-plu
-plu
+vor
 plu
 bVU
 xXu
@@ -79234,7 +79277,7 @@ plu
 plu
 plu
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -79250,14 +79293,14 @@ tpH
 plu
 plu
 plu
-plu
+fQU
 qVK
 aJr
 qVK
 qVK
+fQU
 plu
-plu
-plu
+uqv
 plu
 plu
 qVK
@@ -79282,7 +79325,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 gXs
 "}
 (126,1,2) = {"
@@ -79353,6 +79396,7 @@ wgX
 wgX
 wgX
 wgX
+uqv
 plu
 plu
 plu
@@ -79369,8 +79413,7 @@ plu
 plu
 plu
 plu
-plu
-plu
+dcc
 plu
 plu
 plu
@@ -79392,13 +79435,13 @@ hPb
 bsh
 plu
 plu
+vor
 plu
 plu
 plu
 plu
 plu
-plu
-plu
+vor
 plu
 plu
 kAJ
@@ -79417,9 +79460,9 @@ roN
 mtC
 qVK
 qVK
+fQU
 plu
-plu
-plu
+vor
 plu
 plu
 qVK
@@ -79516,7 +79559,7 @@ wgX
 wgX
 wgX
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -79554,7 +79597,7 @@ fsL
 iVl
 eFG
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -79572,7 +79615,7 @@ xoK
 xoK
 tpH
 plu
-plu
+vor
 plu
 qVK
 aJr
@@ -79593,7 +79636,7 @@ qVK
 qVK
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -79602,7 +79645,7 @@ plu
 uRm
 uRm
 uRm
-plu
+vor
 plu
 plu
 plu
@@ -79679,7 +79722,7 @@ wgX
 wgX
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -79688,13 +79731,13 @@ wgX
 wgX
 wgX
 plu
+vor
 plu
 plu
 plu
 plu
 plu
-plu
-plu
+vOW
 plu
 plu
 plu
@@ -79737,35 +79780,35 @@ plu
 plu
 plu
 plu
+fQU
+fQU
+qVK
+qVK
+dcc
+plu
+plu
+plu
+vOW
 plu
 plu
 qVK
 qVK
-plu
-plu
-plu
-plu
-plu
-plu
-plu
 qVK
-qVK
-qVK
+psf
+fQU
 plu
 plu
 plu
 plu
 plu
-plu
-plu
-plu
+vor
 plu
 plu
 ngm
 uRm
 uRm
 plu
-plu
+vor
 plu
 plu
 plu
@@ -79859,7 +79902,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -79898,6 +79941,7 @@ wgX
 plu
 plu
 plu
+dcc
 plu
 plu
 plu
@@ -79911,13 +79955,12 @@ plu
 plu
 plu
 plu
+fQU
+fQU
 plu
 plu
 plu
-plu
-plu
-plu
-plu
+vOW
 plu
 plu
 plu
@@ -80066,7 +80109,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -80077,7 +80120,7 @@ mDZ
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -80185,6 +80228,7 @@ plu
 plu
 plu
 plu
+vor
 plu
 plu
 plu
@@ -80196,8 +80240,7 @@ plu
 plu
 plu
 plu
-plu
-plu
+vor
 plu
 plu
 plu
@@ -80231,7 +80274,7 @@ plu
 plu
 plu
 plu
-plu
+vor
 plu
 plu
 plu
@@ -80251,9 +80294,9 @@ uRm
 uRm
 uRm
 plu
+vOW
 plu
-plu
-plu
+dcc
 plu
 gXs
 "}
@@ -80350,13 +80393,13 @@ plu
 plu
 plu
 plu
+uqv
+vor
 plu
 plu
 plu
 plu
-plu
-plu
-plu
+dcc
 plu
 wgX
 wgX
@@ -80393,7 +80436,11 @@ wgX
 wgX
 wgX
 wgX
-wgX
+plu
+plu
+plu
+plu
+vOW
 plu
 plu
 plu
@@ -80402,11 +80449,7 @@ plu
 plu
 plu
 plu
-plu
-plu
-plu
-plu
-plu
+vor
 plu
 plu
 uRm
@@ -80510,7 +80553,7 @@ wgX
 wgX
 plu
 plu
-plu
+dcc
 plu
 plu
 plu
@@ -80555,17 +80598,17 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
 plu
-wgX
-wgX
-wgX
-wgX
 plu
 plu
+plu
+plu
+plu
+dcc
+plu
+plu
+vor
 plu
 plu
 plu
@@ -80573,11 +80616,11 @@ plu
 plu
 ngm
 uRm
-uRm
+rYr
 plu
 plu
 plu
-plu
+vor
 plu
 gXs
 "}
@@ -80718,18 +80761,18 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+vor
 plu
 plu
 plu
+plu
+plu
+plu
+plu
+plu
+dcc
 plu
 plu
 plu
@@ -80881,15 +80924,15 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
+plu
+plu
+plu
+plu
+uqv
 plu
 plu
 plu
@@ -80898,7 +80941,7 @@ plu
 uRm
 uRm
 uRm
-plu
+vor
 plu
 plu
 plu
@@ -81044,15 +81087,15 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
+uqv
+vor
+plu
+plu
+plu
 plu
 plu
 plu
@@ -81207,15 +81250,15 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
+plu
+plu
+plu
+plu
+plu
 plu
 plu
 plu
@@ -81225,7 +81268,7 @@ uRm
 plu
 plu
 plu
-plu
+vor
 plu
 gXs
 "}
@@ -81371,22 +81414,22 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
+vor
+plu
+plu
 wgX
 jUp
 jUp
-jUp
+ewj
 uRm
 uRm
 plu
 plu
-plu
+dcc
 plu
 plu
 gXs
@@ -81535,10 +81578,10 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
 wgX
 wgX
 wgX
@@ -81866,14 +81909,14 @@ wgX
 wgX
 wgX
 wgX
-wgX
 plu
 plu
 plu
 plu
+vor
 plu
 plu
-plu
+vor
 plu
 gXs
 "}
@@ -82027,10 +82070,10 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
+plu
+vor
+dcc
 plu
 plu
 plu
@@ -82189,15 +82232,15 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
 plu
 plu
 plu
 plu
 plu
+plu
+plu
+vOW
 plu
 gXs
 "}
@@ -82352,12 +82395,12 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
 plu
 plu
 plu
 plu
+plu
+vor
 plu
 plu
 plu
@@ -82514,10 +82557,10 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
+vor
+plu
+vOW
 plu
 plu
 plu
@@ -82676,13 +82719,13 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
 plu
 plu
 plu
+plu
+plu
+dcc
 plu
 plu
 gXs
@@ -82839,11 +82882,11 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
 plu
 plu
+plu
+plu
+vor
 plu
 plu
 plu
@@ -83001,10 +83044,10 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+vor
+plu
 plu
 plu
 plu
@@ -83164,13 +83207,13 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
 plu
 plu
+plu
+plu
+vOW
+plu
+vor
 gXs
 "}
 (150,1,2) = {"
@@ -83327,13 +83370,13 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+plu
+plu
+plu
+plu
+plu
+plu
 "}
 (151,1,2) = {"
 gXs
@@ -83490,11 +83533,11 @@ wgX
 wgX
 wgX
 wgX
-wgX
-wgX
-wgX
-wgX
-wgX
+plu
+vor
+plu
+plu
+plu
 wgX
 "}
 (152,1,2) = {"
