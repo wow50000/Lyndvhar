@@ -55,6 +55,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/flashlight/flare/torch
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)	
 			H.cmode_music = 'sound/music/combat_vagarian.ogg'
@@ -85,6 +86,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/flashlight/flare/torch
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
 			ADD_TRAIT(H, TRAIT_STRONGBITE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC) //No weapons. Just beating them to death as God intended.
