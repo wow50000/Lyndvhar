@@ -12532,7 +12532,7 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
-/turf/closed/wall/mineral/rogue/decowood,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
 "jaD" = (
 /obj/structure/plasticflaps,
