@@ -6,7 +6,7 @@
       "please": "min fadlik",
       "hello": "s'alaam",
       "peace": "s'alaam",
-      "what?": "madhaa taquul?",
+      "what?": "madhaa taquul?"
     },
 	"multiword": {
     "be with you": "alayyqum",
@@ -20,17 +20,17 @@
     "what is your name?": "maa ismuk",
     "how are you": "kayfa haluk",
     "I'm fine": "anaa bihkayr jukran",
-    "I am fine": "anaa bikhayr jukran",
+    "I am fine": "anaa bikhayr jukran"
   	},
     "start": {
-      "q": "q'",
+      "q": "q'"
     },
     "end": {
       "a": "ah",
       "e": "eh",
       "u": "uh",
       "o": "oh",
-      "i": "ih",
+      "i": "ih"
     },
     "syllable": {
 		"th": "s",
@@ -41,6 +41,6 @@
     "k": "q",
     "q": "kh",
     "d": "dh",
-    "b": "bh",
+    "b": "bh"
     }
 }
