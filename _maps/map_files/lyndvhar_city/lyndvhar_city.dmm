@@ -17043,13 +17043,6 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
-"mrJ" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town)
 "mrN" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/grass,
@@ -102933,7 +102926,7 @@ kef
 kef
 tKP
 vEj
-mrJ
+bRY
 eeF
 vFk
 wdM
