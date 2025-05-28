@@ -72,6 +72,9 @@
 #define TRAIT_SOUL_EXAMINE "Deathly Visionary" //can check bodies to see if they have departed
 #define TRAIT_LEECHIMMUNE "Unleechable" //leeches wont attach in bog squares + Abyssor boon.
 #define TRAIT_CRACKHEAD "Depraved Immunity" //will never overdose
+#define TRAIT_APRICITY	"Apricity" //Decreased stamina regen time during "day"
+#define TRAIT_SHARPER_BLADES "Sharper Blades" //Weapons lose less blade integrity
+#define TRAIT_JUSTICARSIGHT "Blessing of Ravox" //Allows seeing bounties and crimes when examining outlaws.
 #define TRAIT_CHOSEN "Astrata's Chosen"
 #define TRAIT_ABYSSOR_SWIM "Natural Swimmer" //less base fatigue drain when swimming
 #define TRAIT_XYLIX "Trickster's Teachings" //secret thieves cant language
@@ -194,6 +197,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the Undermaiden's attention."),
 	TRAIT_FORGEBLESSED = span_info("Countless long nights spent forging metal have honed my endurance, allowing me to work an anvil far longer than most without tiring."),
 	TRAIT_XYLIX = span_info("I know how to speak in code that only fellow tricksters can understand."),
+	TRAIT_APRICITY = span_info("Astrata's light blesses and rejuvenates me, allowing me to regain my stamina quicker during the dae."),
+	TRAIT_SHARPER_BLADES = span_info("My blades go dull slower, ensuring they stay sharp longer."),
 	TRAIT_CABAL = span_info("In secret, I have studied the ways of the First, and know of others of the Cult."),
 	TRAIT_HORDE = span_info("BY BLOOD AND BONE, I AM OF GRAGGAR'S ANOINTED! I FEEL THE STRENGTH IN OTHERS WHO ARE THE SAME."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
