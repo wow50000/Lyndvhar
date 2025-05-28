@@ -750,6 +750,15 @@
 	skillcraft = /datum/skill/labor/lumberjacking
 	tools = list(/obj/item/rogueweapon/huntingknife = 1)
 
+/datum/crafting_recipe/roguetown/dye_brush
+	name = "dye brush"
+	result = /obj/item/needle
+	reqs = list(
+		/obj/item/grown/log/tree/stick = 2,
+		/obj/item/natural/fur = 1
+		)
+	craftdiff = 1
+
 /datum/crafting_recipe/roguetown/lumberjacking/cart_upgrade
 	name = "woodcutters wheelbrace"
 	result = /obj/item/cart_upgrade/level_1
