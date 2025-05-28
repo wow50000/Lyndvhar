@@ -394,7 +394,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/berserker
 	category_tags = list(CTAG_WRETCH)
-	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_STRONGBITE, TRAIT_OUTLAW)
+	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_STRONGBITE, TRAIT_CRITICAL_RESISTANCE, TRAIT_NOPAINSTUN, TRAIT_OUTLAW)
 
 
 /datum/outfit/job/roguetown/wretch/berserker/pre_equip(mob/living/carbon/human/H)
@@ -452,7 +452,7 @@
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 2)
 	H.change_stat("intelligence", -3)
-	H.change_stat("perception", -1)
+	H.change_stat("perception", -2)
 	H.change_stat("speed", 1)
 	GLOB.outlawed_players += H.real_name
 	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
