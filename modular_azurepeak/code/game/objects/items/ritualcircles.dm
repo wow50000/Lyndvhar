@@ -200,7 +200,7 @@
 /obj/structure/ritualcircle/malum
 	name = "Rune of Forge"
 	desc = "A Holy Rune of Malum"
-icon_state = "malum_chalky"
+	icon_state = "malum_chalky"
 var/forgerites = list("Ritual of Blessed Reforgance")
 
 /obj/structure/ritualcircle/malum/attack_hand(mob/living/user)

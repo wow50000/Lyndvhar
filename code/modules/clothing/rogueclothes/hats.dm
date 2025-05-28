@@ -1439,23 +1439,6 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/valorian/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)

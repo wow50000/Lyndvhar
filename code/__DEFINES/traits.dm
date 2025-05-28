@@ -74,6 +74,7 @@
 #define TRAIT_CRACKHEAD "Depraved Immunity" //will never overdose
 #define TRAIT_APRICITY	"Apricity" //Decreased stamina regen time during "day"
 #define TRAIT_SHARPER_BLADES "Sharper Blades" //Weapons lose less blade integrity
+#define TRAIT_JUSTICARSIGHT "Blessing of Ravox" //Allows seeing bounties and crimes when examining outlaws.
 #define TRAIT_CHOSEN "Astrata's Chosen"
 #define TRAIT_ABYSSOR_SWIM "Natural Swimmer" //less base fatigue drain when swimming
 #define TRAIT_XYLIX "Trickster's Teachings" //secret thieves cant language
