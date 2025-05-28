@@ -2540,12 +2540,12 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/exposed/town/keep)
 "bKQ" = (
-/obj/structure/chair/bench/couch{
-	icon_state = "redcouch2"
-	},
+/obj/structure/chair/stool/rogue,
 /obj/effect/landmark/start/courtagent,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/manor)
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern{
+	first_time_text = "THE FOOL'S FLAGON"
+	})
 "bKX" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	dir = 4;
@@ -4410,11 +4410,6 @@
 /obj/item/clothing/under/roguetown/tights/stockings/random,
 /obj/item/clothing/under/roguetown/tights/stockings/random,
 /turf/open/floor/rogue/carpet,
-/area/rogue/indoors/town/manor)
-"dpa" = (
-/obj/structure/chair/bench/couch,
-/obj/effect/landmark/start/courtagent,
-/turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
 "dpl" = (
 /obj/structure/closet/crate/roguecloset,
@@ -13935,7 +13930,6 @@
 "kcq" = (
 /obj/structure/chair/bench/couch,
 /obj/machinery/light/rogue/wallfire/candle,
-/obj/effect/landmark/start/courtagent,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
 "kcu" = (
@@ -24975,7 +24969,6 @@
 	icon_state = "redcouch2"
 	},
 /obj/machinery/light/rogue/wallfire/candle,
-/obj/effect/landmark/start/courtagent,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
 "rYr" = (
@@ -91583,7 +91576,7 @@ iKK
 iKK
 gKP
 mcV
-bKQ
+cxQ
 oQO
 aNB
 aNB
@@ -91907,7 +91900,7 @@ iEJ
 coC
 gKP
 mcV
-dpa
+pFa
 oQO
 aNB
 aNB
@@ -95107,7 +95100,7 @@ mRs
 jHi
 mgI
 lUH
-mmK
+bKQ
 oEV
 yhx
 yhx
@@ -95269,7 +95262,7 @@ mRs
 iJJ
 dPG
 lUH
-mmK
+bKQ
 oEV
 tzM
 yhx
@@ -95431,7 +95424,7 @@ hSC
 hsy
 mgI
 lUH
-mmK
+bKQ
 oEV
 cVo
 cVo
@@ -95593,7 +95586,7 @@ mRs
 pcY
 mgI
 lUH
-mmK
+bKQ
 oEV
 grC
 grC
