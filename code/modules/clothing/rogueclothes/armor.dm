@@ -697,6 +697,23 @@
 	armor_class = ARMOR_CLASS_HEAVY
 	sellprice = 300
 
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios
+	name = "gilded fullplate"
+	desc = "Often, you have heard that told,"
+	icon_state = "matthiosarmor"
+	max_integrity = 700	
+
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(QDELETED(src))
+		return
+	qdel(src)
+
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/zizo
 	name = "darksteel fullplate"
