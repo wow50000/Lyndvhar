@@ -13,32 +13,31 @@
     "thank you": "jukran",
     "you're welcome": "aafwan",
     "excuse me": "alaafw",
-    "arjuu almaadhira": "I am sorry",
+    "I am sorry": "arjuu almaadhira",
     "good morning": "sabaah alkhayr",
     "good evening": "masaa' alkhayr",
     "good night": "tusbhih aalaah khayr",
-    "what is your name?": "maa ismuk",
+    "what is your name?": "maa ismuk?",
     "how are you": "kayfa haluk",
     "I'm fine": "anaa bihkayr jukran",
     "I am fine": "anaa bikhayr jukran"
   	},
     "start": {
-      "q": "q'"
+		"q": "q'",
+		"k": "q"
     },
     "end": {
       "a": "ah",
       "e": "eh",
-      "o": "oh"
-    },
-    "syllable": {
-		"th": "s",
-  	"s": "ss",
-    "r": "rr",
-    "sh": "j",
-    "j": "jj",
-    "k": "q",
-    "q": "kh",
+      "o": "oh",
+	 "k": "kh",
     "d": "dh",
     "b": "bh"
+    },
+    "syllable": {
+	"th": "s",
+    "r": "rr",
+	"j": "jj"
+    "sh": "jh",
     }
 }
