@@ -15,9 +15,9 @@ GLOBAL_LIST_INIT(character_accents, list("No accent",
 	"Feline accent",
 	"Slopes accent",
     "West Zybantu accent",
-    "High Imperial accent",
+    "North Zybantu accent",
 	"East Zybantu accent",
-	"North Zybantu accent"))
+	"High Imperial accent"))
 
 /mob/living/carbon/human
 	var/char_accent = "No accent"
