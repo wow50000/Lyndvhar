@@ -6,7 +6,9 @@
      "actions": "res",
      "action": "res",
      "library": "liberarium",
+		"libraries": "liberaria",
      "book": "liber",
+		"books": "liberi",
      "now": "jam",
      "presently": "jam",
      "and": "et",
@@ -131,8 +133,6 @@
     },
     "syllable": {
         "u": "v",
-        "i": "ee",
-        "c": "ch",
         "w": "v"
     }
 }
