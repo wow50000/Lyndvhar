@@ -739,11 +739,6 @@
 /obj/item/paper,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
-"axP" = (
-/obj/structure/chair/stool/rogue,
-/obj/structure/roguemachine/scomm/l,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town)
 "axX" = (
 /obj/structure/roguewindow/openclose{
 	dir = 4
@@ -3157,7 +3152,6 @@
 /obj/structure/handcart{
 	dir = 8
 	},
-/obj/structure/roguemachine/scomm/r,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town)
 "cmO" = (
@@ -8201,13 +8195,6 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
-"fYM" = (
-/obj/effect/decal/cobbleedge{
-	dir = 5
-	},
-/obj/structure/roguemachine/scomm/l,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town)
 "fZd" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10
@@ -10286,7 +10273,6 @@
 /obj/item/rogueweapon/sickle{
 	pixel_y = 8
 	},
-/obj/structure/roguemachine/scomm/l,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town)
 "hvw" = (
@@ -17383,6 +17369,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
+/obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
@@ -30887,10 +30874,6 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/woodturned/nosmooth,
-/area/rogue/indoors/town)
-"wfO" = (
-/obj/structure/roguemachine/scomm/r,
-/turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "wfV" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -100165,7 +100148,7 @@ gVv
 wdM
 bdX
 cQk
-axP
+bZc
 cQk
 cQk
 lDh
@@ -100652,7 +100635,7 @@ uPW
 kHn
 cQk
 kHP
-wfO
+cQk
 cQk
 tTR
 uPW
@@ -101951,7 +101934,7 @@ gVv
 fBg
 xIC
 tXh
-fYM
+dgQ
 thK
 cQk
 vvw
