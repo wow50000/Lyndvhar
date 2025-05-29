@@ -177,6 +177,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/under/roguetown/skirt
 
 //ACCESSORIES
+/datum/loadout_item/cowbellcollar
+	name = "Cowbell Collar"
+	path = /obj/item/clothing/neck/roguetown/collar
+
+
 /datum/loadout_item/stockings
 	name = "Stockings"
 	path = /obj/item/clothing/under/roguetown/tights/stockings
