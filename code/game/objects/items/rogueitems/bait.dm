@@ -99,7 +99,9 @@
 							/mob/living/simple_animal/hostile/retaliate/rogue/goatmale = 33,
 							/mob/living/simple_animal/hostile/retaliate/rogue/saiga = 20,
 							/mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck = 20,
-							/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 20)
+							/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 20,
+							/mob/living/simple_animal/hostile/retaliate/rogue/youngboar = 33,
+							/mob/living/simple_animal/hostile/retaliate/rogue/middleboar = 20)
 
 
 /obj/item/bait/bloody
@@ -107,4 +109,6 @@
 	desc = "Imagine if bloodlickers got attracted to those!"
 	icon_state = "baitb"
 	attracted_types = list(/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 20,
-						/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 10)
+						/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 10,
+						/mob/living/simple_animal/hostile/retaliate/rogue/middleboar = 15,
+						/mob/living/simple_animal/hostile/retaliate/rogue/oldboar = 10)
