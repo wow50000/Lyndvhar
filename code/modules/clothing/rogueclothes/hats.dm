@@ -1994,3 +1994,32 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 	sellprice = 85
+
+//............... Rare Helmets ............... //
+///obj/item/clothing/head/roguetown/helmet/rare
+/obj/item/clothing/head/roguetown/rare
+	name = "rare helmet template"
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	bloody_icon = 'icons/effects/blood64x64.dmi'
+	bloody_icon_state = "helmetblood_big"
+	blocksound = PLATEHIT	//DELETE AFTER REPATH
+	equip_delay_self = 3 SECONDS
+	unequip_delay_self = 3 SECONDS
+	resistance_flags = FIRE_PROOF // These are all metallic DELETE AFTER REPATH
+	anvilrepair = /datum/skill/craft/armorsmithing	//DELETE AFTER REPATH
+	smeltresult = /obj/item/ingot/steel
+	
+//............... Bladesinger Helmet ............... //
+/obj/item/clothing/head/roguetown/rare/elfplate // Unique Bladesinger kit
+    name = "elvish plate helmet"
+    desc = "A bizarrely lightweight helmet of alloyed dark elven steel, offering unparalleled protection for elite bladesingers."
+    icon_state = "elfhead"
+    item_state = "elfhead"
+    allowed_race = list(/datum/species/elf/dark)
+    clothing_flags = CANT_SLEEP_IN
+    armor_class = ARMOR_CLASS_MEDIUM
+    body_parts_covered = HEAD|HAIR|NOSE
+    flags_inv = HIDEEARS|HIDEHAIR
+    block2add = FOV_BEHIND
+    armor = list("blunt" = 90, "slash" = 50, "stab" = 60, "piercing" = 70, "fire" = 0, "acid" = 0)

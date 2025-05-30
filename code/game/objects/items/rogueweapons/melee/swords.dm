@@ -1167,3 +1167,27 @@
 	wdefense = 3 // Lower than average sword defense (meant to pair with a shield)
 	wbalance = -1 // Likely weighted towards the blade, for deep cuts and chops
 	sellprice = 200 // A noble collector would love to get his/her hands on one of these blades
+
+//................ Kriegsmesser ............... //
+/obj/item/rogueweapon/sword/long/kriegsmesser
+	name = "elven kriegsmesser"
+	desc = "A long, curved elven blade. It's metal is of a high quality, yet still light, crafted by the greatest elven bladesmiths."
+	icon_state = "kriegsmesser"
+	wdefense = 4
+	minstr = 8
+	sellprice = 120
+	force = 20
+	force_wielded = 32
+	max_integrity = 300
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/strike)
+
+/obj/item/rogueweapon/sword/long/kriegsmesser/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = -6,"sy" = 6,"nx" = 6,"ny" = 7,"wx" = 0,"wy" = 5,"ex" = -1,"ey" = 7,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -50,"sturn" = 40,"wturn" = 50,"eturn" = -50,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
+			if("wielded")
+				return list("shrink" = 0.6,"sx" = 9,"sy" = -4,"nx" = -7,"ny" = 1,"wx" = -9,"wy" = 2,"ex" = 10,"ey" = 2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 5,"sturn" = -190,"wturn" = -170,"eturn" = -10,"nflip" = 4,"sflip" = 4,"wflip" = 1,"eflip" = 0)
+			if("onback")
+				return list("shrink" = 0.6,"sx" = -1,"sy" = 3,"nx" = -1,"ny" = 2,"wx" = 3,"wy" = 4,"ex" = -1,"ey" = 5,"nturn" = 0,"sturn" = 0,"wturn" = 70,"eturn" = 20,"nflip" = 1,"sflip" = 1,"wflip" = 1,"eflip" = 1,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)

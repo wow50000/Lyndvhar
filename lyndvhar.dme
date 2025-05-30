@@ -1297,6 +1297,7 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\antag\knave.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\antag\sawbones.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\antag\sellsword.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\bladesinger.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\cleric.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\hoplite.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\mage.dm"
