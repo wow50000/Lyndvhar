@@ -516,7 +516,7 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
-/turf/open/floor/rogue/grass,
+/turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/town)
 "ars" = (
 /obj/machinery/light/rogue/firebowl/standing,
@@ -4757,12 +4757,8 @@
 	pixel_y = -6
 	},
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/blue,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/blue,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/purple,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/purple,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/black,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/black,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/random,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/random,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
@@ -7597,6 +7593,21 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
+"fAx" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/structure/rack/rogue/shelf/notdense,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/storage/roguebag{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/obj/item/storage/roguebag{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/effect/decal/wood/herringbone,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors/town)
 "fBf" = (
 /turf/closed/wall/mineral/rogue/decostone/long,
 /area/rogue/indoors/town/manor)
@@ -7880,6 +7891,9 @@
 	},
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border,
+/obj/effect/decal/wood/herringbone2{
+	dir = 4
+	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town)
 "fLA" = (
@@ -13742,6 +13756,15 @@
 "jMy" = (
 /turf/closed/wall/mineral/rogue/decostone/end,
 /area/rogue/indoors/town/church)
+"jMJ" = (
+/obj/effect/decal/wood/herringbone2{
+	dir = 1
+	},
+/obj/effect/decal/wood/herringbone2{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "jNc" = (
 /obj/structure/roguemachine/stockpile,
 /obj/structure/fluff/walldeco/wantedposter/r{
@@ -14312,6 +14335,10 @@
 	},
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/town/basement/keep)
+"klV" = (
+/obj/structure/mannequin/male/female,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town)
 "kma" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -20744,6 +20771,12 @@
 /obj/item/clothing/suit/roguetown/shirt/dress,
 /obj/item/clothing/suit/roguetown/shirt/dress,
 /obj/item/clothing/suit/roguetown/shirt/dress,
+/obj/item/clothing/cloak/raincloak/red,
+/obj/item/clothing/cloak/raincloak/purple,
+/obj/item/clothing/cloak/raincloak/mortus,
+/obj/item/clothing/cloak/raincloak/green,
+/obj/item/clothing/cloak/raincloak/brown,
+/obj/item/clothing/cloak/raincloak/blue,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "oLQ" = (
@@ -24345,7 +24378,7 @@
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/structure/rack/rogue,
+/obj/structure/mannequin/male,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "roa" = (
@@ -24955,6 +24988,7 @@
 	icon_state = "cobbleedge-e"
 	},
 /obj/machinery/light/rogue/torchholder/l,
+/obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "rNs" = (
@@ -26782,6 +26816,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
+"tgu" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors/town)
 "tgv" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -26929,6 +26967,10 @@
 /turf/closed/wall/mineral/rogue/decostone{
 	name = "chimney"
 	},
+/area/rogue/indoors/town)
+"tmD" = (
+/obj/effect/decal/wood/herringbone,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town)
 "tmP" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
@@ -29508,20 +29550,14 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
 "vjS" = (
-/obj/structure/rack/rogue,
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/item/clothing/cloak/raincloak/red,
-/obj/item/clothing/cloak/raincloak/purple,
-/obj/item/clothing/cloak/raincloak/mortus,
-/obj/item/clothing/cloak/raincloak/green,
-/obj/item/clothing/cloak/raincloak/brown,
-/obj/item/clothing/cloak/raincloak/blue,
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
 	pixel_y = 0
 	},
+/obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "vkn" = (
@@ -30994,6 +31030,13 @@
 "wkd" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
+"wke" = (
+/obj/structure/fluff/railing/border{
+	pixel_y = -6
+	},
+/obj/structure/mannequin/male/female,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "wky" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -31024,7 +31067,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
-/turf/open/floor/rogue/grass,
+/turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/town)
 "wmk" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -32464,15 +32507,10 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/church/chapel)
 "xnq" = (
-/obj/structure/rack/rogue,
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/random,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/random,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/black,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/blue,
-/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/red,
+/obj/structure/mannequin/male,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "xnH" = (
@@ -91599,7 +91637,7 @@ gce
 gce
 gce
 gVI
-lzQ
+tgu
 gVI
 gce
 gce
@@ -97485,7 +97523,7 @@ tpH
 nlN
 bRY
 bRY
-bRY
+klV
 gFl
 nXx
 jxf
@@ -98216,7 +98254,7 @@ wFk
 gVv
 tpH
 jCu
-utZ
+tmD
 uxZ
 uAT
 uAT
@@ -98378,7 +98416,7 @@ bDE
 gVv
 tpH
 tpH
-uRM
+fAx
 uAT
 uAT
 rlR
@@ -99427,12 +99465,12 @@ hne
 btp
 sdu
 eMB
-bRY
+klV
 bRY
 bRY
 uCo
 vXY
-rnq
+wke
 oHI
 kyY
 qAU
@@ -99753,7 +99791,7 @@ lcv
 bRY
 bRY
 bRY
-wGj
+jio
 fBg
 voe
 dHB
@@ -99915,7 +99953,7 @@ fyS
 bRY
 bRY
 bRY
-wGj
+jio
 fBg
 rUM
 iLw
@@ -101943,7 +101981,7 @@ bDE
 tpH
 lWM
 utZ
-gTW
+jMJ
 gTW
 brR
 vFk
