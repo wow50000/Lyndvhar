@@ -10,7 +10,7 @@
 	throwforce = 0
 	var/check_counter = 0
 	var/list/attracted_types = list(/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 10,
-										/mob/living/simple_animal/hostile/retaliate/rogue/goat = 33,
+									/mob/living/simple_animal/hostile/retaliate/rogue/goat = 33,
 									/mob/living/simple_animal/hostile/retaliate/rogue/goatmale = 33,
 									/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/cabbit = 33,
 									/mob/living/simple_animal/hostile/retaliate/rogue/chicken = 55)
