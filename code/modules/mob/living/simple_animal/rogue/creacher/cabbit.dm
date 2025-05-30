@@ -34,5 +34,5 @@
 /obj/effect/decal/remains/cabbit
 	name = "remains"
 	gender = PLURAL
-	icon = 'icons/roguetown/mob/cabbit.dmi'
+	icon = 'icons/roguetown/mob/monster/cabbit.dmi'
 	icon_state = "cabbit_remains"
