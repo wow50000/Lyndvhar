@@ -1994,3 +1994,18 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 	sellprice = 85
+
+//............... Bladesinger Helmet ............... //
+/obj/item/clothing/head/roguetown/rare/elfplate // Unique Bladesinger kit
+    name = "elvish plate helmet"
+    desc = "A bizarrely lightweight helmet of alloyed dark elven steel, offering unparalleled protection for elite bladesingers."
+    icon_state = "elfhead"
+    item_state = "elfhead"
+    allowed_race = list(/datum/species/elf/dark)
+    clothing_flags = CANT_SLEEP_IN
+    armor_class = ARMOR_CLASS_MEDIUM
+    body_parts_covered = HEAD|HAIR|NOSE
+    flags_inv = HIDEEARS|HIDEHAIR
+    block2add = FOV_BEHIND
+    armor = list("blunt" = 90, "slash" = 50, "stab" = 60, "piercing" = 70, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)

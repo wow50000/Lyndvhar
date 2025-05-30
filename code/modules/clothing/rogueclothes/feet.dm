@@ -380,3 +380,17 @@
 	smeltresult = /obj/item/ingot/blacksteel
 	resistance_flags = FIRE_PROOF
 	sellprice = 210
+
+/obj/item/clothing/shoes/roguetown/boots/rare/elfplate
+    name = "dark elvish plated boots"
+    desc = "Bizzarrely shaped boots of exquisite dark elven craftsmanship, forged from steel alloyed in ways unbeknownst to every other race."
+    icon_state = "elfshoes"
+    item_state = "elfshoes"
+    allowed_race = list(/datum/species/elf/dark)
+    color = null
+    blocksound = PLATEHIT
+    max_integrity = 300
+    armor = list("blunt" = 95, "slash" = 100, "stab" = 90, "piercing" = 90, "fire" = 0, "acid" = 0)
+    prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+    anvilrepair = /datum/skill/craft/armorsmithing
+    body_parts_covered = FEET

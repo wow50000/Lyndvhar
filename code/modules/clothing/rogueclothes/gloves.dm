@@ -252,3 +252,19 @@
 	desc = "Paper and cloth bandages enscrybed with Khazumian runes. They do an ample job of protecting their user's hands in combat."
 	icon_state = "clothwraps"
 	item_state = "clothwraps"
+
+/obj/item/clothing/gloves/roguetown/rare/elfplate
+    name = "dark elf plate gauntlets"
+    desc = "Plate gauntlets of mystic dark elven alloy, lightweight yet incredibly protective. Typically worn by elite bladesingers."
+    icon_state = "elfhand"
+    item_state = "elfhand"
+    allowed_race = list(/datum/species/elf/dark)
+    armor = list("blunt" = 90, "slash" = 100, "stab" = 90, "piercing" = 95, "fire" = 0, "acid" = 0)
+    prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+    resistance_flags = FIRE_PROOF
+    blocksound = PLATEHIT
+    max_integrity = 300
+    blade_dulling = DULLING_BASH
+    break_sound = 'sound/foley/breaksound.ogg'
+    drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+    anvilrepair = /datum/skill/craft/armorsmithing
