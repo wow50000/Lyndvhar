@@ -23897,7 +23897,6 @@
 /area/rogue/outdoors/town/roofs)
 "qWl" = (
 /obj/structure/ladder,
-/obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/roofs)
 "qXa" = (
@@ -30998,12 +30997,6 @@
 "wkd" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
-"wke" = (
-/obj/structure/telescope,
-/turf/open/floor/rogue/rooftop{
-	dir = 4
-	},
-/area/rogue/outdoors/town/roofs)
 "wky" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -142521,7 +142514,7 @@ qpl
 qpl
 qpl
 aip
-wke
+mmB
 mmB
 mmB
 mmB
