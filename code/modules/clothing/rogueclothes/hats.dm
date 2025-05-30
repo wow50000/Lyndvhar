@@ -2008,4 +2008,3 @@
     flags_inv = HIDEEARS|HIDEHAIR
     block2add = FOV_BEHIND
     armor = list("blunt" = 90, "slash" = 50, "stab" = 60, "piercing" = 70, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
