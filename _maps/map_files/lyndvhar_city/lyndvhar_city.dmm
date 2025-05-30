@@ -1177,10 +1177,6 @@
 /obj/structure/ladder,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/mountains)
-"aNY" = (
-/obj/structure/mineral_door/bars,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/town)
 "aOd" = (
 /obj/structure/roguemachine/vendor{
 	keycontrol = "tailor"
@@ -3955,15 +3951,6 @@
 /obj/item/alch/golddust,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/sewer)
-"cUq" = (
-/obj/effect/decal/wood/herringbone2{
-	dir = 1
-	},
-/obj/effect/decal/wood/herringbone2{
-	dir = 4
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town)
 "cUL" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
@@ -4486,6 +4473,10 @@
 /obj/item/candle/eora/lit,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
+"dqe" = (
+/obj/effect/decal/wood/herringbone,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/indoors/town)
 "dqw" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -5350,21 +5341,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors)
-"dYR" = (
-/obj/structure/rack/rogue/shelf/biggest,
-/obj/structure/rack/rogue/shelf/notdense,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/storage/roguebag{
-	pixel_x = 7;
-	pixel_y = 7
-	},
-/obj/item/storage/roguebag{
-	pixel_x = -7;
-	pixel_y = 5
-	},
-/obj/effect/decal/wood/herringbone,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town)
 "dYY" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
@@ -8008,6 +7984,15 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town)
+"fQq" = (
+/obj/effect/decal/wood/herringbone2{
+	dir = 1
+	},
+/obj/effect/decal/wood/herringbone2{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "fQu" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/effect/decal/cobbleedge{
@@ -12670,6 +12655,13 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
+"jag" = (
+/obj/structure/fluff/railing/border{
+	pixel_y = -6
+	},
+/obj/structure/mannequin/male,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "jaD" = (
 /obj/structure/plasticflaps,
 /turf/open/water/swamp/deep,
@@ -20384,10 +20376,6 @@
 /obj/item/book/rogue/sword,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
-"oxP" = (
-/obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/indoors/town)
 "oxR" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/soap,
@@ -21841,6 +21829,10 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
+"pyX" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors/town)
 "pyZ" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
@@ -24382,7 +24374,7 @@
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/structure/mannequin/male,
+/obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "roa" = (
@@ -30670,13 +30662,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/exposed/town/keep)
-"vYN" = (
-/obj/structure/fluff/railing/border{
-	pixel_y = -6
-	},
-/obj/structure/mannequin/male/female,
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town)
 "vYW" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -31613,6 +31598,21 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"wFn" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/structure/rack/rogue/shelf/notdense,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/storage/roguebag{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/obj/item/storage/roguebag{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/effect/decal/wood/herringbone,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors/town)
 "wFA" = (
 /obj/structure/chair/bench/church{
 	dir = 1
@@ -91637,7 +91637,7 @@ gce
 gce
 gce
 gVI
-aNY
+pyX
 gVI
 gce
 gce
@@ -92446,7 +92446,7 @@ rhy
 jio
 jio
 jio
-wGj
+jio
 nFg
 vKj
 nFg
@@ -95318,7 +95318,7 @@ teK
 mqX
 mqX
 mqX
-wFk
+mqX
 vvw
 vvw
 jJw
@@ -95480,7 +95480,7 @@ jTY
 xMX
 xMX
 mqX
-bDE
+mqX
 vvw
 tjc
 osY
@@ -95642,7 +95642,7 @@ jTY
 xMX
 ngf
 mqX
-wFk
+mqX
 vvw
 vga
 sys
@@ -95804,7 +95804,7 @@ mqX
 mqX
 mqX
 mqX
-wFk
+mqX
 vvw
 qXa
 vvw
@@ -98254,7 +98254,7 @@ wFk
 gVv
 tpH
 jCu
-oxP
+dqe
 uxZ
 uAT
 uAT
@@ -98416,7 +98416,7 @@ bDE
 gVv
 tpH
 tpH
-dYR
+wFn
 uAT
 uAT
 rlR
@@ -99146,7 +99146,7 @@ bRY
 bRY
 ssa
 vXY
-rnq
+jag
 gJt
 aiV
 qAU
@@ -99308,7 +99308,7 @@ bRY
 bRY
 ssa
 vXY
-rnq
+jag
 uAT
 qAU
 qAU
@@ -99470,7 +99470,7 @@ bRY
 bRY
 uCo
 vXY
-vYN
+rnq
 oHI
 kyY
 qAU
@@ -101981,7 +101981,7 @@ bDE
 tpH
 lWM
 utZ
-cUq
+fQq
 gTW
 brR
 vFk
@@ -103579,7 +103579,7 @@ gVv
 gVv
 gVv
 wFk
-wFk
+sje
 bDE
 wFk
 gVv
@@ -107309,7 +107309,7 @@ wFk
 cce
 wFk
 wFk
-wFk
+sje
 wFk
 cce
 gVv
