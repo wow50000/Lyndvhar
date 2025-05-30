@@ -35,8 +35,12 @@
 			return strings("feline_replacement.json", type)
 		if("Slopes accent")
 			return strings("welsh_replacement.json", type)
-		if("Zybantu accent")
+		if("West Zybantu accent")
 			return strings("arabic_replacement.json", type)
+		if("North Zybantu accent")
+			return strings("turkish_replacement.json", type)
+		if("East Zybantu accent")
+			return strings("indian_replacement.json", type)
 		if("High Imperial accent")
 			return strings("latin_replacement.json", type)
 
