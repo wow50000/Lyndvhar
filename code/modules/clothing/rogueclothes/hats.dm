@@ -2001,7 +2001,7 @@
 	name = "rare helmet template"
 	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
-	bloody_icon = 'icons/effects/blood32x64.dmi'
+	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
 	blocksound = PLATEHIT	//DELETE AFTER REPATH
 	equip_delay_self = 3 SECONDS
