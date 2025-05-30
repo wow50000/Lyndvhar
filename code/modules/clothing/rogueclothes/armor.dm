@@ -1065,5 +1065,27 @@
 	smelt_bar_num = 2
 	sellprice = 380
 
+//................ Snowflake Plate ............... //
+/obj/item/clothing/suit/roguetown/armor/rare
+	name = "rare armor template"
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	
+/obj/item/clothing/suit/roguetown/armor/rare/elfplate
+    name = "dark elf plate"
+    desc = "A fine suit of sleek, moulded dark elf metal. Its interlocking nature and light weight allow for increased maneuverability."
+    icon_state = "elfchest"
+    item_state = "elfchest"
+    allowed_race = list(/datum/species/elf/dark)
+    equip_delay_self = 2 SECONDS
+    unequip_delay_self = 2 SECONDS
+    max_integrity = 350
+    armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
+    prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
+
+
+    armor_class = ARMOR_CLASS_MEDIUM // Elven craft, also a cuirass
+    body_parts_covered = CHEST|GROIN|VITALS|ARMS
 
 
