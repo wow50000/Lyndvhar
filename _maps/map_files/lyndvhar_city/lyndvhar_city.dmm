@@ -14661,9 +14661,6 @@
 	},
 /area/rogue/indoors/town/manor)
 "kzG" = (
-/obj/structure/boatbell/fluff{
-	desc = ""
-	},
 /obj/structure/fluff/railing/border,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/rtfield{
@@ -84219,7 +84216,7 @@ aTp
 aTp
 aTp
 uDo
-tpT
+aTp
 aTp
 aTp
 aTp
@@ -108677,7 +108674,7 @@ tuy
 tuy
 tuy
 tQg
-rAh
+teK
 pWz
 pXs
 tuy
@@ -109487,7 +109484,7 @@ tuy
 tuy
 tuy
 tQg
-rAh
+teK
 uQE
 uQE
 sAm
@@ -110468,7 +110465,7 @@ lJR
 lJR
 lJR
 teK
-tuy
+teK
 tuy
 tuy
 tuy
@@ -110626,11 +110623,11 @@ qOa
 qOa
 aTp
 tbj
-tpT
+aTp
 qOa
 qOa
 aTp
-tuy
+teK
 tuy
 tuy
 tuy
