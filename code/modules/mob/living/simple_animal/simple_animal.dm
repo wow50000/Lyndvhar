@@ -178,7 +178,6 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	var/botched_butcher_results
 	var/perfect_butcher_results
 
-
 /mob/living/simple_animal/Initialize()
 	. = ..()
 	GLOB.simple_animals[AIStatus] += src
@@ -404,8 +403,8 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 					butcher(user)
 					if(user.mind)
 						user.mind.add_sleep_experience(/datum/skill/labor/butchering, user.STAINT * 4)
-	
-	else if (stat != DEAD && istype(ssaddle, /obj/item/natural/saddle))	
+		
+	else if (stat != DEAD && istype(ssaddle, /obj/item/natural/saddle))		//Fallback saftey for saddles
 		var/datum/component/storage/saddle_storage = ssaddle.GetComponent(/datum/component/storage)
 		var/access_time = (user in buckled_mobs) ? 10 : 30
 		if (do_after(user, access_time, target = src))
@@ -420,7 +419,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 		var/list/butcher = list()
 
 		if(butcher_results)
-						if(user.mind.get_skill_level(/datum/skill/labor/butchering) == 0)
+			if(user.mind.get_skill_level(/datum/skill/labor/butchering) == 0)
 				if(prob(70))
 					butcher = botched_butcher_results // high chance to get shit result
 				else
