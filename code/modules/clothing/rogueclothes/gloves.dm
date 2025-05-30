@@ -253,6 +253,21 @@
 	icon_state = "clothwraps"
 	item_state = "clothwraps"
 
+/obj/item/clothing/gloves/roguetown/rare
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
+	pickup_sound = "rustle"
+	break_sound = 'sound/foley/breaksound.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	sleevetype = null
+	blocksound = PLATEHIT
+	body_parts_covered = HANDS
+	blade_dulling = DULLING_BASH
+	sewrepair = FALSE
+	anvilrepair = /datum/skill/craft/armorsmithing
+	
 /obj/item/clothing/gloves/roguetown/rare/elfplate
     name = "dark elf plate gauntlets"
     desc = "Plate gauntlets of mystic dark elven alloy, lightweight yet incredibly protective. Typically worn by elite bladesingers."

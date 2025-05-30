@@ -1065,6 +1065,13 @@
 	smelt_bar_num = 2
 	sellprice = 380
 
+//................ Snowflake Plate ............... //
+/obj/item/clothing/suit/roguetown/armor/rare
+	name = "rare armor template"
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	
 /obj/item/clothing/suit/roguetown/armor/rare/elfplate
     name = "dark elf plate"
     desc = "A fine suit of sleek, moulded dark elf metal. Its interlocking nature and light weight allow for increased maneuverability."
