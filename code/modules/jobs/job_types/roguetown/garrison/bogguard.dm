@@ -22,7 +22,7 @@
 	. = ..()
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
 	neck = /obj/item/clothing/neck/roguetown/coif
-	head = /obj/item/clothing/head/roguetown/helmet/leather
+	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
