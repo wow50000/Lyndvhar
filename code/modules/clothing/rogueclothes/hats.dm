@@ -1635,6 +1635,18 @@
 /obj/item/clothing/head/roguetown/wizhat/black
 	icon_state = "wizardhatblack"
 
+/obj/item/clothing/head/roguetown/wizhat/necromancer
+	name = "necromancer hat"
+	desc = "Used to distinguish dangerous necromancers from senile old men."
+	icon_state = "necromancerhat"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	dynamic_hair_suffix = "+generic"
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	sewrepair = TRUE
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEFACE|HIDEHAIR
+
 /obj/item/clothing/head/roguetown/wizhat/gen
 	icon_state = "wizardhatgen"
 
