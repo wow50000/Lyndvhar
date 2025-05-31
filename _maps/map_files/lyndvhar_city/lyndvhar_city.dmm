@@ -2463,10 +2463,6 @@
 /obj/item/alch/seeddust,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
-"bHU" = (
-/obj/structure/flora/roguegrass/bush/wall/tall,
-/turf/open/floor/rogue/grassred,
-/area/rogue/indoors/town)
 "bHY" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/machinery/light/rogue/torchholder/r,
@@ -63630,7 +63626,7 @@ gXs
 gXs
 gXs
 nfk
-bHr
+hJU
 hJU
 eNY
 nfk
@@ -89388,8 +89384,8 @@ hoZ
 hoZ
 hoZ
 hoZ
-nFg
-nFg
+hoZ
+hoZ
 nFg
 nFg
 nFg
@@ -89553,9 +89549,9 @@ uAg
 hWC
 uAg
 bFI
-hWC
-uAg
-bHU
+nFg
+nFg
+nFg
 xoK
 xoK
 xoK
