@@ -24984,7 +24984,6 @@
 	icon_state = "cobbleedge-e"
 	},
 /obj/machinery/light/rogue/torchholder/l,
-/obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "rNs" = (
@@ -31018,10 +31017,6 @@
 "wkd" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
-"wke" = (
-/obj/structure/mannequin/male/female,
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town)
 "wky" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -97523,7 +97518,7 @@ tpH
 nlN
 bRY
 bRY
-wke
+bRY
 gFl
 nXx
 jxf
@@ -99465,7 +99460,7 @@ hne
 btp
 sdu
 eMB
-wke
+bRY
 bRY
 bRY
 uCo
