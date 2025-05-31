@@ -339,12 +339,12 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/necromancer
 	category_tags = list(CTAG_WRETCH)
-	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_OUTLAW, TRAIT_ARCYNE_T3)
+	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_OUTLAW, TRAIT_ARCYNE_T4)
 
 
 /datum/outfit/job/roguetown/wretch/necromancer/pre_equip(mob/living/carbon/human/H)
 	H.set_patron(/datum/patron/inhumen/zizo)
-	head = /obj/item/clothing/head/roguetown/roguehood/black
+	head = /obj/item/clothing/head/roguetown/wizhat/necromancer
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
@@ -355,7 +355,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	beltl = /obj/item/rogueweapon/huntingknife
 	backl = /obj/item/storage/backpack/rogue/satchel
-	backr = /obj/item/rogueweapon/woodstaff
+	backr = /obj/item/rogueweapon/woodstaff/prepared/riddle_of_steel
 	backpack_contents = list(/obj/item/spellbook_unfinished/pre_arcyne = 1, /obj/item/roguegem/amethyst = 1, /obj/item/roguekey/inhumen = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1)
 	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -365,6 +365,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 	H.cmode_music = 'sound/music/warscholar.ogg'
 	if(H.age == AGE_OLD)
@@ -376,9 +377,11 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead/necromancer)
 	H.mind.adjust_spellpoints(5)
+	H.faction = list("undead")
 	GLOB.excommunicated_players += H.real_name
 	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
 	if (!my_crime)
