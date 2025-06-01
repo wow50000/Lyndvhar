@@ -7,15 +7,7 @@
 	spawn_positions = 1
 
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/aasimar,
-		/datum/species/halforc,
-		/datum/species/dracon
-	)
+	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	tutorial = "You've known combat your entire life. There isn't a way to kill a man you havent practiced in the tapestries of war itself. You wouldn't call yourself a hero--those belong to the men left rotting in the fields where you honed your ancient trade. You don't sleep well at night anymore, you don't like remembering what you've had to do to survive these turbulent times. Trading adventure for stable pay was the only logical solution, and maybe someday you'll get to lay down the blade and rest your weary body..."
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
@@ -27,7 +19,7 @@
 	max_pq = null
 	round_contrib_points = 2
 
-	cmode_music = 'sound/music/combat_guard.ogg'
+	cmode_music = 'sound/music/combat_guard2.ogg'
 
 /datum/job/roguetown/veteran/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

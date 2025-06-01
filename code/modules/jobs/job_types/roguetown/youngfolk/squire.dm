@@ -10,6 +10,8 @@
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_SQUIRE = 20)
 
+	cmode_music = 'sound/music/combat_guard2.ogg'
+
 	tutorial = "Your folks said you were going to be something, they had better aspirations for you than the life of a peasant. You practiced the basics \
 		in the field alongside your friends, swordfighting with sticks, chasing rabbits with grain flail, and helping around the house lifting heavy \
 		bags of grain. The Knights took notice of your potential and brought you on as one of their personal wards. You're going to be something someday."
