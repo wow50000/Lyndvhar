@@ -215,10 +215,10 @@
 		playsound(src.loc, 'sound/foley/struggle.ogg', 100, FALSE, -1)
 		user.Immobilize(1 SECONDS)
 		user.changeNext_move(1 SECONDS)
-		user.rogfat_add(rand(7,15))
+		user.rogfat_add(rand(3,7))
 		src.Immobilize(0.5 SECONDS)
 		src.changeNext_move(0.5 SECONDS)
-		user.rogfat_add(rand(7,15))
+		user.rogfat_add(rand(3,7))
 		return
 
 	if(!instant)
