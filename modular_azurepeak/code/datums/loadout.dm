@@ -179,8 +179,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 //ACCESSORIES
 /datum/loadout_item/cowbellcollar
 	name = "Cowbell Collar"
-	path = /obj/item/clothing/neck/roguetown/collar
+	path = /obj/item/clothing/neck/roguetown/collar/leather/bell/cow
 
+/datum/loadout_item/catbellcollar
+	name = "Catbell Collar"
+	path = /obj/item/clothing/neck/roguetown/collar/leather/bell
 
 /datum/loadout_item/stockings
 	name = "Stockings"

@@ -302,6 +302,14 @@
 	/obj/item/rogueweapon/woodstaff)
 	reqs = list(/obj/item/grown/log/tree = 1)
 
+/datum/crafting_recipe/roguetown/prepared_woodstaff
+	name = "prepared wood staff"
+	result = list(/obj/item/rogueweapon/woodstaff/prepared)
+	reqs = list(/obj/item/rogueweapon/woodstaff)
+	tools = list(/obj/item/rogueweapon/huntingknife)
+	skillcraft = /datum/skill/craft/carpentry
+	craftdiff = 0
+
 /datum/crafting_recipe/roguetown/woodsword
 	name = "wood sword"
 	result = list(/obj/item/rogueweapon/mace/wsword,
@@ -827,6 +835,13 @@
 				/obj/item/natural/hide/cured = 1,
 				/obj/item/jingle_bells = 1,
 				)
+	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/goodluckcharm
+	name = "cabbit's foot luck charm"
+	result = /obj/item/clothing/neck/roguetown/luckcharm // +1 fortune when worn
+	reqs = list(/obj/item/natural/rabbitsfoot = 1,
+				/obj/item/natural/fibers = 2)
 	craftdiff = 0
 
 // BOUQUETS & CROWNS
