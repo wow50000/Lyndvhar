@@ -50,12 +50,10 @@
 	else
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
-	H.change_stat("strength", 1) ///7 points (weighted)
+	H.change_stat("strength", 1)
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", 1)
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CICERONE, TRAIT_GENERIC)

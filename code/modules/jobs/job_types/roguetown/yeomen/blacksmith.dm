@@ -133,7 +133,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	allowed_races = RACES_SHUNNED_UP
-	tutorial = "You've studied for many decades under quite a number of master smiths. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will."
+	tutorial = "You've studied for many decades under quite a number of master smiths. Through many, many long enduring times of hardship and training, you have become a proper master at the smithy yourself. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will- and you should never let any of these people forget that. Your hammer is the one that will keep this city moving, even if they do not understand it yet."
 
 	outfit = /datum/outfit/job/roguetown/blacksmith
 	display_order = JDO_BLACKSMITH
