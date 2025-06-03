@@ -202,10 +202,10 @@
 /datum/outfit/job/roguetown/wretch/poacher/pre_equip(mob/living/carbon/human/H)
 	head = /obj/item/clothing/head/roguetown/roguehood/darkgreen
 	mask = /obj/item/clothing/mask/rogue/wildguard
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	pants = /obj/item/clothing/under/roguetown/trou/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/darkgreen
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	shirt = /obj/item/clothing/suit/roguetown/undershirt/black
 	backl = /obj/item/storage/backpack/rogue/satchel
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/gorget
@@ -305,18 +305,19 @@
 	if (istype (H.patron, /datum/patron/inhumen/zizo))
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
 		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
-	cloak = /obj/item/clothing/cloak/raincloak/mortus
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
+	mask = /obj/item/clothing/mask/rogue/ragmask/black
+	cloak = /obj/item/clothing/cloak/stabard/dungeon
+	gloves = /obj/item/clothing/gloves/roguetown/leather/black
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	shirt = /obj/item/clothing/suit/roguetown/undershirt/black
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
-	backr = /obj/item/rogueweapon/shield/tower
+	backr = /obj/item/rogueweapon/shield/tower/metal
 	beltl = /obj/item/roguekey/inhumen
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/ritechalk = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -405,7 +406,7 @@
 	mask = /obj/item/clothing/mask/rogue/wildguard
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	backr = /obj/item/storage/backpack/rogue/satchel
