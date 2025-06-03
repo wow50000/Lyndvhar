@@ -155,20 +155,21 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 				log_game("Antagonists: Bandits")
 			*/ // We added bandits as a normal job slot, so this ain't needed
 
-			if(0 to 35)
+			if(0 to 50)
 				if(prob(50)) //Readded vampries from 90 to 100 pop and made it so it picks either wolves or vamps
 					pick_werewolves()
 				else
 					pick_vampires()
+				pick_aspirants()
 				log_game("Antagonists: Werewolves or Vampires & Bandits")
-			if(35 to 60)
+			if(50 to 70)
 				if(prob(50))
-					pick_bandits()
-				else
 					pick_rebels()
+				else
+					pick_aspirants()
 				pick_lich()
-				log_game("Antagonists: Lich & Bandits OR Rebels")
-			if(60 to 98)
+				log_game("Antagonists: Lich & Rebels OR Aspirants")
+			if(70 to 98)
 				pick_lich()
 				if(prob(50))
 					pick_werewolves()
@@ -178,7 +179,6 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 			if(98 to 100) //Should never happen but you know, would be pretty funny and can be tweaked later
 				pick_vampires() 
 				pick_werewolves()
-				pick_bandits()
 				pick_lich()
 				log_game("Darkness Comes!")
 
