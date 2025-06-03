@@ -41,12 +41,12 @@
 /datum/outfit/job/roguetown/guardsman
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	cloak = /obj/item/clothing/cloak/stabard/guard
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather		//Would seperate to leather bracers for archer for dodge but - funnily, armor class doesn't exist on bracers.
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/signal_horn = 1)
 
 /*Design philosophy: Men and women from various areas of life, from hunters to street-brawlers and more 'veteran' levy-men. Know less skills overall than Bog, but far more specialized.
@@ -88,11 +88,11 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 7))
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	backl = /obj/item/rogueweapon/shield/buckler		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	belt = /obj/item/storage/belt/rogue/leather/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
 
 /datum/advclass/watchman/archer
@@ -131,11 +131,11 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	armor = /obj/item/clothing/suit/roguetown/armor/leather		//So they get default-dodge expert usage.
 	beltr = /obj/item/quiver/arrows
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	belt = /obj/item/storage/belt/rogue/leather/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell
 
 /datum/advclass/watchman/pikeman
@@ -170,7 +170,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
 	beltr = /obj/item/rogueweapon/sword/iron/short
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	var/weapontype = pickweight(list("Spear" = 5, "Bardiche" = 3, "Lucerne" = 2)) //pooors

@@ -25,7 +25,7 @@
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	beltl = /obj/item/storage/keyring/guard

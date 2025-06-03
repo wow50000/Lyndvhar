@@ -38,7 +38,7 @@
 			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
 			H.change_stat("speed", -2)		//They get heavy armor now + sword option; so lower speed.
-			r_hand = /obj/item/rogueweapon/greatsword/zwei/steel
+			r_hand = /obj/item/rogueweapon/greatsword/zwei
 		if("Halberdier")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Halberdier from Grenzelhoft, a skilled user of poleamrs and axes. Though you prefer them combined.."))
@@ -69,11 +69,11 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/grenzelgloves
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	backl = /obj/item/gwstrap
 
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/grenzelhoft)

@@ -39,12 +39,12 @@
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 2)
-			backl = /obj/item/rogueweapon/shield/wood
-			r_hand = /obj/item/rogueweapon/mace/steel
-			neck = /obj/item/clothing/neck/roguetown/chaincoif/full
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+			backl = /obj/item/rogueweapon/shield/heater
+			r_hand = /obj/item/rogueweapon/mace
+			neck = /obj/item/clothing/neck/roguetown/gorget
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
 			H.grant_language(/datum/language/celestial)
@@ -69,11 +69,11 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.change_stat("intelligence", 1)
-			H.change_stat("speed", 3)
+			H.change_stat("speed", 2)
 			backl = /obj/item/rogueweapon/sword/long/rider
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+			pants = /obj/item/clothing/under/roguetown/tights/black
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
 			H.grant_language(/datum/language/celestial)
@@ -85,7 +85,7 @@
 					backl = /obj/item/rogueweapon/sword/long/rider
 				if("Whips and Knives")	///They DO enslave people after all
 					r_hand = /obj/item/rogueweapon/whip
-					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
+					l_hand = /obj/item/rogueweapon/huntingknife/idagger
 
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/rogueweapon/huntingknife/idagger/navaja, /obj/item/clothing/neck/roguetown/shalal, /obj/item/clothing/neck/roguetown/mercmedal/zybatine)
 

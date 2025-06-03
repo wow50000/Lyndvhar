@@ -77,9 +77,9 @@
 		if(/datum/patron/divine/malum)
 			neck = /obj/item/clothing/neck/roguetown/psicross/malum
 			cloak = /obj/item/clothing/cloak/tabard/crusader/malum
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
@@ -190,8 +190,8 @@
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)

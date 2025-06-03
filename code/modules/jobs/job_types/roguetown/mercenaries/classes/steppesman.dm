@@ -15,7 +15,7 @@
 	head = /obj/item/clothing/head/roguetown/papakha
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/black
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	beltr = /obj/item/rogueweapon/shield/buckler

@@ -33,11 +33,10 @@
 
 /datum/outfit/job/roguetown/marshal/pre_equip(mob/living/carbon/human/H)
 	..()
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	backl = /obj/item/storage/backpack/rogue/satchel
-	gloves = /obj/item/clothing/gloves/roguetown/angle
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1)
 	if(H.mind)
