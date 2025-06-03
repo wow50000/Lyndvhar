@@ -80,3 +80,4 @@
 		H.change_stat("intelligence", 3)
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/teach) // we are going to try something fun here
