@@ -311,7 +311,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	shirt = /obj/item/clothing/suit/roguetown/undershirt/black
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
