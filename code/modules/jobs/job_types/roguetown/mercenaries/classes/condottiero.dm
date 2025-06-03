@@ -12,17 +12,17 @@
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	cloak = /obj/item/clothing/cloak/half/red
-	gloves = /obj/item/clothing/gloves/roguetown/angle
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/iron
-	head = /obj/item/clothing/head/roguetown/helmet
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
+	head = /obj/item/clothing/head/roguetown/helmet/kettle
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/sword/short
 	beltr = /obj/item/quiver/bolts
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/storage/belt/rogue/pouch/coins/poor, /obj/item/rogueweapon/huntingknife/idagger/navaja)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE) //Possibly too high, no idea.
@@ -40,8 +40,8 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
 		H.change_stat("endurance", 2)
-		H.change_stat("perception", 2)
-		H.change_stat("speed", 3)
+		H.change_stat("perception", 1)
+		H.change_stat("speed", 2)
 		H.change_stat("intelligence", 1)
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
