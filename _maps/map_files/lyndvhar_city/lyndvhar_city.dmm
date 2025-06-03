@@ -208,7 +208,7 @@
 /obj/structure/stairs{
 	dir = 8
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "agp" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
@@ -256,7 +256,7 @@
 	},
 /obj/item/polishing_cream,
 /obj/item/armor_brush,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -378,7 +378,7 @@
 "ale" = (
 /obj/structure/table/wood,
 /obj/item/candle/yellow/lit,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -516,7 +516,7 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
-/turf/open/floor/rogue/grassred,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
 "ars" = (
 /obj/machinery/light/rogue/firebowl/standing,
@@ -879,6 +879,9 @@
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt/cobweb{
+	icon_state = "cobweb2"
+	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/garrison)
 "aDN" = (
@@ -966,6 +969,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"aGm" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "aGv" = (
 /obj/structure/fluff/wallclock,
 /turf/open/floor/rogue/herringbone,
@@ -1222,7 +1231,7 @@
 /area/rogue/indoors/town/garrison)
 "aOI" = (
 /obj/structure/mineral_door/wood/deadbolt,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -1442,7 +1451,7 @@
 /area/rogue/indoors/town/bath)
 "aVt" = (
 /obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/ruinedwood/turned,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/garrison)
 "aVw" = (
 /obj/structure/stairs/fancy/l{
@@ -1681,10 +1690,6 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "bbw" = (
@@ -1698,6 +1703,12 @@
 /obj/machinery/light/rogue/campfire,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/mountains)
+"bbC" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "bbH" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -1875,10 +1886,6 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -1942,6 +1949,10 @@
 /obj/item/natural/feather,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
+"boB" = (
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/garrison)
 "boZ" = (
 /obj/structure/far_travel,
 /turf/open/floor/rogue/dirt/road,
@@ -2132,6 +2143,9 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/rogueweapon/tongs,
+/obj/effect/decal/cobbleedge{
+	dir = 9
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -2213,7 +2227,7 @@
 	pixel_x = -6;
 	pixel_y = 20
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "byz" = (
 /obj/effect/decal/cobbleedge{
@@ -2355,7 +2369,7 @@
 	dir = 5;
 	pixel_x = -1
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "bEs" = (
 /turf/open/floor/rogue/hay,
@@ -2455,14 +2469,16 @@
 	first_time_text = "THE FOOL'S FLAGON"
 	})
 "bHT" = (
-/obj/structure/table/wood,
-/obj/item/alch/valeriana,
-/obj/item/alch/viscera,
-/obj/item/alch/waterdust,
-/obj/item/alch/swampdust,
-/obj/item/alch/seeddust,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
+"bHU" = (
+/obj/structure/flora/roguegrass/bush/wall/tall,
+/turf/open/floor/rogue/grassred,
+/area/rogue/indoors/town)
 "bHY" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/machinery/light/rogue/torchholder/r,
@@ -2630,7 +2646,6 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "bOl" = (
-/obj/structure/table/wood,
 /obj/item/reagent_containers/glass/alchemical,
 /obj/item/reagent_containers/glass/alchemical,
 /obj/item/reagent_containers/glass/alchemical,
@@ -2638,6 +2653,10 @@
 /obj/item/reagent_containers/glass/alchemical,
 /obj/item/reagent_containers/glass/alchemical,
 /obj/item/reagent_containers/glass/alchemical,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "bOK" = (
@@ -2922,7 +2941,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -3041,7 +3060,7 @@
 /obj/structure/fluff/wallclock{
 	dir = 3
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "ciI" = (
 /obj/structure/roguewindow/openclose{
@@ -3186,6 +3205,12 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
+"cnL" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "cob" = (
 /obj/structure/fermenting_barrel/crafted,
 /turf/open/floor/rogue/ruinedwood{
@@ -3411,7 +3436,7 @@
 "cyn" = (
 /obj/structure/bed/rogue/inn/hay,
 /obj/effect/landmark/start/sapprentice,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -3477,7 +3502,7 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "cCm" = (
 /obj/structure/roguewindow,
@@ -3859,7 +3884,7 @@
 /area/rogue/outdoors/town)
 "cQg" = (
 /obj/structure/rack/rogue,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "cQk" = (
 /turf/open/floor/rogue/cobble,
@@ -3934,9 +3959,11 @@
 	first_time_text = "THE FOOL'S FLAGON"
 	})
 "cUc" = (
-/obj/structure/closet/crate/roguecloset,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/indoors/town/magician)
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
 "cUg" = (
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/carpet/lord/right,
@@ -3954,6 +3981,11 @@
 	},
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/indoors/town/bath)
+"cVa" = (
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "cVo" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4
@@ -4015,6 +4047,13 @@
 /turf/open/floor/rogue/twig{
 	dir = 4
 	},
+/area/rogue/indoors/town)
+"cXp" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "cXu" = (
 /obj/structure/chair/stool/rogue,
@@ -4469,10 +4508,6 @@
 /obj/item/candle/eora/lit,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
-"dqe" = (
-/obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/indoors/town)
 "dqw" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -4590,6 +4625,13 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"dvo" = (
+/obj/structure/rack/rogue,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "dvA" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -4689,6 +4731,9 @@
 /obj/structure/rack/rogue,
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
 /obj/item/quiver/bolts,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 8
+	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/garrison)
 "dyy" = (
@@ -4757,8 +4802,12 @@
 	pixel_y = -6
 	},
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/blue,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/blue,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/purple,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/purple,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/random,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/random,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
@@ -5019,6 +5068,12 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"dMu" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
 "dMF" = (
 /obj/structure/fluff/statue/myth{
 	icon_state = "knightstatue_l"
@@ -5113,15 +5168,11 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "dQk" = (
-/obj/structure/roguewindow/openclose{
-	dir = 1
-	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
-/turf/open/floor/rogue/carpet,
-/area/rogue/indoors/town/manor)
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "dQo" = (
 /obj/structure/flora/roguegrass,
 /obj/effect/decal/cobbleedge{
@@ -5359,7 +5410,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/reagent_containers/glass/cup/steel,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "eaa" = (
 /obj/effect/decal/wood/herringbone2{
@@ -5512,6 +5563,13 @@
 /obj/effect/spawner/lootdrop/potion_ingredient/herb,
 /obj/effect/spawner/lootdrop/potion_ingredient/herb,
 /obj/effect/spawner/lootdrop/potion_ingredient/herb,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "efN" = (
@@ -5545,7 +5603,7 @@
 	dir = 4
 	},
 /obj/machinery/light/rogue/wallfire/candle,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "egZ" = (
 /obj/structure/closet/crate/chest{
@@ -6133,7 +6191,8 @@
 /area/rogue/outdoors/town)
 "ezb" = (
 /obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/ruinedwood/platform,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/garrison)
 "ezd" = (
 /turf/closed/mineral/random/rogue/med,
@@ -7565,7 +7624,7 @@
 /obj/item/grown/log/tree/stick,
 /obj/item/grown/log/tree/stick,
 /obj/item/grown/log/tree/stick,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -7779,7 +7838,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -7876,9 +7935,6 @@
 	},
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border,
-/obj/effect/decal/wood/herringbone2{
-	dir = 4
-	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town)
 "fLA" = (
@@ -7980,15 +8036,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town)
-"fQq" = (
-/obj/effect/decal/wood/herringbone2{
-	dir = 1
-	},
-/obj/effect/decal/wood/herringbone2{
-	dir = 4
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town)
 "fQu" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/effect/decal/cobbleedge{
@@ -8085,7 +8132,7 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/item/reagent_containers/glass/cup/wooden,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -8242,7 +8289,7 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -8582,6 +8629,15 @@
 /obj/item/roguebin/crackers,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
+"gja" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5;
+	pixel_x = -6
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "gjQ" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/hay,
@@ -8640,6 +8696,12 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
+"goA" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
 "goR" = (
 /obj/structure/roguetent,
 /turf/open/floor/rogue/dirt/road,
@@ -8809,7 +8871,7 @@
 /area/rogue/indoors/town)
 "gxA" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "gxH" = (
 /obj/structure/fluff/railing/wood{
@@ -8849,11 +8911,11 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave)
 "gyG" = (
-/obj/structure/fermenting_barrel/random/beer,
 /obj/structure/fluff/railing/border{
 	dir = 4;
 	icon_state = "border"
 	},
+/obj/structure/fermenting_barrel/random/beer,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/exposed/magiciantower)
 "gzr" = (
@@ -8900,7 +8962,7 @@
 	dir = 9
 	},
 /obj/structure/roguemachine/mail/r,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -9631,7 +9693,7 @@
 /obj/structure/rack/rogue,
 /obj/item/natural/feather,
 /obj/item/natural/feather,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "ham" = (
 /obj/structure/fermenting_barrel/random/water,
@@ -9789,6 +9851,13 @@
 	lockid = "garrison"
 	},
 /turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
+"hgu" = (
+/obj/structure/rack/rogue,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/garrison)
 "hhe" = (
 /obj/machinery/light/rogue/wallfire/candle{
@@ -10255,6 +10324,9 @@
 /obj/machinery/light/rogue/torchholder/l{
 	dir = 8
 	},
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -10449,6 +10521,10 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
+"hBf" = (
+/obj/structure/chair/wood/rogue,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
 "hBS" = (
 /obj/structure/rack/rogue/shelf,
 /obj/item/reagent_containers/glass/cup/wooden{
@@ -10497,6 +10573,13 @@
 /obj/structure/bars/cemetery,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
+"hCY" = (
+/obj/machinery/light/rogue/torchholder/r,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "hCZ" = (
 /obj/machinery/light/rogue/hearth,
 /obj/machinery/light/rogue/oven/south,
@@ -11157,9 +11240,12 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
 "hZt" = (
-/obj/structure/table/wood,
 /obj/item/reagent_containers/glass/mortar,
 /obj/item/pestle,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "hZL" = (
@@ -11304,6 +11390,10 @@
 /obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
+"ihb" = (
+/obj/structure/closet/crate/chest/neu,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "ihl" = (
 /obj/structure/chair/bench/church/r{
 	dir = 1
@@ -11327,7 +11417,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "iig" = (
 /obj/structure/bookcase{
@@ -11706,6 +11796,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town)
+"ivr" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/ruinedwood/platform,
+/area/rogue/indoors/town/garrison)
 "ivt" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
@@ -11804,10 +11900,6 @@
 /area/rogue/indoors/cave)
 "iyL" = (
 /obj/structure/roguewindow/openclose/reinforced,
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "iyT" = (
@@ -11851,13 +11943,7 @@
 	},
 /area/rogue/indoors/town/manor)
 "iAl" = (
-/obj/structure/table/wood,
-/obj/item/alch/runedust,
-/obj/item/alch/tobaccodust,
-/obj/item/alch/mentha,
-/obj/item/alch/horn,
-/obj/item/alch/feaudust,
-/obj/item/alch/benedictus,
+/obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "iAL" = (
@@ -12479,7 +12565,7 @@
 /area/rogue/outdoors/beach)
 "iVo" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -12651,13 +12737,6 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
-"jag" = (
-/obj/structure/fluff/railing/border{
-	pixel_y = -6
-	},
-/obj/structure/mannequin/male,
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town)
 "jaD" = (
 /obj/structure/plasticflaps,
 /turf/open/water/swamp/deep,
@@ -12830,7 +12909,7 @@
 	locked = 1;
 	lockid = "blacksmith"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -13160,10 +13239,6 @@
 /area/rogue/under/town/sewer)
 "jpP" = (
 /obj/structure/roguewindow/openclose/reinforced,
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician)
 "jqc" = (
@@ -13297,6 +13372,10 @@
 "jtT" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
@@ -13557,7 +13636,7 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -13784,6 +13863,13 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/shop)
+"jOA" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "jOK" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/goatmale,
 /turf/open/floor/rogue/dirt,
@@ -13964,9 +14050,12 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "jWQ" = (
-/obj/structure/table/wood,
 /obj/structure/fluff/millstone{
 	pixel_y = 7
+	},
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
@@ -14211,7 +14300,7 @@
 /area/rogue/under/town/basement/keep)
 "khr" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "khF" = (
 /obj/machinery/tanningrack,
@@ -14229,6 +14318,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
+"kiv" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "kiF" = (
 /obj/structure/fluff/railing/border{
 	dir = 8;
@@ -14676,6 +14772,9 @@
 	},
 /area/rogue/indoors/town/manor)
 "kzG" = (
+/obj/structure/boatbell/fluff{
+	desc = ""
+	},
 /obj/structure/fluff/railing/border,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/rtfield{
@@ -15296,12 +15395,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/sewer)
 "kXm" = (
-/obj/structure/roguewindow/openclose{
+/obj/structure/roguewindow/openclose/reinforced{
 	dir = 8
-	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
@@ -15402,7 +15497,7 @@
 	lockid = "steward";
 	name = "DORM"
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "lbV" = (
 /obj/structure/stairs/stone{
@@ -15431,7 +15526,7 @@
 /obj/item/paper,
 /obj/item/paper,
 /obj/item/paper,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "lcv" = (
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -15721,7 +15816,7 @@
 	pixel_y = -32
 	},
 /obj/structure/fermenting_barrel/water,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -16059,6 +16154,10 @@
 	pixel_y = -6
 	},
 /obj/structure/fluff/grindwheel,
+/obj/effect/decal/cobbleedge{
+	dir = 5;
+	pixel_x = -6
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -16196,6 +16295,16 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
+"lFG" = (
+/obj/structure/roguemachine/scomm/r,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "lFM" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/hexstone,
@@ -16788,9 +16897,15 @@
 	},
 /area/rogue/indoors/town/manor)
 "lYC" = (
-/obj/structure/roguemachine/scomm{
-	pixel_y = -32
-	},
+/obj/structure/closet/crate/chest/neu,
+/obj/item/herbseed/artemisia,
+/obj/item/herbseed/atropa,
+/obj/item/herbseed/benedictus,
+/obj/item/herbseed/calendula,
+/obj/item/herbseed/euphrasia,
+/obj/item/herbseed/hypericum,
+/obj/item/herbseed/paris,
+/obj/item/herbseed/taraxacum,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "lYG" = (
@@ -16876,6 +16991,10 @@
 /area/rogue/indoors/town/manor)
 "mbA" = (
 /obj/item/roguebin/water/gross,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -17371,10 +17490,11 @@
 	},
 /area/rogue/indoors/town/manor)
 "mux" = (
-/obj/structure/table/wood,
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	pixel_y = -32
 	},
+/obj/structure/closet/crate/chest/neu,
+/obj/item/seeds/apple,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "muQ" = (
@@ -17708,6 +17828,13 @@
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
+"mFe" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 26
+	},
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "mFm" = (
 /obj/structure/fluff/statue/knight/r,
 /turf/open/floor/rogue/cobble,
@@ -17927,6 +18054,7 @@
 	})
 "mNE" = (
 /obj/structure/closet/crate/roguecloset,
+/obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/indoors/town/garrison)
 "mNG" = (
@@ -18198,7 +18326,7 @@
 	},
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "mVQ" = (
 /obj/structure/flora/roguegrass,
@@ -18255,7 +18383,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -18409,7 +18537,7 @@
 /area/rogue/indoors/town/bath)
 "ncx" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -19258,10 +19386,6 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
 "nIh" = (
@@ -19342,6 +19466,18 @@
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/manor)
+"nKJ" = (
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
+"nKR" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "nLA" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
@@ -19403,7 +19539,7 @@
 /obj/effect/decal/cleanable/dirt/cobweb{
 	icon_state = "cobweb2"
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "nOh" = (
 /obj/structure/stairs{
@@ -19433,6 +19569,10 @@
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/physician)
+"nPg" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town)
 "nPC" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/dirt,
@@ -19496,6 +19636,11 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/sewer)
+"nSN" = (
+/obj/structure/rack/rogue,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "nTV" = (
 /obj/structure/globe,
 /turf/open/floor/rogue/ruinedwood{
@@ -19992,6 +20137,18 @@
 /obj/structure/chair/bench/couch,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/town/basement/keep)
+"omr" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	pixel_y = 1
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 6
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "omx" = (
 /obj/structure/mineral_door/wood/fancywood{
 	name = "Door";
@@ -20011,6 +20168,12 @@
 "onf" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave)
+"onj" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/garrison)
 "ono" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
@@ -20148,17 +20311,9 @@
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/under/cave)
 "oqy" = (
-/obj/structure/table/wood,
-/obj/item/alch/ozium,
-/obj/item/alch/matricaria,
-/obj/item/alch/hypericum,
-/obj/item/alch/firedust,
-/obj/item/alch/bonemeal,
-/obj/item/alch/sinew,
-/obj/item/alch/artemisia,
-/obj/item/alch/airdust,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/indoors/town/magician)
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/exposed/magiciantower)
 "oqD" = (
 /obj/structure/fermenting_barrel/random/water,
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -20201,6 +20356,11 @@
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
+"oru" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/garrison)
 "orz" = (
 /obj/effect/decal/wood/herringbone2{
 	dir = 4
@@ -20299,7 +20459,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
 "ovB" = (
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -20596,16 +20756,15 @@
 /turf/closed/wall/mineral/rogue/wooddark/window,
 /area/rogue/indoors/town)
 "oFI" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/item/seeds/fyritius,
-/obj/item/seeds/apple,
-/obj/item/herbseed/taraxacum,
-/obj/item/herbseed/artemisia,
 /obj/structure/fluff/walldeco/stone{
 	pixel_y = -32
 	},
 /obj/structure/fluff/walldeco/med{
 	pixel_x = -32
+	},
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
@@ -20633,6 +20792,10 @@
 /area/rogue/indoors/shelter/town/sargoth{
 	first_time_text = "MERCENARY GUILD"
 	})
+"oGw" = (
+/obj/structure/closet/crate/chest/neu,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town/garrison)
 "oGK" = (
 /obj/effect/landmark/start/lady,
 /turf/open/floor/rogue/tile{
@@ -20759,12 +20922,6 @@
 /obj/item/clothing/suit/roguetown/shirt/dress,
 /obj/item/clothing/suit/roguetown/shirt/dress,
 /obj/item/clothing/suit/roguetown/shirt/dress,
-/obj/item/clothing/cloak/raincloak/red,
-/obj/item/clothing/cloak/raincloak/purple,
-/obj/item/clothing/cloak/raincloak/mortus,
-/obj/item/clothing/cloak/raincloak/green,
-/obj/item/clothing/cloak/raincloak/brown,
-/obj/item/clothing/cloak/raincloak/blue,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "oLQ" = (
@@ -21201,6 +21358,18 @@
 /obj/item/clothing/mask/rogue/wildguard,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
+"pcz" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 6
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "pcE" = (
 /obj/structure/bed/rogue/shit{
 	name = "makeshift bed"
@@ -21227,12 +21396,10 @@
 	first_time_text = "THE FOOL'S FLAGON"
 	})
 "pdy" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 4
-	},
-/obj/structure/bars,
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "pdA" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -21728,7 +21895,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/machinery/light/rogue/wallfire/candle,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "pvt" = (
 /obj/structure/fluff/railing/fence,
@@ -21825,10 +21992,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
-"pyX" = (
-/obj/structure/mineral_door/bars,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/town)
 "pyZ" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
@@ -21999,6 +22162,16 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
+"pEA" = (
+/obj/structure/closet/crate/chest/neu_fancy,
+/obj/item/rogueweapon/hammer,
+/obj/item/rogueweapon/hammer,
+/obj/item/rogueweapon/tongs,
+/obj/item/rogueweapon/tongs,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "pED" = (
 /obj/structure/roguewindow/openclose{
 	dir = 4
@@ -22206,7 +22379,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "pNL" = (
 /obj/structure/chair/wood/rogue{
@@ -22352,6 +22525,10 @@
 /area/rogue/indoors/town/shop)
 "pVg" = (
 /obj/machinery/light/rogue/torchholder/l,
+/obj/effect/decal/cobbleedge{
+	dir = 5;
+	pixel_x = -6
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -22498,7 +22675,7 @@
 "pYS" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/chair/wood/rogue/chair3,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -22899,10 +23076,6 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 8
 	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "qnL" = (
@@ -22966,7 +23139,7 @@
 /obj/item/clothing/suit/roguetown/shirt/undershirt/random,
 /obj/item/clothing/under/roguetown/tights/random,
 /obj/item/clothing/under/roguetown/tights/random,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "qpS" = (
 /turf/open/floor/rogue/dirt/road,
@@ -23396,6 +23569,12 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/garrison)
+"qFK" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town)
 "qFO" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -23770,7 +23949,7 @@
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -23919,6 +24098,7 @@
 /area/rogue/outdoors/town/roofs)
 "qWl" = (
 /obj/structure/ladder,
+/obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/roofs)
 "qXa" = (
@@ -24095,7 +24275,7 @@
 	locked = 1;
 	lockid = "steward"
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "rcf" = (
 /obj/structure/roguemachine/mail/r,
@@ -24362,7 +24542,7 @@
 /obj/item/rogueweapon/hammer,
 /obj/item/rogueweapon/tongs,
 /obj/item/rogueweapon/tongs,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -24370,7 +24550,7 @@
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/structure/mannequin/male/female,
+/obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "roa" = (
@@ -24427,7 +24607,7 @@
 /area/rogue/indoors/town/shop)
 "rpO" = (
 /obj/structure/roguetent,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "rqB" = (
 /mob/living/carbon/human/species/goblin/npc/cave,
@@ -24442,7 +24622,7 @@
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 8
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -25117,8 +25297,10 @@
 /turf/open/transparent/openspace,
 /area/rogue/under/cave)
 "rQJ" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "rQP" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
@@ -25307,7 +25489,7 @@
 /area/rogue/indoors/town)
 "rYF" = (
 /obj/structure/closet/crate/roguecloset,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -25531,15 +25713,13 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
 "sfX" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 4
+/obj/effect/decal/cobbleedge{
+	dir = 9
 	},
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "sgh" = (
 /turf/closed/wall/mineral/rogue/wooddark/end{
 	dir = 8
@@ -25639,7 +25819,7 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "skp" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
@@ -25786,6 +25966,10 @@
 /obj/structure/stairs,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
+"spE" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "spG" = (
 /turf/closed/wall/mineral/rogue/decostone{
 	name = "chimney"
@@ -25811,6 +25995,12 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"sqy" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
 "sre" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -26197,7 +26387,7 @@
 /obj/structure/bed/rogue/inn/wool,
 /obj/effect/landmark/start/clerk,
 /obj/item/bedsheet/rogue/cloth,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "sKn" = (
 /obj/item/grown/log/tree/stake,
@@ -26247,6 +26437,14 @@
 /obj/item/paper/scroll,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town)
+"sMI" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "sNf" = (
 /obj/structure/fluff/walldeco/customflag{
 	pixel_x = 0;
@@ -26280,7 +26478,7 @@
 /area/rogue/indoors/town)
 "sNS" = (
 /obj/structure/closet/crate/drawer,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "sNU" = (
 /obj/structure/closet/crate/roguecloset,
@@ -26297,6 +26495,9 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/natural/bundle/stick,
+/obj/item/natural/bundle/stick,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/exposed/magiciantower)
 "sOA" = (
@@ -26309,7 +26510,7 @@
 /area/rogue/indoors/town)
 "sPg" = (
 /obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/ruinedwood/turned,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/garrison)
 "sPn" = (
 /turf/open/floor/carpet/inn,
@@ -26431,9 +26632,12 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/town/keep)
 "sSo" = (
-/obj/structure/table/wood,
 /obj/item/mortar,
 /obj/item/pestle,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "sSp" = (
@@ -26558,7 +26762,7 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "sWn" = (
 /obj/structure/closet/crate/roguecloset,
@@ -26710,6 +26914,9 @@
 /area/rogue/indoors/town)
 "tcJ" = (
 /obj/structure/rack/rogue,
+/obj/effect/decal/cobbleedge{
+	dir = 1
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -26907,7 +27114,7 @@
 	})
 "tjW" = (
 /obj/structure/bed/rogue,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "tkc" = (
 /obj/effect/decal/cobbleedge{
@@ -27018,6 +27225,9 @@
 	dir = 3
 	},
 /obj/item/rogueore/copper,
+/obj/effect/decal/cobbleedge{
+	dir = 10
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -27470,11 +27680,7 @@
 /turf/open/water/swamp,
 /area/rogue/outdoors/town)
 "tHd" = (
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
-/obj/structure/roguewindow/openclose{
+/obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
 /turf/open/floor/rogue/carpet,
@@ -28044,7 +28250,7 @@
 "ugr" = (
 /obj/structure/table/wood,
 /obj/item/paper/bsmith,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -28129,9 +28335,13 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
 "ukn" = (
-/obj/structure/closet/crate/drawer,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town)
+/obj/effect/decal/cobbleedge{
+	dir = 10
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "ulG" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
@@ -28282,6 +28492,12 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"uqZ" = (
+/obj/effect/decal/cleanable/dirt/cobweb{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/town/garrison)
 "urd" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
 /turf/open/floor/rogue/naturalstone,
@@ -28945,6 +29161,15 @@
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
+"uRh" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "uRk" = (
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/floor/rogue/blocks/green,
@@ -29296,6 +29521,13 @@
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/sewer)
+"vbn" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town)
 "vbv" = (
 /obj/structure/fluff/railing/border{
 	pixel_y = -7
@@ -29533,19 +29765,29 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
 "vjS" = (
+/obj/structure/rack/rogue,
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
+/obj/item/clothing/cloak/raincloak/red,
+/obj/item/clothing/cloak/raincloak/purple,
+/obj/item/clothing/cloak/raincloak/mortus,
+/obj/item/clothing/cloak/raincloak/green,
+/obj/item/clothing/cloak/raincloak/brown,
+/obj/item/clothing/cloak/raincloak/blue,
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "vkn" = (
 /obj/structure/rack/rogue,
 /obj/item/roguegear,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -29805,7 +30047,7 @@
 	pixel_x = 7;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "vux" = (
 /obj/structure/fluff/railing/border{
@@ -29922,6 +30164,9 @@
 /area/rogue/indoors/town)
 "vyt" = (
 /obj/structure/table/wood,
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -29968,7 +30213,7 @@
 /area/rogue/indoors/town/garrison)
 "vAV" = (
 /obj/machinery/light/rogue/wallfire/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -30039,6 +30284,15 @@
 "vDi" = (
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
+"vDm" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "vDs" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass,
@@ -30087,7 +30341,7 @@
 /area/rogue/under/town/sewer)
 "vEs" = (
 /obj/structure/chair/wood/rogue/chair3,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -30097,7 +30351,7 @@
 	pixel_y = 0
 	},
 /obj/structure/closet/crate/drawer,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "vEC" = (
 /obj/structure/table/wood/fancy/blue,
@@ -31013,6 +31267,12 @@
 "wkd" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
+"wke" = (
+/obj/structure/telescope,
+/turf/open/floor/rogue/rooftop{
+	dir = 4
+	},
+/area/rogue/outdoors/town/roofs)
 "wky" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -31043,7 +31303,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
-/turf/open/floor/rogue/grassred,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
 "wmk" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -31134,7 +31394,7 @@
 "wqk" = (
 /obj/structure/closet/crate/drawer,
 /obj/machinery/light/rogue/wallfire/candle/l,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "wqx" = (
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -31589,21 +31849,6 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
-"wFn" = (
-/obj/structure/rack/rogue/shelf/biggest,
-/obj/structure/rack/rogue/shelf/notdense,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/storage/roguebag{
-	pixel_x = 7;
-	pixel_y = 7
-	},
-/obj/item/storage/roguebag{
-	pixel_x = -7;
-	pixel_y = 5
-	},
-/obj/effect/decal/wood/herringbone,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town)
 "wFA" = (
 /obj/structure/chair/bench/church{
 	dir = 1
@@ -31959,7 +32204,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -32083,7 +32328,7 @@
 /obj/item/grown/log/tree/small,
 /obj/item/grown/log/tree/small,
 /obj/item/grown/log/tree/small,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -32357,6 +32602,14 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
+"xiR" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/magician)
 "xjv" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/quiver/arrows,
@@ -32470,7 +32723,7 @@
 "xmL" = (
 /obj/structure/rack/rogue,
 /obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "xmO" = (
 /obj/structure/bearpelt{
@@ -32498,10 +32751,15 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/church/chapel)
 "xnq" = (
+/obj/structure/rack/rogue,
 /obj/structure/fluff/railing/border{
 	pixel_y = -6
 	},
-/obj/structure/mannequin/male,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/random,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/random,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/blue,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/red,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
 "xnH" = (
@@ -32571,7 +32829,7 @@
 /obj/structure/chair/wood/rogue{
 	dir = 8
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "xqj" = (
 /obj/item/reagent_containers/food/snacks/crow{
@@ -32735,6 +32993,11 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"xwd" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/garrison)
 "xwg" = (
 /obj/structure/closet/crate/drawer,
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -33026,7 +33289,7 @@
 	dir = 5;
 	pixel_x = -1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -33038,7 +33301,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
@@ -33152,7 +33415,7 @@
 	pixel_y = 0
 	},
 /obj/structure/fermenting_barrel/random/beer,
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "xQv" = (
 /obj/structure/fluff/railing/border{
@@ -33311,7 +33574,7 @@
 /obj/item/clothing/suit/roguetown/shirt/undershirt/random,
 /obj/item/clothing/under/roguetown/tights/random,
 /obj/item/clothing/under/roguetown/tights/random,
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "xWH" = (
 /obj/effect/landmark/events/haunts,
@@ -33460,6 +33723,10 @@
 /area/rogue/indoors/town/shop)
 "ycK" = (
 /obj/machinery/light/rogue/torchholder/r,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
@@ -33478,14 +33745,14 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "ydF" = (
-/obj/structure/table/wood,
-/obj/machinery/light/rogue/wallfire/candle/blue{
-	pixel_x = -32;
-	pixel_y = 0
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
 	},
-/obj/item/alch/rosa,
 /turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/dwarfin{
+	first_time_text = "SMITHING QUARTER"
+	})
 "yej" = (
 /obj/structure/chair/wood/rogue,
 /obj/effect/landmark/start/villager,
@@ -63626,7 +63893,7 @@ gXs
 gXs
 gXs
 nfk
-hJU
+bHr
 hJU
 eNY
 nfk
@@ -84245,7 +84512,7 @@ aTp
 aTp
 aTp
 uDo
-aTp
+tpT
 aTp
 aTp
 aTp
@@ -89384,8 +89651,8 @@ hoZ
 hoZ
 hoZ
 hoZ
-hoZ
-hoZ
+nFg
+nFg
 nFg
 nFg
 nFg
@@ -89549,9 +89816,9 @@ uAg
 hWC
 uAg
 bFI
-nFg
-nFg
-nFg
+hWC
+uAg
+bHU
 xoK
 xoK
 xoK
@@ -89716,13 +89983,13 @@ uAg
 jio
 xoK
 xoK
-gni
-gni
-bdI
+tXh
+tXh
+cXp
 xoK
 sJU
-gni
-bdI
+tXh
+cXp
 xoK
 xoK
 oSZ
@@ -89880,11 +90147,11 @@ xoK
 agl
 khr
 khr
-gni
+tXh
 xoK
 sNS
-gni
-gni
+tXh
+tXh
 xoK
 xoK
 xoK
@@ -90207,10 +90474,10 @@ byv
 khr
 xoK
 ciF
-gni
+tPJ
 rpO
-gni
-gni
+tXh
+tXh
 xoK
 xlU
 bnZ
@@ -90363,16 +90630,16 @@ bRY
 jJf
 wvJ
 xoK
-gni
+tXh
 khr
 khr
-gni
+tXh
 lbN
-gni
-gni
+tPJ
+tPJ
 jHH
-gni
-gni
+tXh
+tXh
 xoK
 iUC
 eZU
@@ -90525,13 +90792,13 @@ aoy
 bRY
 lIY
 xoK
-gni
-gni
-gni
+tXh
+tXh
+tXh
 xQk
 xoK
 nNY
-gni
+tPJ
 jHH
 vEz
 sJU
@@ -91628,7 +91895,7 @@ gce
 gce
 gce
 gVI
-pyX
+lzQ
 gVI
 gce
 gce
@@ -92437,7 +92704,7 @@ rhy
 jio
 jio
 jio
-jio
+wGj
 nFg
 vKj
 nFg
@@ -95309,7 +95576,7 @@ teK
 mqX
 mqX
 mqX
-mqX
+wFk
 vvw
 vvw
 jJw
@@ -95471,7 +95738,7 @@ jTY
 xMX
 xMX
 mqX
-mqX
+bDE
 vvw
 tjc
 osY
@@ -95633,7 +95900,7 @@ jTY
 xMX
 ngf
 mqX
-mqX
+wFk
 vvw
 vga
 sys
@@ -95795,7 +96062,7 @@ mqX
 mqX
 mqX
 mqX
-mqX
+wFk
 vvw
 qXa
 vvw
@@ -95920,7 +96187,7 @@ tpH
 iDf
 vFk
 mrN
-bDE
+wFk
 wFk
 gVv
 gVv
@@ -96081,7 +96348,7 @@ nXx
 vFk
 iDf
 vFk
-iqy
+bDE
 wFk
 bDE
 gVv
@@ -96243,7 +96510,7 @@ gRI
 vFk
 iDf
 vFk
-iqy
+sje
 wFk
 wFk
 wFk
@@ -96405,7 +96672,7 @@ lUs
 vFk
 iDf
 vFk
-iqy
+wFk
 wFk
 wFk
 mrN
@@ -96567,8 +96834,8 @@ lSu
 vFk
 wdM
 vFk
-iqy
 bDE
+wFk
 wFk
 wFk
 wFk
@@ -96729,7 +96996,7 @@ bmy
 vFk
 wdM
 vFk
-iqy
+wFk
 wFk
 wFk
 cce
@@ -96891,7 +97158,7 @@ cIk
 vFk
 wdM
 vFk
-iqy
+sje
 wFk
 wFk
 wFk
@@ -97053,7 +97320,7 @@ nXx
 vFk
 wdM
 vFk
-iqy
+wFk
 wFk
 wFk
 mrN
@@ -98245,7 +98512,7 @@ wFk
 gVv
 tpH
 jCu
-dqe
+utZ
 uxZ
 uAT
 uAT
@@ -98407,7 +98674,7 @@ bDE
 gVv
 tpH
 tpH
-wFn
+uRM
 uAT
 uAT
 rlR
@@ -98962,10 +99229,10 @@ bRY
 sdu
 gkx
 gtx
-jpk
+sfX
 rQi
 jpk
-jpk
+ydF
 vkn
 pVg
 mwr
@@ -99122,14 +99389,14 @@ bRY
 bRY
 bRY
 rQi
-jpk
+ujq
 jtT
 gkx
 mnm
 tph
 gkx
 gkx
-jpk
+nKR
 xfj
 lIY
 tCy
@@ -99137,7 +99404,7 @@ bRY
 bRY
 ssa
 vXY
-jag
+rnq
 gJt
 aiV
 qAU
@@ -99291,7 +99558,7 @@ prE
 oYE
 gkx
 gkx
-jpk
+nKR
 xfj
 eMB
 cis
@@ -99299,7 +99566,7 @@ bRY
 bRY
 ssa
 vXY
-jag
+rnq
 uAT
 qAU
 qAU
@@ -99782,7 +100049,7 @@ lcv
 bRY
 bRY
 bRY
-jio
+wGj
 fBg
 voe
 dHB
@@ -99944,7 +100211,7 @@ fyS
 bRY
 bRY
 bRY
-jio
+wGj
 fBg
 rUM
 iLw
@@ -100095,12 +100362,12 @@ bRY
 bRY
 ppi
 jpk
-jpk
+gja
 gkx
-jpk
+pcz
 gkx
-jpk
-jpk
+uRh
+sMI
 eGL
 fyS
 gce
@@ -100258,11 +100525,11 @@ eWm
 lcv
 bSa
 oes
+uRh
 jpk
+ujq
 jpk
-jpk
-jpk
-jpk
+ukn
 kFt
 fyS
 jsI
@@ -100419,9 +100686,9 @@ lIY
 bpi
 fyS
 lsA
-jpk
-jpk
-jpk
+ydF
+ydF
+ydF
 jpk
 jpk
 orM
@@ -100584,7 +100851,7 @@ lsA
 gkx
 gkx
 gkx
-jpk
+vDm
 jpk
 gkx
 dgp
@@ -100744,8 +101011,8 @@ bpi
 fyS
 lsA
 gpd
-jpk
-jpk
+omr
+ukn
 jpk
 jpk
 gkx
@@ -100909,7 +101176,7 @@ lcv
 mvf
 gkx
 gkx
-jpk
+vDm
 gkx
 eQP
 gkx
@@ -101070,7 +101337,7 @@ lcv
 lcv
 eHR
 gkx
-jpk
+sMI
 jpk
 tcJ
 nDt
@@ -101232,7 +101499,7 @@ mnm
 mnm
 lcv
 dkt
-jpk
+ukn
 jpk
 tcJ
 nDt
@@ -101395,7 +101662,7 @@ gsc
 mnm
 lcv
 ykO
-jpk
+vDm
 gkx
 eQP
 ujq
@@ -101557,7 +101824,7 @@ sep
 sep
 lVV
 gkx
-jpk
+vDm
 gkx
 dgp
 jpk
@@ -101719,7 +101986,7 @@ sep
 bUN
 mnm
 gkx
-jpk
+vDm
 gkx
 dgp
 kKA
@@ -101881,7 +102148,7 @@ sep
 sep
 mnm
 gkx
-jpk
+vDm
 lBr
 sgh
 lcv
@@ -101972,7 +102239,7 @@ bDE
 tpH
 lWM
 utZ
-fQq
+gTW
 gTW
 brR
 vFk
@@ -102043,8 +102310,8 @@ sep
 nMo
 mnm
 xVi
-jpk
-jpk
+vDm
+sfX
 hTU
 fyS
 qIh
@@ -102205,7 +102472,7 @@ cKl
 mWl
 mnm
 vOs
-jpk
+vDm
 gkx
 eGL
 fyS
@@ -102367,7 +102634,7 @@ neh
 neh
 mnm
 gkx
-ksz
+lFG
 ycK
 mbA
 fyS
@@ -103570,7 +103837,7 @@ gVv
 gVv
 gVv
 wFk
-sje
+wFk
 bDE
 wFk
 gVv
@@ -107300,7 +107567,7 @@ wFk
 cce
 wFk
 wFk
-sje
+wFk
 wFk
 cce
 gVv
@@ -108703,7 +108970,7 @@ tuy
 tuy
 tuy
 tQg
-teK
+rAh
 pWz
 pXs
 tuy
@@ -109513,7 +109780,7 @@ tuy
 tuy
 tuy
 tQg
-teK
+rAh
 uQE
 uQE
 sAm
@@ -110494,7 +110761,7 @@ lJR
 lJR
 lJR
 teK
-teK
+tuy
 tuy
 tuy
 tuy
@@ -110652,11 +110919,11 @@ qOa
 qOa
 aTp
 tbj
-aTp
+tpT
 qOa
 qOa
 aTp
-teK
+tuy
 tuy
 tuy
 tuy
@@ -114825,52 +115092,52 @@ gKA
 nXx
 bfY
 nXx
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
-qPZ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
 nXx
 nXx
 nXx
@@ -114944,8 +115211,8 @@ gKA
 gKA
 nXx
 ezb
-rvb
-rvb
+mNU
+mNU
 nXx
 itI
 stz
@@ -114984,58 +115251,58 @@ itI
 itI
 itI
 nXx
-sPg
-xum
-xum
+ezb
+mNU
+ihb
 nXx
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
-mwV
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
 nXx
-iVS
+oru
 bKh
-iVS
+boB
 nXx
 gKA
 gKA
@@ -115105,9 +115372,9 @@ gKA
 gKA
 gKA
 bfY
-rvb
-rvb
-rvb
+mNU
+mNU
+mNU
 hcP
 jjP
 mwV
@@ -115146,55 +115413,55 @@ jjP
 mwV
 mwV
 bai
-xum
-xum
-xum
-bai
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-mwV
-mwV
-gnS
-mwV
-mwV
-bai
+mNU
+mNU
+mNU
+nXx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+nXx
 iVS
 iVS
 iVS
@@ -115267,9 +115534,9 @@ gKA
 gKA
 gKA
 nXx
-rvb
-rvb
-rvb
+mNU
+mNU
+cnL
 nXx
 nur
 nur
@@ -115308,58 +115575,58 @@ nur
 scF
 nur
 nXx
-xum
-xum
-xum
+hgu
+mNU
+kiv
 nXx
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
-nur
-nur
-itI
-nur
-nur
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
 nXx
+oGw
 iVS
-iVS
-iVS
+onj
 nXx
 gKA
 gKA
@@ -115636,9 +115903,9 @@ qWd
 qWd
 qWd
 xoK
-eKP
-gTW
-rQJ
+hSZ
+tPJ
+pFI
 cQg
 xoK
 xoK
@@ -115799,8 +116066,8 @@ qWd
 qWd
 xoK
 lVi
-gTW
-gTW
+tPJ
+tPJ
 cQg
 xoK
 vWq
@@ -115961,8 +116228,8 @@ qWd
 qWd
 xoK
 sWk
-gTW
-gTW
+tPJ
+tPJ
 lcq
 xoK
 bcW
@@ -116123,8 +116390,8 @@ qWd
 qWd
 xoK
 gZK
-gTW
-gTW
+tPJ
+tPJ
 gZK
 xoK
 iYS
@@ -116285,8 +116552,8 @@ qWd
 qWd
 xoK
 cQg
-gTW
-gTW
+tPJ
+tPJ
 cQg
 xoK
 jIv
@@ -118110,7 +118377,7 @@ siW
 siW
 siW
 siW
-dQk
+tHd
 rcl
 bjQ
 vOO
@@ -119154,7 +119421,7 @@ gKA
 gKA
 gKA
 nXx
-rvb
+ivr
 jOV
 ufw
 jOV
@@ -120776,7 +121043,7 @@ gKA
 gKA
 gKA
 nXx
-ndb
+uqZ
 vJQ
 gme
 nXx
@@ -121099,9 +121366,9 @@ gKA
 gKA
 gKA
 nXx
-xum
-xum
-xum
+nSN
+mNU
+ihb
 nXx
 szW
 szW
@@ -121261,9 +121528,9 @@ gKA
 gKA
 gKA
 bfY
-xum
-xum
-xum
+mNU
+mNU
+mNU
 bfY
 szW
 szW
@@ -121423,9 +121690,9 @@ gKA
 gKA
 gKA
 nXx
-aVt
-xum
-xum
+hCY
+mNU
+mNU
 nXx
 szW
 szW
@@ -123263,7 +123530,7 @@ qWd
 qWd
 bfF
 iif
-ukn
+drn
 bfF
 tjW
 wqk
@@ -123295,7 +123562,7 @@ uYu
 jgY
 jOV
 nXx
-mcD
+mFe
 mNU
 mNU
 aZs
@@ -123424,11 +123691,11 @@ qWd
 qWd
 tpH
 tpH
-kxK
-gJK
+tPJ
+sqy
 bfF
-kxK
-kxK
+tPJ
+tPJ
 tpH
 bfF
 tpH
@@ -123586,12 +123853,12 @@ qWd
 qWd
 bfF
 qpR
-vHD
+rQJ
 pNg
 bfF
 egP
 bDZ
-kxK
+tPJ
 xWu
 bfF
 qWd
@@ -123748,13 +124015,13 @@ qWd
 qWd
 bfF
 pvq
-uWR
+nPg
 wkd
 bfF
 wkd
-jth
-aOg
-cZe
+cUc
+hBf
+dMu
 bfF
 qWd
 qWd
@@ -123910,13 +124177,13 @@ qWd
 qWd
 sYP
 xpO
-uNJ
-rBz
+vbn
+qFK
 bfF
-rBz
+goA
 gxA
-aOg
-cZe
+hBf
+dMu
 bfF
 qWd
 qWd
@@ -125858,7 +126125,7 @@ lcv
 ovB
 nDt
 rmV
-ovB
+cVa
 ncx
 cyn
 nDt
@@ -126019,9 +126286,9 @@ wXo
 fzi
 ovB
 aOI
-ovB
-ovB
-ovB
+cVa
+cVa
+cVa
 rYF
 nDt
 qWd
@@ -126182,7 +126449,7 @@ ovB
 ovB
 nDt
 jED
-ovB
+cVa
 iVo
 cyn
 nDt
@@ -126668,7 +126935,7 @@ wRJ
 wRJ
 xHT
 ovB
-vEs
+dQk
 gae
 nDt
 blU
@@ -127477,7 +127744,7 @@ qWd
 qWd
 xte
 nDt
-ovB
+pdy
 vEs
 ale
 nDt
@@ -127801,8 +128068,8 @@ qWd
 qWd
 xte
 lpb
-ovB
-ovB
+pdy
+pdy
 rqK
 wnd
 lcv
@@ -127963,10 +128230,10 @@ qWd
 qWd
 xte
 lpb
-ovB
-ovB
-ovB
-rmV
+pdy
+pdy
+pdy
+pEA
 nDt
 qWd
 qWd
@@ -129848,8 +130115,8 @@ gKA
 gKA
 nXx
 sPg
-xum
-xum
+mNU
+mNU
 nXx
 wny
 wny
@@ -129879,9 +130146,9 @@ wny
 wny
 wny
 nXx
-xum
-xum
-xum
+mNU
+mNU
+mNU
 nXx
 wny
 wny
@@ -130009,9 +130276,9 @@ gKA
 gKA
 gKA
 bfY
-xum
-xum
-xum
+mNU
+mNU
+mNU
 bai
 mwV
 mwV
@@ -130041,9 +130308,9 @@ mwV
 mwV
 mwV
 bai
-xum
-xum
-xum
+mNU
+mNU
+mNU
 bai
 mwV
 mwV
@@ -130171,9 +130438,9 @@ gKA
 gKA
 gKA
 nXx
-xum
-xum
-xum
+aGm
+mNU
+cnL
 nXx
 itI
 qPZ
@@ -130203,8 +130470,8 @@ stz
 stz
 itI
 nXx
-xum
-xum
+bbC
+mNU
 aVt
 nXx
 itI
@@ -130238,9 +130505,9 @@ wny
 wny
 wny
 nXx
-xum
-xum
-xum
+xwd
+mNU
+nKJ
 nXx
 wny
 wny
@@ -130253,8 +130520,8 @@ wny
 wny
 nXx
 ezb
-rvb
-rvb
+mNU
+spE
 nXx
 gKA
 gKA
@@ -130400,9 +130667,9 @@ mwV
 mwV
 mwV
 bai
-xum
-xum
-xum
+mNU
+mNU
+mNU
 bai
 mwV
 mwV
@@ -130414,9 +130681,9 @@ mwV
 mwV
 mwV
 hcP
-rvb
-rvb
-rvb
+mNU
+mNU
+mNU
 bfY
 gKA
 gKA
@@ -130562,8 +130829,8 @@ stz
 stz
 itI
 nXx
-xum
-xum
+jOA
+mNU
 aVt
 nXx
 itI
@@ -130576,9 +130843,9 @@ itI
 stz
 itI
 nXx
-rvb
-rvb
-rvb
+ihb
+mNU
+dvo
 nXx
 gKA
 gKA
@@ -140743,9 +141010,9 @@ gKA
 gKA
 gKA
 gKA
-eEt
-eEt
-eEt
+fIx
+fIx
+fIx
 hNJ
 hNJ
 hNJ
@@ -140792,9 +141059,9 @@ hNJ
 hNJ
 hNJ
 hNJ
-eEt
-eEt
-eEt
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -140904,60 +141171,60 @@ vlV
 vlV
 vlV
 vlV
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -141066,60 +141333,60 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -141228,32 +141495,32 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
-eEt
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
 mcV
 mcV
 mcV
@@ -141278,10 +141545,10 @@ mcV
 mcV
 mcV
 mcV
-eEt
-eEt
-eEt
-eEt
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -141391,9 +141658,9 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
+fIx
+fIx
+fIx
 brQ
 brQ
 brQ
@@ -141440,9 +141707,9 @@ mcV
 mcV
 mcV
 mcV
-eEt
-eEt
-eEt
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -142540,7 +142807,7 @@ qpl
 qpl
 qpl
 aip
-mmB
+wke
 mmB
 mmB
 mmB
@@ -143518,7 +143785,7 @@ qWd
 qWd
 qWd
 xte
-lrE
+xte
 xte
 xte
 xte
@@ -143681,7 +143948,7 @@ qWd
 qWd
 xte
 xte
-lrE
+xte
 xte
 xte
 mcV
@@ -166664,9 +166931,9 @@ gKA
 gKA
 gKA
 gKA
-qWd
-qWd
-qWd
+fIx
+fIx
+fIx
 hNJ
 hNJ
 hNJ
@@ -166713,9 +166980,9 @@ hNJ
 hNJ
 hNJ
 hNJ
-qWd
-qWd
-qWd
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -166825,60 +167092,60 @@ qWd
 qWd
 qWd
 qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -166987,60 +167254,60 @@ qWd
 qWd
 qWd
 qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -167149,48 +167416,48 @@ qWd
 qWd
 qWd
 qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-qWd
-xte
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
-brQ
+fIx
+fIx
+fIx
+fIx
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
+hNJ
 blU
 blU
 blU
@@ -167199,10 +167466,10 @@ blU
 blU
 blU
 blU
-qWd
-qWd
-qWd
-qWd
+wzn
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -167312,9 +167579,9 @@ qWd
 qWd
 qWd
 qWd
-qWd
-qWd
-qWd
+fIx
+fIx
+fIx
 qWd
 qWd
 qWd
@@ -167336,22 +167603,22 @@ qWd
 xte
 wqx
 ngK
-pdy
+ngK
 wqx
 ngK
-pdy
-wqx
 ngK
-pdy
-ngK
-ngK
-ngK
-sfX
 wqx
 ngK
 ngK
 ngK
 ngK
+ngK
+ngK
+wqx
+ngK
+ngK
+ngK
+ngK
 wqx
 blU
 blU
@@ -167361,9 +167628,9 @@ blU
 blU
 blU
 blU
-qWd
-qWd
-qWd
+wzn
+wzn
+wzn
 gKA
 gKA
 gKA
@@ -169620,7 +169887,7 @@ vEf
 rFn
 ngK
 sOn
-tvL
+oqy
 tPb
 jJU
 blU
@@ -169928,16 +170195,16 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
-eEt
+kEy
+kEy
+kEy
+kEy
 ngK
 teq
 fTE
-ydF
-fTE
 pyy
+fTE
+xiR
 oFI
 ngK
 gyG
@@ -170090,14 +170357,14 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
-eEt
+kEy
+kEy
+kEy
+kEy
 ngK
 hpl
 jYG
-oqy
+jYG
 jYG
 jYG
 fTE
@@ -170252,15 +170519,15 @@ qWd
 qWd
 qWd
 qWd
-eEt
-eEt
-eEt
-eEt
+kEy
+kEy
+kEy
+kEy
 iyL
 hZt
 jYG
-jYG
-jYG
+iAl
+iAl
 jYG
 hLw
 ngK
@@ -170422,8 +170689,8 @@ ngK
 kea
 jYG
 bHT
+bHT
 jYG
-cUc
 mux
 ngK
 mtB
@@ -170584,7 +170851,7 @@ iyL
 jWQ
 jYG
 iAl
-jYG
+iAl
 jYG
 lYC
 ngK
