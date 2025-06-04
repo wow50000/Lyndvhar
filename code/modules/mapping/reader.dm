@@ -50,8 +50,7 @@
 /// Parse a map, possibly cropping it.
 /datum/parsed_map/New(tfile, x_lower = -INFINITY, x_upper = INFINITY, y_lower = -INFINITY, y_upper=INFINITY, measureOnly=FALSE)
 	if(isfile(tfile))
-		// name/path of dmm file, new var so as to not rename the `tfile` var
-		// to maybe maintain compatibility with other codebases
+		// name/path of dmm file
 		original_path = "[tfile]"
 		tfile = null
 		// use bapi to read, parse, process, mapmanip etc
