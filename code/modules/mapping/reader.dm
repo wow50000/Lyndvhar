@@ -52,7 +52,7 @@
 	if(isfile(tfile))
 		// name/path of dmm file, new var so as to not rename the `tfile` var
 		// to maybe maintain compatibility with other codebases
-		var/tfilepath = "[tfile]"
+		original_path = "[tfile]"
 		tfile = null
 		// use bapi to read, parse, process, mapmanip etc
 		// this will "crash"/stacktrace on fail
@@ -60,11 +60,11 @@
 		// if you're changing the map size from bapi you're stupid and deserve it not to work,
 		// and i'm not slowing down the whole initialization by a third just for this possibility
 		if(!measureOnly)
-			tfile = bapi_read_dmm_file(tfilepath)
+			tfile = bapi_read_dmm_file(original_path)
 		// if bapi for whatever reason fails and returns null, or we're measuring
 		// try to load it the old dm way instead
 		if(!tfile)
-			tfile = file2text(tfilepath)
+			tfile = file2text(original_path)
 	else if(isnull(tfile))
 		// create a new datum without loading a map
 		return
