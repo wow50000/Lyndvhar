@@ -8732,6 +8732,12 @@
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
+"gqu" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
 "grC" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -21603,6 +21609,9 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "plV" = (
@@ -31274,13 +31283,7 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "wky" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -7
-	},
-/obj/item/rogueweapon/huntingknife/chefknife,
+/obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "wkz" = (
@@ -32296,6 +32299,10 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -7
+	},
+/obj/item/rogueweapon/huntingknife/chefknife,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "wWD" = (
@@ -116079,7 +116086,7 @@ ila
 aSS
 cQk
 cQk
-cQk
+gqu
 plS
 xoK
 xoK
