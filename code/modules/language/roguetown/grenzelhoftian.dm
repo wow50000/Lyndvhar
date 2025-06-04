@@ -1,6 +1,6 @@
 /datum/language/grenzelhoftian
-	name = "Grenzelhoftian Imperial"
-	desc = "The primary language of the Grenzelhoft Emperiate, a robust language filled with hearty words and enthusiastic enunciation."
+	name = "Grenz"
+	desc = "The primary language of the Grenzelhoft Imperiate, a robust language filled with hearty words and enthusiastic enunciation."
 	speech_verb = "remarks"
 	ask_verb = "inquires"
 	exclaim_verb = "asserts"
