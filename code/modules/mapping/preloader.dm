@@ -32,7 +32,6 @@ GLOBAL_DATUM_INIT(_preloader, /datum/map_preloader, new)
 
 /area/template_noop
 	name = "Area Passthrough"
-	icon_state = "noop"
 
 /turf/template_noop
 	name = "Turf Passthrough"
